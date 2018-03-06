@@ -7,8 +7,8 @@ sidebar_link: true
 <p class="message">
   <!--Hey there! This page is included as an example. Feel free to customize it
   for your own use upon downloading. Carry on! -->
-  ¾È³çÇÏ¼¼¿ä. ´Üºñ´Â ¿£¾¾¼ÒÇÁÆ® I&I½ÇÀÇ ±â¼úºí·Î±×ÀÔ´Ï´Ù. 
-  Data Analytics aNd Business InsightsÀÇ ¾àÀÚÀÌ¸ç ¸Ş¸»¶óÀÖ´Â ¼­ºñ½ºµé¿¡ ´Üºñ·Î »ı±â¸¦ ÁÖÀÚ´Â ÀÇ¹Ì°¡ ´ã°Ü ÀÖ½À´Ï´Ù.
+  ì•ˆë…•í•˜ì„¸ìš”. ë‹¨ë¹„ëŠ” ì—”ì”¨ì†Œí”„íŠ¸ I&Iì‹¤ì˜ ê¸°ìˆ ë¸”ë¡œê·¸ì…ë‹ˆë‹¤. 
+  Data Analytics aNd Business Insightsì˜ ì•½ìì´ë©° ë©”ë§ë¼ìˆëŠ” ì„œë¹„ìŠ¤ë“¤ì— ë‹¨ë¹„ë¡œ ìƒê¸°ë¥¼ ì£¼ìëŠ” ì˜ë¯¸ê°€ ë‹´ê²¨ ìˆìŠµë‹ˆë‹¤.
 </p>
 
 To make pages show up in the sidebar, add `sidebar_link: true` to the front
