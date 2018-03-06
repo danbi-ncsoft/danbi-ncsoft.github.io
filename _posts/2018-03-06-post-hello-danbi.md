@@ -8,7 +8,6 @@ This is a test post.
 
 ### This is a header
 
-한글입력 테스트
 
 
 Hydeout replaces Hyde's class-based theming with the use
