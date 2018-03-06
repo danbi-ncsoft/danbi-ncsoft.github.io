@@ -4,7 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            DANBI
-tagline:          'A Jekyll theme'
+tagline:          'Data Analytics aNd Business Insights'
 description:      'Data Analytics aNd Business Insights'
 url:              https://dani-ncsoft.github.io/
 baseurl:          # the optional subpath of your site, e.g. "/blog"
