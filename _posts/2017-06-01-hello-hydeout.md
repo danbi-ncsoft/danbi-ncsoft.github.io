@@ -1,23 +1,15 @@
 ---
 layout: post
-title: Hello Hydeout
+title: Hello DANBI
 excerpt_separator:  <!--more-->
 ---
 
-Hydeout updates the original [Hyde](https://github.com/poole/hyde)
-theme for [Jekyll](http://jekyllrb.com) 3.x and adds new functionality.
+This is a test post.
 
-### Keep It Simple
+### This is a header
 
-In keeping with the original Hyde theme, Hydeout aims to keep the overall
-design lightweight and plugin-free. JavaScript is currently limited only
-to Disqus and Google Analytics (and is only loaded if you provide configuration
-variables).
+한글입력 테스트
 
-Hydeout makes heavy use of Flexbox in its CSS. If Flexbox is not available,
-the CSS degrades into a single column layout.
-
-### Customization
 
 Hydeout replaces Hyde's class-based theming with the use
 of the following SASS variables:
