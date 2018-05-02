@@ -1,7 +1,10 @@
+---
+layout: post
+excerpt_separator:  <!--more-->
+
 2017년 데이터 분석 경진대회 기법 재현
 =====================================
 
-#### 이번 포스트는 2017년에 실시된 데이터 분석 경진대회 우승팀의 모델 재현에 대한 포스트입니다. 이전 대회의 데이터를 활용하여 게임 로그 가공법 및 모델 생성 방법을 소개해드리겠습니다. 
 
 ##### 데이터 가공
 
@@ -12,212 +15,316 @@
 -   집계한 일일 데이터의 요약치를 추가 집계하여 최종 데이터를
     생성합니다.
 
-> ![7fb4eda6aa89713e268cf3d8fafcd283](./media/image1.png){width="3.25in"
-> height="3.1145833333333335in"}
+> <img src="../media/image1.png" alt="7fb4eda6aa89713e268cf3d8fafcd283" style="width:3.25in;height:3.11458in" />
 
 ##### 각 데이터의 구성 방법 및 특징에 대해 자세하게 설명해 드리겠습니다.
 
 ##### 기간 총계 데이터 
 
--   ##### 기간 총계 데이터는 해당 기간 동안 계정의 활동 로그를 집계한 데이터 입니다. 
+-   ##### 기간 총계 데이터는 해당 기간 동안 계정의 활동 로그를 집계한 데이터 입니다.
 
-+-----------------------+-----------------------+-----------------------+
-| **구분**              | **정의**              | **비고**              |
-+=======================+=======================+=======================+
-| accountLevel          | 전체 캐릭터의 최종    | 기간 내 캐릭터 별     |
-|                       | 레벨 및 홍문 레벨     | 최대 레벨의 합으로    |
-|                       | 총합                  | 계산                  |
-+-----------------------+-----------------------+-----------------------+
-| nActors               | 전체 캐릭터의 수      | 기간 내 로그가        |
-|                       |                       | 존재하는 캐릭터의 수  |
-+-----------------------+-----------------------+-----------------------+
-| nActorsLow            | 50레벨 미만 캐릭터의  | 홍문레벨 무           |
-|                       | 수                    |                       |
-+-----------------------+-----------------------+-----------------------+
-| nActorsHigh           | 50레벨 이상 캐릭터의  | 홍문레벨 유           |
-|                       | 수                    |                       |
-+-----------------------+-----------------------+-----------------------+
-| nZones                | 전체 케릭터가         | >                     |
-|                       | 플레이한 지역의 수    |                       |
-+-----------------------+-----------------------+-----------------------+
-| nGuilds               | 전체 케릭터의 소속    | >                     |
-|                       | 길드 수               |                       |
-+-----------------------+-----------------------+-----------------------+
-
-  
-
-##### 
-
-##### 
-
-##### 
-
-##### 
-
-##### 
-
-##### 
+<table>
+<thead>
+<tr class="header">
+<th><strong>구분</strong></th>
+<th><strong>정의</strong></th>
+<th><strong>비고</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>accountLevel</td>
+<td>전체 캐릭터의 최종 레벨 및 홍문 레벨 총합</td>
+<td>기간 내 캐릭터 별 최대 레벨의 합으로 계산</td>
+</tr>
+<tr class="even">
+<td>nActors</td>
+<td>전체 캐릭터의 수</td>
+<td>기간 내 로그가 존재하는 캐릭터의 수</td>
+</tr>
+<tr class="odd">
+<td>nActorsLow</td>
+<td>50레벨 미만 캐릭터의 수</td>
+<td>홍문레벨 무</td>
+</tr>
+<tr class="even">
+<td>nActorsHigh</td>
+<td>50레벨 이상 캐릭터의 수</td>
+<td>홍문레벨 유</td>
+</tr>
+<tr class="odd">
+<td>nZones</td>
+<td>전체 케릭터가 플레이한 지역의 수 </td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td>nGuilds</td>
+<td>전체 케릭터의 소속 길드 수</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 ##### 일일 데이터 
 
--   ##### 일일 데이터는 하루 동안 계정의 활동 로그를 집계한 데이터입니다. 일, 구분, 데이터 형식으로 구성 되어 있습니다. X는 변수를 의미합니다. 
+-   ##### 일일 데이터는 하루 동안 계정의 활동 로그를 집계한 데이터입니다. 일, 구분, 데이터 형식으로 구성 되어 있습니다. X는 변수를 의미합니다.
 
-+-----------------------+-----------------------+-----------------------+
-| **구분**              | **정의**              | **비고**              |
-+=======================+=======================+=======================+
-| LogID                 | 일별 각 로그아이디    | 전체 로그아이디의     |
-|                       | 개수                  | 개수                  |
-+-----------------------+-----------------------+-----------------------+
-| playtime              | 일별 플레이 시간      | >                     |
-+-----------------------+-----------------------+-----------------------+
-| sessions              | 일별 세션 개수.       | 로그아웃을 기준으로   |
-|                       |                       | 세션 정의             |
-+-----------------------+-----------------------+-----------------------+
-| levelUpNormal         | 일별 모든 캐릭터의    | >                     |
-|                       | 레벨업 횟수           |                       |
-+-----------------------+-----------------------+-----------------------+
-| levelUpMastery        | 일별 모든 캐릭터의    | >                     |
-|                       | 홍문 레벨업 횟수      |                       |
-+-----------------------+-----------------------+-----------------------+
-| nActorsDaily          | 일별 플레이한 캐릭터  | >                     |
-|                       | 수                    |                       |
-+-----------------------+-----------------------+-----------------------+
-| playtime\_dayOfWeek\_ | 해당일자의 요일 및    | 플레이시간은          |
-| **\[X\]**             | 플레이시간            | 주중/주말로 구분하여  |
-|                       |                       | 가공 할 때 사용       |
-+-----------------------+-----------------------+-----------------------+
-| playtime\_actorJob\_* | 해당일자의 캐릭터     | +--------+--------+   |
-| *\[X\]**              | 직업별 플레이시간     | | **직업 | **직업** | |
-|                       |                       | | 코드** |        |   |
-|                       |                       | +========+========+   |
-|                       |                       | | 1      | blade- |   |
-|                       |                       | |        | master |   |
-|                       |                       | |        | (검사) |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | 2      | kung-f |   |
-|                       |                       | |        | u-figh |   |
-|                       |                       | |        | ter    |   |
-|                       |                       | |        | (권사) |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | 3      | force- |   |
-|                       |                       | |        | master |   |
-|                       |                       | |        | (역사) |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | 5      | destro |   |
-|                       |                       | |        | yer    |   |
-|                       |                       | |        | (기공사) | |
-|                       |                       | +--------+--------+   |
-|                       |                       | | 6      | summon |   |
-|                       |                       | |        | er     |   |
-|                       |                       | |        | (소환사) | |
-|                       |                       | +--------+--------+   |
-|                       |                       | | 7      | assass |   |
-|                       |                       | |        | in     |   |
-|                       |                       | |        | (암살자) | |
-|                       |                       | +--------+--------+   |
-|                       |                       | | 8      | Lyn-bl |   |
-|                       |                       | |        | ade-ma |   |
-|                       |                       | |        | ster   |   |
-|                       |                       | |        |        |   |
-|                       |                       | |        | (린검사) | |
-|                       |                       | +--------+--------+   |
-|                       |                       | | 9      | Warloc |   |
-|                       |                       | |        | k      |   |
-|                       |                       | |        | (주술사) | |
-|                       |                       | +--------+--------+   |
-|                       |                       | | 10     | SoulFi |   |
-|                       |                       | |        | ghter  |   |
-|                       |                       | |        | (기권가) | |
-|                       |                       | +--------+--------+   |
-+-----------------------+-----------------------+-----------------------+
-| playtime\_actorRace\_ | 해당일자 캐릭터 종족  |   **종족 코드**   **종족** |
-| **\[X\]**             | 별 플레이시간         |                       |
-|                       |                       |   --------------- --- |
-|                       |                       | ----------            |
-|                       |                       |   0               non |
-|                       |                       | e (없음)              |
-|                       |                       |   1               kun |
-|                       |                       |  (건)                 |
-|                       |                       |   2               gon |
-|                       |                       |  (곤)                 |
-|                       |                       |   3               lyn |
-|                       |                       |  (린)                 |
-|                       |                       |   4               jin |
-|                       |                       |  (진)                 |
-+-----------------------+-----------------------+-----------------------+
-| playtime\_actorGender | 해당일자 캐릭터 성별  | 1: Male, 2: Female    |
-| \_**\[X\]**           | 플레이시간            |                       |
-+-----------------------+-----------------------+-----------------------+
-| playtime\_timeOfDay\_ | 하루를 6개의 시간     |   **시간**        **구분* |
-| **\[X\]**             | 블럭으로 나눔         | *                     |
-|                       |                       |   --------------- --- |
-|                       |                       | ------------------    |
-|                       |                       |   02:00 - 06:00   Ear |
-|                       |                       | lyMorning (새벽)      |
-|                       |                       |   06:00 - 10:00   Mor |
-|                       |                       | ning (아침)           |
-|                       |                       |   10:00 - 14:00   Noo |
-|                       |                       | n (오전)              |
-|                       |                       |   14:00 - 18:00   Aft |
-|                       |                       | ernoon (오후)         |
-|                       |                       |   18:00 - 22:00   Eve |
-|                       |                       | ning (저녁)           |
-|                       |                       |   22:00 - 02:00   Nig |
-|                       |                       | ht (밤)               |
-+-----------------------+-----------------------+-----------------------+
-| actionVariety         | 해당일자에 행해진     | >                     |
-|                       | 행동 개수 (로그       |                       |
-|                       | 아이디 개수)          |                       |
-+-----------------------+-----------------------+-----------------------+
-| **\[X\]**\_group      | 그룹별 카운트         | +--------+--------+   |
-|                       |                       | | **그룹** | **해당 | |
-|                       | 로그 아이디를 8개의   | |        | 로그** |   |
-|                       | 그룹으로 나누어 집계  | +========+========+   |
-|                       |                       | | party\ | 1101,  |   |
-|                       | >                     | | _group | 1102,  |   |
-|                       |                       | |        | 1105,  |   |
-|                       |                       | |        | 1406,  |   |
-|                       |                       | |        |        |   |
-|                       |                       | |        | 1422,  |   |
-|                       |                       | |        | 1424   |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | guild\ | 6001,  |   |
-|                       |                       | | _group | 6004,  |   |
-|                       |                       | |        | 6005   |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | quest\ | 5004,  |   |
-|                       |                       | | _group | 5011,  |   |
-|                       |                       | |        | 5015   |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | tradeG | 2202,  |   |
-|                       |                       | | et\_gr | 2207   |   |
-|                       |                       | | oup    |        |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | tradeG | 2201,  |   |
-|                       |                       | | ive\_g | 2206   |   |
-|                       |                       | | roup   |        |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | skill\ | 4001,  |   |
-|                       |                       | | _group | 4002,  |   |
-|                       |                       | |        | 4006,  |   |
-|                       |                       | |        | 5008   |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | item\_ | 2113,  |   |
-|                       |                       | | group  | 2121,  |   |
-|                       |                       | |        | 2127   |   |
-|                       |                       | +--------+--------+   |
-|                       |                       | | auctio | 2014,  |   |
-|                       |                       | | n\_gro | 2301,  |   |
-|                       |                       | | up     | 2407   |   |
-|                       |                       | +--------+--------+   |
-+-----------------------+-----------------------+-----------------------+
-| equipScore            | 해당일 장착 장비 지수 | 2103                  |
-|                       |                       | (SaveEquipInfo)의     |
-|                       |                       | Old\_Value3\_Num      |
-+-----------------------+-----------------------+-----------------------+
-| totalMoneyGotLog      | log(총 획득 게임      | >                     |
-|                       | 머니)                 |                       |
-+-----------------------+-----------------------+-----------------------+
+<table>
+<thead>
+<tr class="header">
+<th><strong>구분</strong></th>
+<th><strong>정의</strong></th>
+<th><strong>비고</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LogID</td>
+<td>일별 각 로그아이디 개수</td>
+<td>전체 로그아이디의 개수</td>
+</tr>
+<tr class="even">
+<td>playtime</td>
+<td>일별 플레이 시간</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td>sessions</td>
+<td>일별 세션 개수. </td>
+<td>로그아웃을 기준으로 세션 정의</td>
+</tr>
+<tr class="even">
+<td>levelUpNormal</td>
+<td>일별 모든 캐릭터의 레벨업 횟수</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td>levelUpMastery</td>
+<td>일별 모든 캐릭터의 홍문 레벨업 횟수</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td>nActorsDaily</td>
+<td>일별 플레이한 캐릭터 수</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td>playtime_dayOfWeek_<strong>[X]</strong></td>
+<td>해당일자의 요일 및 플레이시간</td>
+<td>플레이시간은 주중/주말로 구분하여 가공 할 때 사용</td>
+</tr>
+<tr class="even">
+<td>playtime_actorJob_<strong>[X]</strong></td>
+<td>해당일자의 캐릭터 직업별 플레이시간</td>
+<td><table>
+<thead>
+<tr class="header">
+<th><strong>직업 코드</strong></th>
+<th><strong>직업</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>blade-master (검사)</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>kung-fu-fighter (권사)</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>force-master (역사)</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>destroyer (기공사)</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>summoner (소환사)</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>assassin (암살자)</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td><p>Lyn-blade-master</p>
+<p>(린검사)</p></td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>Warlock (주술사)</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>SoulFighter (기권가)</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr class="odd">
+<td>playtime_actorRace_<strong>[X]</strong></td>
+<td>해당일자 캐릭터 종족 별 플레이시간</td>
+<td><table>
+<thead>
+<tr class="header">
+<th><strong>종족 코드</strong></th>
+<th><strong>종족</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>none (없음)</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>kun (건)</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>gon (곤)</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>lyn (린)</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>jin (진)</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr class="even">
+<td>playtime_actorGender_<strong>[X]</strong></td>
+<td>해당일자 캐릭터 성별 플레이시간</td>
+<td>1: Male, 2: Female</td>
+</tr>
+<tr class="odd">
+<td>playtime_timeOfDay_<strong>[X]</strong></td>
+<td>하루를 6개의 시간 블럭으로 나눔</td>
+<td><table>
+<thead>
+<tr class="header">
+<th><strong>시간</strong></th>
+<th><strong>구분</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>02:00 - 06:00</td>
+<td>EarlyMorning (새벽)</td>
+</tr>
+<tr class="even">
+<td>06:00 - 10:00</td>
+<td>Morning (아침)</td>
+</tr>
+<tr class="odd">
+<td>10:00 - 14:00</td>
+<td>Noon (오전)</td>
+</tr>
+<tr class="even">
+<td>14:00 - 18:00</td>
+<td>Afternoon (오후)</td>
+</tr>
+<tr class="odd">
+<td>18:00 - 22:00</td>
+<td>Evening (저녁)</td>
+</tr>
+<tr class="even">
+<td>22:00 - 02:00</td>
+<td>Night (밤)</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr class="even">
+<td>actionVariety</td>
+<td>해당일자에 행해진 행동 개수 (로그 아이디 개수)</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><strong>[X]</strong>_group</td>
+<td><p>그룹별 카운트</p>
+<p>로그 아이디를 8개의 그룹으로 나누어 집계</p>
+<blockquote>
+<p> </p>
+</blockquote></td>
+<td><table>
+<thead>
+<tr class="header">
+<th><strong>그룹</strong></th>
+<th><strong>해당 로그</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>party_group</td>
+<td><p>1101, 1102, 1105, 1406,</p>
+<p>1422, 1424</p></td>
+</tr>
+<tr class="even">
+<td>guild_group</td>
+<td>6001, 6004, 6005</td>
+</tr>
+<tr class="odd">
+<td>quest_group</td>
+<td>5004, 5011, 5015</td>
+</tr>
+<tr class="even">
+<td>tradeGet_group</td>
+<td>2202, 2207</td>
+</tr>
+<tr class="odd">
+<td>tradeGive_group</td>
+<td>2201, 2206</td>
+</tr>
+<tr class="even">
+<td>skill_group</td>
+<td>4001, 4002, 4006, 5008</td>
+</tr>
+<tr class="odd">
+<td>item_group</td>
+<td>2113, 2121, 2127</td>
+</tr>
+<tr class="even">
+<td>auction_group</td>
+<td>2014, 2301, 2407</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr class="even">
+<td>equipScore</td>
+<td>해당일 장착 장비 지수</td>
+<td>2103 (SaveEquipInfo)의 Old_Value3_Num</td>
+</tr>
+<tr class="odd">
+<td>totalMoneyGotLog</td>
+<td>log(총 획득 게임 머니)</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
  
 
@@ -227,39 +334,80 @@
     X는 일별 데이터 각각의 특징을 의미합니다. 기간 총계 데이터와 해당
     데이터를 합쳐 학습에 활용합니다.
 
-+-----------------------+-----------------------+-----------------------+
-| **구분**              | **정의**              | **비고**              |
-+=======================+=======================+=======================+
-| **\[X\]**\_total      | 일별 데이터의 총합    | >                     |
-+-----------------------+-----------------------+-----------------------+
-| **\[X\]**\_mean       | 일별 데이터의 평균    | >                     |
-+-----------------------+-----------------------+-----------------------+
-| **\[X\]**\_std        | 일별 데이터의 표준    | >                     |
-|                       | 편차                  |                       |
-+-----------------------+-----------------------+-----------------------+
-| **\[X\]**\_variation  | 일별 데이터의 변동    | 표준편차 / 평균 \*    |
-|                       | 계수 ( %)             | 100                   |
-+-----------------------+-----------------------+-----------------------+
-| **\[X\]**\_loyalty    | 일별 데이터의 충성도  | 해당 Feature의 개수 / |
-|                       |                       | 총 플레이기간         |
-+-----------------------+-----------------------+-----------------------+
-| **\[X\]**\_amountLast | 마지막 활동량         | 마지막 데이터의 해당  |
-|                       |                       | 값                    |
-+-----------------------+-----------------------+-----------------------+
-| **\[X\]**\_lastDays\_ | 마지막 7일동안        | 해당 Feature의 개수 / |
-| 7                     | 플레이한 로그의 개수  | 7                     |
-+-----------------------+-----------------------+-----------------------+
-| **\[X\]**\_lastDays\_ | 마지막 14일동안       | 해당 Feature의 개수 / |
-| 14                    | 플레이한 로그의 개수  | 14                    |
-+-----------------------+-----------------------+-----------------------+
-| royalty\_last1week    | 마지막 1주간 충성도   | 접속 횟수 / 7         |
-+-----------------------+-----------------------+-----------------------+
-| royalty\_last2week    | 마지막 2주간 충성도   | 접속 횟수 / 14        |
-+-----------------------+-----------------------+-----------------------+
-| daySinceLastActiontoL | 로그별 마지막         | >                     |
-| astDay                | 기록시간과 마지막     |                       |
-|                       | 접속 시간의 시간차    |                       |
-+-----------------------+-----------------------+-----------------------+
+<table>
+<thead>
+<tr class="header">
+<th><strong>구분</strong></th>
+<th><strong>정의</strong></th>
+<th><strong>비고</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>[X]</strong>_total</td>
+<td>일별 데이터의 총합</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><strong>[X]</strong>_mean</td>
+<td>일별 데이터의 평균</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><strong>[X]</strong>_std</td>
+<td>일별 데이터의 표준 편차</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><strong>[X]</strong>_variation</td>
+<td>일별 데이터의 변동 계수 ( %)</td>
+<td>표준편차 / 평균 * 100</td>
+</tr>
+<tr class="odd">
+<td><strong>[X]</strong>_loyalty</td>
+<td>일별 데이터의 충성도</td>
+<td>해당 Feature의 개수 / 총 플레이기간</td>
+</tr>
+<tr class="even">
+<td><strong>[X]</strong>_amountLast</td>
+<td>마지막 활동량</td>
+<td>마지막 데이터의 해당 값</td>
+</tr>
+<tr class="odd">
+<td><strong>[X]</strong>_lastDays_7</td>
+<td>마지막 7일동안 플레이한 로그의 개수</td>
+<td>해당 Feature의 개수 / 7</td>
+</tr>
+<tr class="even">
+<td><strong>[X]</strong>_lastDays_14</td>
+<td>마지막 14일동안 플레이한 로그의 개수</td>
+<td>해당 Feature의 개수 / 14</td>
+</tr>
+<tr class="odd">
+<td>royalty_last1week</td>
+<td>마지막 1주간 충성도</td>
+<td>접속 횟수 / 7</td>
+</tr>
+<tr class="even">
+<td>royalty_last2week</td>
+<td>마지막 2주간 충성도</td>
+<td>접속 횟수 / 14</td>
+</tr>
+<tr class="odd">
+<td>daySinceLastActiontoLastDay</td>
+<td>로그별 마지막 기록시간과 마지막 접속 시간의 시간차</td>
+<td><blockquote>
+<p> </p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
 
 ##### 위에서 생성된 변수 중, 특징을 잘 설명할 수 있도록 변수를 선택하고 일반화를 통해 학습이 용이하도록 변경합니다.
 
@@ -317,8 +465,7 @@
 데이터를, Sub Input에는 일일 데이터를 학습에 활용합니다. 각 레이어를 왜
 활용하였는지, 어떤 방식으로 동작하는지 설명드리겠습니다.
 
-![7a53471db53d127ec97d437a322f6527](./media/image2.png){width="4.034974846894138in"
-height="6.75082239720035in"}
+<img src="../media/image2.png" alt="7a53471db53d127ec97d437a322f6527" style="width:4.03497in;height:6.75082in" />
 
 -   Batch Normalization
 
@@ -354,11 +501,10 @@ height="6.75082239720035in"}
     -   Dropout은 모든 뉴런을 계산에 참여시키지 않고 레이어에 포함된
         뉴런 중 일부만 계산에 참여시키는 방법입니다. 이전 레이어에서
         다름 레이어로 데이터를 전달할 때 일부 뉴런을 0으로 만드는
-        방법입니다 위 방법을 사용하여\
+        방법입니다 위 방법을 사용하여  
         Overfit을 줄일 수 있습니다.
 
-    -   ![](./media/image3.png){width="5.533333333333333in"
-        height="2.9145833333333333in"}
+    -   <img src="../media/image3.png" style="width:5.53333in;height:2.91458in" />
 
 -   TimeDistributed Dense
 
@@ -387,92 +533,92 @@ height="6.75082239720035in"}
 
 <!-- -->
 
--   
 
-\# RNN Model
+```python
+# RNN Model
 
-main\_input = Input(shape=np.shape(Z\_train\[1\]), dtype=\'float32\',
-name=\'main\_input\')
+main_input = Input(shape=np.shape(Z_train[1]), dtype='float32',name='main_input')
 
-main\_inp = BatchNormalization()(main\_input)
+main_inp = BatchNormalization()(main_input)
 
-x = Masking(mask\_value=0.)(main\_inp)
+x = Masking(mask_value=0.)(main_inp)
 
-x = Dropout(float(drop\_out\[0\]))(x)
+x = Dropout(float(drop_out[0]))(x)
 
-x = TimeDistributed(Dense(int(RNN\_dense\[0\]),
-kernel\_initializer=\'normal\'))(x)
+x = TimeDistributed(Dense(int(RNN_dense[0]),
+kernel_initializer='normal'))(x)
 
 x = LeakyReLU()(x)
 
-x = GRU(units=int(gru\[0\]), return\_sequences=True)(x)
+x = GRU(units=int(gru[0]), return_sequences=True)(x)
 
-x = Dropout(float(drop\_out\[1\]))(x)
+x = Dropout(float(drop_out[1]))(x)
 
-x = TimeDistributed(Dense(int(RNN\_dense\[1\]),
-kernel\_initializer=\'glorot\_uniform\', activation=\'sigmoid\'))(x)
+x = TimeDistributed(Dense(int(RNN_dense[1]),
+kernel_initializer='glorot_uniform', activation='sigmoid'))(x)
 
-x = GRU(int(gru\[1\]), return\_sequences=False)(x)
+x = GRU(int(gru[1]), return_sequences=False)(x)
 
-\# DNN Model
+# DNN Model
 
-sub\_input = Input(shape=np.shape(X\_train\[1\]), dtype=\'float32\',
-name=\'sub\_input\')
+sub_input = Input(shape=np.shape(X_train[1]), dtype='float32',
+name='sub_input')
 
-sub\_inp = BatchNormalization()(sub\_input)
+sub_inp = BatchNormalization()(sub_input)
 
-y = Dropout(float(drop\_out\[2\]))(sub\_inp)
+y = Dropout(float(drop_out[2]))(sub_inp)
 
-y = Dense(int(DNN\_dense\[0\]), kernel\_initializer=\'he\_uniform\',
-activation=\'relu\')(y)
+y = Dense(int(DNN_dense[0]), kernel_initializer='he_uniform',
+activation='relu')(y)
 
-y = Dropout(float(drop\_out\[3\]))(y)
+y = Dropout(float(drop_out[3]))(y)
 
-y = Dense(int(DNN\_dense\[1\]), kernel\_initializer=\'he\_uniform\',
-kernel\_regularizer=l2(l2\_lambda), activation=\'relu\')(y)
+y = Dense(int(DNN_dense[1]), kernel_initializer='he_uniform',
+kernel_regularizer=l2(l2_lambda), activation='relu')(y)
 
-\# Merge Model ( Concat )
+# Merge Model ( Concat )
 
-x = keras.layers.concatenate(\[x, y\])\# Shape (None,2048+64)
+x = keras.layers.concatenate([x, y])# Shape (None,2048+64)
 
-x = Dropout(float(drop\_out\[4\]))(x)
+x = Dropout(float(drop_out[4]))(x)
 
 x = BatchNormalization()(x)
 
-x = Dense(int(DNN\_dense\[2\]), kernel\_initializer=\'he\_uniform\',
-activation=\'relu\')(x)\# Shape (None,256)
+x = Dense(int(DNN_dense[2]), kernel_initializer='he_uniform',
+activation='relu')(x)# Shape (None,256)
 
-x = Dropout(float(drop\_out\[5\]))(x)
+x = Dropout(float(drop_out[5]))(x)
 
-main\_output = Dense(1, activation=\'sigmoid\',
-kernel\_initializer=\'glorot\_uniform\',
-kernel\_regularizer=l2(l2\_lambda),name=\'main\_output\')(x)\# Shape
+main_output = Dense(1, activation='sigmoid',
+kernel_initializer='glorot_uniform',
+kernel_regularizer=l2(l2_lambda),name='main_output')(x)# Shape
 (None,1)
 
-model = Model(inputs=\[main\_input, sub\_input\], outputs=main\_output)
+model = Model(inputs=[main_input, sub_input], outputs=main_output)
 
-\# Set Optimizer
+# Set Optimizer
 
 opt = keras.optimizers.Adam(lr=0.0005)
 
-\# Set Complie Method
+# Set Complie Method
 
 model.compile(optimizer=opt,
 
-loss={\'main\_output\': \'binary\_crossentropy\'},
+loss={'main_output': 'binary_crossentropy'},
 
-metrics=\[\'binary\_accuracy\',f1,recall,precision\])
+metrics=['binary_accuracy',f1,recall,precision])
 
-\# Train Model with Validation Data
+# Train Model with Validation Data
 
-history = model.fit({\'main\_input\': Z\_train, \'sub\_input\':
-X\_train},
+history = model.fit({'main_input': Z_train, 'sub_input': X_train},
 
-{\'main\_output\': y\_train},
+{'main_output': y_train},
 
-epochs=int(epochs), batch\_size=int(batch\_size),
+epochs=int(epochs), batch_size=int(batch_size),
 
-validation\_split=0.1)
+validation_split=0.1)
+
+```
 
 -   성능 측정 
 
@@ -481,12 +627,12 @@ validation\_split=0.1)
 
     -   
 
-  **각 수치별 병균 및 표준편차**                    
-  -------------------------------- ---------------- ---------------
-                                   **Test 1**       **Test 2**
-  **Precision (SD)**               0.493 (0.013)    0.534 (0.011)
-  **Recall (SD)**                  0.675 (0.026)    0.666 (0.022)
-  **FScore (SD)**                  0.5603 (0.004)   0.593 (0.004)
+| **각 수치별 병균 및 표준편차** |                |               |
+|--------------------------------|----------------|---------------|
+|                                | **Test 1**     | **Test 2**    |
+| **Precision (SD)**             | 0.493 (0.013)  | 0.534 (0.011) |
+| **Recall (SD)**                | 0.675 (0.026)  | 0.666 (0.022) |
+| **FScore (SD)**                | 0.5603 (0.004) | 0.593 (0.004) |
 
 -   진리표 
 
@@ -494,52 +640,93 @@ validation\_split=0.1)
 
         -   
 
-+--------+--------+--------+--------+--------+--------+--------+--------+
-| **Test |
-| 1      |
-| (기준  |
-| =      |
-| 0.5)** |
-+========+========+========+========+========+========+========+========+
-|        | **우승팀* | **2차 |      |        |        |        |        |
-|        | *      | 튜닝   |        |        |        |        |        |
-|        |        | 모델** |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-|        | **예측치* | **예측치* |  |        |        |        |        |
-|        | *      | *      |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-|        | **이탈** | **비이탈* | **소계** | **이탈** | **비이탈* | **소계** |  |
-|        |        | *      |        |        | *      |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-| **관**\ | **이탈** | 624 | 276    | 900    | 644    | 256    | 900    |
-|        |        |        |        |        |        |        |        |
-| **측**\ |       |        |        |        |        |        |        |
-|        |        |        |        |        |        |        |        |
-| **치** |        |        |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-|        | **비이탈* | 531 | 1,569  | 2,100  | 677    | 1,423  | 2,100  |
-|        | *      |        |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-|        | **소계** | 1,155 | 1,845 | 3,000  | 1,321  | 1,679  | 3,000  |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-| Precis | Precis |        |        |        |        |        |        |
-| ion    | ion    |        |        |        |        |        |        |
-| :      | :      |        |        |        |        |        |        |
-| 0.54\  | 0.49\  |        |        |        |        |        |        |
-| Recall | Recall |        |        |        |        |        |        |
-| :      | :      |        |        |        |        |        |        |
-| 0.693  | 0.72\  |        |        |        |        |        |        |
-|        | Accura |        |        |        |        |        |        |
-| Accura | cy     |        |        |        |        |        |        |
-| cy     | : 0.69 |        |        |        |        |        |        |
-| :      |        |        |        |        |        |        |        |
-| 0.731  | **F-Sc |        |        |        |        |        |        |
-|        | ore    |        |        |        |        |        |        |
-| **F-Sc | :      |        |        |        |        |        |        |
-| ore    | 0.58** |        |        |        |        |        |        |
-| :      |        |        |        |        |        |        |        |
-| 0.61** |        |        |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Test 1 (기준 = 0.5)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><strong>우승팀</strong></td>
+<td><strong>2차 튜닝 모델</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>예측치</strong></td>
+<td><strong>예측치</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>이탈</strong></td>
+<td><strong>비이탈</strong></td>
+<td><strong>소계</strong></td>
+<td><strong>이탈</strong></td>
+<td><strong>비이탈</strong></td>
+<td><strong>소계</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>관</strong><br />
+<strong>측</strong><br />
+<strong>치</strong></td>
+<td><strong>이탈</strong></td>
+<td>624</td>
+<td>276</td>
+<td>900</td>
+<td>644</td>
+<td>256</td>
+<td>900</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>비이탈</strong></td>
+<td>531</td>
+<td>1,569</td>
+<td>2,100</td>
+<td>677</td>
+<td>1,423</td>
+<td>2,100</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>소계</strong></td>
+<td>1,155</td>
+<td>1,845</td>
+<td>3,000</td>
+<td>1,321</td>
+<td>1,679</td>
+<td>3,000</td>
+</tr>
+<tr class="odd">
+<td><p>Precision : 0.54<br />
+Recall : 0.693</p>
+<p>Accuracy : 0.731</p>
+<p><strong>F-Score : 0.61</strong></p></td>
+<td><p>Precision : 0.49<br />
+Recall : 0.72<br />
+Accuracy : 0.69</p>
+<p><strong>F-Score : 0.58</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 -   
 
@@ -549,50 +736,93 @@ validation\_split=0.1)
 
     -   
 
-+--------+--------+--------+--------+--------+--------+--------+--------+
-| **Test |
-| 2      |
-| (기준  |
-| =      |
-| 0.5)** |
-+========+========+========+========+========+========+========+========+
-|        | **우승팀* | **2차 |      |        |        |        |        |
-|        | *      | 튜닝   |        |        |        |        |        |
-|        |        | 모델** |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-|        | **예측치* | **예측치* |  |        |        |        |        |
-|        | *      | *      |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-|        | **이탈** | **비이탈* | **소계** | **이탈** | **비이탈* | **소계** |  |
-|        |        | *      |        |        | *      |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-| **관**\ | **이탈** | 683 | 217    | 900    | 699    | 201    | 900    |
-|        |        |        |        |        |        |        |        |
-| **측**\ |       |        |        |        |        |        |        |
-|        |        |        |        |        |        |        |        |
-| **치** |        |        |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-|        | **비이탈* | 615 | 1,485  | 2,100  | 670    | 1,430  | 2,100  |
-|        | *      |        |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-|        | **소계** | 1,298 | 1,702 | 3,000  | 1,369  | 1,631  | 3,000  |
-+--------+--------+--------+--------+--------+--------+--------+--------+
-| Precis | Precis |        |        |        |        |        |        |
-| ion    | ion    |        |        |        |        |        |        |
-| :      | :      |        |        |        |        |        |        |
-| 0.53\  | 0.51\  |        |        |        |        |        |        |
-| Recall | Recall |        |        |        |        |        |        |
-| : 0.76 | :      |        |        |        |        |        |        |
-|        | 0.78\  |        |        |        |        |        |        |
-| Accura | Accura |        |        |        |        |        |        |
-| cy     | cy     |        |        |        |        |        |        |
-| : 0.72 | : 0.71 |        |        |        |        |        |        |
-|        |        |        |        |        |        |        |        |
-| **F-Sc | **F-Sc |        |        |        |        |        |        |
-| ore    | ore    |        |        |        |        |        |        |
-| :      | :      |        |        |        |        |        |        |
-| 0.62** | 0.61** |        |        |        |        |        |        |
-+--------+--------+--------+--------+--------+--------+--------+--------+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Test 2 (기준 = 0.5)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><strong>우승팀</strong></td>
+<td><strong>2차 튜닝 모델</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>예측치</strong></td>
+<td><strong>예측치</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>이탈</strong></td>
+<td><strong>비이탈</strong></td>
+<td><strong>소계</strong></td>
+<td><strong>이탈</strong></td>
+<td><strong>비이탈</strong></td>
+<td><strong>소계</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>관</strong><br />
+<strong>측</strong><br />
+<strong>치</strong></td>
+<td><strong>이탈</strong></td>
+<td>683</td>
+<td>217</td>
+<td>900</td>
+<td>699</td>
+<td>201</td>
+<td>900</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>비이탈</strong></td>
+<td>615</td>
+<td>1,485</td>
+<td>2,100</td>
+<td>670</td>
+<td>1,430</td>
+<td>2,100</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>소계</strong></td>
+<td>1,298</td>
+<td>1,702</td>
+<td>3,000</td>
+<td>1,369</td>
+<td>1,631</td>
+<td>3,000</td>
+</tr>
+<tr class="odd">
+<td><p>Precision : 0.53<br />
+Recall : 0.76</p>
+<p>Accuracy : 0.72</p>
+<p><strong>F-Score : 0.62</strong></p></td>
+<td><p>Precision : 0.51<br />
+Recall : 0.78<br />
+Accuracy : 0.71</p>
+<p><strong>F-Score : 0.61</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 -   이탈 판별 기준 (Threshold)에 따른 성능 측정 
 
@@ -604,23 +834,21 @@ validation\_split=0.1)
 
     -   Test1 
 
-        -   ![12afa6e1f8c5ff9cc55796ab034bbe65](./media/image4.png){width="4.480952537182852in"
-            height="2.5061734470691164in"}
+        -   <img src="../media/image4.png" alt="12afa6e1f8c5ff9cc55796ab034bbe65" style="width:4.48095in;height:2.50617in" />
 
     -   Test2
 
-        -   ![fdebac1d5e71c5998d032ad6dc759e8f](./media/image5.png){width="4.5in"
-            height="2.5168274278215224in"}
+        -   <img src="../media/image5.png" alt="fdebac1d5e71c5998d032ad6dc759e8f" style="width:4.5in;height:2.51683in" />
 
 ##### 결과물 
 
 모델 및 결과 파일입니다.
 
--   모델 코드 파일
-     : [[http://172.20.92.57:9999/edit/kuross/churn\_DNN/fin\_model/test\_churn\_model\_fin.py]{.underline}](http://172.20.92.57:9999/edit/kuross/churn_DNN/fin_model/test_churn_model_fin.py)
+-   모델 코드 파일  : [<span
+    class="underline">http://172.20.92.57:9999/edit/kuross/churn\_DNN/fin\_model/test\_churn\_model\_fin.py</span>](http://172.20.92.57:9999/edit/kuross/churn_DNN/fin_model/test_churn_model_fin.py)
 
--   각 모델별 테스트 라벨
-     : [[http://172.20.92.57:9999/tree/kuross/churn\_DNN/fin\_model/cv\_label]{.underline}](http://172.20.92.57:9999/tree/kuross/churn_DNN/fin_model/cv_label)
+-   각 모델별 테스트 라벨  : [<span
+    class="underline">http://172.20.92.57:9999/tree/kuross/churn\_DNN/fin\_model/cv\_label</span>](http://172.20.92.57:9999/tree/kuross/churn_DNN/fin_model/cv_label)
 
--   학습 데이터
-    : [[http://172.20.92.57:9999/tree/YokozunaData/data]{.underline}](http://172.20.92.57:9999/tree/YokozunaData/data)
+-   학습 데이터 : [<span
+    class="underline">http://172.20.92.57:9999/tree/YokozunaData/data</span>](http://172.20.92.57:9999/tree/YokozunaData/data)
