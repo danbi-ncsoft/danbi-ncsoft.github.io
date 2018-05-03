@@ -17,8 +17,13 @@ author:
   name:           'Andrew Fong'
   url:            https://twitter.com/fongandrewc
 
+<<<<<<< HEAD
 paginate:         5
 paginate_path: '/page/:num/'
+=======
+paginate:         1
+# paginate_path:    '/page:num'
+>>>>>>> parent of 736b9cd... test_list
                     # Or '/blog/page:num' if you want to move your index pages
 
 plugins:
