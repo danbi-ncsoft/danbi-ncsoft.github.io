@@ -1,15 +1,20 @@
 ---
-layout: page
-title: About
-sidebar_link: true
+layout: default
+title: About Us
+permalink: /about/
 ---
+<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../assets/about_us.jpg');"{% endif %}>
+  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+    <header class="site-header">
+		<h1 class="title">About Us</h1>
+    </header>
+  </div>
+</div>
 
-<p class="message">
-  <!--Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on! -->
-  안녕하세요. 단비는 엔씨소프트 I&I실의 기술블로그입니다. 
-  Data Analytics aNd Business Insights의 약자이며 메말라있는 서비스들에 단비로 생기를 주자는 의미가 담겨 있습니다.
-</p>
+<div class="wrapper">
+  NCSOFT는 게임 서버에서 발생하는 모든 데이터들을 저장하고 저장된 데이터를 활용하여 유저의 성향이나 악성 유저를 분류하고 있습니다. 
+  NCSOFT는 I&I팀은 데이터의 특징을 활용하여 예측 모델을 구현하고 예측 된 지표를 업무에 활용할 수 있도록 지원하고 있습니다. 
 
-To make pages show up in the sidebar, add `sidebar_link: true` to the front
-matter.
+  <img src='/assets/team.jpg'>
+</div>
+
