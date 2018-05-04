@@ -209,7 +209,7 @@ PCR은 말그대로 독립 변수들의 주성분(Principal Component)들을 추
 
 반면, 각각의 주성분 변수들은 실제 독립변수들의 전체 영향력을 부분적으로 반영한 변수들이기 때문에 이 회귀 모델을 이용해서는 각 조건의 영향력을 파악하기가 거의 불가능해지는 문제가 있습니다 (즉, 모델을 해석하기가 어렵습니다). 그래서 실제로 PCR은 잘 사용하지 않습니다. 
 
-    <http://www.milanor.net/blog/performing-principal-components-regression-pcr-in-r/> 은 PCR 에 대해 간략히 소개한 자료입니다. 
+<http://www.milanor.net/blog/performing-principal-components-regression-pcr-in-r/> 은 PCR 에 대해 간략히 소개한 자료입니다. 
 
 ### Partial Least Square (PLS) regression
 
@@ -218,7 +218,7 @@ PCR과 기본 개념은 비슷하지만 아래와 같이 변수들의 변환 방
 * PCR: 독립 변수의 분산을 최대로 하는 축을 찾아 데이터를 전사(projection)하는 방식으로 독립변수만 변형합니다.
 * PLS: 종속 변수와 독립 변수의 관계를 가장 잘 설명하는 축을 찾아 전사하는 방식으로 종속 변수와 독립 변수를 모두 변형합니다.
 
- <https://www.r-bloggers.com/partial-least-squares-regression-in-r/> 에 PLS 에 대한 기본적인 사용법이 나와 있으니 참고하시기 바랍니다.
+<https://www.r-bloggers.com/partial-least-squares-regression-in-r/> 에 PLS 에 대한 기본적인 사용법이 나와 있으니 참고하시기 바랍니다.
 
 
 
