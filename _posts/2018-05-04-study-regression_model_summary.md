@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2017년 회귀 모델의 종류와 특징"
+title:  "회귀 모델의 종류와 특징"
 date:   2015-05-04 14:22:00
 categories: Study
 author : DANBI
