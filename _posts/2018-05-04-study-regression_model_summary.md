@@ -170,7 +170,8 @@ R에서는 **arima()**라는 함수를 기본 패키지로 제공하며 이 함�
 Robust regression 은 이런 문제를 완화하기 위한 회귀 모델 기법입니다. 모델의 형태 자체는 일반적인 선형 회귀 모델과 동일하지만 회귀 계수의 추정 방식에서 차이가 있는 것이죠. 가장 널리 알려진 **Robust regression 기법은 잔차의 제곱 대신 절대값의 합이 최소가 되도록 계수를 추정하는 방식입니다.** 이렇게 절대값을 이용하면 아웃라이어의 영향력이 줄어들기 때문에 왜곡 현상이 완화됩니다. 고전적 선형 회귀와 로버스트 회귀의 계수 추정 방법을 수식으로 비교하면 아래와 같습니다. 
 
 * Classical linear regression: $$ argmin_\beta \sum{(\epsilon_i)^2} $$
-* Robust regression: $$ argmin_\beta \sum |\epsilon_i| $$
+
+* Robust regression: $$ argmin_\beta \sum {\|\epsilon_i\|} $$
 
 R에서는 'MASS' 라는 패키지에서 **rlm()** 함수를 이용하면 로버스트 회귀 분석을 할 수 있습니다. 사용방법은 **lm()**과 거의 유사합니다. 
 
@@ -190,9 +191,12 @@ R에서는 'quantreg' 이라는 패키지를 이용해서 quantile 회귀 분석
 다중공선성이 있는 데이터에 대해서 그냥 고전적인 선형 회귀 모델을 만들게 되면 회귀 계수의 영향력이 과다 추정될 수 있습니다. 이런 문제를 피하기 위해 가장 널리 알려진 방법이 'regularization'이라고 부르는 기법입니다. 여기서 소개하는 Ridge / lasso / elastic net 이 모두 이런 regularization 을 이용한 회귀 모델링 기법입니다. 이것 역시 로버스트 회귀처럼 모델의 형태 자체는 고전적인 선형 회귀 모델과 동일하나 회귀 계수를 추정하는 방식에서 차이가 있습니다. 말로 설명하기에 앞서 우선 수식으로 표현하면 아래와 같습니다.
 
 * Classical linear regression: $$ argmin_\beta \sum{\epsilon_i^2} $$
+
 * Ridge: $$ argmin_\beta {\epsilon_i^2} + \lambda \sum{\beta_k^2} $$
-* Lasso: $$ argmin_\beta {\epsilon_i^2} + \lambda \sum{|\beta_k|} $$
-* Elastic net: $$ argmin_\beta {\epsilon_i^2} + \lambda_1 \sum{\beta_k^2} + \lambda_2 \sum{|\beta_k|} $$
+
+* Lasso: $$ argmin_\beta {\epsilon_i^2} + \lambda \sum{\|\beta_k\|} $$
+
+* Elastic net: $$ argmin_\beta {\epsilon_i^2} + \lambda_1 \sum{\beta_k^2} + \lambda_2 \sum{\|\beta_k\|} $$
 
 위 수식을 보면 고전적인 선형 회귀 모델은 회귀 계수를 추정할 때 잔차의 제곱의 합을 계산합니다. 이 함수를 비용함수라고 부르는데 이 비용 함수가 최소가 되는 회귀 계수를 찾는 것이죠. 그런데 여기서 소개하는 회귀 모델들은 이 비용함수에 (그림에서 빨간색으로 표시한) 추가적인 수식들이 붙습니다. 이런 추가적인 수식을 페널티 함수라고 부릅니다. 말그대로 **회귀 계수 값 자체가 너무 커지지 않도록 페널티를 줌으로써 회귀계수값들이 과다 추정되는 것을 막는 것**입니다. 이 때 페널티 함수의 형태에 따라 ridge 와 lasso 가 구분됩니다. ridge regression 은 회귀 계수의 제곱합을 계산하는 방식이고, lasso 는 회귀 계수의 절대값을 계산하는 방식입니다. 그리도 elastic net은 이 둘을 결합한 방식이죠.
 
