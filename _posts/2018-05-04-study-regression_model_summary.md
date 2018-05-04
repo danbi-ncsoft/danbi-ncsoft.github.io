@@ -32,6 +32,7 @@ $$ y = h(x_1, x_2, x_3, ..., x_k; \beta_1, \beta_2, \beta_3, ..., \beta_k) + \ep
 가장 먼저 고려해야 할 가정은 선형성과 비선형성입니다. '선형성(linearity)'란 어떤 집합의 원소쌍(아래 수식의 u와 v)에 대해서 함수 f()가 아래 두 가지 성질을 만족시키는 것을 말합니다 (직관적으로 잘 와닿지 않는 분들을 위해 쉽게 말하면, 일차 다항식을 선형 함수라고 생각하면 됩니다).
 
 $$ f(c \times u) = c \times f(u) (여기서 c는 상수) $$
+
 $$ f(u+v) = f(u) + f(v) $$
 
 그런데 이 부분에서 많은 분들이 착각하는 점이 있는데, **회귀 모델에서 선형과 비선형을 구분할 때 독립 변수와 종속 변수의 관계를 기준으로 생각하면 안됩니다.** 선형이냐 비선형이냐를 결정하는 대상은 '변수'가 아니라 '회귀 계수'입니다. 다시 말해, 회귀식에서 x를 기준으로 선형 함수인지를 판단하는 것이 아닙니다. 왜냐하면 회귀 모델에서 우리가 추정해야 하는 미지수는 독립 변수나 종속 변수가 아니라 회귀 계수이기 때문입니다. 이에 대해서는 '선형 회귀 모델에서 선형이 의미하는 것은 무엇인가 (<https://brunch.co.kr/@gimmesilver/18>)' 에서 자세하게 설명을 했으니 한번 읽어 보시기 바랍니다. 
@@ -121,7 +122,7 @@ GAM 은 이렇게 표현할 수 있는 모델의 범위가 넓긴 하지만 여�
 일반화 선형 회귀 모델은 **종속 변수에 적절한 함수를 적용**하는 회귀 모델링 기법입니다. 
 
 
-$g(\hat{y}) = \beta_0 + \sum_{i=1}^{p} {\beta_i x_i} (g: link function)$ 
+$$ g(\hat{y}) = \beta_0 + \sum_{i=1}^{p} {\beta_i x_i} (g: link function) $$
 
 
 
@@ -150,7 +151,7 @@ GLM은 가장 많이 사용하는 회귀 분석 기법 중 하나입니다. <htt
 
 보통 시계열 데이터와 같이 순서가 정해져 있는 데이터의 경우 **주기성이나 계절성** 같이 일정한 패턴을 갖고 있는 경우가 많은데 이것을 '자기 상관성' 이라고 합니다. 그래서 이런 경우에는 아래와 같이 회귀 모델을 만들게 됩니다.
 
-$\hat{y_t} = \beta_0 + \sum_{i=1}^{k} {\beta_i y_{t-1}} + e_t$ 
+$$ \hat{y_t} = \beta_0 + \sum_{i=1}^{k} {\beta_i y_{t-1}} + e_t $$
 
 수식을 보면 알 수 있듯이, 특정 시점 t의 데이터를 과거 시점의 종속변수들이 설명하는 방식입니다. 이런 모델을 '자기 회귀 (Autoregressive)' 모델이라고 부릅니다. 대개의 경우 현실 세계에서는 위와 같이 단순한 자기 회귀 모델로만 적용할 수 있는 경우는 거의 없습니다. 보통 위 수식에 있는 e_t 에 또 다른 패턴이 있는 경우가 많으며 어떤 패턴이 있느냐에 따라 크게 두 가지 방식으로 확장됩니다.
 
@@ -168,8 +169,8 @@ R에서는 **arima()**라는 함수를 기본 패키지로 제공하며 이 함�
 
 Robust regression 은 이런 문제를 완화하기 위한 회귀 모델 기법입니다. 모델의 형태 자체는 일반적인 선형 회귀 모델과 동일하지만 회귀 계수의 추정 방식에서 차이가 있는 것이죠. 가장 널리 알려진 **Robust regression 기법은 잔차의 제곱 대신 절대값의 합이 최소가 되도록 계수를 추정하는 방식입니다.** 이렇게 절대값을 이용하면 아웃라이어의 영향력이 줄어들기 때문에 왜곡 현상이 완화됩니다. 고전적 선형 회귀와 로버스트 회귀의 계수 추정 방법을 수식으로 비교하면 아래와 같습니다. 
 
-* Classical linear regression: $argmin_\beta \sum{(\epsilon_i)^2}$ 
-* Robust regression: $argmin_\beta \sum |\epsilon_i|$  
+* Classical linear regression: $$ argmin_\beta \sum{(\epsilon_i)^2} $$
+* Robust regression: $$ argmin_\beta \sum |\epsilon_i| $$
 
 R에서는 'MASS' 라는 패키지에서 **rlm()** 함수를 이용하면 로버스트 회귀 분석을 할 수 있습니다. 사용방법은 **lm()**과 거의 유사합니다. 
 
@@ -188,10 +189,10 @@ R에서는 'quantreg' 이라는 패키지를 이용해서 quantile 회귀 분석
 
 다중공선성이 있는 데이터에 대해서 그냥 고전적인 선형 회귀 모델을 만들게 되면 회귀 계수의 영향력이 과다 추정될 수 있습니다. 이런 문제를 피하기 위해 가장 널리 알려진 방법이 'regularization'이라고 부르는 기법입니다. 여기서 소개하는 Ridge / lasso / elastic net 이 모두 이런 regularization 을 이용한 회귀 모델링 기법입니다. 이것 역시 로버스트 회귀처럼 모델의 형태 자체는 고전적인 선형 회귀 모델과 동일하나 회귀 계수를 추정하는 방식에서 차이가 있습니다. 말로 설명하기에 앞서 우선 수식으로 표현하면 아래와 같습니다.
 
-* Classical linear regression: $argmin_\beta \sum{\epsilon_i^2}$ 
-* Ridge: $argmin_\beta {\epsilon_i^2} + \lambda \sum{\beta_k^2}$ 
-* Lasso: $argmin_\beta {\epsilon_i^2} + \lambda \sum{|\beta_k|}$ 
-* Elastic net: $argmin_\beta {\epsilon_i^2} + \lambda_1 \sum{\beta_k^2} + \lambda_2 \sum{|\beta_k|}$ 
+* Classical linear regression: $$ argmin_\beta \sum{\epsilon_i^2} $$
+* Ridge: $$ argmin_\beta {\epsilon_i^2} + \lambda \sum{\beta_k^2} $$
+* Lasso: $$ argmin_\beta {\epsilon_i^2} + \lambda \sum{|\beta_k|} $$
+* Elastic net: $$ argmin_\beta {\epsilon_i^2} + \lambda_1 \sum{\beta_k^2} + \lambda_2 \sum{|\beta_k|} $$
 
 위 수식을 보면 고전적인 선형 회귀 모델은 회귀 계수를 추정할 때 잔차의 제곱의 합을 계산합니다. 이 함수를 비용함수라고 부르는데 이 비용 함수가 최소가 되는 회귀 계수를 찾는 것이죠. 그런데 여기서 소개하는 회귀 모델들은 이 비용함수에 (그림에서 빨간색으로 표시한) 추가적인 수식들이 붙습니다. 이런 추가적인 수식을 페널티 함수라고 부릅니다. 말그대로 **회귀 계수 값 자체가 너무 커지지 않도록 페널티를 줌으로써 회귀계수값들이 과다 추정되는 것을 막는 것**입니다. 이 때 페널티 함수의 형태에 따라 ridge 와 lasso 가 구분됩니다. ridge regression 은 회귀 계수의 제곱합을 계산하는 방식이고, lasso 는 회귀 계수의 절대값을 계산하는 방식입니다. 그리도 elastic net은 이 둘을 결합한 방식이죠.
 
