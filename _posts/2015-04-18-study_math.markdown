@@ -5,7 +5,7 @@ date:   2015-04-18 08:43:59
 categories: Study
 author : DANBI
 ---
-
+$$ y = h(x_1, x_2, x_3, ..., x_k; \beta_1, \beta_2, \beta_3, ..., \beta_k) + \epsilon $$
 This is just a dummy post. Lorem ipsum and all the rest.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
