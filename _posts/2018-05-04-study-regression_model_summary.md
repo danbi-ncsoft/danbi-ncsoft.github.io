@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "회귀 모델의 종류와 특징"
-date:   2015-05-04 14:22:00
+date:   2018-05-04 14:22:00
 categories: Study
 author : DANBI
 cover:  "/assets/statistics.jpg"

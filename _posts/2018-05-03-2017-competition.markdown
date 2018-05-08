@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2017년 데이터 분석 경진대회 기법 재현"
-date:   2015-04-18 08:43:59
+date:   2018-05-03 08:43:59
 categories: Competition
 author : DANBI
 cover:  "/assets/bns.jpg"
