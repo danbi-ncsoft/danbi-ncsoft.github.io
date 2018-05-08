@@ -4,6 +4,7 @@ title: "Test Post"
 date: 2015-05-08 11:53:00
 categories: Study
 author : DANBI
+cover: "/assets/test_post_cover_image.jpg"
 ---
 
 
