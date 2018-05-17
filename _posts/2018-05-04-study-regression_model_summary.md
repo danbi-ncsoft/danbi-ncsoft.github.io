@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "회귀 모델의 종류와 특징"
-date:   2015-05-04 14:22:00
+date:   2018-05-04 14:22:00
 categories: Study
 author : DANBI
-cover:  "/assets/publications.jpg"
+cover:  "/assets/statistics.jpg"
 ---
 
 ## 회귀 모델이란?
@@ -98,7 +98,7 @@ $$ \hat{y} = \beta_0 + \sum_{i=1}^{p}{\beta_i x_i} $$
 
 이름 그대로 독립 변수가 다항식으로 구성되는 회귀 모델입니다. 아래 그림처럼 만약 종속변수인 y와 독립변수인 x가 선형 관계가 아닌 곡선 형태를 갖는다면 독립변수에 지수승을 붙여서 여러 개의 변수로 만들어 회귀 모델을 구성하는 기법을 말합니다. 실상 형태적으로 보면 고전적인 다중 선형 회귀 모델과 똑같습니다. 또한 R에서 다항 회귀를 이용하는 방법은 아래 그림에 나와 있듯이 고전적 선형 회귀와 똑같이 **lm()** 함수를 이용하면 됩니다.
 
-![polynomial_regression_example](/assets/study/polynomial_regression_example.png)
+![polynomial_regression_example](/assets/study/regression_model_summary/polynomial_regression_example.png)
 
 ### Generalized Additive Model (GAM)
 
@@ -251,12 +251,12 @@ R에서는 'survival'이라는 패키지를 이용하면 되는데 <http://rstud
 
 지금까지 언급한 회귀 모델들을 특징에 따라 분류한 내용을 도식화하면 아래 그림과 같습니다.
 
-![regression_summary](/assets/study/regression_summary.png)
+![regression_summary](/assets/study/regression_model_summary/regression_summary.png)
 
 
 이것을 다시 일반화 수준에 따라 계층적으로 정리하면 아래 그림처럼 표현할 수 있습니다.
 
-![regression_tree](/assets/study\regression_tree.png)
+![regression_tree](/assets/study/regression_model_summary/regression_tree.png)
 
 
 
