@@ -6,11 +6,7 @@ categories: ETC
 author : DANBI
 ---
 
-This is just a dummy post. Lorem ipsum and all the rest.
+현재 경력직 수시 채용이 진행 중입니다. 
+저희와 함께하실 분들은 아래 링크를 클릭해 주세요~
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+[지금 클릭][https://recruit.ncsoft.net/korean/careers/adoptionview.aspx?BID=&BC=&SYear=&SType=&SWord=&PNo=2&d1=1&d2=0&BNo=6176&Section=]
