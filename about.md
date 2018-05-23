@@ -13,8 +13,6 @@ permalink: /about/
 
 <div class="wrapper">
   NCSOFT는 게임 서버에서 발생하는 모든 데이터들을 저장하고 저장된 데이터를 활용하여 유저의 성향이나 악성 유저를 분류하고 있습니다. 
-  NCSOFT는 I&I실은 데이터의 특징을 활용하여 예측 모델을 구현하고 예측 된 지표를 업무에 활용할 수 있도록 지원하고 있습니다. 
-
   <img src='/assets/team.png'>
 </div>
 
