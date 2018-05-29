@@ -1,5 +1,6 @@
 ---
 layout: post
+classoption: fleqn
 title: "수식 읽는 법"
 date: 2018-05-29 11:10:00
 categories: Study
@@ -69,9 +70,9 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
 ### 기초 통계
 
-* $\begin{aligned} \mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 \end{aligned}$
-* $ \sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 분산 (편차 제곱의 평균) $
-* $ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 표준편차 $
+* $$ \mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 $$
+* $$ \sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 분산 (편차 제곱의 평균) $$
+* $$ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 표준편차 $$
 
 
 
@@ -80,16 +81,16 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 * P(A), Pr(A): 사상 A의 확률
 * P(B\|A): 조건 A에서의 사상 B의 확률 (조건부확률)
   * 예) 베이즈 정리
-  * $ P(X\|Y) = \frac{P(Y\|X)P(X)}{P(Y)} $
+  * $$ P(X\|Y) = \frac{P(Y\|X)P(X)}{P(Y)} $$
 * P(A,B) = P(B\|A) P(A): 결합 확률. A이면서 B일 확률
 * E(X): 기대값. 확률변수 X의 평균
-  * $ E(X) = \sum_{i=1}^nx_iP(x_i) $
+  * $$ E(X) = \sum_{i=1}^nx_iP(x_i) $$
 
 
 
 ### 순열, 조합
 
-* $ n! = \Pi_{k=1}^nk=n\times(n-1)\times(n-2)\ \times...\times\ 3\times2\times1 $
+* $$ n! = \Pi_{k=1}^nk=n\times(n-1)\times(n-2)\ \times...\times\ 3\times2\times1 $$
   * 계승 (그 수보다 작거나 같은 모든 양의 정수의 곱). 팩토리얼이라고 부름. !로 표시
 * $$ \Pi $$: 곱집합
 * 순열 $$ _nP_r = \frac{n!}{(n-r)!} $$: 서로 다른 n개의 원소에서 r개를 중복없이 골라 순서에 상관있게 나열하는 것
@@ -100,7 +101,7 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 ### 벡터, 행렬
 
 * $$ \|\|a\|\| $$: 벡터의 norm, 벡터의 크기, 길이를 의미함
-  * 예) 회귀모델의 coefficients(계수)가 w = (w_1, ..., w_p)라고 할 때, 편차의 제곱이 최소가 되는 w를 구하는 공식![coefficients_w](/assets/study/how_to_read_mathematical_expression\coefficients_w.png){: width="40" height="250"}
+  * 예) 회귀모델의 coefficients(계수)가 w = (w_1, ..., w_p)라고 할 때, 편차의 제곱이 최소가 되는 w를 구하는 공식![coefficients_w](/assets/study/how_to_read_mathematical_expression\coefficients_w.png){: width="40" height="400"}
 * det(A) 또는 \|A\|: 행렬식, 선형 행렬 A의 크기를 나타냄
 
   * 2 X 2 행렬일 경우, $$ A = \begin{bmatrix} a & b \\ c & d\end{bmatrix} $$ 라면, det(A) = ad - bc로 정의됨
@@ -122,11 +123,11 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
     
 
-    ![gradient](/assets/study/how_to_read_mathematical_expression\gradient.png){: width="40" height="250"}
+    ![gradient](/assets/study/how_to_read_mathematical_expression\gradient.png){: width="40" height="400"}
 
     * $$ \nabla f $$: 함수 f(x1,x2,...,xn)의 기울기 (Gradient)
     * 경사하강법(Gradient descent) 공식
-      * $ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $
+      * $$ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $$
 
 
 
