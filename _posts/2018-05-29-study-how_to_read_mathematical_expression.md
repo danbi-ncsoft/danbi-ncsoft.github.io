@@ -11,7 +11,7 @@ cover: "/assets/statistics.jpg"
 
 업무를 하면서 인터넷을 통해 다양한 자료나 논문을 찾아 읽다 보면, 어김없이 아래와 같은 수식을 접하게 됩니다.
 
-$$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\pi x}{L}\Bigl)  (푸리에\ 급수) $$
+$$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\pi x}{L}\Bigl)\ (푸리에\ 급수) $$
 
 수식에 익숙한 사람이라면 모르겠지만, 대개는 대충 눈으로 훑어보고 (혹은 패스하고) 다음 설명을 읽어나가게 되고, 결국 자료의 내용 전체를 이해하지 못하는 경우가 종종 생겨납니다. 이번 포스트에서는 왜 수식이 어려운가, 수식은 대체 뭔가, 어떻게 해야 수식을 잘 읽을 수 있을까에 대한 간단한 고찰을 짤막하게 정리해 봅니다.
 
@@ -55,39 +55,33 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 $$ given\  A \in R^{m\times n} and \ b \in R^m,\ find\ vector\ x \in R^n\ that\ minimizes \\
 ||Ax - b ||^2 = \sum_{i=1}^m\Biggl(\sum_{j=1}^nA_{ij}x_j-b_i\Biggl)^2 $$
 
-이 때 $$ A \in R^{m\times n} $$: A가 임의의 m x n의 행렬이라는 것을 의미 (∈: 왼쪽이 오른쪽의 원소 )
+​     이 때 $$ A \in R^{m\times n} $$: A가 임의의 m x n의 행렬이라는 것을 의미 (∈: 왼쪽이 오른쪽의 원소 )
 
 
 
 ### 기초 통계
 
-* $$ \mu = \frac{\sum_{i=1}^nx_i}{n} $$: 평균
-* $$ \sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n} $$: 분산 (편차 제곱의 평균)
-* $$ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n} $$: 표준편차
+* $$ \mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 $$
+* $$ \sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 분산 (편차 제곱의 평균) $$
+* $$ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 표준편차 $$
 
 
 
 ### 확률
 
 * P(A), Pr(A): 사상 A의 확률
-
 * P(B|A): 조건 A에서의 사상 B의 확률 (조건부확률)
-
   * 예) 베이즈 정리
-
-    $$ P(X|Y) = \frac{P(Y|X)P(X)}{P(Y)} $$
-
+  * $$ P(X|Y) = \frac{P(Y|X)P(X)}{P(Y)} $$
 * P(A,B) = P(B|A) P(A): 결합 확률. A이면서 B일 확률
-
 * E(X): 기대값. 확률변수 X의 평균
-
-  ​     $$ E(X) = \sum_{i=1}^nx_iP(x_i) $$
+  * $$ E(X) = \sum_{i=1}^nx_iP(x_i) $$
 
 
 
 ### 순열, 조합
 
-* $$ n! = \Pi_{k=1}^nk=n\times(n-1)\times(n-2)\ \times...\times\ 3\times2\times1 $$
+* $$ n! = \Pi_{k=1}^nk=n\times(n-1)\times(n-2)\ \times...\times\ 3\times2\times1 $$ 
   * 계승 (그 수보다 작거나 같은 모든 양의 정수의 곱). 팩토리얼이라고 부름. !로 표시
 * $$ \Pi $$: 곱집합
 * 순열 $$ _nP_r = \frac{n!}{(n-r)!} $$: 서로 다른 n개의 원소에서 r개를 중복없이 골라 순서에 상관있게 나열하는 것
@@ -97,20 +91,13 @@ $$ given\  A \in R^{m\times n} and \ b \in R^m,\ find\ vector\ x \in R^n\ that\ 
 
 ### 벡터, 행렬
 
-* $$ ||a|| $$: 벡터의 norm, 벡터의 크기, 길이를 의미함
-
-  * 예) 회귀모델의 coefficients(계수)가 w = (w_1, ..., w_p)라고 할 때, 편차의 제곱이 최소가 되는 w를 구하는 공식
-
-    ![coefficients_w](/assets/study/how_to_read_mathematical_expression\coefficients_w.png)
-
-* det(A) 또는 |A|: 행렬식, 선형 행렬 A의 크기를 나타냄
+* $$ \||a\|| $$: 벡터의 norm, 벡터의 크기, 길이를 의미함
+  * 예) 회귀모델의 coefficients(계수)가 w = (w_1, ..., w_p)라고 할 때, 편차의 제곱이 최소가 되는 w를 구하는 공식![coefficients_w](/assets/study/how_to_read_mathematical_expression\coefficients_w.png){: width="100" height="100"}
+* det(A) 또는 \|A\|: 행렬식, 선형 행렬 A의 크기를 나타냄
 
   * 2 X 2 행렬일 경우, $$ A = \begin{bmatrix} a & b \\ c & d\end{bmatrix} $$ 라면, det(A) = ad - bc로 정의됨
-
 * $$ A^T $$: 전치 행렬. A의 행렬에서 행과 열을 바꾼 형태
-
-* $$ A^-1 $$: 역행렬. A행렬과 곱했을 때, 단위행렬이 되는 행렬
-
+* $$ A^{-1} $$: 역행렬. A행렬과 곱했을 때, 단위행렬이 되는 행렬
 * I (E나 U로도 씀): 단위 행렬. 주 대각선이 전부 1이고 나머지 원소는 0을 값으로 갖는 정사각행렬
 
 
@@ -127,13 +114,11 @@ $$ given\  A \in R^{m\times n} and \ b \in R^m,\ find\ vector\ x \in R^n\ that\ 
 
     
 
-    ![gradient](/assets/study/how_to_read_mathematical_expression\gradient.png)
+    ![gradient](/assets/study/how_to_read_mathematical_expression\gradient.png){: width="100" height="100"}
 
     * $$ \nabla f $$: 함수 f(x1,x2,...,xn)의 기울기 (Gradient)
-
     * 경사하강법(Gradient descent) 공식
-
-      $$ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $$
+      * $$ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $$
 
 
 
@@ -144,7 +129,7 @@ $$ given\  A \in R^{m\times n} and \ b \in R^m,\ find\ vector\ x \in R^n\ that\ 
 * 논문 같은 경우에는 수식을 사용할 때, 해당 기호나 문자가 무엇을 의미하는지 따로 적어놓는 경우가 있습니다. 처음보는 수식이 어려울 때는, **우선 수식 근처에 해당 기호나 문자가 의미하는 바가 따로 설명되어 있는지** 찾아보면 좋을 것 같습니다.. 
 * 따로 설명이 없다면, **해당 기호가 원래 많이 쓰이는 기호인지 찾아봅니다**. 도움이 될만한 링크는 아래와 같습니다.
   * [수학기호(wikipedia)](https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8)
-  * http://pigbrain.github.io/math/2015/07/15/MathematicalSymbol_on_Math
+  * <http://pigbrain.github.io/math/2015/07/15/MathematicalSymbol_on_Math>
   * [수학기호(리브레위키)](https://librewiki.net/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8)
 * 그래도 어렵다면, **기호가 나타내는 바에 대한 개념을 찾아봐야** 합니다.
   * 예를 들어, $$ \int $$는 적분이라고 하는데, 그래도 잘 모르겠다면, 적분의 개념 이해가 안되었기 때문입니다. 이 경우는 개념 자체에 대한 이해가 필요하다고 생각합니다.
@@ -153,9 +138,9 @@ $$ given\  A \in R^{m\times n} and \ b \in R^m,\ find\ vector\ x \in R^n\ that\ 
 
 ### 참고자료
 
-https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8
+<https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8>
 
-http://pigbrain.github.io/math/2015/07/15/MathematicalSymbol_on_Math
+<http://pigbrain.github.io/math/2015/07/15/MathematicalSymbol_on_Math>
 
-https://librewiki.net/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8
+<https://librewiki.net/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8>
 
