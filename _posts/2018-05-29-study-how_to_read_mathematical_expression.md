@@ -69,8 +69,7 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
 ### 기초 통계
 
-* \begin{flalign*} $$ \mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 $$ \end{flalign*}
-*  $$ \mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 $$
+*  $$\mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 $$
 *  $$ \sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 분산 (편차 제곱의 평균) $$
 *  $$ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 표준편차 $$
 
@@ -101,7 +100,7 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 ### 벡터, 행렬
 
 * $$ \|a\| $$: 벡터의 norm, 벡터의 크기, 길이를 의미함
-  * 예) 회귀모델의 coefficients(계수)가 w = (w_1, ..., w_p)라고 할 때, 편차의 제곱이 최소가 되는 w를 구하는 공식![coefficients_w](/assets/study/how_to_read_mathematical_expression\coefficients_w.png){:height="50%" width="30%"}
+  * 예) 회귀모델의 coefficients(계수)가 w = (w_1, ..., w_p)라고 할 때, 편차의 제곱이 최소가 되는 w를 구하는 공식![coefficients_w](/assets/study/how_to_read_mathematical_expression\coefficients_w.png){:height="5%" width="5%"}
 * det(A) 또는 \|A\|: 행렬식, 선형 행렬 A의 크기를 나타냄
 
   * 2 X 2 행렬일 경우, $$ A = \begin{bmatrix} a & b \\ c & d\end{bmatrix} $$ 라면, det(A) = ad - bc로 정의됨
@@ -123,11 +122,11 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
     
 
-    ![gradient](/assets/study/how_to_read_mathematical_expression\gradient.png){: width="40" height="400"}
+    ![gradient](/assets/study/how_to_read_mathematical_expression\gradient.png){:height="5%" width="5%"}
 
     * $$ \nabla f $$: 함수 f(x1,x2,...,xn)의 기울기 (Gradient)
     * 경사하강법(Gradient descent) 공식
-      * $$ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $$
+      *  $$ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $$
 
 
 
