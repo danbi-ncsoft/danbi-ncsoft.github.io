@@ -33,7 +33,7 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
 예를 들어, 밀도는 Density이기 때문에 알파벳 D에 해당하는 델타를 사용하고, 오차(Error)는 E를 의미하는 엡실론, 모평균(Mean)은 M을 의미하는 뮤, 원주율(Pi)는 P를 의미하는 파이를 사용하는 방식입니다.
 
-![greek_letters](/assets/study/how_to_read_mathematical_expression\greek_letters.jpg)
+![greek_letters](/assets/study/how_to_read_mathematical_expression\greek_letters.jpg){:height="90%" width="90%"}
 
 
 
@@ -69,9 +69,9 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
 ### 기초 통계
 
-*  $$\mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 $$
-*  $$ \sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 분산 (편차 제곱의 평균) $$
-*  $$ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 표준편차 $$
+*  \ $$ \mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 $$
+*  \ $$ \sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 분산 (편차 제곱의 평균) $$
+*  \ $$ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 표준편차 $$
 
 
 
@@ -90,10 +90,10 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 ### 순열, 조합
 
 *  $$ n! = \Pi_{k=1}^nk=n\times(n-1)\times(n-2)\ \times...\times\ 3\times2\times1 $$
-  * 계승 (그 수보다 작거나 같은 모든 양의 정수의 곱). 팩토리얼이라고 부름. !로 표시
-* $$ \Pi $$: 곱집합
-* 순열 $$ _nP_r = \frac{n!}{(n-r)!} $$: 서로 다른 n개의 원소에서 r개를 중복없이 골라 순서에 상관있게 나열하는 것
-* 조합 $$ _nC_r = _nP_r \ /\  r! = \frac{n!}{(n-r)!\times r!} = \begin{pmatrix} n \\ r \end{pmatrix} $$: 서로 다른 n개의 원소에서 순서에 상관없이 r개를 뽑을 때
+  *  계승 (그 수보다 작거나 같은 모든 양의 정수의 곱). 팩토리얼이라고 부름. !로 표시
+*  $$ \Pi $$: 곱집합
+*  순열 $$ _nP_r = \frac{n!}{(n-r)!} $$: 서로 다른 n개의 원소에서 r개를 중복없이 골라 순서에 상관있게 나열하는 것
+*  조합 $$ _nC_r = _nP_r \ /\  r! = \frac{n!}{(n-r)!\times r!} = \begin{pmatrix} n \\ r \end{pmatrix} $$: 서로 다른 n개의 원소에서 순서에 상관없이 r개를 뽑을 때
 
 
 
