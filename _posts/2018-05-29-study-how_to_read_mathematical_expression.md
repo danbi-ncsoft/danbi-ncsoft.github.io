@@ -69,9 +69,15 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
 ### 기초 통계
 
-*  \text $$ \mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균 $$
-*  \text $$ \sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 분산 (편차 제곱의 평균) $$
-*  \text $$ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 표준편차 $$
+* \begin{multline} 
+
+   $$ \shoveleft{\mu = \frac{\sum_{i=1}^nx_i}{n}:\ 평균} $$
+
+  \end{multline}
+
+* $$ \shoveleft{\sigma^2 = \frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 분산 (편차 제곱의 평균)} $$
+
+* \text $$ \sigma = \sqrt\frac{\sum_{i=1}^n(x_i-\mu)^2}{n}:\ 표준편차 $$
 
 
 
