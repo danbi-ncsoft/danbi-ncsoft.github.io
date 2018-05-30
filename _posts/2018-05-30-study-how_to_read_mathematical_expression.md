@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "수식 읽는 법"
-date: 2018-05-30 14:15:00
+date: 2018-05-30 14:35:00
 categories: Study
 author: DANBI
 cover: "/assets/statistics.jpg"
@@ -79,7 +79,7 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
 * P(A), Pr(A): 사상 A의 확률
 * P(B\|A): 조건 A에서의 사상 B의 확률 (조건부확률)
-  * 예) 베이즈 정리 $$ P(X|Y) = \frac{P(Y|X)P(X)}{P(Y)} $$
+  * 예) 베이즈 정리: $$ P(X\|Y) = \frac{P(Y\|X)P(X)}{P(Y)} $$
 * P(A,B) = P(B\|A) P(A): 결합 확률. A이면서 B일 확률
 * E(X): 기대값. 확률변수 X의 평균. $$ E(X) = \sum_{i=1}^nx_iP(x_i) $$
 
@@ -103,7 +103,7 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
   * 2 X 2 행렬일 경우, $$ A = \begin{bmatrix} a & b \\ c & d\end{bmatrix} $$ 라면, det(A) = ad - bc로 정의됨
 * $$ A^T $$: 전치 행렬. A의 행렬에서 행과 열을 바꾼 형태
 * $$ A^{-1} $$: 역행렬. A행렬과 곱했을 때, 단위행렬이 되는 행렬
-* I (E나 U로도 씀): 단위 행렬. 주 대각선이 전부 1이고 나머지 원소는 0을 값으로 갖는 정사각행렬
+* $$ I $$ (E나 U로도 씀): 단위 행렬. 주 대각선이 전부 1이고 나머지 원소는 0을 값으로 갖는 정사각행렬
 
 
 
@@ -113,13 +113,10 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
 * $$ \int f(x)dx $$: 함수 f(x)의 적분
 
-  * 예) 어떤 다변수 함수 f(x1,x2,...,xn)이 있을 때, f의 그레디언트(Gradient)는 아래처럼 표현
-
-    $$ \nabla f=\Bigl(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, ..., \frac{\partial f}{\partial x_n}\Bigl) $$
+  * 예) 어떤 다변수 함수 f(x1,x2,...,xn)이 있을 때, f의 그레디언트(Gradient)는 다음과 같이 표현: $$ \nabla f=\Bigl(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, ..., \frac{\partial f}{\partial x_n}\Bigl) $$
 
     * $$ \nabla f $$: 함수 f(x1,x2,...,xn)의 기울기 (Gradient)
-    * 경사하강법(Gradient descent) 공식
-      *  $$ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $$
+    * 경사하강법(Gradient descent) 공식: $$ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $$
 
 
 
@@ -127,13 +124,12 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 
 수식을 읽기 어려울 때는 아래의 단계처럼 수식을 이해하려는 노력을 해보면 좋을 것 같습니다.
 
-* 논문 같은 경우에는 수식을 사용할 때, 해당 기호나 문자가 무엇을 의미하는지 따로 적어놓는 경우가 있습니다. 처음보는 수식이 어려울 때는, **우선 수식 근처에 해당 기호나 문자가 의미하는 바가 따로 설명되어 있는지** 찾아보면 좋을 것 같습니다.. 
-* 따로 설명이 없다면, **해당 기호가 원래 많이 쓰이는 기호인지 찾아봅니다**. 도움이 될만한 링크는 아래와 같습니다.
-  * [수학기호(wikipedia)](https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8)
-  * <http://pigbrain.github.io/math/2015/07/15/MathematicalSymbol_on_Math>
-  * [수학기호(리브레위키)](https://librewiki.net/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8)
-* 그래도 어렵다면, **기호가 나타내는 바에 대한 개념을 찾아봐야** 합니다.
-  * 예를 들어, $$ \int $$는 적분이라고 하는데, 그래도 잘 모르겠다면, 적분의 개념 이해가 안되었기 때문입니다. 이 경우는 개념 자체에 대한 이해가 필요하다고 생각합니다.
+1. 논문 같은 경우에는 수식을 사용할 때, 해당 기호나 문자가 무엇을 의미하는지 따로 적어놓는 경우가 있습니다. 처음보는 수식이 어려울 때는, **우선 수식 근처에 해당 기호나 문자가 의미하는 바가 따로 설명되어 있는지** 찾아보면 좋을 것 같습니다.
+2. 따로 설명이 없다면, **해당 기호가 원래 많이 쓰이는 기호인지 찾아봅니다**. 도움이 될만한 링크는 아래와 같습니다.
+   * [수학기호(wikipedia)](https://ko.wikipedia.org/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8)
+   * <http://pigbrain.github.io/math/2015/07/15/MathematicalSymbol_on_Math>
+   * [수학기호(리브레위키)](https://librewiki.net/wiki/%EC%88%98%ED%95%99_%EA%B8%B0%ED%98%B8)
+3. 그래도 어렵다면, **기호가 나타내는 바에 대한 개념을 찾아봐야** 합니다. 예를 들어, $$ \int $$는 적분이라고 하는데, 그래도 잘 모르겠다면, 적분의 개념 이해가 안되었기 때문입니다. 이 경우는 개념 자체에 대한 이해가 필요하다고 생각합니다.
 
 
 
