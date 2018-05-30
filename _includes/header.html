@@ -1,0 +1,25 @@
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="http://kr.ncsoft.com/korean/" class="logo">
+      <img src="/assets/main_ci.png" alt="{{ site.title }}"> 
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        {% for page in site.pages %}
+          {% if page.title == "Home" %}
+          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% break %}
+          {% endif %}
+        {% endfor %}        
+        {% for page in site.pages %}
+          {% if page.title and page.main_nav != false and page.title != "Home" %}
+          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
