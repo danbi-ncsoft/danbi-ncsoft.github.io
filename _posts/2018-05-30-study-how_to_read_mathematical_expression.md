@@ -84,7 +84,7 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 | P(A,B) = P(B\|A) P(A) | 결합 확률. A이면서 B일 확률                                  |
 | E(X)                  | 기대값. 확률변수 X의 평균. $$ E(X) = \sum_{i=1}^nx_iP(x_i) $$ |
 
-* 사용 예) 베이즈 정리: $$ P(X\|Y) = \frac{P(Y\|X) P(X)}{P(Y)} $$
+* 사용 예) 베이즈 정리: $$ P(X \mid Y) = \frac{P(Y \mid X) P(X)}{P(Y)} $$
 
 
 
