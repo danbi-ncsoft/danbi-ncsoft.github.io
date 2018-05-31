@@ -109,7 +109,7 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 | $$ A^{-1} $$           | 역행렬. A행렬과 곱했을 때, 단위행렬이 되는 행렬              |
 | $$ I $$ (E나 U로도 씀) | 단위 행렬. 주 대각선이 전부 1이고 나머지 원소는 0을 값으로 갖는 정사각행렬 |
 
-* 사용 예) 회귀모델의 coefficients(계수)가 $#w = (w_1, ..., w_p)$라고 할 때, 편차의 제곱이 최소가 되는 w를 구하는 공식: $\rm argmin_{w}$ $$ {\|X w-y \|{_2}^2} $$
+* 사용 예) 회귀모델의 coefficients(계수)가 $$ w = (w_1, ..., w_p) $$ 라고 할 때, 편차의 제곱이 최소가 되는 w를 구하는 공식: $$ argmin_{w}{\|X w-y \|{_2}^2} $$
 
 
 
@@ -120,9 +120,9 @@ $$ f(x) = a_0 + \sum_{n=1}^\infty\Bigl(a_n\cos \frac{n\pi x}{L}+b_n\sin\frac{n\p
 | $$ \frac{\partial f}{\partial x} = \frac{dy}{dx} = f'(x) $$ | 함수 f(x)의 도함수(미분) |
 | $$ \int f(x)dx $$                                           | 함수 f(x)의 적분         |
 
-* 사용 예) 어떤 다변수 함수 $f(x_1,x_2,...,x_n)$이 있을 때, f의 그레디언트(Gradient)는 다음과 같이 표현: $$ \nabla f=\Bigl(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, ..., \frac{\partial f}{\partial x_n}\Bigl) $$
+* 사용 예) 어떤 다변수 함수 $$ f(x_1,x_2,...,x_n) $$ 이 있을 때, f의 그레디언트(Gradient)는 다음과 같이 표현: $$ \nabla f=\Bigl(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, ..., \frac{\partial f}{\partial x_n}\Bigl) $$
 
-  * $$ \nabla f $$: 함수 $f(x_1,x_2,...,x_n)$의 기울기 (Gradient)
+  * $$ \nabla f $$: 함수 $$ f(x_1,x_2,...,x_n) $$의 기울기 (Gradient)
   * 경사하강법(Gradient descent) 공식: $$ x_{i+1} = x_i -\lambda_i\nabla f(x_i) $$
 
 
