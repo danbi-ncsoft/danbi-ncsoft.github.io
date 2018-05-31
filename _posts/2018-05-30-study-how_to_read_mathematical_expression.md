@@ -4,7 +4,7 @@ title: "수식 읽는 법"
 date: 2018-05-30 15:00:00
 categories: Study
 author: DANBI
-cover: "/assets/statistics.jpg"
+cover: "/assets/math.png"
 ---
 
 ## 수식에 대해서
