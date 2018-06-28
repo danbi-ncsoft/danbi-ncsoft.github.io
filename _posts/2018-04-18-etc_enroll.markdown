@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "채용 공고"
-date:   2015-04-18 08:43:59
+date:   2018-04-18 08:43:59
 categories: ETC
 author : DANBI
 ---
