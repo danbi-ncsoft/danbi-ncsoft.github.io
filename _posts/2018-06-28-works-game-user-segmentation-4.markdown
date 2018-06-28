@@ -4,7 +4,7 @@ title:  "데이터 분석을 이용한 게임 고객 모델링 #4"
 date:   2018-06-28 12:00:00
 categories: Works
 author : DANBI
-cover:  "/assets/works/game_user_segmentation/user_segmentation.jpg"
+cover:  "/assets/works/game_user_segmentation/user_segmentation.png"
 ---
 
 이번 편에서는 이전에 소개한 방법들을 이용해 게임 고객을 유형별로 세분화한 자료를 어떤 식으로 활용할 수 있는지 활용 사례와 함께 그 동안 미처 다루지 못했던세부적인 내용 몇 가지를 FAQ 형식으로 소개해 드리겠습니다.

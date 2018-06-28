@@ -4,7 +4,7 @@ title:  "데이터 분석을 이용한 게임 고객 모델링 #2"
 date:   2018-06-28 12:00:00
 categories: Works
 author : DANBI
-cover:  "/assets/works/game_user_segmentation/user_segmentation.jpg"
+cover:  "/assets/works/game_user_segmentation/user_segmentation.png"
 ---
 
 [1편](/_posts/2018-06-28-works-game_user_segmentation-1.markdown)에서 다양한 고객의 특징을 잘 파악하여 세분화하는 방법으로 ‘군집화’ 라는 것이 있다고 했습니다. 군집화는 이름에서 알 수 있듯이 전체 고객을 유사한 특성을 갖는 유형끼리 군집을 묶어주는 데이터 마이닝 기법을 말하는데요, 그럼 이번 편에서는 1편에서 언급한 3가지 관점에서 고객을 어떻게 군집화하는지 구체적인 방법에 대해 소개해 드리겠습니다.

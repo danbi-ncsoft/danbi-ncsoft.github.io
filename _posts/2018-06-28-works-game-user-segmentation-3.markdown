@@ -4,7 +4,7 @@ title:  "데이터 분석을 이용한 게임 고객 모델링 #3"
 date:   2018-06-28 12:00:00
 categories: Works
 author : DANBI
-cover:  "/assets/works/game_user_segmentation/user_segmentation.jpg"
+cover:  "/assets/works/game_user_segmentation/user_segmentation.png"
 ---
 
 2편에서 예고했듯이 이번 편에서는 ‘사회 연결망 분석(Social network analysis)’을 통해 고객의 특성을 파악하는 방법에 대해 소개해 드리겠습니다.
