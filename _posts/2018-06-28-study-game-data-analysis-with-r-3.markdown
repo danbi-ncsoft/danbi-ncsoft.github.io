@@ -4,7 +4,7 @@ title:  "R을 활용한 게임 데이터 분석 #3"
 date:   2018-06-28 10:30:00
 categories: Study
 author : DANBI
-cover:  "/assets/study/r_background_image.jpg"
+cover:  "/assets/study/data_analysis_with_r/r_background_image.jpg"
 ---
 
 이번엔 R와 직접 연관이 있으면서도 좀 더 포괄적인 이야기를 다뤄보도록하겠습니다. 데이터 분석에 있어 가장 중요한 게 뭘까요? 제가 생각하기에 그것은 바로 ‘재현성(reproducibility)’ 과 ‘실행 가능성(actionability)’입니다.

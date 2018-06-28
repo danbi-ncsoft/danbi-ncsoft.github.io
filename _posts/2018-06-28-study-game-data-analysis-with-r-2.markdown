@@ -4,7 +4,7 @@ title:  "R을 활용한 게임 데이터 분석 #2"
 date:   2018-06-28 10:30:00
 categories: Study
 author : DANBI
-cover:  "/assets/study/r_background_image.jpg"
+cover:  "/assets/study/data_analysis_with_r/r_background_image.jpg"
 ---
 
 **게임 데이터 분석 절차**
