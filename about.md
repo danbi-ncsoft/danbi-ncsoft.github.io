@@ -11,7 +11,8 @@ permalink: /about/
   </div>
 </div>
 
-!<--<div class="wrapper">
+<!--
+<div class="wrapper">
   NCSOFT는 게임 서버에서 발생하는 모든 데이터들을 저장하고 저장된 데이터를 활용하여 유저의 성향이나 악성 유저를 분류하고 있습니다. 
   <img src='/assets/team.png'>
 </div>
@@ -23,4 +24,4 @@ permalink: /about/
 게임 서비스를 통해 적재되는 각종 데이터를 이용하여 기계 학습 및 통계 모델링 기반의 서비스 및 지표를 개발하고 있으며, 최근에는 게임 데이터 뿐만 아니라 회사에 산재되어 있는 각종 내부 자료로 분석 범위를 확대하고 있습니다.
 
 ## Members of I&I Division
-![](/assets/team.png)
+<img src='/assets/team.png'>
