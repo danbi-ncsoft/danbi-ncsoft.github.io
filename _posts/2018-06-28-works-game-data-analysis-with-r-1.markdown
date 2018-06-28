@@ -15,7 +15,7 @@ R이 처음 공개된 게 1993년이니까, 벌써 20년이 넘은 오래된 언
 
 아래 그림은 2015년,KDnugget(www.kdnuggets.com)라는 사이트에서 데이터 분석가들이 사용하는 도구를 조사한 자료입니다. 보시다시피 R은 데이터 마이닝 기반의 분석가들이 가장 많이 쓰는 도구임을 알 수 있죠. 이 사이트가 전통적인 통계 분석가들보다는 해커 성향(!)의 분석가들이 많이 이용하는 사이트라는 점을 감안하더라도, R이 상당히 대중화된 도구임을 알 수 있습니다.
 
-<img src="/assets/works/data_analysis_with_r/image_1.png" width="500">
+<img src="/assets/works/data_analysis_with_r/image_1.png" width="400">
 캐글에서 조사한 데이터 과학자의 분석 도구 선호도 자료 <출처: [http://www.kdnuggets.com/2015/06/poll-programming-language-analytics-data-mining-data-science.html](http://www.kdnuggets.com/2015/06/poll-programming-language-analytics-data-mining-data-science.html)> 
 
 여담이지만 엔씨소프트 데이터분석팀에서는 채용 시 지원자들에게 R을이용한 분석 과제를 냅니다. 과제를 낸 지 2~3년 정도됐는데, 초기엔 과제를 내는 지원자가 절반도 채 되지 않았지만 요새는 대부분이 과제를 너무 잘해 오셔서 깜짝 놀랄 때가 한 두 번이 아니랍니다(이참에 과제 난이도를 좀 올려야…^^;)
