@@ -2,9 +2,9 @@
 layout: post
 title:  "R을 활용한 게임 데이터 분석 #2"
 date:   2018-06-28 10:30:00
-categories: Study
+categories: Works
 author : DANBI
-cover:  "/assets/study/data_analysis_with_r/r_background_image.jpg"
+cover:  "/assets/works/data_analysis_with_r/r_background_image.jpg"
 ---
 
 **게임 데이터 분석 절차**
@@ -21,7 +21,7 @@ cover:  "/assets/study/data_analysis_with_r/r_background_image.jpg"
 
 과거에는 OLAP라는 시스템을 이용해서 탐사 분석을 했습니다. OLAP는 미리 다양한 분석 상황을 큐브 형태로 구축한 후 분석하는 시스템을 말합니다. 따라서 이 큐브에 들어갈 데이터마트(datamart)가 굉장히 잘 구축된 상황에서는 굉장히 효율적으로 작업을 할 수 있죠.
 
-![](/assets/study/data_analysis_with_r/image_4.gif)
+![](/assets/works/data_analysis_with_r/image_4.gif)
 OLAP은 뭐 이런 겁니다…쿨럭
 
   
@@ -36,7 +36,7 @@ OLAP은 뭐 이런 겁니다…쿨럭
 
 위의 과정이 몇 번이고 반복되며 시간만 속절없이 흐르고…그럼 결국 ‘아놔 저 사람이랑 짜증나서 일 못 하겠네!’하며 ‘술이나 마시러 가자!’ 뭐 이렇게 되는 거죠.
 
-![](/assets/study/data_analysis_with_r/image_5.jpg)
+![](/assets/works/data_analysis_with_r/image_5.jpg)
 분석가와 DBA도 역시 마찬가지…
 
   
@@ -47,7 +47,7 @@ OLAP은 뭐 이런 겁니다…쿨럭
 
 비록 최근에 다양하고 세련된 여러 가지 분석 솔루션들이 나오고 있지만 제 생각에는 효율성이나 유연성 측면에서 볼 때 아직까지는 Hive + Bash shell + R 조합을 능가하지는 못하는 것 같습니다. (*물론 익숙하다는 전제 하예요.)
 
-![](/assets/study/data_analysis_with_r/image_6.png) 
+![](/assets/works/data_analysis_with_r/image_6.png) 
 데이터 분석 궁극의 조합 ? hive, bash, R
 
   
@@ -56,7 +56,7 @@ OLAP은 뭐 이런 겁니다…쿨럭
 
   
 
-![](/assets/study/data_analysis_with_r/image_7.png)
+![](/assets/works/data_analysis_with_r/image_7.png)
 R을 이용한 여러가지 데이터 시각화 예
 
   
@@ -65,14 +65,14 @@ R을 이용한 여러가지 데이터 시각화 예
 
 진성 유저 지표 프로젝트의 경우, 유저들을 유형별로 분류하기 위한 분류 모델을 만드는 작업입니다. R에는 다양한 데이터 마이닝 알고리즘이 있고, 사용법도 어렵지 않죠. 그래서 데이터분석팀에서는 예측 모델을 생성하고그 성능을 측정하는 작업을 모두 R에서 수행합니다.
 
-![](/assets/study/data_analysis_with_r/image_8.png)
+![](/assets/works/data_analysis_with_r/image_8.png)
 기계 학습 결과는 여러 가지 방식으로 성능을 측정합니다
 
   
 
 마지막으로 전 단계에서 만든 예측 모델을 실제 서비스에 적용할 수 있도록 서비스 개발에 돌입합니다. 진성 유저 지표 서비스를 예로 들자면, 먼저 유저들의 플레이 데이터를 예측 모델에서 사용할 수 있는 형태로 정제하는 데이터 전처리 모듈, 이 데이터로 각 유저들이 어떤 유형인지를 기계 학습을 통해 자동으로 분류하는 모듈, 분류 결과를 서비스하는 모듈을 만들게 되는데 이중 기계 학습 모듈을 R로 개발합니다.
 
-![](/assets/study/data_analysis_with_r/image_9.png)
+![](/assets/works/data_analysis_with_r/image_9.png)
 진성 유저분류 과정을 (아주아주아주아주)간략하게 그림으로 표현하면 이렇습니다.
 
   
@@ -83,5 +83,5 @@ R은 통계 분석용 도구이기도 하지만, 동시에 프로그래밍 언�
 
 이렇듯 R은 단순히 시각화를 통한 탐사 분석이나 보고서에 쓸 차트를 그리는 용도뿐 아니라, 예측 모델을 만들고 이를 실전 서비스로 구현하는 데까지 전반적으로 활용되고 있습니다. 다음 편에서는 데이터 분석을 할 때 필요한 두 가지 요소에 대해 다뤄보도록 할게요.
 
-![](/assets/study/data_analysis_with_r/image_10.png)
+![](/assets/works/data_analysis_with_r/image_10.png)
 데이터 서비스 개발 전 과정에서 핵심 도구로 사용하는 R

@@ -56,7 +56,7 @@ descriptions:
     desc: "그 외 기타 자료"
 
   - cat: Study
-    desc: "연구 자료 및 공유 내용"    
+    desc: "팀 스터디 자료"    
 # Social icons and sharing options
 #
 # Social settings are used in two places:
