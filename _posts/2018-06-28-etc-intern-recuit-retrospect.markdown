@@ -2,7 +2,7 @@
 layout: post
 title:  "2018년 인턴 채용 후기"
 date:   2018-06-28 12:00:00
-categories: Study
+categories: ETC
 author : DANBI
 cover:  "/assets/about_us.jpg"
 ---
