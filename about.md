@@ -43,13 +43,17 @@ permalink: /about/
 * 재무/회계/인사 등 사내 ERP 데이터 분석을 위한 데이터 가공 및 적재 시스템 구축
 * 유저의 가상 세계 속 행태에 대한 분석 및 관련 연구
 
+## Members of I&I Division
+
+
+<!--<img src='/assets/team.png' width="400">-->
 
     <div class="container">
       <!-- 팀소개 및 명함 파트 -->
       <div class="team">
-        <div class="center wow fadeInDown">
+<!--        <div class="center wow fadeInDown">
           <h2 align="left">Members of <span> Intelligence & Insight Division </span></h2>
-        </div>
+        </div> -->
         <div class="row clearfix">
         <!-- 명함 시작 -->
           <div class="col-md-4 col-sm-6">  
@@ -61,7 +65,7 @@ permalink: /about/
       	      <div class="media">
       		      <div class="pull-left">
                 <!-- 사진을 ./images/에 삽입한 후 참조-->			
-      		        <img class="media-object" src="./images/ini_1.png " alt="">
+      		        <img class="media-object" src="/assets/about_us/images/ini_1.png " alt="">
                 </div>
       	      <div class="media-body">
       		      <h4>허준석</h4>
@@ -82,7 +86,7 @@ permalink: /about/
       	    <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
       	      <div class="media">
       		      <div class="pull-left">
-      		        <img class="media-object" src="./images/ini_10.png " alt="">
+      		        <img class="media-object" src="/assets/about_us/images/ini_10.png " alt="">
       	        </div>
       	      <div class="media-body">
       		      <h4>유초롱</h4>
@@ -127,7 +131,7 @@ permalink: /about/
 		      <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 			      <div class="media">
 				      <div class="pull-left">
-					      <img class="media-object" src="./images/ini_2.png " alt="">
+					      <img class="media-object" src="/assets/about_us/images/ini_2.png " alt="">
 				      </div>
 				    <div class="media-body">
 					    <h4>이은조</h4>
@@ -146,7 +150,7 @@ permalink: /about/
   		  <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
   			  <div class="media">
   				  <div class="pull-left">
-  					  <img class="media-object" src="./images/ini_3.png " alt="">
+  					  <img class="media-object" src="/assets/about_us/images/ini_3.png " alt="">
   				  </div>
   				  <div class="media-body">
   					  <h4>엄혜민</h4>
@@ -168,7 +172,7 @@ permalink: /about/
 		    <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 			    <div class="media">
 				    <div class="pull-left">
-					    <img class="media-object" src="./images/ini_5.png " alt="">
+					    <img class="media-object" src="/assets/about_us/images/ini_5.png " alt="">
 				    </div>
 				    <div class="media-body">
 					    <h4>장윤제</h4>
@@ -185,7 +189,7 @@ permalink: /about/
 		    <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 			    <div class="media">
 				    <div class="pull-left">
-				    	<img class="media-object" src="./images/ini_6.png " alt="">
+				    	<img class="media-object" src="/assets/about_us/images/ini_6.png " alt="">
 			    	</div>
 	    			<div class="media-body">
 		    			<h4>안태희</h4>
@@ -223,7 +227,7 @@ permalink: /about/
 	    	<div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 	    		<div class="media">
 	    			<div class="pull-left">
-	    				<img class="media-object" src="./images/ini_7.png " alt="">
+	    				<img class="media-object" src="/assets/about_us/images/ini_7.png " alt="">
     				</div>
     				<div class="media-body">
     					<h4>안진옥</h4>
@@ -240,7 +244,7 @@ permalink: /about/
     		<div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
     			<div class="media">
     				<div class="pull-left">
-    					<img class="media-object" src="./images/ini_8.png " alt="">
+    					<img class="media-object" src="/assets/about_us/images/ini_8.png " alt="">
     				</div>
     				<div class="media-body">
     					<h4>강병수</h4>
@@ -260,7 +264,7 @@ permalink: /about/
     		<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
     			<div class="media">
     				<div class="pull-left">
-    					<img class="media-object" src="./images/ini_9.png " alt="">
+    					<img class="media-object" src="/assets/about_us/images/ini_9.png " alt="">
     				</div>
     				<div class="media-body">
     					<h4>서상덕</h4>
