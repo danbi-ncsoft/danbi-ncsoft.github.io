@@ -97,7 +97,7 @@ permalink: /about/
   		      </ul>
   	      </div>
         </div>
-        <p>I&I 인텔리전스팀장</p>
+        <p>인텔리전스팀장</p>
       </div>
     </div>   
   </div> 
@@ -137,7 +137,6 @@ permalink: /about/
 			    <h4>이은조</h4>
 			    <h5>Analyst&Modeling Team</h5>
 			    <ul class="tag clearfix">
-				    <li class="btn">Manager</li>
 				    <li class="btn">Analyst</li>>
 				    <li class="btn">Developer</li>
 			    </ul>              
@@ -160,7 +159,7 @@ permalink: /about/
 				  </ul>
 			  </div>
 		  </div>
-		  <p>팀원</p>
+		  <p>데이터 분석가</p>
 	  </div>
   </div>
 </div>  
@@ -182,7 +181,7 @@ permalink: /about/
 			    </ul>              
 		    </div>
 	    </div>
-	    <p>팀원</p>
+	    <p>데이터 분석가</p>
     </div>
   </div>
   <div class="col-md-4 col-sm-6 col-md-offset-2"> 
@@ -199,7 +198,7 @@ permalink: /about/
   				</ul>
   			</div>
   		</div>
-  		<p>팀원</p>
+  		<p>데이터 분석가</p>
   	</div>
 	</div>
 </div>        
@@ -237,7 +236,7 @@ permalink: /about/
 					</ul>              
 				</div>
 			</div>
-			<p>팀원</p>
+			<p>프로덕트 개발자</p>
 		</div>
 	</div>
 	<div class="col-md-4 col-sm-6 col-md-offset-2"> 
@@ -254,7 +253,7 @@ permalink: /about/
 					</ul>
 				</div>
 			</div>
-			<p>팀원</p>
+			<p>프로덕트 개발자</p>
 		</div>
 	</div>
 </div> 
@@ -274,7 +273,7 @@ permalink: /about/
 					</ul>
 				</div>
 			</div>
-			<p>팀원</p>
+			<p>프로덕트 개발자</p>
 		</div>
 	</div>
 </div>
