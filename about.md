@@ -137,7 +137,7 @@ permalink: /about/
 			    <h4>이은조</h4>
 			    <h5>Analyst&Modeling Team</h5>
 			    <ul class="tag clearfix">
-				    <li class="btn">Analyst</li>>
+				    <li class="btn">Analyst</li>
 				    <li class="btn">Developer</li>
 			    </ul>              
 		    </div>
