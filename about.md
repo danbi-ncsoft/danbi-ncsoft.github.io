@@ -3,7 +3,6 @@ layout: about
 title: About Us
 permalink: /about/
 ---
-<!DOCTYPE html>
 <head>
 	<script src="/assets/about_us/js/jquery.js"></script>
 	<script src="/assets/about_us/js/bootstrap.min.js"></script>
@@ -29,7 +28,7 @@ permalink: /about/
 </div>
 
 
-# NCSOFT Itelligence&Insight(I&I)실은
+## NCSOFT Itelligence&Insight(I&I)실은
 
 회사에 존재하는 다양한 데이터에 대한 분석을 통해 인사이트를 찾고 기계학습 및 통계 모델링을 이용해 고도화된 지표 및 시스템을 개발하는 조직입니다.
 
@@ -44,7 +43,7 @@ permalink: /about/
 * 재무/회계/인사 등 사내 ERP 데이터 분석을 위한 데이터 가공 및 적재 시스템 구축
 * 유저의 가상 세계 속 행태에 대한 분석 및 관련 연구
 
-# Members of I&I Division
+## Members of I&I Division
 
 
 <!--<img src='/assets/team.png' width="400">-->
