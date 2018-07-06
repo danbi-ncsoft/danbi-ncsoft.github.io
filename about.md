@@ -311,7 +311,7 @@ permalink: /about/
 					</ul>              
 				</div>
 			</div>
-			<p>인턴</p>
+			<p>미생</p>
 		</div>
 	</div>
 	<div class="col-md-4 col-sm-6 col-md-offset-2"> 
@@ -328,7 +328,7 @@ permalink: /about/
 					</ul>
 				</div>
 			</div>
-			<p>인턴</p>
+			<p>미생</p>
 		</div>
 	</div>
 </div> 
