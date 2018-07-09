@@ -4,7 +4,7 @@ title: "데이터 시각화 - #1 탐사분석이란?"
 date: 2018-07-09 12:30:00
 categories: Study
 author : DANBI
-cover: "/assets/study/eda/tukey_eda.png"
+cover: "/assets/study/eda/tukey_eda.PNG"
 ---
 
 # 데이터 시각화 - #1 탐사분석이란?
