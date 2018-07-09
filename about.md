@@ -277,3 +277,58 @@ permalink: /about/
 		</div>
 	</div>
 </div>
+
+<div class="row team-bar">
+  <div class="first-one-arrow hidden-xs">
+  	<hr>
+  </div>
+  <div class="first-arrow hidden-xs">
+  	<hr> <i class="fa fa-angle-up"></i>
+	</div>
+  <div class="second-arrow hidden-xs">
+  	<hr> <i class="fa fa-angle-down"></i>
+  </div>
+  <div class="third-arrow hidden-xs">
+  	<hr> <i class="fa fa-angle-up"></i>
+  </div>
+  <div class="fourth-arrow hidden-xs">
+  	<hr> <i class="fa fa-angle-down"></i>
+  </div>
+</div>     
+
+<div class="row clearfix">   
+  <div class="col-md-4 col-sm-6"> 
+  	<div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+  		<div class="media">
+  			<div class="pull-left">
+  				<img class="media-object" src="/assets/about_us/images/ini_11.png " alt="">
+				</div>
+				<div class="media-body">
+					<h4>김나현</h4>
+					<h5>Analyst&Modeling Team</h5>
+					<ul class="tag clearfix">
+						<li class="btn">Padawan</li>
+					</ul>              
+				</div>
+			</div>
+			<p>미생</p>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6 col-md-offset-2"> 
+		<div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+			<div class="media">
+				<div class="pull-left">
+					<img class="media-object" src="/assets/about_us/images/ini_12.png " alt="">
+				</div>
+				<div class="media-body">
+					<h4>오희령</h4>
+					<h5>Analyst&Modeling Team</h5>
+					<ul class="tag clearfix">
+						<li class="btn">Padawan</li>
+					</ul>
+				</div>
+			</div>
+			<p>미생</p>
+		</div>
+	</div>
+</div> 
