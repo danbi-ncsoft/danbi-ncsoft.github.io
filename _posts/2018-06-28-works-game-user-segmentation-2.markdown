@@ -16,7 +16,7 @@ cover:  "/assets/works/game_user_segmentation/user_segmentation.png"
 예를 들어 각 고객별로 일주일 동안 게임을 플레이한 시간과 이 때 획득한 경험치를 이용해 각각 X, Y 좌표 상의 한 점으로 표시했을 때, 아래 그림과 같이 나온다면 서로 몰려 있는 점들끼리 네 그룹으로 묶을 수 있을 것입니다. 그러면 왼쪽 하단부터 시계 방향으로 각각 ‘플레이 시간도 적고 성장도 느린 유형(Type1)’, ‘플레이는 적게 하지만 성장은 빠른 유형(Type2)’, ‘플레이 시간도 많고 성장도 빠른 유형(Type3)’, ‘플레이 시간은 많지만 성장은 느린 유형(Type4)’으로 분류할 수 있겠죠.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2_1.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_1.png" style="width:6in" />
 </p>
 
 물론 위 예에서는 이해를 돕기 위해 단지 두 종류의 데이터를 이용한 것이고 실제 서비스에서는 수십 가지가 넘는 다양한 활동 정보를 이용합니다.
@@ -24,28 +24,28 @@ cover:  "/assets/works/game_user_segmentation/user_segmentation.png"
 그런데 1편에서 언급했듯이 고객의 성향이나 활동 패턴은 조금씩 바뀌기 때문에 주기적으로 고객의 유형을 갱신해줘야 합니다. 그 때마다 매번 위 작업을 반복한다면 번거롭기 때문에 최초 군집화 결과를 이용해 이후 유형 분류를 자동화할수 있습니다. 구체적인 방법은 군집화 알고리즘이 무엇인지에 따라 조금씩 다른데요, 예를 들어 앞서 소개한 ‘k 평균 군집화’ 의 경우 각 유형별 개체들의 평균점을 기억하고 있다가 이후 새로운 데이터에 대해서 각 평균점들과의 거리를 측정한 후 가장 가까운 평균점에 해당하는 유형으로 분류할 수 있습니다(참고로 이 알고리즘 이름이 ‘k 평균 군집화’인 이유는 이처럼 k개의 평균점을 이용해서 군집을 만들기 때문입니다).
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2_2.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_2.png" style="width:6in" />
 k 평균 군집화 모델을 이용해서 유형을 자동으로 분류하는 예
 </p>
 
 한편, 고객의 게임 활동 유형을 주기적으로 갱신하게 되면 시간이 지남에 따라 매 주기마다 고객별로 분류했던 유형의 이력이 쌓이게 됩니다. 그러면 이 이력 정보를 이용해서 아래와 같은 시퀀스 데이터를 생성할 수 있으며 이 시퀀스 데이터가 서로 비슷한 고객끼리 다시 유형을 분류할 수 있습니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2_3.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_3.png" style="width:6in" />
 고객별 유형 분류 이력을 시퀀스 데이터로 만든예
 </p>
 
 시퀀스 데이터의 유형을 분류할 때는 주로 ‘계층적 군집화 (Hierarchicalclustering)’ 라는 방법을 이용합니다. 이 알고리즘은 고객별 시퀀스 데이터 간의 유사도를 측정한 후 서로 비슷한 고객끼리 같은 하위 계층에 묶이도록 계층 구조를 만듭니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2_4.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_4.png" style="width:6in" />
 시퀀스 데이터 간의 유사성을 토대로 계층 구조를만든 예
 </p>
 
 이렇게 계층 구조를 만들고 나면 아래 그림처럼 같은 하위 계층에 있는 고객끼리 군집을 묶어 유형을 분류할 수 있습니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2_5.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_5.png" style="width:6in" />
 계층 구조를 이용한 군집화 예
 </p>
 
@@ -57,8 +57,8 @@ k 평균 군집화 모델을 이용해서 유형을 자동으로 분류하는 �
 더 나아가 각 시퀀스 유형별 고객들의 1인당 평균 매출을 비교해 보면 빨간색 박스로 표시한 시퀀스 유형(Type3)의 고객 매출이 다른 유형에 비해 유독 높은 것을 볼 수 있습니다. 그러면 Type3 고객과 다른 고객의 차이를 분석해 봄으로써 사업적인 관점에서 의사 결정을 하는데 도움이 될 수 있습니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2_6.png" style="width:6in" />
-<img src="/assets/works/data_analysis_with_r/image_2_7.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_6.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_7.png" style="width:6in" />
 고객의 게임 활동 유형의 변화가 비슷한 집단끼리 분류한 예
 </p>
 
@@ -67,7 +67,7 @@ k 평균 군집화 모델을 이용해서 유형을 자동으로 분류하는 �
 잠시 머리를 식히는 의미에서 영화 이야기를 잠깐 해보죠. 혹시 제 또래 분들이라면 지금은 고인이 된 크리스토퍼 리브가 주연을 맡았던 ‘슈퍼맨’ 시리즈를 기억하실지 모르겠네요. 이 슈퍼맨 시리즈 중 3편 마지막 부분에 보면 슈퍼맨이 어린 시절 짝사랑했던 여자 친구 주려고 석탄 한 움큼을 꽉 쥐어 다이아몬드로 만드는 장면이 나옵니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2_8.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_8.png" style="width:6in" />
 비록 지금은 마블이 짱 먹고 있지만 이 당시에는DC의 히어로들이 최고였죠!
 </p>
 
@@ -77,7 +77,7 @@ k 평균 군집화 모델을 이용해서 유형을 자동으로 분류하는 �
 심지어 어린 시절 흔하게 쓰던 연필심도 탄소로 이뤄져 있습니다. 석탄과 연필심은 둘 다 검고 잘 부서지며 손에 검댕이가 잘 묻는다는 점을 생각해 보면 뭐 그럴 수 있겠구나 싶지만 겉으로 보기엔 전혀 다를 것 같은 다이아몬드도 똑같은 물질이라는 것이 믿어지시나요? 이렇게 다이아몬드와 연필심, 석탄이 입자 수준에서 보면 완전히 동일한 물질임에도 불구하고 전혀 다른 외형과 특성을 갖는 이유는 입자끼리 서로 얽힌 구조가 다르기 때문입니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2_9.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_2_9.png" style="width:6in" />
 같은 입자로 이뤄진 물질이라 하더라도 서로 어떻게연결되는지에 따라 다른 특성을 가질 수 있습니다.
 </p>
 
