@@ -109,5 +109,5 @@ Q4. 3편에서 예시로 나온 네트워크 시각화 그림들이 흥미로운
 
 A4. 블로그에서 소개한 네트워크 그림들은 모두 ‘게피(Gephi, [https://gephi.org/)’](https://gephi.org/)%E2%80%99) 라는 툴을 사용해서 그렸습니다. 이 툴은 누구나 무료로 사용할 수 있는데 다양한 그래프를 그릴 수 있을 뿐만 아니라 기본적인 네트워크 분석기능도 제공해 줍니다. 특히 GUI 기반이기 때문에 기본적인 사용법만 알면 초보자도 쉽게 사용할 수 있는 꽤 괜찮은 툴입니다.
 <p align="center">
-<img src="/assets/works/game_user_segmentation/image_4_7.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_4_7.jpg" style="width:6in" />
 </p>
