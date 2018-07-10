@@ -13,11 +13,15 @@ cover:  "/assets/works/game_user_segmentation/user_segmentation.png"
 
 이와 관련해 널리 알려진 사례로 U.C. 버클리 대학교의 1973년 남녀 신입생 합격률 자료가 있습니다. 당시 버클리 대학교의 남녀 입학률은 아래 표와 같습니다.
 
-![](/assets/works/game_user_segmentation/image_4_1.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4_1.png" style="width:6in" />
+</p>
 
 위 자료에 의하면 남학생에 비해 여학생의 합격률이 상대적으로 낮게 나오고 있어 버클리 대학교는 남녀 차별을 하고 있다는 의심을 받게 되었죠. 그런데 학과별로 세분화해서 자료를 집계했더니 아래와 같이 나타났습니다(전체자료 중 인원이 가장 많은 상위 6개 학과만 표시한 자료입니다).
 
-![](/assets/works/game_user_segmentation/image_4_2.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4_2.png" style="width:6in" />
+</p>
 
 보시다시피 이렇게 학과별로 세분화된 자료를 보면 오히려 여학생의 합격률이 남학생에 비해 전반적으로 높게 나옵니다. 이런 현상이 발생하는 이유는 학과별 입학 정원이 서로 다르기 때문입니다. 즉, 여학생들은 남학생들에 비해 입학 정원이 적은 학과에 지원자가 몰리는 바람에 전체 합격률이 낮아지게 된 것이죠.
 
@@ -41,13 +45,16 @@ ARPU와 ARPPU를 분리해서 측정하는 이유는 게임의 매출 특성을 
 
 어쨌든 이 게임의 업데이트 전/후 DAU와 ARPU지표를 확인해 보니 아래와 같이 나왔습니다.
 
-![](/assets/works/game_user_segmentation/image_4_3.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4_3.png" style="width:6in" />
+</p>
 
 이 수치를 보면 업데이트로 인해 일별 접속자수(DAU)는 크게 늘어난 반면 상대적으로 유저당 결제금액(ARPU)은 큰 하락세를 보이기 때문에 ARPU를 높이기 위한 상품 프로모션을 기획해야겠다고 생각할 수 있습니다.
 
 그런데 이것을 유형별로 세분화한 지표로 확인해 보면 아래와 같습니다.
-
-![](/assets/works/game_user_segmentation/image_4_4.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4_4.png" style="width:6in" />
+</p>
 
 이 자료를 보면 실제 전체 지표 상에서 크게 늘어난 유저는 ‘라이트’나 ‘봇’ 유형이며 ‘진성’ 유형의 유저 수 변화는 상대적으로 그리 크지 않다는 것을 알 수 있습니다. 또한 매출에 가장 큰 비중을 차지하는 ‘진성’ 고객의 ARPU 는 전체 지표와 달리 상승 추세에 있습니다. 전체 지표 상에서 ARPU가 낮게 집계되는 이유는 결재를 거의 하지 않는 기타 유저의 수가 큰 폭으로 증가했기 때문이죠.
 
@@ -61,7 +68,10 @@ ARPU와 ARPPU를 분리해서 측정하는 이유는 게임의 매출 특성을 
 
 예전에 작업했던 모 게임의 경우 이탈 예측 모델을 적용할 때 우선 전체 이용자를 대상으로 장기간에 걸쳐 게임 활동 유형의 변화를 추적한 후 비슷한 변화를 보이는 고객별로 시퀀스 유형을 분류하였습니다. 아래 그림은 이런 과정을 통해 나온 유형 중 일부입니다.
 
-![](/assets/works/game_user_segmentation/image_4_5.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4_5.png" style="width:6in" />
+</p>
+
 
 이 후 논의를 거쳐 오랜 기간 게임을 열심히 즐기다가 이탈하는 게임 고객들에 대한 분석을 먼저 수행하자고 결정하고 위 유형 중 ‘장기 진성 유형’ 에 해당하는 고객을 선별하여 이탈 예측 분석을 수행했습니다.
 
@@ -91,10 +101,13 @@ A3. 어떤 것이 더 낫다기 보다 이 둘을 적절히 혼합하여 사용�
 
 1편 맨 앞에서 소개했던 MBTI 의 경우를 생각해 보면 MBTI는 각기 독립된 네 가지 기준으로 사람의 성향을 나눈 후 이들을 합쳐 최종 유형을 정합니다. 이와 비슷하게 고객 유형을 나눌 때도 행동 기반의 유형과 커뮤니티 기반의 유형을 각기 분류한 후 이들을 합쳐 최종 유형을 만들면 보다 정확한 고객 특성 파악이 가능하다고 생각합니다.
 
-![](/assets/works/game_user_segmentation/image_4_6.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4_6.png" style="width:6in" />
+</p>
 
 Q4. 3편에서 예시로 나온 네트워크 시각화 그림들이 흥미로운데 이런 자료는 어떻게 만들 수 있나요?
 
 A4. 블로그에서 소개한 네트워크 그림들은 모두 ‘게피(Gephi, [https://gephi.org/)’](https://gephi.org/)%E2%80%99) 라는 툴을 사용해서 그렸습니다. 이 툴은 누구나 무료로 사용할 수 있는데 다양한 그래프를 그릴 수 있을 뿐만 아니라 기본적인 네트워크 분석기능도 제공해 줍니다. 특히 GUI 기반이기 때문에 기본적인 사용법만 알면 초보자도 쉽게 사용할 수 있는 꽤 괜찮은 툴입니다.
-
-![](/assets/works/game_user_segmentation/image_4_7.jpg)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4_7.png" style="width:6in" />
+</p>

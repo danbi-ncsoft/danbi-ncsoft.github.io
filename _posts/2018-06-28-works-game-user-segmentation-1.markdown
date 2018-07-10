@@ -9,30 +9,43 @@ cover:  "/assets/works/game_user_segmentation/user_segmentation.png"
 
 혹시 MBTI 검사라는 말을 들어 보셨거나 직접 검사를 받아 보신 적 있으신가요? MBTI는 테스트를 통해 사람의 성격을 16가지 유형으로 분류하는 지표입니다. 비교적 단순한 검사와 몇 가지 유형만으로도 그럴듯하게 사람의 성격을 잘 분류하기 때문인지 지표가 개발된 지 수십 년이 지난 지금까지도 많은 인기를 끌고 있습니다.
 
-![](/assets/works/game_user_segmentation/image_1_1.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_1_1.png" style="width:6in" />
 MBTI는 양분되는 4가지 카테고리의 유형을 조합하여 총 16가지 유형으로 사람의 성격을 분류합니다.
+</p>
+
 
 이처럼 다양한 사람들을 몇 가지 유형으로 분류하여 파악하는 방식은 비단 심리 테스트에서만 사용하는 것이 아닙니다. 고객관리 및 마케팅, 제품 설계, 서비스 기획 등의 분야에서도 저마다의 목적에 맞춰 다양하게 방식으로 고객을 유형별로 분류하여 그 결과를 활용하고 있죠. 이것을 ‘고객 세분화 (Customer Segmentation)’ 라고 부릅니다. 카드 회사에서 소비 패턴에 따른 맞춤형 신용 카드 상품을 설계한다거나 혹은 백화점이나 마트 등에서 성별, 거주지, 연령대 별로 소비 패턴을 분석하여 각 유형에 맞는 상품을 진열하고 카탈로그를 발송하는 등이 모두 고객 세분화의 활용 사례입니다.
 
 온라인 게임 역시 현실 세계 못지 않게 다양한 유형의 유저들이 존재합니다. 때문에 좋은 게임을 만들고 서비스하기 위해선 이런 다양한 유저의 특징을 잘 파악하여 적절하게 세분화하는 것이 필요합니다.
 
-![](/assets/works/game_user_segmentation/image_1_2.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_1_2.png" style="width:6in" />
 ‘게임 유저’ 라고 하면 이런 이미지를 떠올릴지 모르겠지만……
+</p>
 
-![](/assets/works/game_user_segmentation/image_1_3.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_1_3.png" style="width:6in" />
 무려 이런 사람들도 게임을 즐긴답니다!
+</p>
 
 특히 온라인 게임에서는 유저가 수행하는 다양한 활동들이 로그에 꼼꼼히 기록되기 때문에 풍부하고 다양한 데이터를 바탕으로 유저 행동에 대한 세밀한 분석이 가능합니다. 이렇게 게임 활동을 관찰하여 유저의 특징을 파악하는 작업은 마치 프로파일러가 세밀한 관찰을 토대로 어떤 사람의 직업이나 나이, 성격 등을 추정하는 것과 비슷하다고도 볼 수 있습니다.
 
-![](/assets/works/game_user_segmentation/image_1_4.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_1_4.png" style="width:6in" />
 ‘손목의 시계줄 자국과 딱딱한 말투에 단정히 빗은 머리로 지팡이를 짚은 모습을 보니 너님은 아프칸 파병 갔다 의가사 제대한 군인인 듯……’
+</p>
+
 
 물론 그렇다고 해서 게임 유저를 세분화할 때 ‘이 사람은 겉으론 까칠해 보여도 섬세한 내면의 감수성을 보유한 20대 도시남이군’ 이라고 파악하지는 못합니다. 저희가 볼 수 있는 것은 단지 게임 플레이 기록이기 때문에 실제 유저의 특성이 아니라 유저가 플레이한 캐릭터의 특성을 파악할 수 있을 뿐이죠. 예를 들면 ‘일주일에 10시간 정도 게임을 즐기는데 필드 사냥보다는 퀘스트나 인던 활동을 더 선호하는 유형’ 같은 식입니다.
 
 이런 고객 세분화를위해 많이 사용되는 데이터 마이닝 기법으로 ‘군집화 (Clustering)’라는 것이 있습니다. 이름에서 알 수 있듯이 서로 다른 여러 가지 유형이 섞여 있는 데이터에서 유사한 특성을 갖는 유형끼리 군집을 묶어줄 때 사용하는 기법이죠.
 
-![](/assets/works/game_user_segmentation/image_1_5.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_1_5.png" style="width:6in" />
 어떤 데이터에서 유사한 특징을 갖는 대상끼리 군집을 묶어주는 기법을 ‘군집화(Clustering)’ 이라고 부릅니다.
+</p>
+
 
 이런 군집화 기법을 사용해 게임 유저의 유형을 분류할 때 우리는 크게 세 가지 측면에서 적용할 수 있습니다.
 
@@ -46,8 +59,10 @@ MBTI는 양분되는 4가지 카테고리의 유형을 조합하여 총 16가지
 
 아마도 비록 같은 C 유형이라고 하더라도 기존에 어떤 이력을 거쳐 현재의 상태에 도달했느냐를 고려하여 유형을 분류하는 것이 더 유저를 정확히 이해하는데 도움이 될 것입니다. 따라서 시간에 따라 달라지는 유형 정보 역시 군집화에 활용할 수 있습니다. 이렇게 일련의 순서를 갖는 정보를 이용하여 군집화 하는 기법을 ‘시퀀스 클러스터링 (Sequence Clustering)’ 이라고합니다.
 
-![](/assets/works/game_user_segmentation/image_1_6.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_1_6.png" style="width:6in" />
 동일한 유형의 유저라고 해도 어떤 이력을 거쳐 왔는지에 따라 구분이 필요할 수 있습니다.
+</p>
 
 셋째, 유저가 속한 사회 집단을 기준으로 군집화가 가능합니다.
 
@@ -57,8 +72,10 @@ MBTI는 양분되는 4가지 카테고리의 유형을 조합하여 총 16가지
 
 이렇게 각 개체간의 사회 관계 데이터를 이용해 여러 가지 특징을 분석하는 기법을 ‘사회 연결망 분석 (Social Network Analysis)’ 이라고 합니다. 주로 페이스북이나 트위터 같은 SNS 데이터를 이용한 분석이 널리 알려져 있는데, 온라인 게임 역시 이런 분석이 가능합니다.
 
-![](/assets/works/game_user_segmentation/image_1_7.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_1_7.png" style="width:6in" />
 ‘사회 연결망 분석 (Social Network Analysis)’은 유저 간의 관계에서 나타나는 여러 가지 특징들을 분석하는 기법입니다.
+</p>
 
 정리하자면, 우리는 게임 유저가 어떤 행동 패턴을 갖고 있는지, 시간이 지남에 따라 패턴이 어떻게 변화하는지, 그리고 게임 유저가 긴밀한 관계를 갖고 있는 집단의 유형은 무엇인지를 이용하여 유저를 세분화할 수 있습니다.
 

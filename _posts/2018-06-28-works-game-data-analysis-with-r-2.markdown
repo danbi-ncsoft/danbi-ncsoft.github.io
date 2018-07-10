@@ -21,10 +21,11 @@ cover:  "/assets/works/data_analysis_with_r/r_background_image.jpg"
 
 과거에는 OLAP라는 시스템을 이용해서 탐사 분석을 했습니다. OLAP는 미리 다양한 분석 상황을 큐브 형태로 구축한 후 분석하는 시스템을 말합니다. 따라서 이 큐브에 들어갈 데이터마트(datamart)가 굉장히 잘 구축된 상황에서는 굉장히 효율적으로 작업을 할 수 있죠.
 
-![](/assets/works/data_analysis_with_r/image_4.gif)
-OLAP은 뭐 이런 겁니다…쿨럭
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4.gif" style="width:6in" />
+분석가와 DBA도 역시 마찬가지…
+</p>
 
-  
 
 제조업이나 금융업처럼 도메인의 특성상 데이터 종류의 변화가 크지 않은 분야나, 비즈니스 변화가 빠르지 않았던 과거에는 이렇게 OLAP을 이용한 방법이 효과적이었죠. 그러나 요즘처럼 변화가 휙휙 이루어지는 시대, 그리고 특히 게임처럼 몇 개월 단위로 대규모 콘텐츠 업데이트가 이뤄지는 분야에서는 탐사 분석 전에 모든 가능한 데이터를 OLAP로 구성해서 활용하는 건 현실적으로 불가능하죠. 아마 OLAP을 구축해본 DBA분들이라면 dimension이 추가될 때마다 OLAP을 재구성하느라 밤을 새본 경험이 한 두 번씩은 있을 것 같네요…
 
@@ -37,7 +38,7 @@ OLAP은 뭐 이런 겁니다…쿨럭
 위의 과정이 몇 번이고 반복되며 시간만 속절없이 흐르고…그럼 결국 ‘아놔 저 사람이랑 짜증나서 일 못 하겠네!’하며 ‘술이나 마시러 가자!’ 뭐 이렇게 되는 거죠.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_5.png" style="width:5in" />
+<img src="/assets/works/data_analysis_with_r/image_5.jpg" style="width:6in" />
 분석가와 DBA도 역시 마찬가지…
 </p>
 
@@ -90,5 +91,8 @@ R은 통계 분석용 도구이기도 하지만, 동시에 프로그래밍 언�
 
 이렇듯 R은 단순히 시각화를 통한 탐사 분석이나 보고서에 쓸 차트를 그리는 용도뿐 아니라, 예측 모델을 만들고 이를 실전 서비스로 구현하는 데까지 전반적으로 활용되고 있습니다. 다음 편에서는 데이터 분석을 할 때 필요한 두 가지 요소에 대해 다뤄보도록 할게요.
 
-![](/assets/works/data_analysis_with_r/image_10.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_10.png" style="width:6in" />
 데이터 서비스 개발 전 과정에서 핵심 도구로 사용하는 R
+</p>
+
