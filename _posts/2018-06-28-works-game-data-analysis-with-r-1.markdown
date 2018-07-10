@@ -25,7 +25,7 @@ R이 처음 공개된 게 1993년이니까, 벌써 20년이 넘은 오래된 언
 요즘은 통계학과에서도 R을 많이 사용한다더군요. 이런 것만 봐도 R은 이제 대세라도 봐도 무방할 것 같습니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2.png" style="width:4.25in;height:3.5in" />
+<img src="/assets/works/data_analysis_with_r/image_2.png" style="width:7in" />
 캐글에서 조사한 데이터 과학자의 분석 도구 선호도 자료 <출처: [http://www.kdnuggets.com/2015/06/poll-programming-language-analytics-data-mining-data-science.html](http://www.kdnuggets.com/2015/06/poll-programming-language-analytics-data-mining-data-science.html)> 
 취업 검색 사이트 Indeed.com에서 공개한 데이터 분석가 구직 추세 비교그래프 - 전통적인 통계 도구인 SAS, SPSS 가 추춤한 사이 R의 수요가 크게 높아졌다.
 </p>
