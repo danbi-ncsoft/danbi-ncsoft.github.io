@@ -7,7 +7,7 @@ author : DANBI
 cover: "/assets/title2.jpg" 
 ---
 
-![7fb4eda6aa89713e268cf3d8fafcd283]([/assets/competition/2017-competition/image1.png](https://danbi-ncsoft.github.io/assets/hadoop.jpg)) 
+<img src="/assets/competition/2017-competition/image1.png">
 
 인턴생활 1주차에는 회사 및 팀의 전반적인 사항들에 대한 교육을 받았다면, 2주차에는 실무에 한걸음 더 다가가기 위한 교육을 받았습니다. 특히 서버에 적재되어있는 DB에서 분석에 필요한 데이터만을 추출하기 위한 Hive 쿼리를 본격적으로 실습했는데요. DB에는 게임 내에서 초 단위로 일어나는 유저들의 다양한 행동을 표현한 자료인 로그와 함께 유저들의 게임 결제 내역까지 각각 테이블로, 또 변수의 형태로 적재되어 있었습니다. 이 양이 너무 방대하여 원하는 정보가 어디에 있는지 찾는 것조차 쉬운 일이 아니었습니다. 
 
