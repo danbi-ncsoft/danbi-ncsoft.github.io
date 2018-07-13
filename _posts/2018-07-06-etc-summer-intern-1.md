@@ -2,7 +2,7 @@
 layout: post
 title: "인턴 생활기 #1"
 date: 2018-07-06 17:20:00
-categories: Etc
+categories: ETC
 author: DANBI
 cover: "/assets/start.jpg"
 ---
