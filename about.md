@@ -153,7 +153,7 @@ permalink: /about/
 			  </div>
 			  <div class="media-body">
 				  <h4>엄혜민</h4>
-				  <h5>Analyst&Modeling Team</h5>
+				  <h5>Analysis&Modeling Team</h5>
 				  <ul class="tag clearfix">
 					  <li class="btn">Analyst</li>
 				  </ul>
@@ -175,7 +175,7 @@ permalink: /about/
 		    </div>
 		    <div class="media-body">
 			    <h4>장윤제</h4>
-			    <h5>Analyst&Modeling Team</h5>
+			    <h5>Analysis&Modeling Team</h5>
 			    <ul class="tag clearfix">
 				    <li class="btn">Analyst</li>
 			    </ul>              
@@ -192,7 +192,7 @@ permalink: /about/
 	    	</div>
   			<div class="media-body">
     			<h4>안태희</h4>
-  				<h5>Analyst&Modeling Team</h5>
+  				<h5>Analysis&Modeling Team</h5>
   				<ul class="tag clearfix">
   					<li class="btn">Analyst</li>
   				</ul>
@@ -230,7 +230,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>안진옥</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Developer</li>
 					</ul>              
@@ -247,7 +247,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>강병수</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Developer</li>
 					</ul>
@@ -267,7 +267,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>서상덕</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Developer</li>
 					</ul>
@@ -305,7 +305,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>김나현</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Padawan</li>
 					</ul>              
@@ -322,7 +322,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>오희령</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Padawan</li>
 					</ul>

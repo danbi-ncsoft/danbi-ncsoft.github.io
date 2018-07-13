@@ -18,16 +18,21 @@ cover:  "/assets/works/data_analysis_with_r/r_background_image.jpg"
 기존 과학계를 흔드는 엄청난 결과에, 보기 드문 여성 과학자라는 점이 작용해 언론에서 엄청난 스포트라이트를 받았죠. 하지만 다른 사람들이 논문에 나온 방법대로 실험을 해도 재현이 안 되면서 연구 결과의 진위 여부에 대한 의혹이 불거졌습니다. 결국 조작된 결과임이 들통나면서 ‘일본판 황우석’이라는 오명을 얻은 채 사람들의 관심 밖으로 사라졌죠.
 
   
-
-![](/assets/works/data_analysis_with_r/image_11.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_11.png" style="width:6in" />
 만능 세포사기극으로 열도를 들썩이게 만든 오보카타 하루코
+</p>
+
 
 그런데 사실 위 사례는 워낙 언론의 스포트라이트를 받은 연구였기 때문에 더 크게 회자됐던 것이고, 이 사례뿐만 아니라 학계 전반에 재현성 문제가 만연하면서 ‘재현성위기’라는 용어가 등장하기도 했습니다. 그래서 올해 3월에 미국 통계 학회(America Statistics Association)에서 올바른 데이터 분석을 위한 지침서([https://www.amstat.org/newsroom/pressreleases/P-ValueStatement.pdf](https://www.amstat.org/newsroom/pressreleases/P-ValueStatement.pdf))를 발표하기도 했습니다(직접적으로는 p-value의 오남용을 막기 위한 지침이지만 포괄적으로는 재현이 안 되는 잘못된 통계 분석을 방지하기 위한 지침이라볼 수 있습니다). 
 
 데이터 분석에서도 비슷한 사례가 있습니다. ‘피터 와든’ 이라는 데이터분석가가 페이스북에서 근무하던 당시 페이스북의 친구 관계 네트워크를 분석하던 중 이 연결 정보에 의하면 미국은 7개 지역으로 나눌 수 있다는 내용을 자신의 블로그에 실었습니다(관련링크:  [https://petewarden.com/2010/02/06/how-to-split-up-the-us/](https://petewarden.com/2010/02/06/how-to-split-up-the-us/)). 그런데 이게 많은 사람들의 흥미를 끌면서 널리 퍼졌고 급기야 뉴욕 타임즈에도 실리게 되었죠. 그러나 한참 후에 피터 와든은 사실 7개 지역으로 구분한 자료는 엄밀한 분석을 통해 나온 것이 아니라 그저 주관적인 감으로 시각화해서 만든 것이라고 고백했습니다(관련링크:  [https://petewarden.com/2013/07/18/why-you-should-never-trust-a-data-scientist/](https://petewarden.com/2013/07/18/why-you-should-never-trust-a-data-scientist/)).즉, 이 분석은 다른 사람에 의해 얼마든지 다른 결과가 나올 수 있는 재현이 안 되는 분석이었던것이죠.
 
-![](/assets/works/data_analysis_with_r/image_12.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_12.png" style="width:6in" />
 피터 와든이 만든 페이스북 친구 관계에 의해 구분된 미국 지도
+</p>
+
  
 한편, 실행 가능성은 말 그대로 실제 활용할 수 있는 분석을 해야함을 뜻합니다. 이 실행 가능성은 재현성과도 크게 상관이 있습니다. 재현이 되지 않는 분석을 활용할 수는 없으니까요. 다만 여기서 더 나아가 재현이 될 뿐만 아니라 서비스에 활용할 수 있는 결과물을 만드는 것이 필요합니다. 아마 실제 업무를 수행하고 계신 데이터 분석가들은 다 공감하시리라 생각합니다. 얼마나 많은 노력을 들여 분석한 결과들이 한낱 단 한번의 상급자 보고를 위한 PPT로 산화하여 사라져갔는지…
 
@@ -39,8 +44,11 @@ cover:  "/assets/works/data_analysis_with_r/r_background_image.jpg"
 
 물론 이것은 엄밀한 의미의 재현성과는 약간 다릅니다. 그러나 적어도 이런 식의 정리를 통해 다른 사람들이 분석가의 작업을 동일한 절차대로 재현할 수 있게 하면 해당 작업에 대해 리뷰하며 오류를 검증해 볼 수도 있고더 나아가 기존 분석 작업을 변형해서 새로운 결과를 얻을 수도 있기 때문에 유용합니다.
 
-![](/assets/works/data_analysis_with_r/image_13.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_13.png" style="width:5in" />
 재현 가능한 결과물의 나쁜 예
+</p>
+
 
 또한 2편에서 설명했듯이 R은 예측 결과를 그대로 서비스에 연동하기에 편리한 언어이므로 실행 가능성 측면에서도 매우 유리합니다(오해가있을까 싶어 첨언하자면, 실행 가능성이 단지 구현 상의 문제만은 아닙니다). 심지어 서비스 서버에서 직접 실행하는 모듈 형태로 서비스할 수 있을 뿐만 아니라, R에서 만든 예측 모델을 다른 서비스나 개발 환경에서 사용할 수 있도록  [**PMML(PredictiveModel Markup Language)**](https://en.wikipedia.org/wiki/Predictive_Model_Markup_Language) 이라는 형식의 데이터로 제공하는 것도 가능하죠.
 
