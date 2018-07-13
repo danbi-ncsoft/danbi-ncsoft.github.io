@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 인턴 생활기 #2
+title: "인턴 생활기 #2"
 date: 2018-07-13 18:00:00
 categories: ETC
 author : DANBI
