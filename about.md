@@ -29,7 +29,7 @@ permalink: /about/
 
 
 
-<div class="wrapper">
+<div>
 <h2>NCSOFT Itelligence&amp;Insight(I&amp;I)실은</h2>
 <p>회사에 존재하는 다양한 데이터에 대한 분석을 통해 인사이트를 찾고 기계학습 및 통계 모델링을 이용해 고도화된 지표 및 시스템을 개발하는 조직입니다.</p>
 <p>게임 서비스를 통해 적재되는 각종 데이터를 이용하여 기계 학습 및 통계 모델링 기반의 서비스를 개발하고 있으며, </p>
