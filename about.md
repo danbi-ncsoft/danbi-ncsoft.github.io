@@ -60,7 +60,9 @@ permalink: /about/
     <li>유저의 가상 세계 속 행태에 대한 다양한 분석 및 관련 연구 진행</li>
   </ul>
 </div>
-
+<br>
+<br>
+<br>
 <!--<img src='/assets/team.png' width="400">-->
 
 <div class="container">
