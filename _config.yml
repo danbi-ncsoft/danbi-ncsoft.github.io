@@ -39,7 +39,7 @@ jekyll-archives:
     category: '/category/:name/'
 
 # Disqus comments
-# disqus_shortname: bencentra
+disqus_shortname: ncdam
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
