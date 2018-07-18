@@ -27,7 +27,7 @@ permalink: /about/
   </div>
 </div>
 
-
+<p align="center">
 ## NCSOFT Itelligence&Insight(I&I)실은
 
 회사에 존재하는 다양한 데이터에 대한 분석을 통해 인사이트를 찾고 기계학습 및 통계 모델링을 이용해 고도화된 지표 및 시스템을 개발하는 조직입니다.
@@ -44,7 +44,7 @@ permalink: /about/
 * 유저의 가상 세계 속 행태에 대한 다양한 분석 및 관련 연구 진행
 
 ## Members of I&I Division
-
+</p>
 
 <!--<img src='/assets/team.png' width="400">-->
 
