@@ -39,7 +39,7 @@ jekyll-archives:
     category: '/category/:name/'
 
 # Disqus comments
-disqus_shortname: ncdam
+disqus_shortname: danbi
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
