@@ -19,13 +19,13 @@ permalink: /about/
 	<link href="/assets/about_us/css/responsive.css" rel="stylesheet">
 </head>
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../assets/about_us.jpg');"{% endif %}>
+<!-- <div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../assets/about_us.jpg');"{% endif %}>
   <div class="scrim {% if site.cover %}has-cover{% endif %}">
     <header class="site-header">
 		<h1 class="title">About Us</h1>
     </header>
   </div>
-</div>
+</div> -->
 
 
 ## NCSOFT Itelligence&Insight(I&I)실은
