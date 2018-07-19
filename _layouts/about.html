@@ -7,8 +7,12 @@ layout: default
 
 
 
-
-{% unless page.cover %} {% include page_divider.html %} {% endunless %}
+<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../assets/about_us.jpg');"{% endif %}>
+  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+    <header class="site-header"><h1 class="title">About Us</h1></header>
+  </div>
+</div>
+<!-- {% unless page.cover %} {% include page_divider.html %} {% endunless %}
 
 <section class="post-meta">
   <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
@@ -21,7 +25,7 @@ layout: default
     {% endif %}
   {% endfor %}{% endif %}
   </div>
-</section>
+</section> -->
 
 <article class="post-content">
   {{ content }}
