@@ -2,13 +2,15 @@
 layout: default
 ---
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-<div class="post">
-<div class="wrapper">
 
 
 
-
-{% unless page.cover %} {% include page_divider.html %} {% endunless %}
+<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../assets/about_us.jpg');"{% endif %}>
+  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+    <header class="site-header"><h1 class="title">About Us</h1></header>
+  </div>
+</div>
+<!-- {% unless page.cover %} {% include page_divider.html %} {% endunless %}
 
 <section class="post-meta">
   <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
@@ -21,7 +23,9 @@ layout: default
     {% endif %}
   {% endfor %}{% endif %}
   </div>
-</section>
+</section> -->
+<div class="post">
+<div class="wrapper">
 
 <article class="post-content">
   {{ content }}
@@ -114,25 +118,6 @@ layout: default
 	</section>
 {% endif %}
 
-{% if site.disqus_shortname %}
-{% unless page.disqus_disabled %}
-<section class="disqus">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname = '{{ site.disqus_shortname }}';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
-{% endunless %}
-{% endif %}
 
 </div>
 </div>

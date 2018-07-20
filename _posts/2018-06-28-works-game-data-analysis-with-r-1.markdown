@@ -16,7 +16,7 @@ R이 처음 공개된 게 1993년이니까, 벌써 20년이 넘은 오래된 언
 아래 그림은 2015년,KDnugget(www.kdnuggets.com)라는 사이트에서 데이터 분석가들이 사용하는 도구를 조사한 자료입니다. 보시다시피 R은 데이터 마이닝 기반의 분석가들이 가장 많이 쓰는 도구임을 알 수 있죠. 이 사이트가 전통적인 통계 분석가들보다는 해커 성향(!)의 분석가들이 많이 이용하는 사이트라는 점을 감안하더라도, R이 상당히 대중화된 도구임을 알 수 있습니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_1.png" style="width:3.25in;height:3.5in" />
+<img src="/assets/works/data_analysis_with_r/image_1.png" style="width:5in" />
 캐글에서 조사한 데이터 과학자의 분석 도구 선호도 자료 <출처: [http://www.kdnuggets.com/2015/06/poll-programming-language-analytics-data-mining-data-science.html](http://www.kdnuggets.com/2015/06/poll-programming-language-analytics-data-mining-data-science.html)> 
 </p>
 
@@ -25,7 +25,7 @@ R이 처음 공개된 게 1993년이니까, 벌써 20년이 넘은 오래된 언
 요즘은 통계학과에서도 R을 많이 사용한다더군요. 이런 것만 봐도 R은 이제 대세라도 봐도 무방할 것 같습니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_2.png" style="width:4.25in;height:3.5in" />
+<img src="/assets/works/data_analysis_with_r/image_2.png" style="width:7in" />
 캐글에서 조사한 데이터 과학자의 분석 도구 선호도 자료 <출처: [http://www.kdnuggets.com/2015/06/poll-programming-language-analytics-data-mining-data-science.html](http://www.kdnuggets.com/2015/06/poll-programming-language-analytics-data-mining-data-science.html)> 
 취업 검색 사이트 Indeed.com에서 공개한 데이터 분석가 구직 추세 비교그래프 - 전통적인 통계 도구인 SAS, SPSS 가 추춤한 사이 R의 수요가 크게 높아졌다.
 </p>
@@ -37,7 +37,7 @@ R이 처음 공개된 게 1993년이니까, 벌써 20년이 넘은 오래된 언
 첫째, 데이터 시각화 기능이 다른 언어나 도구에 비해 매우 편리하고 풍부합니다. 통계 분석 도구에서 웬 시각화? 하고 생각하실 분들도 있을 텐데요, 실제 데이터 분석을 할 때는 많은 데이터를 적절한 그래프로 표현하는 게 매우 중요하답니다.
 
 <p align="center">
-<img src="/assets/works/data_analysis_with_r/image_3.png" style="width:3.25in;height:3.5in" />
+<img src="/assets/works/data_analysis_with_r/image_3.png" style="width:5in" />
 천 개의 숫자보다 더 나은 한 개의 그래프.jpg
 </p>
 

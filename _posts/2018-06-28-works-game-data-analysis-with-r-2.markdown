@@ -21,10 +21,11 @@ cover:  "/assets/works/data_analysis_with_r/r_background_image.jpg"
 
 과거에는 OLAP라는 시스템을 이용해서 탐사 분석을 했습니다. OLAP는 미리 다양한 분석 상황을 큐브 형태로 구축한 후 분석하는 시스템을 말합니다. 따라서 이 큐브에 들어갈 데이터마트(datamart)가 굉장히 잘 구축된 상황에서는 굉장히 효율적으로 작업을 할 수 있죠.
 
-![](/assets/works/data_analysis_with_r/image_4.gif)
-OLAP은 뭐 이런 겁니다…쿨럭
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_4.gif" style="width:6in" />
+분석가와 DBA도 역시 마찬가지…
+</p>
 
-  
 
 제조업이나 금융업처럼 도메인의 특성상 데이터 종류의 변화가 크지 않은 분야나, 비즈니스 변화가 빠르지 않았던 과거에는 이렇게 OLAP을 이용한 방법이 효과적이었죠. 그러나 요즘처럼 변화가 휙휙 이루어지는 시대, 그리고 특히 게임처럼 몇 개월 단위로 대규모 콘텐츠 업데이트가 이뤄지는 분야에서는 탐사 분석 전에 모든 가능한 데이터를 OLAP로 구성해서 활용하는 건 현실적으로 불가능하죠. 아마 OLAP을 구축해본 DBA분들이라면 dimension이 추가될 때마다 OLAP을 재구성하느라 밤을 새본 경험이 한 두 번씩은 있을 것 같네요…
 
@@ -36,8 +37,10 @@ OLAP은 뭐 이런 겁니다…쿨럭
 
 위의 과정이 몇 번이고 반복되며 시간만 속절없이 흐르고…그럼 결국 ‘아놔 저 사람이랑 짜증나서 일 못 하겠네!’하며 ‘술이나 마시러 가자!’ 뭐 이렇게 되는 거죠.
 
-![](/assets/works/data_analysis_with_r/image_5.jpg)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_5.jpg" style="width:6in" />
 분석가와 DBA도 역시 마찬가지…
+</p>
 
   
 
@@ -47,17 +50,20 @@ OLAP은 뭐 이런 겁니다…쿨럭
 
 비록 최근에 다양하고 세련된 여러 가지 분석 솔루션들이 나오고 있지만 제 생각에는 효율성이나 유연성 측면에서 볼 때 아직까지는 Hive + Bash shell + R 조합을 능가하지는 못하는 것 같습니다. (*물론 익숙하다는 전제 하예요.)
 
-![](/assets/works/data_analysis_with_r/image_6.png) 
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_6.png" style="width:6in" />
 데이터 분석 궁극의 조합 ? hive, bash, R
+</p>
 
-  
 
 또한 효과적인 탐사 분석을 위해서는 적절한 시각화가 매우 중요합니다. 앞서 언급했듯, R은 이런 데이터 시각화를 통한 탐사 분석에 아주 강력한 장점을 갖고 있어서 이 단계에서 가장 중요한 역할을 수행하죠.
 
   
-
-![](/assets/works/data_analysis_with_r/image_7.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_7.png" style="width:6in" />
 R을 이용한 여러가지 데이터 시각화 예
+</p>
+
 
   
 
@@ -65,16 +71,18 @@ R을 이용한 여러가지 데이터 시각화 예
 
 진성 유저 지표 프로젝트의 경우, 유저들을 유형별로 분류하기 위한 분류 모델을 만드는 작업입니다. R에는 다양한 데이터 마이닝 알고리즘이 있고, 사용법도 어렵지 않죠. 그래서 데이터분석팀에서는 예측 모델을 생성하고그 성능을 측정하는 작업을 모두 R에서 수행합니다.
 
-![](/assets/works/data_analysis_with_r/image_8.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_8.png" style="width:6in" />
 기계 학습 결과는 여러 가지 방식으로 성능을 측정합니다
-
+</p>
   
 
 마지막으로 전 단계에서 만든 예측 모델을 실제 서비스에 적용할 수 있도록 서비스 개발에 돌입합니다. 진성 유저 지표 서비스를 예로 들자면, 먼저 유저들의 플레이 데이터를 예측 모델에서 사용할 수 있는 형태로 정제하는 데이터 전처리 모듈, 이 데이터로 각 유저들이 어떤 유형인지를 기계 학습을 통해 자동으로 분류하는 모듈, 분류 결과를 서비스하는 모듈을 만들게 되는데 이중 기계 학습 모듈을 R로 개발합니다.
 
-![](/assets/works/data_analysis_with_r/image_9.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_9.png" style="width:6in" />
 진성 유저분류 과정을 (아주아주아주아주)간략하게 그림으로 표현하면 이렇습니다.
-
+</p>
   
 
 R은 통계 분석용 도구이기도 하지만, 동시에 프로그래밍 언어이기 때문에 이렇게 시스템 모듈을 개발하는 것도 가능하죠. 특히 탐사 분석이나 예측 분석에서 사용한 코드를 상당 부분 재활용할 수 있는데, 이 점은 실전에서 큰 장점이 됩니다. 왜냐하면 분석가가 만든 코드를 개발자가 다시 포팅(*기존의 코드를 다른 컴퓨팅 환경에서 동작할 수 있도록 수정하는 것)할 필요가 없기 때문이죠. 포팅 과정에서 잘못 구현하거나 버그가 발생할 가능성이 크게 낮아지는 것은 물론이고요.
@@ -83,5 +91,8 @@ R은 통계 분석용 도구이기도 하지만, 동시에 프로그래밍 언�
 
 이렇듯 R은 단순히 시각화를 통한 탐사 분석이나 보고서에 쓸 차트를 그리는 용도뿐 아니라, 예측 모델을 만들고 이를 실전 서비스로 구현하는 데까지 전반적으로 활용되고 있습니다. 다음 편에서는 데이터 분석을 할 때 필요한 두 가지 요소에 대해 다뤄보도록 할게요.
 
-![](/assets/works/data_analysis_with_r/image_10.png)
+<p align="center">
+<img src="/assets/works/data_analysis_with_r/image_10.png" style="width:6in" />
 데이터 서비스 개발 전 과정에서 핵심 도구로 사용하는 R
+</p>
+

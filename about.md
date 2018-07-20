@@ -19,13 +19,13 @@ permalink: /about/
 	<link href="/assets/about_us/css/responsive.css" rel="stylesheet">
 </head>
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../assets/about_us.jpg');"{% endif %}>
+<!-- <div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../assets/about_us.jpg');"{% endif %}>
   <div class="scrim {% if site.cover %}has-cover{% endif %}">
     <header class="site-header">
 		<h1 class="title">About Us</h1>
     </header>
   </div>
-</div>
+</div> -->
 
 
 ## NCSOFT Itelligence&Insight(I&I)실은
@@ -153,7 +153,7 @@ permalink: /about/
 			  </div>
 			  <div class="media-body">
 				  <h4>엄혜민</h4>
-				  <h5>Analyst&Modeling Team</h5>
+				  <h5>Analysis&Modeling Team</h5>
 				  <ul class="tag clearfix">
 					  <li class="btn">Analyst</li>
 				  </ul>
@@ -175,7 +175,7 @@ permalink: /about/
 		    </div>
 		    <div class="media-body">
 			    <h4>장윤제</h4>
-			    <h5>Analyst&Modeling Team</h5>
+			    <h5>Analysis&Modeling Team</h5>
 			    <ul class="tag clearfix">
 				    <li class="btn">Analyst</li>
 			    </ul>              
@@ -192,7 +192,7 @@ permalink: /about/
 	    	</div>
   			<div class="media-body">
     			<h4>안태희</h4>
-  				<h5>Analyst&Modeling Team</h5>
+  				<h5>Analysis&Modeling Team</h5>
   				<ul class="tag clearfix">
   					<li class="btn">Analyst</li>
   				</ul>
@@ -230,7 +230,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>안진옥</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Developer</li>
 					</ul>              
@@ -247,7 +247,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>강병수</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Developer</li>
 					</ul>
@@ -267,7 +267,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>서상덕</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Developer</li>
 					</ul>
@@ -305,7 +305,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>김나현</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Padawan</li>
 					</ul>              
@@ -322,7 +322,7 @@ permalink: /about/
 				</div>
 				<div class="media-body">
 					<h4>오희령</h4>
-					<h5>Analyst&Modeling Team</h5>
+					<h5>Analysis&Modeling Team</h5>
 					<ul class="tag clearfix">
 						<li class="btn">Padawan</li>
 					</ul>
