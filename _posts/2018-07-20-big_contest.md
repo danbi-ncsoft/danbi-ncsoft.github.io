@@ -4,7 +4,7 @@ title: "2018 빅콘테스트"
 date: 2018-07-20 12:30:00
 categories: Competition
 author : DANBI
-cover: "![poster](\assets\competition\bigcontest\poster.PNG"
+cover: "\assets\competition\bigcontest\poster.PNG"
 
 ---
 
