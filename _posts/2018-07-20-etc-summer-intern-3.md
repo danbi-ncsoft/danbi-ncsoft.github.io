@@ -18,7 +18,7 @@ cover: "/assets/title3.jpg"
 "블레이드&소울 게임에서 6월 첫째 주에 접속한 유저들이 퀘스트를 완료한 횟수와 완료율을 에픽/어트랙션/일일/주간 카테고리로 나누어 각각 Top 10을 구하고, 그 퀘스트에서 얻은 금 수량을 추출하세요."
 
 <p align="center">
-<img src="/assets/quest.jpg" style="width:5in" />
+<img src="/assets/quest.jpg" style="width:8in" />
 블레이드&소울 퀘스트 완료 화면
 </p>
 
