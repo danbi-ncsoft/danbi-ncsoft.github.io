@@ -48,7 +48,7 @@ title(ylab = "Frequency", family = "gochi", cex.lab = 2)
 text(2, 70, "N = 1000", family = "bell", cex = 2.5)
 ```
 
-![](/assets/etc/use-your-font-in-r/fig_1.png)
+![](/assets/etc/use-your-font-in-r/fig_1.png&s=200)
 
 이제 같은 내용을 한글로도 구현해보자! 
 
