@@ -127,6 +127,7 @@ pdf("YOUR_FILENAME.pdf", width = 7, height = 4)
 print(p) 
 dev.off()
 ```
+
 이게 귀찮다면 ggplot2 패키지를 쓰자. ggplot2는 장치를 포맷 별로 편리하게 기록할 수 있는 통일적인 방법을 제공한다. `ggsave` 명령어를 쓰면 `dev.off()`없이 대부분의 포맷으로 아래와 같이 편리하게 저장할 수 있다.
 
 ```{r}
@@ -137,7 +138,7 @@ ggsave("YOUR_FILENAME.pdf", p, width = 7, height = 4) ggsave("YOUR_FILENAME.png"
 
 ```{r}
 library(Cairo)
-# ggsave(filename="./foo.pdf", q, device=cairo_pdf) #
+ggsave(filename="./foo.pdf", q, device=cairo_pdf) #
 ```
 
 # 참고 자료 
