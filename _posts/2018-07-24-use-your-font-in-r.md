@@ -4,7 +4,7 @@ title: "너의 폰트를 써라! (R에서도)"
 date: 2018-07-24 11:59:59
 categories: ETC 
 author : DANBI  
-cover: "/assets/statistics.jpg"  
+cover: "/assets/r-cover.png"  
 ---
 
 # 알파벳이 아닌 그런 경우 
