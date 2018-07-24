@@ -131,7 +131,7 @@ dev.off()
 
 ```{r}
 ggsave("YOUR_FILENAME.pdf", p, width = 7, height = 4) ggsave("YOUR_FILENAME.png", p, width = 7, height = 4, dpi = 96)
-``
+```
 
 폰트를 PDF에 심는 문제는 문제가 될 수도 있고 아닐 수도 있다. 문제가 될 것 같으면 그냥 확실히 해두면 되겠다. 아래 같이 하면 pdf에 폰트를 함께 확실하게 심을 수 있다. 
 
