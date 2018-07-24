@@ -76,9 +76,14 @@ social:
 
   - name: GitHub
     icon: github
-    username: DANBI
     url: https://github.com/danbi-ncsoft
-    desc: Fork me on GitHub
+    desc: Go to GitHub
+    share: false
+    
+  - name: RSS
+    icon: rss
+    url: https://danbi-ncsoft.github.io/feed.xml
+    desc: Subscribe via RSS
     share: false
 
 
