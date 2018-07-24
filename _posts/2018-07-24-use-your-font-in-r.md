@@ -73,7 +73,7 @@ title(ylab = "빈도", family = "poorstory", cex.lab = 1)
 text(2, 70, "생성 샘플 수: 1000", family = "poorstory", cex = 1.5)
 ```
 ![](/assets/etc/use-your-font-in-r/fig_2.png)
-<img src="/assets/etc/use-your-font-in-r/fig_2.png" width="200">
+<img src="/assets/etc/use-your-font-in-r/fig_2.png" width="100">
 
 참고 삼아서 `windows()`에서 별도 창으로 출력한 결과를 그대로 붙여 보았다. 
 
