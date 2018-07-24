@@ -48,7 +48,7 @@ title(ylab = "Frequency", family = "gochi", cex.lab = 2)
 text(2, 70, "N = 1000", family = "bell", cex = 2.5)
 ```
 
-![](/assets/etc/use-your-font-in-r/fig_1.png))
+![](/assets/etc/use-your-font-in-r/fig_1.png)
 
 이제 같은 내용을 한글로도 구현해보자! 
 
@@ -73,7 +73,7 @@ title(ylab = "빈도", family = "poorstory", cex.lab = 1)
 text(2, 70, "생성 샘플 수: 1000", family = "poorstory", cex = 1.5)
 ```
 
-![](/assets/etc/use-your-font-in-r/fig_2.png))
+![](/assets/etc/use-your-font-in-r/fig_2.png)
 
 `showtext_auto()`는 showtext  패키지에게 필요한 상황이 되면 폰트 출력 모드를 켜고 끄는 것을 알아서 하라는 지시다. 수동으로 켜고 끌 수도 있다. 안타깝지만 RStudio의 기본 그래픽 장치는 showtext와 호환되지 않는다. 즉, RStudio IDE 화면 우측 하단에는 폰트가 위의 그림처럼 표현되지 않는다. 당황하지 말자. 그냥 명령어로 별도의 그래픽 장치를 호출하면 된다. Windows라면 `windows()`를, Macos라면 `x11()`을 적절한 위치에 넣어주자. 아울러 rmarkdown에서도 폰트가 제대로 표현되지 않는다. 이때 코드 옵션에 `fig.showtext=TRUE`를 추가하면 위의 그림처럼 잘 나온다. 즉, 마크다운 코드 옵션의 윗단을 아래와 같이 적절하게 처리해주면 되겠다.
 
@@ -101,7 +101,7 @@ annotate("text", 1, 0.9, label = 'Chinese for "Hello, world!"', family = "consta
 print(p)
 ```
 
-![](/assets/etc/use-your-font-in-r/fig_3.png))
+![](/assets/etc/use-your-font-in-r/fig_3.png)
 
 # 어디까지나 기우 
 
