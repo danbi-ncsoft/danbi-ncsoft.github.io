@@ -62,7 +62,7 @@ ggplot(data=iris, aes(x=Species, y=Sepal.Length))+
 
 ## Scatter Plot
 
-Scatter Plot은 두 변수 간의 관계를 보여주는 대표적인 시각화 기법의 하나입니다. 17세기에 x축과 y축으로 이뤄진 2차원의 공간에 함수(y=f(x))를 시각화하는 수학의 좌표체계의 개념이 고안되었고, 이에 따라 1686년 Edmund Halley에 의해 x와 y의 관계를 나타내는 함수가 아닌, 고도(x축)와 기압(y축)의 관측값의 변화를 나타내는 첫 Scatter Plot이 탄생하였습니다.  
+Scatter Plot은 두 변수 간의 관계를 보여주는 대표적인 시각화 기법의 하나입니다. 17세기에 x축과 y축으로 이뤄진 2차원의 공간에 함수(y=f(x))를 시각화하는 수학의 좌표체계의 개념이 고안되었습니다. 참고로, 좌표체계의 개념은 데카르트와 페르마에 의해 고안되었고, 뉴튼에 의해 널리 퍼지게되었으며, 좌표체계 탄생의 역사는 브리태니커 백과사전의 해당 항목 ([링크](https://www.britannica.com/science/analytic-geometry))을 참조하시기 바랍니다. 이에 따라 1686년 Edmund Halley에 의해 x와 y의 관계를 나타내는 함수가 아닌, 고도(x축)와 기압(y축)의 관측값의 변화를 나타내는 첫 Scatter Plot이(아래 그림) 탄생하였습니다. 
 
 ![](/assets/study/eda2/eda2_sc1.png)
 
