@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://danbi-ncsoft.github.io/sitemap.xml
