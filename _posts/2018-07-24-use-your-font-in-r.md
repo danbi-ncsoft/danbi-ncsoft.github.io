@@ -48,7 +48,7 @@ title(ylab = "Frequency", family = "gochi", cex.lab = 2)
 text(2, 70, "N = 1000", family = "bell", cex = 2.5)
 ```
 
-![](/assets/etc/use-your-font-in-r/fig_1.png&s=150)
+![](/assets/etc/use-your-font-in-r/fig_1.png)
 
 이제 같은 내용을 한글로도 구현해보자! 
 
@@ -73,7 +73,7 @@ title(ylab = "빈도", family = "poorstory", cex.lab = 1)
 text(2, 70, "생성 샘플 수: 1000", family = "poorstory", cex = 1.5)
 ```
 
-![](/assets/etc/use-your-font-in-r/fig_2.png&s=150)
+![](/assets/etc/use-your-font-in-r/fig_2.png =150x)
 
 참고 삼아서 `windows()`에서 별도 창으로 출력한 결과를 그대로 붙여 보았다. 
 
