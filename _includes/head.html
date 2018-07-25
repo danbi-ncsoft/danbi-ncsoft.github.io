@@ -12,6 +12,10 @@
   <meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date: '%Y' }}">
   {% endif %}
   
+  {% if page.cover %}
+    <meta property="og:image" content="{{ site.url }}/{{ page.cover }}" />
+  {% endif %}
+
   <meta property="og:description" content="{{ page.subtitle }}" />
 
   <!-- External libraries -->
