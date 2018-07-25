@@ -17,7 +17,15 @@ cover: "/assets/study/eda/tukey_eda.PNG"
 
 굳이 번거롭게 데이터를 시각화하여 살펴보아지 않아도, 데이터의 성격을 나타내는 수치 (max, mean, min 등)를 통해 표현하고자 하는 바를 전달하는 것이 충분한 경우도 있지만, 때로는 데이터의 시각화가 수치로는 쉽게 발견하지 못하는 점들을 너무나 명료하게 보여주는 경우도 있습니다. 
 
-바로 아래 그림의 Anscombe's Quartet이 대표적인 예인데요, 11개의 데이터 포인트로 이뤄진 4개의 데이터세트의 X와 Y의 성격은 수치상(min, max, mean 등)으로는 매우 비슷하며,  X와 Y간의 직선 상관관계 (correlation)조차 비슷합니다. 하지만 보시는바와 같이 시각화를 진행한 경우 4개의 데이터 세트는 매우 다른 것을 알 수 있죠. 
+바로 아래 그림의 Anscombe's Quartet이 대표적인 예인데요, 11개의 데이터 포인트로 이뤄진 4개의 데이터세트의 X와 Y는 평균과 표준편차가 매우 비슷하며, X와 Y간의 직선 상관관계 (correlation) 조차 비슷합니다. 하지만 보시는바와 같이 시각화를 진행한 경우 4개의 데이터 세트는 매우 다른 것을 알 수 있죠. 
+
+| Property | Value |
+|--|--|
+| Mean of X | 9 in all four XY plots |
+| Sample variance of X | 11 in all four XY plots |
+| Mean of Y | 7.5 in all four XY plots |
+| Sample variance of Y | 4.122 or 4.127 in all four XY plots |
+| Correlation | 0.816 in all four XY plots |
 
 ![990px-Anscombe's_quartet_3.svg](/assets/study/eda/990px-Anscombe's_quartet_3.svg.png)
 
