@@ -12,11 +12,11 @@
   <meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date: '%Y' }}">
   {% endif %}
   
-  {% if page.cover %}
-    <meta property="og:image" content="{{ site.url }}/{{ page.cover }}" />
+  {% if page.header-img %}
+    <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
   {% endif %}
 
-<meta property="og:description" content="{{ page.subtitle }}" />
+  <meta property="og:description" content="{{ page.subtitle }}" />
 
   <!-- External libraries -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
