@@ -12,8 +12,8 @@
   <meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date: '%Y' }}">
   {% endif %}
   
-  {% if page.header-img %}
-    <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
+  {% if post.header-img %}
+    <meta property="og:image" content="{{ site.url }}/{{ post.header-img }}" />
   {% endif %}
 
   <meta property="og:description" content="{{ page.subtitle }}" />
