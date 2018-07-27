@@ -2,22 +2,13 @@
 layout: default
 ---
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../../../assets/posts.jpg');"{% endif %}>
+<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../../../assets/competition.jpg');"{% endif %}>
   <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header"><h1 class="title">Posts</h1></header>
+    <header class="site-header"><h1 class="title">Competition</h1></header>
   </div>
 </div>
-<div class="wrapper">
-{% for category in site.categories.Competition %}
-  {% capture cat %}{{ category | first }}{% endcapture %}
-  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
-  {% for desc in site.descriptions %}
-    {% if desc.cat == cat %}
-      <p class="desc"><em>{{ desc.desc }}</em></p>
-    {% endif %}
-  {% endfor %}
   <ul class="posts-list">
-  {% for post in site.categories[cat] %}
+  {% for post in site.categories.Competition %}
     <li>
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
