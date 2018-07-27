@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url('../../../assets/title2.jpg');"{% endif %}>
+  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+    <header class="site-header"><h1 class="title">Works</h1></header>
+  </div>
+</div>
+  <ul class="posts-list">
+  {% for post in site.categories.Works %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+<br>
+</div>
