@@ -31,6 +31,7 @@ layout: default
     {% endif %}
   {% endfor %}{% endif %}
   </div>
+  {% if page.comments %} ? <a href="{{ site.baseurl }}/{{ page.url }}#disqus_thread">0 Comments</a>{% endif %}
 </section>
 
 <article class="post-content">
