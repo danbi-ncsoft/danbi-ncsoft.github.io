@@ -49,7 +49,7 @@ $$\Delta y \approx \frac{\beta}{100} (100 \times \Delta x / x)$$
 * 같은 결과를 편미분을 통해 도출할 수 있다. 양변을 $$x$$에 대해서 미분하면 
  $$dy = \beta \dfrac{dx}{x}$$ 
 
-# Log-Log model 
+# log-log model 
 
 $$\log y = \alpha + \beta \log x$$
 
@@ -64,7 +64,7 @@ $$\beta = \dfrac{d{\,}{\log y}}{d{\,}\log x}  = \dfrac{(dy / y) \times 100}{(dx 
 
 ## 사례 
 
-### Log-level 모형에서 더미 변수 해석 
+### log-level 모형에서 더미 변수 해석 
 
 $$\log(\text{write}) = \beta_0 + \beta_1 * \text{female} + \beta_2 * \text{read} + \beta_3 * \text{math} $$
 
@@ -72,7 +72,7 @@ $$\log(\text{write}) = \beta_0 + \beta_1 * \text{female} + \beta_2 * \text{read}
 
 이 회귀분석은 분석 대상이 된 표본 학생들의 쓰기 점수를 성별, 읽기 점수 그리고 수학 점수로 회귀한 결과이다. female 계수(1이면 여성, 0이면 남성)는 어떻게 해석해야 할까? 앞서 보았듯 더미 변수는 질적인 변수다. 따라서 계수에 100을 곱해 여자 성별이 11.4% 더 높은 점수를 준다고 해석해서는 곤란하다. $$e^{0.114718} = 1.12$$의 결과에 따라서 약 12% 정도 더 높은 점수를 준다고 보는 것이 맞다. 다른 계수들은 어떨까? 다른 변수은 모두 연속 함수이고 계수 값들이 크지 않음을 알 수 있다. 따라서 근사 값로 해석하는 것이 가능하다. 즉, 읽기 점수가 1% 증가하면 글쓰기 점수는 약 0.66% 정도 증가한다. 
 
-### Level-log  모형에서 변수 해석 
+### level-log  모형에서 변수 해석 
 
 $$\text{write} = \beta_0 + \beta_1 * \text{female} + \beta_2 * \log \text{read} + \beta_3 * \log \text{math} $$
 
@@ -80,7 +80,7 @@ $$\text{write} = \beta_0 + \beta_1 * \text{female} + \beta_2 * \log \text{read} 
 
 $$\log \text{read}$$의 계수는 어떻게 해석해야 할까? read 값은 연속 값이므로 1%의 작은 값을 취하는 것이 가능하다. 따라서 근사 값으로 해석해도 무방하다. 앞서 보았 듯 read 값의 1% 증가는 $$\beta * 0.01$$ %의 효과를 종속 변수에 준다. 즉, 약 0.17% 증가를 초래한다. 물론 정확하게 계산하면 0.161%가 나올 테지만, 소수점 자리를 생각할 때 오차는 무시할 만 하다. 
 
-### Log-log  모형에서 변수 해석 
+### log-log  모형에서 변수 해석 
 
 $$\log \text{write} = \beta_0 + \beta_1 * \text{female} + \beta_2 * \log \text{math} +\beta_3 *\text{read} $$
 
@@ -88,7 +88,7 @@ $$\log \text{write} = \beta_0 + \beta_1 * \text{female} + \beta_2 * \log \text{m
 
 $$\beta_2$$는 어떻게 해석해야 할까? 근사 값로 해석하면 된다. 수학 점수 1% 상승은 쓰기 점수 0,4% 상승을 가져온다. 
 
-## (부록) Log-Log 계산 
+## (부록) log-log 계산 
 
 $$
 \begin{aligned}
