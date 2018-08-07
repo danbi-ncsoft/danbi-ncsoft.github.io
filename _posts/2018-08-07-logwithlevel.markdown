@@ -35,7 +35,7 @@ $$\log y = \alpha + \beta x$$
 
 * 같은 취지로 식의 양변을 편미분해서 동일한 결과를 도출할 수 있다.  
 $$\dfrac{d{\,}y / d{\,}x }{y} = \dfrac{d{\,}y / y }{d{\,}x} = \beta$$
-*  $$\dfrac{d{\,}y / y }{d{\,}x}$$는 $$x$$가 몹시 미세하게(infinitesimal) 변화할 때 $$y$$의 순간 변화비율을 나타낸다. 만일 이를 %로 표시하고 싶다면, $$\beta \times 100$$이 된다. 
+*  $$\dfrac{d{\,}y / y }{d{\,}x}$$는 $$x$$가 몹시 미세하게(infinitesimal) 변화할 때 $$d{\,}y / y$$의 '순간'(instantaneous) 변화비율을 나타낸다. 만일 이를 %로 표시하고 싶다면, $$\beta \times 100$$이 된다. 
 
 # level-log model 
 
