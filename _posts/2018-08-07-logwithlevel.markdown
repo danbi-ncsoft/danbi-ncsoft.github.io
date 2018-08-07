@@ -13,10 +13,10 @@ cover: "/assets/statistics.jpg"
 
 |  |level  | log |
 |--|--|--|
-|__level__ | $ y_i = \alpha + \beta x_i + \varepsilon_i $ | $ y_i = \alpha + \beta \log x_i + \varepsilon_i $ |
-|__log__ | $\log y_i = \alpha + \beta x_i + \varepsilon_i$ | $\log y_i = \alpha + \beta \log x_i + \varepsilon_i$ |
+|__level__|$y_i = \alpha + \beta x_i + \varepsilon_i$|$y_i = \alpha + \beta \log x_i + \varepsilon_i$|
+|__log__|$\log y_i = \alpha + \beta x_i + \varepsilon_i$|$\log y_i = \alpha + \beta \log x_i + \varepsilon_i$|
 
-level-level의 조합에서 \(\beta\)는 $x$의 한 단위 변화에 대한 $y$의 변화 단위를 측정한다. 이하에서는 오해의 소지가 없는 이상 $i$ 인덱스 와 $\varepsilon_i$은 생략하도록 하자. 
+level-level의 조합에서 $\beta$는 $x$의 한 단위 변화에 대한 $y$의 변화 단위를 측정한다. 이하에서는 오해의 소지가 없는 이상 $i$ 인덱스 와 $\varepsilon_i$은 생략하도록 하자. 
 
 # log-level model 
 
