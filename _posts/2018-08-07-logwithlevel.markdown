@@ -26,7 +26,7 @@ $$\log y = \alpha + \beta x$$
 
 * y에 붙은 로그를 제거한다. $y = e^{\alpha + \beta x}$ 
 * $x$가 $\Delta x$ 만큼 변하면 그에 상응하여 $y$가 $\Delta y$ 만큼 변한다고 하자. 
-   $$y + \Delta y = e^{\alpha + \beta (x + \Delta x)} = e^{\alpha + \beta x} e^{\beta \Delta x}= y (e^{\beta \Delta x})$$ 
+   \[ y + \Delta y = e^{\alpha + \beta (x + \Delta x)} = e^{\alpha + \beta x} e^{\beta \Delta x}= y (e^{\beta \Delta x}) \]
 *  양변을 $y$로 나눈다. $\frac{y + \Delta y}{y} =  1 + \frac{\Delta y}{y} = e^{\beta \Delta x}$
  * 종속변수에 log를 취했다면 $x$의 $\Delta x$ 증가에 대한 $y$의 % 변화율은 위와 같이 측정할 수 있다. 
    $$100 \times \frac{\Delta y}{y} = (e^{\beta \Delta x} -1) \times 100$$
