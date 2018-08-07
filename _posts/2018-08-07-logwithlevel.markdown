@@ -9,12 +9,12 @@ cover: "/assets/statistics.jpg"
 
 # 들어가며
 
-회귀분석을 하다 보면 여러가지 이유로 변환(transformation)을 하게 된다. 가장 흔하게 하는 변형은 log 변형이다. 회귀분석의 좌변(종속변수)와 우변(독립변수)를 각기 log로 변환한다고 하면, 변환 유무에 따라서 네 가지 조합이 가능하다. 
+회귀분석을 하다보면 여러가지 이유로 변환(transformation)을 하게 된다. 가장 흔하게 하는 변형은 log 변형이다. 회귀분석의 좌변(종속변수)와 우변(독립변수)를 각기 log로 변환한다고 하면, 변환 유무에 따라서 네 가지 조합이 가능하다. 
 
 |  |level  | log |
 |--|--|--|
-|**level** | $ y_i = \alpha + \beta x_i + \varepsilon_i $ | $ y_i = \alpha + \beta \log x_i + \varepsilon_i $ |
-|**log** | $\log y_i = \alpha + \beta x_i + \varepsilon_i$ | $\log y_i = \alpha + \beta \log x_i + \varepsilon_i$ |
+|__level__ | $ y_i = \alpha + \beta x_i + \varepsilon_i $ | $ y_i = \alpha + \beta \log x_i + \varepsilon_i $ |
+|__log__ | $\log y_i = \alpha + \beta x_i + \varepsilon_i$ | $\log y_i = \alpha + \beta \log x_i + \varepsilon_i$ |
 
 level-level의 조합에서 $\beta$는 $x$의 한 단위 변화에 대한 $y$의 변화 단위를 측정한다. 이하에서는 오해의 소지가 없는 이상 $i$ 인덱스 와 $\varepsilon_i$은 생략하도록 하자. 
 
