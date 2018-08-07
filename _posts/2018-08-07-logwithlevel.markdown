@@ -16,7 +16,7 @@ cover: "/assets/statistics.jpg"
 |__level__|$$y_i = \alpha + \beta x_i + \varepsilon_i$$|$$y_i = \alpha + \beta \log x_i + \varepsilon_i$$|
 |__log__|$$\log y_i = \alpha + \beta x_i + \varepsilon_i$$|$$\log y_i = \alpha + \beta \log x_i + \varepsilon_i$$|
 
-level-level의 조합에서 $$\beta$$는 $$x$$의 한 단위 변화에 대한 $$y$$의 변화 단위를 측정한다. 이하에서는 오해의 소지가 없는 이상 $i$ 인덱스 와 $$\varepsilon_i$$은 생략하도록 하자. 
+level-level의 조합에서 $$\beta$$는 $$x$$의 한 단위 변화에 대한 $$y$$의 변화 단위를 측정한다. 이하에서는 오해의 소지가 없는 이상 $$i$$ 인덱스 와 $$\varepsilon_i$$은 생략하도록 하자. 
 
 # log-level model 
 
@@ -24,18 +24,18 @@ level-level의 조합에서 $$\beta$$는 $$x$$의 한 단위 변화에 대한 $$
 
 $$\log y = \alpha + \beta x$$
 
-* y에 붙은 로그를 제거한다. $y = e^{\alpha + \beta x}$ 
-* $x$가 $\Delta x$ 만큼 변하면 그에 상응하여 $y$가 $\Delta y$ 만큼 변한다고 하자. 
-   \[ y + \Delta y = e^{\alpha + \beta (x + \Delta x)} = e^{\alpha + \beta x} e^{\beta \Delta x}= y (e^{\beta \Delta x}) \]
-*  양변을 $y$로 나눈다. $\frac{y + \Delta y}{y} =  1 + \frac{\Delta y}{y} = e^{\beta \Delta x}$
- * 종속변수에 log를 취했다면 $x$의 $\Delta x$ 증가에 대한 $y$의 % 변화율은 위와 같이 측정할 수 있다. 
+* $$y$$에 붙은 로그를 제거한다. $$y = e^{\alpha + \beta x}$$ 
+* $$x$$가 $$\Delta x$$ 만큼 변하면 그에 상응하여 $$y$$가 $$\Delta y$$ 만큼 변한다고 하자. 
+   $$y + \Delta y = e^{\alpha + \beta (x + \Delta x)} = e^{\alpha + \beta x} e^{\beta \Delta x}= y (e^{\beta \Delta x})$$
+*  양변을 $$y$$로 나눈다. $$\frac{y + \Delta y}{y} =  1 + \frac{\Delta y}{y} = e^{\beta \Delta x}$$
+ * 종속변수에 log를 취했다면 $$x$$의 $$\Delta x$$ 증가에 대한 $$y$$의 % 변화율은 위와 같이 측정할 수 있다. 
    $$100 \times \frac{\Delta y}{y} = (e^{\beta \Delta x} -1) \times 100$$
 
-* 근사치로 해석해보자. $\beta \Delta x$ 값이 크지 않다면 (대략 0.1이하), $e^{\beta \Delta x} \approx 1 + \beta \Delta x$에 따라서 대략 $(\beta \Delta x \times 100)$ % 변화로 간주해도 무방하다. 
+* 근사치로 해석해보자. $$\beta \Delta x$$ 값이 크지 않다면 (대략 0.1이하), $$e^{\beta \Delta x} \approx 1 + \beta \Delta x$$에 따라서 대략 $$(\beta \Delta x \times 100)$$ % 변화로 간주해도 무방하다. 
 
 * 같은 취지로 식의 양변을 편미분해서 동일한 결과를 도출할 수 있다.  
 $$\dfrac{d{\,}y / d{\,}x }{y} = \dfrac{d{\,}y / y }{d{\,}x} = \beta$$
-*  $\dfrac{d{\,}y / y }{d{\,}x}$는 $x$가 몹시 미세하게(infinitesimal) 변화할 때 $y$의 순간 변화비율을 나타낸다. 만일 이를 %로 표시하고 싶다면, $\beta \times 100$이 된다. 
+*  $$\dfrac{d{\,}y / y }{d{\,}x}$$는 $$x$$가 몹시 미세하게(infinitesimal) 변화할 때 $$y$$의 순간 변화비율을 나타낸다. 만일 이를 %로 표시하고 싶다면, $$\beta \times 100$$이 된다. 
 
 # level-log model 
 
