@@ -44,8 +44,8 @@ $$y = \alpha + \beta \log x$$
 
 * 앞서와 마찬가지로 $$\Delta x$$, $$\Delta y$$를 적어보자.  
   $$y + \Delta y = \alpha + \beta \log (x + \Delta x)$$ 
-* 양변에서 $$y$$를 빼주면 아래와 같이 전개된다. 
-  $$\Delta y = \beta (\log (x + \Delta x) - \log x) = \beta \log (1+\frac{\Delta x}{x})$$
+* 양변에서 $$y$$를 빼주면 아래와 같이 전개된다.  
+  $$\Delta y = \beta (\log (x + \Delta x) - \log x) = \beta \log (1+\frac{\Delta x}{x})$$ 
 * 만일 $$\frac{\Delta x}{x}$$의 값이 작다면, $$\log(1+\frac{\Delta x}{x}) \approx \frac{\Delta x}{x}$$를 사용할 수 있다. $$\frac{\Delta x}{x}$$를 %로 표현하고 싶다면 100을 곱하면 된다. 따라서 $$\Delta y \approx \frac{\beta}{100} (100 \times \Delta x / x)$$ 라고 볼 수 있다. 
 * 같은 결과를 편미분을 통해 도출할 수 있다. 양변을 $$x$$에 대해서 미분하면 
  $$dy = \beta \dfrac{dx}{x}$$ 
