@@ -35,19 +35,21 @@ $$\log y = \alpha + \beta x$$
 
 * 같은 취지로 식의 양변을 편미분해서 동일한 결과를 도출할 수 있다.  
 $$\dfrac{d{\,}y / d{\,}x }{y} = \dfrac{d{\,}y / y }{d{\,}x} = \beta$$
-*  $$\dfrac{d{\,}y / y }{d{\,}x}$$는 $$x$$가 몹시 미세하게(infinitesimal) 변화할 때 $$d{\,}y / y$$의 '순간'(instantaneous) 변화비율을 나타낸다. 만일 이를 %로 표시하고 싶다면, $$\beta \times 100$$이 된다. 
+* $$\dfrac{d{\,}y / y }{d{\,}x}$$는 $$x$$가 몹시 미세하게(infinitesimal) 변화할 때 $$d{\,}y / y$$의 '순간'(instantaneous) 변화비율을 나타낸다. 만일 이를 %로 표시하고 싶다면, $$\beta \times 100$$이 된다. 
+* 정리하자면, log-level model 에서 $\beta$ 는 $x$ 의 한 단위 변화에 대한 $y$ 의 변화율을 의미한다. 
 
 # level-log model 
 
 $$y = \alpha + \beta \log x$$
 
 * 앞서와 마찬가지로 $$\Delta x$$, $$\Delta y$$를 적어보자.  
-  $$y + \Delta y = \alpha + \beta \log (x + \Delta x)$$ $$\Delta y = \beta \log (1+\frac{\Delta x}{x})$$
-* 정확한 $$\beta$$ 값은 위와 같이 구할 수 있다. 
-* 만일 $$\frac{\Delta x}{x}$$의 값이 작다면, $$\log(1+\frac{\Delta x}{x}) \approx \frac{\Delta x}{x}$$를 사용할 수 있다. $$\frac{\Delta x}{x}$$를 %로 표현하고 싶다면 100을 곱하면 된다. 이렇게 되면, 
-$$\Delta y \approx \frac{\beta}{100} (100 \times \Delta x / x)$$
+  $$y + \Delta y = \alpha + \beta \log (x + \Delta x)$$ 
+* 양변에서 $y$를 빼주면 아래와 같이 전개된다. 
+  $$\Delta y = \beta (\log (x + \Delta x) - \log x) = \beta \log (1+\frac{\Delta x}{x})$$
+* 만일 $$\frac{\Delta x}{x}$$의 값이 작다면, $$\log(1+\frac{\Delta x}{x}) \approx \frac{\Delta x}{x}$$를 사용할 수 있다. $$\frac{\Delta x}{x}$$를 %로 표현하고 싶다면 100을 곱하면 된다. 따라서 $$\Delta y \approx \frac{\beta}{100} (100 \times \Delta x / x)$$ 라고 볼 수 있다. 
 * 같은 결과를 편미분을 통해 도출할 수 있다. 양변을 $$x$$에 대해서 미분하면 
  $$dy = \beta \dfrac{dx}{x}$$ 
+* 결국 $x$가 1% 만큼 증가할 때 $y$ 는 $\frac {\beta}{100}$ 만큼 변한다는 것을 의미한다. 
 
 # log-log model 
 
@@ -78,7 +80,7 @@ $$\text{write} = \beta_0 + \beta_1 * \text{female} + \beta_2 * \log \text{read} 
 
 ![](/assets/study/logwithlevel/reg_1.PNG)
 
-$$\log \text{read}$$의 계수는 어떻게 해석해야 할까? read 값은 연속 값이므로 1%의 작은 값을 취하는 것이 가능하다. 따라서 근사 값으로 해석해도 무방하다. 앞서 보았 듯 read 값의 1% 증가는 $$\beta * 0.01$$ %의 효과를 종속 변수에 준다. 즉, 약 0.17% 증가를 초래한다. 물론 정확하게 계산하면 0.161%가 나올 테지만, 소수점 자리를 생각할 때 오차는 무시할 만 하다. 
+$$\log \text{read}$$의 계수는 어떻게 해석해야 할까? read 값은 연속 값이므로 1%의 작은 값을 취하는 것이 가능하다. 따라서 근사 값으로 해석해도 무방하다. 앞서 보았 듯 read 값의 1% 증가는 $$\beta * 0.01$$ 만큼의 효과를 종속 변수에 준다. 즉, 약 0.17 만큼의 증가를 초래한다. 물론 정확하게 계산하면 0.161 이 나올 테지만, 소수점 자리를 생각할 때 오차는 무시할 만 하다. 
 
 ### log-log  모형에서 변수 해석 
 
