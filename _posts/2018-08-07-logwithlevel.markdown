@@ -94,8 +94,8 @@ $$\beta_2$$는 어떻게 해석해야 할까? 근사 값로 해석하면 된다.
 
 $$
 \begin{aligned}
-y + \Delta y & = e^{\alpha + \beta (\log x + \Delta x)} \\
-1 + \frac{\Delta y}{y} & = e^{\beta (1 + \frac{\Delta x}{x})}
+y + \Delta y & = e^{\alpha + \beta \log (x + \Delta x)} \\
+1 + \frac{\Delta y}{y} & = e^{\beta \log (1 + \frac{\Delta x}{x})}
 \end{aligned}
 $$
 
