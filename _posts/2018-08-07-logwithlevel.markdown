@@ -88,7 +88,7 @@ $$\log \text{write} = \beta_0 + \beta_1 * \text{female} + \beta_2 * \log \text{m
 
 ![](/assets/study/logwithlevel/reg_2.PNG)
 
-$$\beta_2$$는 어떻게 해석해야 할까? 근사 값로 해석하면 된다. 수학 점수 1% 상승은 쓰기 점수 0,4% 상승을 가져온다. 
+$$\beta_2$$는 어떻게 해석해야 할까? 근사 값로 해석하면 된다. 수학 점수 1% 상승은 쓰기 점수 0.4% 상승을 가져온다. 
 
 ## (부록) log-log 계산 
 
