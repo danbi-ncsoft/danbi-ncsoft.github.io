@@ -13,7 +13,7 @@ cover: "/assets/title6.png"
 
 
 <p align="center">
-<img src="/assets/etc/summer_intern/unagi_gang.PNG" style="width:8in" />
+<img src="/assets/etc/summer_intern/unagi_gang.jpg" style="width:6in" />
 
 </p>
 
@@ -97,11 +97,12 @@ cover: "/assets/title6.png"
 
 
 <p align="center">
-<img src="/assets/etc/summer_intern/lineageM.JPG" style="width:8in" /> 
+<img src="/assets/etc/summer_intern/lineageM.png" style="width:8in" /> 
 지금도 열일 중인 내 캐릭...
 </p>
 
-6주라는 짧은 기간 동안 인턴 과제를 통해 처음 실무를 접해보면서 여러 가지 우여곡절도 많았지만 게임 데이터 분석에 관하여 많이 배웠던 뜻 깊은 시간이 되었습니다. 서툰 저희의 포스팅 끝까지 읽어주셔서 감사 드리고, 저희는 드디어 과제를 끝내고 사회에서의 첫 휴가 다녀온 후 다음 주 마지막 인턴 생활기로 찾아 뵙겠습니다. 고맙습니다!
+6주라는 짧은 기간 동안 인턴 과제를 통해 처음 실무를 접해보면서 여러 가지 우여곡절도 많았지만 게임 데이터 분석에 관하여 많이 배웠던 뜻 깊은 시간이 되었습니다. 서툰 저희의 포스팅 끝까지 읽어주셔서 감사 드리고, 저희는 드디어 과제를 끝내고 사회에서의 첫 휴가를 만끽하고 오겠습니다.
+그럼 휴가 다녀온 후 다음 주 마지막 인턴 생활기로 찾아 뵙겠습니다. 고맙습니다!
 
 <p align="center">
 <img src="/assets/etc/summer_intern/vacation.jpg" style="width:8in" />
