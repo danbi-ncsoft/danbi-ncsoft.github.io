@@ -4,7 +4,7 @@ title: "인턴 생활기 #6"
 date: 2018-08-10 18:00:00
 categories: ETC
 author : DANBI
-cover: "/assets/title6.jpg" 
+cover: "/assets/title6.png" 
 ---
 
 
