@@ -11,6 +11,12 @@ cover: "/assets/title6.png"
 
 인턴 생활도 어느덧 마지막을 향해 달려가고 있습니다. 다음 주가 말복이기도 하고 연일 최고 기록을 갱신하는 무더운 날씨에 함께 힘을 북돋우고자 오늘 점심 회식을 다녀왔는데요. 햇살은 따가웠지만 회사 안에만 있다가 외출도 하고 장어덮밥도 먹으니 정말 좋았습니다!ㅎㅎ 
 
+
+<p align="center">
+<img src="/assets/etc/summer_intern/unagi_gang.PNG" style="width:8in" />
+
+</p>
+
 ### 변화무쌍한 유저들의 전투행태
 
 지난 포스팅에서는 리니지M의 중요한 플레이 요소인 PvP 시스템과 유저별 전투 유형에 대한 소개를 했었습니다. 일별로 일정한 기준에 따라 혈맹전투자, PvP공격자, PvP피해자, 동일혈맹전투자, 단발성전투자 등으로 유형을 구분하고 그에 따른 소비 패턴에 대한 간단한 분석 결과를 공유했었습니다. 이번 포스팅에서는 소비 이외의 플레이패턴에 대한 분석 내용을 소개하려 합니다! 리니지M에서 유저들의 전투유형은 일별로 할당되므로 특정 기간의 전투유형을 살펴보게 될 경우 전투 유형이 매일 바뀌는 유저도 있을 것이고 늘 같은 유형으로만 분류되는 유저도 존재합니다. 따라서 이렇게 변화무쌍한 유저들을 비슷한 전투 성향을 지닌 유저들끼리 그룹화 할 때에는 빈번한 유형뿐만 아니라 그 유형이 변화되어온 순서까지도 고려해 주어야 하는데요. 이해를 돕기 위하여 아래와 같은 표를 그려보았습니다.
@@ -18,7 +24,7 @@ cover: "/assets/title6.png"
 
 
 <p align="center">
-<img src="/assets/table.PNG" style="width:8in" /> 
+<img src="/assets/etc/summer_intern/table.PNG" style="width:8in" />
 
 </p>
 
@@ -33,7 +39,7 @@ cover: "/assets/title6.png"
 
 
 <p align="center">
-<img src="/assets/seq_clust.PNG" style="width:8in" /> 
+<img src="/assets/etc/summer_intern/seq_clust.PNG" style="width:8in" />
 
 </p>
 
@@ -44,7 +50,7 @@ cover: "/assets/title6.png"
 
 
 <p align="center">
-<img src="/assets/die_box.png" style="width:8in" />   
+<img src="/assets/etc/summer_intern/die_box.png" style="width:8in" />  
 
 </p>
 
@@ -57,14 +63,14 @@ cover: "/assets/title6.png"
 이를 알아보기 위하여 대상 유저들의 전투와 관련된 활동 지표를 제외한 다른 플레이 기록만을 토대로 주성분 분석을 해보았고 다음과 같은 결과를 얻을 수 있었습니다.
 
 <p align="center">
-<img src="/assets/pca_var.JPG" style="width:8in" />   
+<img src="/assets/etc/summer_intern/pca_var.JPG" style="width:8in" />  
 
 </p>
 
 리니지M에서 할 수 있는 다양한 활동들이 유사한 성격을 지닌 것끼리 묶인 것을 보실 수 있는데요. 첫번째로 살펴볼만한 것은 소셜 활동입니다. 게임 내에서 친구 신청/수락/삭제를 했던 횟수와 혈맹 가입/탈퇴 횟수, 채팅 횟수 등이 1사분면 방향으로 함께 뻗어있는 것을 보실 수 있습니다. 다음으로 주목할만한 것은 게임 내 캐쉬인 다이아 소비, UI상점의 상품 구매 개수, 거래소 구매 횟수 등 소비와 관련한 플레이 기록이 4사분면 내에서 화살표가 비슷한 방향을 가리키고 있다는 것입니다. 마지막으로는 거래소 판매 횟수, 아이템 제작 횟수 등 생산적인 활동이 한 데 묶인 것을 볼 수 있겠네요. 이렇게 비슷한 성질의 활동들끼리 묶인 상태에서 각 유저들에게 앞서 분류했던 5개의 전투 유형 레이블을 달아보겠습니다. 
 
 <p align="center">
-<img src="/assets/pca_biplot.JPG" style="width:8in" />   
+<img src="/assets/etc/summer_intern/pca_biplot.JPG" style="width:8in" />  
 
 </p>
 
@@ -77,7 +83,7 @@ cover: "/assets/title6.png"
 이런 추측들을 확인해 보기 위하여 여러 요인에 따른 레벨업 속도를 LASSO Regression를 통해 분석해 보았는데요. 앞서 군집화했던 유형에 속하는 유저들 중 레벨 55이상 달성한 유저들의 1업당 소요 시간을 모델링 해보았습니다. 전투 유형, 플레이 시간, 전투 횟수, 일반 채팅 횟수, 다이아 소비량, 친구 수락/삭제/요청 횟수, 혈맹 가입/탈퇴 횟수 등 수많은 게임 요소들 중에서 레벨업 소요 시간에 영향을 주는 것은 무엇일까요? 그리고 어떤 플레이들이 빠른 레벨업에 도움이 될까요? LASSO Regression을 통해 추정된 회귀계수와 결과를 분석해보면 다음과 같이 정리할 수 있습니다. 
 
 <p align="center">
-<img src="/assets/reg_result.PNG" style="width:8in" />   
+<img src="/assets/etc/summer_intern/reg_result.PNG" style="width:8in" />  
 
 </p>
 
@@ -89,4 +95,15 @@ cover: "/assets/title6.png"
 
 분석 과제를 수행하면서 느낀 점도 참 많았는데요. 특히 게임 로그의 다양성이 상상을 초월했습니다. 게임별로 약 200가지의 액션 마다 60여 가지의 정보가 기록되기 때문에 로그 자체에 대한 이해에도 시간이 걸렸는데요. 수많은 DB 테이블을 비롯한 로그 정보들을 모두 머릿속에 가지고 계신 멘토님들이 정말 대단해 보였습니다.ㅎㅎ 여러 데이터를 접하면서 하루에 274번 죽은 캐릭터와 같이 특이한 유저들도 발견하게 되었는데, 이러한 유저들을 포함하여 분석을 하는 것이 어렵기는 했지만 한편으로는 흥미로웠습니다. 그리고 무엇보다도 자신이 분석하는 게임에 대한 전반적인 이해가 필수적이라는 것을 깨닫게 되었습니다. 왜 인턴 사전 과제가 리니지M 55레벨 달성이었는지 데이터를 보고, 분석을 하면서 몸소 느꼈습니다. 사실 지금도 꾸준히 플레이를 하고 있는데요. 자기 전에 자동 사냥을 켜놓고 아침에 일어나보면 어느새 죽어서 회복의 신녀 앞으로 이동해 있는 제 캐릭터를 보며 PvP피해자의 마음을 직접 이해하기도 했습니다.. ㅠㅠ 
 
-7주라는 짧은 인턴 기간 동안 처음 실무를 접해보면서 우여곡절도 많았지만 게임 데이터 분석에 관하여 많이 배웠던 뜻 깊은 시간이 되었습니다. 서툰 저희의 포스팅 끝까지 읽어주셔서 감사 드리고, 이것으로 인턴 생활기의 끝을 맺도록 하겠습니다. 고맙습니다!
+
+<p align="center">
+<img src="/assets/etc/summer_intern/lineageM.JPG" style="width:8in" /> 
+지금도 열일 중인 내 캐릭...
+</p>
+
+6주라는 짧은 기간 동안 인턴 과제를 통해 처음 실무를 접해보면서 여러 가지 우여곡절도 많았지만 게임 데이터 분석에 관하여 많이 배웠던 뜻 깊은 시간이 되었습니다. 서툰 저희의 포스팅 끝까지 읽어주셔서 감사 드리고, 저희는 드디어 과제를 끝내고 사회에서의 첫 휴가 다녀온 후 다음 주 마지막 인턴 생활기로 찾아 뵙겠습니다. 고맙습니다!
+
+<p align="center">
+<img src="/assets/etc/summer_intern/vacation.jpg" style="width:8in" />
+
+</p>
