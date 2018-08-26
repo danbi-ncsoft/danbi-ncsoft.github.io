@@ -19,13 +19,13 @@ cover: "/assets/etc/summer_intern/mr_oh.png"
  
 또 한편으로는 겉으로는 무뚝뚝하지만 내 팀원을 감쌀 줄 아는 츤데레 같은, 마치 미생의 오차장 같은 팀장이 되어야지 라는 생각도 가졌죠. 
 <p align="center">
-<img src="/assets/etc/summer_intern/oh_manager.jpg" style="width:6in" />
+<img src="/assets/etc/summer_intern/mr_oh2.jpg" style="width:6in" />
 </p>
 
 네 맞습니다. 인턴 출근 직전 제 상태는 의욕이 충만하다 못해 과다한 그런 상태였습니다...
 
 <p align="center">
-<img src="/assets/etc/summer_intern/nodap.jpg" style="width:8in" />
+<img src="/assets/etc/summer_intern/nodap.jpg" style="width:6in" />
 이 때 누가 날 말려줬어야 했는데...
 </p>
 
@@ -33,7 +33,7 @@ cover: "/assets/etc/summer_intern/mr_oh.png"
 드디어 인턴들이 출근했습니다. 전 좋은 첫 인상과 더불어 츤데레 이미지를 줘야 하는 만큼 지나치게 가볍지는 않으면서 그렇다고 너무 무뚝뚝하지도 않은 상태를 유지하는 동시에, 슈퍼 직원을 만들기 위해 필요한 내가 아는 모든 데이터 분석 지식을 전수하지만 그렇다고 너무 세세한 것을 다 가르쳐줌으로써 자칫 물고기를 낚는 법이 아닌 물고기만 던져주는 우를 범하지 않아야했고, 인턴들은 결국 저희 뛰어난 영도력 아래 험난한 데이터 분석가로써의 과정을 훌륭히 완수하여 최종적으로 인턴이 했다고 하기엔 모두가 깜짝 놀랄만한 과제물을 세상에 선보임으로써 모두를 감동시키는 동시에 인턴들 스스로도 큰 카타르시스를 경험할 예정이었습니다.  
 
 <p align="center">
-<img src="/assets/etc/summer_intern/crazy.jpg" style="width:8in" />
+<img src="/assets/etc/summer_intern/crazy.jpg" style="width:6in" />
 아마 인턴들이 이런 제 생각을 알았다면 이런 반응을 보였겠죠...
 </p>
 
@@ -60,7 +60,7 @@ $$ cor(기대감, 실망감) \approx  1$$
 그런데 막상 인턴들의 얘기를 들어 보니 그들 나름의 어려움? 난감함? 같은 걸 조금은 이해할 수 있었습니다. 열심히 하고 싶은데 뭘 어떻게 열심히 해야할지 모르는 막막함이 있었던 거죠. 학교에서는 한번도 다뤄보지 않았던 분석 환경 속에서 생소한 데이터를 다뤄야 하는 데다가 학교에서는 보통 정형화된 자료를 갖고 주로 모델링이나 검증 위주로만 과제를 했는데, 갑자기 알아서 분석 주제를 정하고 raw 데이터를 갖고 탐사 분석을 해보라고 하니 어디서부터 시작해야 할지 막막했던 겁니다. 제 딴에는 물고기 낚는 법을 알려주겠다고 했지만 그들 입장에서는 야생에 내팽개쳐진 느낌일 수 있겠다 싶었습니다. 
 
 <p align="center">
-<img src="/assets/etc/summer_intern/self_service" style="width:7in" />
+<img src="/assets/etc/summer_intern/self_service.png" style="width:6in" />
 인턴들 입장에서는 인턴 생활이 이런 느낌이었을것 같네요...
 </p>
 
@@ -79,5 +79,5 @@ $$ cor(기대감, 실망감) \approx  1$$
 그럼 이것으로 2018년 여름 인턴 생활기를 모두 마치겠습니다. 
 
 <p align="center">
-<img src="/assets/etc/summer_intern/oh_manager.jpg" style="width:8in" />
+<img src="/assets/etc/summer_intern/oh_manager.jpg" style="width:6in" />
 </p>
