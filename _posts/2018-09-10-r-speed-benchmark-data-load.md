@@ -2,7 +2,7 @@
 layout: post
 title:  "R벤치마크 - 데이터 불러오기"
 date:   2018-09-10 18:00:00
-categories: etc
+categories: ETC
 author : DANBI
 cover: "/assets/etc/r_speed_benchmark/r_logo.png"
 ---
@@ -90,7 +90,7 @@ read.table함수의 sep 파라미터는 값 구분자 (value separator)를 �
 또한, 자주 접하게 되는 csv (comma separated values), tsv (tab separated values) 파일들은 각각 쉼표와 탭으로 값들을 구분된 텍스트 파일을 의미합니다. 구분자를 정확하게 명시하지 않으면, 다수의 열이 존재하는 테이블을 1열로 인식하여 읽게 되는 등의 문제가 생길 수 있습니다. 구분자 지정 여부에 따른 영향력은 함수마다 다르겠지만, read·table에서는 어떤 효과가 있는지 알아보도록 하겠습니다.
 본 벤치마크에 사용되는 테이블은 앞서 말씀드린 것과 같이 7열로 구성되어 있으며, ","로 구분하여 저장하였습니다. 그렇기 때문에 구분자(sep)를 지정하지 않고 데이터를 불러들인 첫 번째 방식의 경우, 7열이 아닌 1열의 테이블을 불러오게 됩니다. 만약 sep=","를 지정한다면 어떻게 될까요? 
 
-![read.table.read.table.sep](assets/etc/r_speed_benchmark/read.table.read.table.sep.png) 
+![read.table.read.table.sep](/assets/etc/r_speed_benchmark/read.table.read.table.sep.png) 
 
 위 도표를 보면, **sep=","** 파라미터와 함께 데이터를 읽는 경우(빨간색), 그렇지 않은 경우 (초록색)보다 더 오래 걸리는 것을 알 수 있습니다. 이는 각 행을 1열로 인식하고 불러들였던 [첫번째 방식](#read1)과는 달리, 1행당 7개의 값을 불러들였기 때문입니다. 오래 걸리는 대신, 정확하게 원 데이터의 형태 그대로 불러오기가 진행된 것이죠. 
 
