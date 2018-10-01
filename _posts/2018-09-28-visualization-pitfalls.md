@@ -4,7 +4,7 @@ title: "데이터 시각화 #3 - 유의사항"
 date: 2018-10-01 09:20:00
 categories: Study
 author : DANBI
-cover: "/assets/study/visualization_pitfalls/cover.png
+cover: "/assets/study/visualization_pitfalls/cover.png"
 ---
 
 # 데이터 시각화 유의사항
