@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "R벤치마크 - 데이터 불러오기"
+title:  "데이터 시각화 #3 - 유의사항"
 date:   2018-09-28 17:00:00
-categories: ETC
+categories: Study
 author : DANBI
-cover: "/assets/etc/r_speed_benchmark/r_logo.png
+cover: "/assets/study/visualization_pitfalls/cover.png
 ---
 
 # 데이터 시각화 유의사항
@@ -17,11 +17,11 @@ cover: "/assets/etc/r_speed_benchmark/r_logo.png
 
 일반적으로 사람의 눈은 수만 가지의 색을 구분할 수 있다고 합니다. 하지만 실제로 쉽게 구분 가능한 색상들은 그리 많지 않습니다. 또한, 컴퓨터 모니터 또는 출력하여 보는 경우, 모니터 및 프린터의 사양에 따라 색들이 조금 다르게 표현되는 때도 있어, 색을 구분하기 어려운 경우가 종종 있습니다. 예를 들어, 아래의 3개의 직사각형을 봐주시기 바랍니다. 여러분은 세 사각형의 색이 구분 가능하신가요? 
 
-![색 구분](G:\2018년\12. 블로그 글\시각화 유의점\색 구분.PNG)
+![색 구분]("/assets/study/visualization_pitfalls/색 구분.PNG")
 
 두번째 사각형이 다른 색이라는 것은 꽤 쉽게 분별할 수 있지만, 첫 번째와 세 번째 사각형이 다르다는 것은 구분하기 어려워 보입니다.
 
-![색 구분2](G:\2018년\12. 블로그 글\시각화 유의점\색 구분2.PNG)
+![색 구분2]("/assets/study/visualization_pitfalls/색 구분2.PNG")
 
 위와같이 세 직사각형을 합쳐서 비교하면, 각각의 사각형이 다른 색으로 채워졌다는 것을 더욱 확실히 알 수 있습니다. 이렇듯, 비슷한 색을 사용하는 경우, 색 간 공간의 유무, 색의 배치 등 다양한 조건에 따라 분별력이 크게 차이 나게 됩니다. 이런 비슷한 색들을 이용하여 그래프를 그리게 되면 어떻게 될까요? 
 
