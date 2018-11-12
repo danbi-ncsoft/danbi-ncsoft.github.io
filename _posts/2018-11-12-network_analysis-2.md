@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "네트워크 분석기법을 활용한 게임 데이터 분석 #1"
-date:   2018-11-12 16:00:00
+title:  "네트워크 분석기법을 활용한 게임 데이터 분석 #2"
+date:   2018-11-12 16:30:00
 categories: Works
 author : DANBI
 cover:  "/assets/works/network_analysis/community_trade_network.png"
