@@ -61,7 +61,7 @@ cover:  "/assets/works/network_analysis/community_trade_network.png"
 그림 3. 유저간의 파티 활동에 대한 시각화 - 서로 응집력이 높은 커뮤니티와 낮은 커뮤니티들이 있습니다.
 </p>
 
-<그림4>는 이탈 유저와 잔존 유저가 속한 커뮤니티의 전체 파티 횟수 (party count), 같이 파티활동을 한 유저수 (party-user count), 유저 당 파티를 한 횟수 (party count per user), 커뮤니티의 밀집도 (density), 클러스터링 계수 (clustering coef.), 그리고 커뮤니티의 크기 (community size) 를 비교한 CDF (Cumulative Density Function) plot 입니다. 여기서 흥미로운 점은 유독 클러스터링 계수의 차이가 크다는 것입니다. 잔존 유저 (not churn) 들은 대체로 클러스터링 계수 값이 큰 유저의 비율이 높은 반면, 이탈 유저 (churn) 는 상대적으로 값이 작은 유저들이 많습니다 (CDF 그래프가 위쪽에 있다는 건 작은 값을 갖는 유저의 비율이 높다는 의미입니다).
+우리는 이탈 유저와 잔존 유저가 속한 커뮤니티의 전체 파티 횟수 (party count), 같이 파티활동을 한 유저수 (party-user count), 유저 당 파티를 한 횟수 (party count per user), 커뮤니티의 밀집도 (density), 클러스터링 계수 (clustering coef.), 그리고 커뮤니티의 크기 (community size) 를 비교해 보았습니다. <그림4>은 비교 결과를 CDF (Cumulative Density Function) plot 으로 표현한 것입니다. 여기서 흥미로운 점은 유독 클러스터링 계수의 차이가 크다는 것입니다. 잔존 유저 (not churn) 들은 대체로 클러스터링 계수 값이 큰 유저의 비율이 높은 반면, 이탈 유저 (churn) 는 상대적으로 값이 작은 유저들이 많습니다 (CDF 그래프가 위쪽에 있다는 건 작은 값을 갖는 유저의 비율이 높다는 의미입니다).
 
 
 ## 3. 아이템 현금 거래 규모 추정 - 거래 네트워크 커뮤니티 유형 분류
