@@ -4,7 +4,7 @@ title:  "네트워크 분석기법을 활용한 게임 데이터 분석 #1"
 date:   2018-11-12 16:00:00
 categories: Works
 author : DANBI
-cover:  "/assets/works/game_user_segmentation/user_segmentation.png"
+cover:  "/assets/works/network_analysis/diamond.png"
 ---
 
 ## 0. 시작하며
