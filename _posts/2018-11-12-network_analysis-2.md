@@ -61,7 +61,7 @@ cover:  "/assets/works/network_analysis/community_trade_network.png"
 그림 3. 유저간의 파티 활동에 대한 시각화 - 서로 응집력이 높은 커뮤니티와 낮은 커뮤니티들이 있습니다.
 </p>
 
-우리는 이탈 유저와 잔존 유저가 속한 커뮤니티의 전체 파티 횟수 (party count), 같이 파티활동을 한 유저수 (party-user count), 유저 당 파티를 한 횟수 (party count per user), 커뮤니티의 밀집도 (density), 클러스터링 계수 (clustering coef.), 그리고 커뮤니티의 크기 (community size) 를 비교해 보았습니다. <그림4>은 비교 결과를 CDF (Cumulative Density Function) plot 으로 표현한 것입니다. 여기서 흥미로운 점은 유독 클러스터링 계수의 차이가 크다는 것입니다. 잔존 유저 (not churn) 들은 대체로 클러스터링 계수 값이 큰 유저의 비율이 높은 반면, 이탈 유저 (churn) 는 상대적으로 값이 작은 유저들이 많습니다 (CDF 그래프가 위쪽에 있다는 건 작은 값을 갖는 유저의 비율이 높다는 의미입니다).
+우리는 이탈 유저와 잔존 유저가 속한 커뮤니티의 전체 파티 횟수 (party count), 같이 파티활동을 한 유저수 (party-user count), 유저 당 파티를 한 횟수 (party count per user), 커뮤니티의 밀집도 (density), 클러스터링 계수 (clustering coef.), 그리고 커뮤니티의 크기 (community size) 를 비교해 본 결과 두 집단의 클러스터링 계수 차이가 큰 것을 발견했습니다. <그림4>는 이 비교 결과를 CDF (Cumulative Density Function) plot 으로 표현한 것인데, 잔존 유저 (not churn) 들은 대체로 클러스터링 계수 값이 큰 유저의 비율이 높은 반면, 이탈 유저 (churn) 는 상대적으로 값이 작은 유저들이 많습니다 (CDF 그래프가 위쪽에 있다는 건 작은 값을 갖는 유저의 비율이 높다는 의미입니다).
 
 <p align="center">
 <img src="/assets/works/network_analysis/party_network_stat.png" style="width:6in" />
@@ -94,7 +94,7 @@ cover:  "/assets/works/network_analysis/community_trade_network.png"
 
  
 
-RMT 는 현재 굉장히 활성화되어 있어서 심지어 아이템 구매자와 판매자 사이를 중개해주고 수수료를 받는 일을 전문적으로 하는 회사도 존재합니다 (아이템 현금 거래 시장에 대한 좀 더 자세한 것이 알고 싶은 분은 [http://lecture.cfe.org/info/bbsDetail.php?cid=13113&idx=42943](http://lecture.cfe.org/info/bbsDetail.php?cid=13113&idx=42943) 를 참고하시기 바랍니다). 인기 있는 게임일수록 RMT 시장이 활성화되어 있기 때문에 RMT 규모는 곧 게임의 인기를 가늠하는 외부 지표 역할을 합니다. 그래서 보통 게임 회사에서는 RMT 시장의 변화나 아이템 시세를 주기적으로 모니터링합니다.
+RMT 는 현재 굉장히 활성화되어 있어서 심지어 아이템 구매자와 판매자 사이를 중개해주고 수수료를 받는 일을 전문적으로 하는 회사도 존재합니다 (아이템 현금 거래 시장에 대한 좀 더 자세한 내용은 [http://lecture.cfe.org/info/bbsDetail.php?cid=13113&idx=42943](http://lecture.cfe.org/info/bbsDetail.php?cid=13113&idx=42943) 를 참고하시기 바랍니다). 인기 있는 게임일수록 RMT 시장이 활성화되어 있기 때문에 RMT 규모는 곧 게임의 인기를 가늠하는 외부 지표 역할을 합니다. 그래서 보통 게임 회사에서는 RMT 시장의 변화나 아이템 시세를 주기적으로 모니터링합니다.
 
 그런데 이렇게 게임 아이템이 돈이 되다 보니 대량의 게임 캐릭터를 운영하여 게임 재화를 모아 파는 것을 전문적으로 하는 사람들도 생겨났습니다. 이들을 속칭 '작업장' 이라고 부릅니다 (<그림6> 참조). 이들은 좀 더 수월하고 효율적으로 돈을 벌기 위해 게임 회사에서 금지하는 불법적인 행위를 하는 경우가 많기 때문에 여러 가지 문제를 일으키고 있습니다.
 
@@ -122,12 +122,12 @@ RMT 는 현재 굉장히 활성화되어 있어서 심지어 아이템 구매자
 
 <p align="center">
 <img src="/assets/works/network_analysis/user2user_trade.png" style="width:3in" />
-그림 7. 유저 간의 거래 네트워크 예시
+그림 7. 유저 간의 거래 활동만 보면 거래 의도를 파악하기 힘들지만...
 </p>
 
 <p align="center">
 <img src="/assets/works/network_analysis/community2community_trade.png" style="width:6in" />
-그림 8. 커뮤니티 간의 거래 네트워크 예시
+그림 8. 커뮤니티 단위로 분석하면 좀 더 의도를 명확히 이해할 수 있습니다.
 </p>
 
   
