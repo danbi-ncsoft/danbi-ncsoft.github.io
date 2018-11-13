@@ -236,7 +236,14 @@ Radius는 우리말로 하면 '반지름' 입니다. 반지름이란 원의 중�
 
 
 ## 4. 네트워크 분석 도구
-제가 네트워크 분석을 위해 사용하는 도구는 크게 두 가지 입니다. 하나는 'igraph ([http://igraph.org/](http://igraph.org/))' 라고 하는 네트워크 분석용 라이브러리이고 다른 하나는 'gephi ([https://gephi.org/](https://gephi.org/))' 라고 하는 네트워크 시각화 및 탐사 분석용 도구입니다 (참고로 제가 이 연재글을 작성할 때 사용한 네트워크 이미지의 거의 대부분은 gephi 를 이용하였습니다). 둘 다 이미 유명한 도구이기 때문에 구체적인 사용 방법은 인터넷에 많은 자료가 공개되어 있습니다. 
+제가 네트워크 분석을 위해 사용하는 도구는 크게 두 가지 입니다. 하나는 'igraph ([http://igraph.org/](http://igraph.org/))' 라고 하는 네트워크 분석용 라이브러리이고 다른 하나는 'gephi ([https://gephi.org/](https://gephi.org/))' 라고 하는 네트워크 시각화 및 탐사 분석용 도구입니다 (참고로 제가 이 연재글을 작성할 때 사용한 네트워크 이미지의 거의 대부분은 gephi 를 이용하였습니다). 둘 다 이미 유명한 도구이기 때문에 구체적인 사용 방법은 인터넷에 많은 자료가 공개되어 있습니다. 이 외에 igraph 와 함께 사용하면 좋은 패키지를 소개하자면, 우선 tidygraph 라는 패키지가 있습니다. igraph 를 tidyverse 문법을 이용해서 사용할 수 있어서 데이터 처리할 때 좀 더 편하게 코딩할 수 있습니다. 또 ggraph 라는 패키지는 ggplot2 와 유사한 문법을 이용해서 네트워크 시각화를 할 수 있는 라이브러리입니다. 
+
+위에서 소개한 도구들에 대한 튜토리얼 자료를 몇 가지 추천하면 다음과 같습니다.
+
+ - igraph : [http://kateto.net/networks-r-igraph](http://kateto.net/networks-r-igraph)
+ - gephi : [https://www.slideshare.net/gephi/gephi-quick-start](https://www.slideshare.net/gephi/gephi-quick-start)
+ - tidygraph : [https://www.data-imaginist.com/2017/introducing-tidygraph/](https://www.data-imaginist.com/2017/introducing-tidygraph/)
+ - ggraph : [https://www.data-imaginist.com/tags/visualization/](https://www.data-imaginist.com/tags/visualization/)
   
 
 ## 5. 중간 정리
