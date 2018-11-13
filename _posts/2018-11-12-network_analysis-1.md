@@ -240,10 +240,10 @@ Radius는 우리말로 하면 '반지름' 입니다. 반지름이란 원의 중�
 
 위에서 소개한 도구들에 대한 튜토리얼 자료를 몇 가지 추천하면 다음과 같습니다.
 
- - igraph : [http://kateto.net/networks-r-igraph](http://kateto.net/networks-r-igraph)
- - gephi : [https://www.slideshare.net/gephi/gephi-quick-start](https://www.slideshare.net/gephi/gephi-quick-start)
- - tidygraph : [https://www.data-imaginist.com/2017/introducing-tidygraph/](https://www.data-imaginist.com/2017/introducing-tidygraph/)
- - ggraph : [https://www.data-imaginist.com/tags/visualization/](https://www.data-imaginist.com/tags/visualization/)
+ - igraph 튜토리얼: [http://kateto.net/networks-r-igraph](http://kateto.net/networks-r-igraph)
+ - gephi 튜토리얼: [https://www.slideshare.net/gephi/gephi-quick-start](https://www.slideshare.net/gephi/gephi-quick-start)
+ - tidygraph 튜토리얼: [https://www.data-imaginist.com/2017/introducing-tidygraph/](https://www.data-imaginist.com/2017/introducing-tidygraph/)
+ - ggraph 튜토리얼: [https://www.data-imaginist.com/tags/visualization/](https://www.data-imaginist.com/tags/visualization/)
   
 
 ## 5. 중간 정리
