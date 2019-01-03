@@ -50,13 +50,13 @@ descriptions:
     desc: "경진대회 관련 포스트"
 
   - cat: Works
-    desc: "분석 업무 관련 자료"
+    desc: "팀 업무 관련 자료"
 
   - cat: ETC
-    desc: "그 외 기타 자료"
+    desc: "기타 자료"
 
   - cat: Study
-    desc: "팀 스터디 자료"    
+    desc: "스터디 자료"    
 # Social icons and sharing options
 #
 # Social settings are used in two places:
