@@ -124,14 +124,23 @@ library(dplyr)
 library(promotionImpact)
 sim.data <- sim.data %>% 
        dplyr::mutate(month_start = ifelse(substr(as.character(dt),9,10) == '01', 1, 0))
-model <- promotionImpact(data=sim.data, promotion=sim.promotion, 
+pri <- promotionImpact(data=sim.data, promotion=sim.promotion, 
                         time.field = 'dt', target.field = 'simulated_sales', 
                         dummy.field = 'month_start',
                         trend = T, period = 30.5, logged = T, differencing = T)
 ```
 
-분석  결과는 ‘model’ 객체에  저장되는데, 여기에는  다음과  같은  정보가  담겨있다. 
-- model: 회귀  모델의  결과를  담고  있는  객체 
+위 코드를 실행하면 분석  결과는 ‘pri’ 객체에  저장되는데, 여기에는  다음과  같은  정보가  담겨있다. 
+
+- **effects**: sim.promotion에  기록된  프로모션  유형별로  지표에  미치는  효과. 종속  변수는  로그  변환되었으므로 (즉, logged = T) 이  효과는  증가  혹은  감소율로  표시된다. 가령  아래  결과의  경우 A 유형의  프로모션은  평균적으로  매출을 19.35% 증가시키는  효과가  있다는  것을  의미한다.
+
+```cmd
+model$effects
+         A        B        C        D        E
+1 19.34965 13.40238 10.46531 7.764716 4.015453
+```
+
+- **model**: 회귀  분석 결과와 관련된 정보를 담고  있는  객체 
  - model: lm() 함수를  통해  나온  회귀  모델  결과  객체 
  - final_input_data: promotionImpact() 함수에  지정된  파라미터를  토대로  전처리  과정이  모두  끝난  최종  입력  데이터 
  - fit_plot: 실제  값과  모델의  예측값을  표시한  그래프 (그림 4)
@@ -153,16 +162,7 @@ model <- promotionImpact(data=sim.data, promotion=sim.promotion,
 [그림 6] trend_period_graph_with_target 그래프  예시
 </p>
 
-- effects: sim.promotion에  기록된  프로모션  유형별로  지표에  미치는  효과. 종속  변수는  로그  변환되었으므로 (즉, logged = T) 이  효과는  증가  혹은  감소율로  표시된다. 가령  아래  결과의  경우 A 유형의  프로모션은  평균적으로  매출을 19.35% 증가시키는  효과가  있다는  것을  의미한다.
-
-
-```cmd
-model$effects
-         A        B        C        D        E
-1 19.34965 13.40238 10.46531 7.764716 4.015453
-```
-
-- smoothvar: 각  프로모션에 smooth function을  적용한  결과를  담고  있는  객체
+- **smoothvar**: 각  프로모션 효과 변화를 추정한 smooth function 관련 정보를  담고  있는  객체
  - data: 프로모션  유형별로 smooth function 을  적용하여  나온  결과를  담고  있는  데이터 
  - smooth_except_date: 함수  실행  시 ‘smooth.except.date’ 파라미터에  지정한  값 
  - smoothing_graph: 사용된 smooth function 그래프. 예를  들어  아래  그래프는  전체  프로모션들에  대해  일자에  따른  효과의  평균적인  변화를  그래프로  나타낸  것이다 (그림 7). 만약 smooth.origin = ‘tag’로  지정한  경우에는  각  프로모션  유형별  그래프가  반환된다. (그림 8)
