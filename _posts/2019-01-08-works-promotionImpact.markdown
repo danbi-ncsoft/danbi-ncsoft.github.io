@@ -24,7 +24,7 @@ cover:  "/assets/statistics.jpg"
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_01.png" style="width:6in" />
-<그림1> 단순히 숫자만 보고 판단하기에는 너무 많은 변수들이 존재한다.
+[그림1] 단순히 숫자만 보고 판단하기에는 너무 많은 변수들이 존재한다.
 </p>
 
 ## 지표에 영향을 주는 것들이 이렇게나 많습니다.
@@ -62,18 +62,20 @@ cover:  "/assets/statistics.jpg"
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_02.png" style="width:6in" />
-<그림 2> 다양한 프로모션의 기간별 매출 변화 예시
+[그림 2] 다양한 프로모션의 기간별 매출 변화 예시
 </p>
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_03.png" style="width:6in" />
-<그림 3> 시간에 따른 프로모션 효과 변화를 표현하려면 더미 변수 방식 (왼쪽) 보다 smoothing function 방식 (오른쪽) 이 더 적절함
+[그림 3] 시간에 따른 프로모션 효과 변화를 표현하려면 더미 변수 방식 (왼쪽) 보다 smoothing function 방식 (오른쪽) 이 더 적절함
 </p>
 
 
 promotionImpact는 엔씨소프트 깃헙 ([https://github.com/ncsoft/promotionImpact](https://github.com/ncsoft/promotionImpact)) 을 통해 설치할 수 있다. 설치 방법은 다음과 같다.
 
+```cmd
 	devtools::install_github("ncsoft/promotionImpact")
+```
 
 만약  아래  패키지들이  이미  설치되어  있다면, promotionImpact 를  설치하기  전에  이  패키지들은  삭제하고  설치해야  한다 (아래  패키지들은 promotionImpact 를  설치할  때  같이  설치된다).
 
@@ -117,7 +119,7 @@ promotionImpact 패키지에는 사용자가 모델링 테스트에 사용할 �
 
 다음은 샘플 데이터를 이용해 프로모션 효과를 분석한 예이다.
 
-```
+```cmd
 library(dplyr)
 library(promotionImpact)
 sim.data <- sim.data %>% 
@@ -138,23 +140,23 @@ model <- promotionImpact(data=sim.data, promotion=sim.promotion,
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_04.png" style="width:6in" />
-<그림 4> fit_plot 그래프  예시
+[그림 4] fit_plot 그래프  예시
 </p>
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_05.png" style="width:6in" />
-<그림 5> trend_period_graph 그래프  예시
+[그림 5] trend_period_graph 그래프  예시
 </p>
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_06.png" style="width:6in" />
-<그림 6> trend_period_graph_with_target 그래프  예시
+[그림 6] trend_period_graph_with_target 그래프  예시
 </p>
 
   - effects: sim.promotion에  기록된  프로모션  유형별로  지표에  미치는  효과. 종속  변수는  로그  변환되었으므로 (즉, logged = T) 이  효과는  증가  혹은  감소율로  표시된다. 가령  아래  결과의  경우 A 유형의  프로모션은  평균적으로  매출을 19.35% 증가시키는  효과가  있다는  것을  의미한다.
-<![endif]-->
 
-```
+
+```cmd
 model$effects
          A        B        C        D        E
 1 19.34965 13.40238 10.46531 7.764716 4.015453
@@ -170,12 +172,12 @@ model$effects
 	
 <p align="center">
 <img src="/assets/works/promotionImpact/image_07.png" style="width:6in" />
-<그림 7> 전체  프로모션에  대한  평균적인 smooth function 그래프
+[그림 7] 전체  프로모션에  대한  평균적인 smooth function 그래프
 </p>
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_08.png" style="width:6in" />
-<그림 8> 만약 smooth.origin 파라미터를 ‘all’ 대신 ‘tag’ 로  하면 smooth function 을  유형별로  추정함
+[그림 8] 만약 smooth.origin 파라미터를 ‘all’ 대신 ‘tag’ 로  하면 smooth function 을  유형별로  추정함
 </p>
 
 ## 마치며 
