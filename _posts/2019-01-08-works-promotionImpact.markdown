@@ -45,7 +45,7 @@ cover:  "/assets/statistics.jpg"
 그런데 올바른 회귀 모델을 만드는 것이 그리 만만한 작업은 아니다. 특히 이 경우 시계열 회귀 분석이 필요한데 이것은 회귀 분석 중에서도 어려운 분야에 속한다. ARIMA 와 같은 잘 알려진 기법들이 있지만 지나치게 일반적인 방법이기 때문에 목적에 맞게 사용하기 다소 까다롭다.
 
 ## 그래서 구글이나 페이스북이 이런 걸 만들었습니다.
-그래서 좀 더 목적에 맞게 특화된 시계열 지표 분석용 라이브러리들이 있다. 최근에 가장 널리 알려진 것은 구글의 causalImpact (https://github.com/google/CausalImpact) 와 페이스북의 prophet  (https://github.com/facebook/prophet) 이다. 이 두 패키지의 특징 및 한계점은 다음과 같다.
+그래서 좀 더 목적에 맞게 특화된 시계열 지표 분석용 라이브러리들이 있다. 최근에 가장 널리 알려진 것은 구글의 causalImpact ([https://github.com/google/CausalImpact](https://github.com/google/CausalImpact)) 와 페이스북의 prophet  ([https://github.com/facebook/prophet](https://github.com/facebook/prophet)) 이다. 이 두 패키지의 특징 및 한계점은 다음과 같다.
 
 **causalImpact**: 프로모션에 영향을 받는 지표와 그렇지 않은 지표 두 개를 제공하고 이 둘 간의 관계를 토대로 프로모션의 효과를 추정하는 방식이다. 목적 자체가 프로모션 효과를 추정하기 위함이기 때문에 특정 프로모션의 효과를 다양한 측면에서 직관적으로 추정해주는 장점이 있다. 하지만 앞서 언급했듯이 프로모션 효과를 분석하려면 대조군 역할을 하는 지표가 필요하다. 예를 들어 구글과 같은 글로벌 기업의 경우 어떤 프로모션을 특정 국가에만 실시할 수 있을 것이다. 이 경우 해당 국가의 프로모션 효과를 추정하기 위해 대조군으로 다른 국가 지표를 둘 수 있다. 만약 이런 식의 프로모션 진행이 어려운 상황이라면 이 패키지를 이용하기는 어렵다.
 
@@ -74,7 +74,7 @@ cover:  "/assets/statistics.jpg"
 promotionImpact는 엔씨소프트 깃헙 ([https://github.com/ncsoft/promotionImpact](https://github.com/ncsoft/promotionImpact)) 을 통해 설치할 수 있다. 설치 방법은 다음과 같다.
 
 ```cmd
-	devtools::install_github("ncsoft/promotionImpact")
+devtools::install_github("ncsoft/promotionImpact")
 ```
 
 만약  아래  패키지들이  이미  설치되어  있다면, promotionImpact 를  설치하기  전에  이  패키지들은  삭제하고  설치해야  한다 (아래  패키지들은 promotionImpact 를  설치할  때  같이  설치된다).
