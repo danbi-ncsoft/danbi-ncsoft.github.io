@@ -53,7 +53,7 @@ cover:  "/assets/statistics.jpg"
 
 ## 그래서 우리도 하나 만들어 봤습니다.
 
-우리는 위 두 패키지들이 갖고 있는 특징을 참고하여, 프로모션의 효과를 추정하는 목적에 충실한 ‘promotionImpact’ 라는 R 패키지를 만들었다. promotionImpact의 주요 특징은 다음과 같다.
+우리는 위 두 패키지들이 갖고 있는 특징을 참고하여, 프로모션의 효과를 추정하는 목적에 충실한 ‘promotionImpact’ 라는 R 패키지를 만들었다 ([https://github.com/ncsoft/promotionImpact](https://github.com/ncsoft/promotionImpact)). promotionImpact의 주요 특징은 다음과 같다.
 
  - 내부적으로 추세와 주기성 정보를 모델에 반영할 때 prophet 을 사용한다. 시계열 데이터는 추세나 주기성을 잘 관리하는 것이 중요한데, prophet 은 이런 신호를 모델에 잘 반영해 준다. 즉, prophet이 가진 장점은 그대로 활용하면서 프로모션 효과 추정 기능에 집중했다.
  - 프로모션 정보와 시계열 지표 데이터를 넣어주면 알아서 더미변수를 생성하여 모델을 생성해 준다. 따라서 사용자가 일일이 프로모션 정보를 회귀 모델에 맞게 변환할 필요가 없다. 즉, 번거로운 전처리 작업을 자동화했다. 
@@ -70,7 +70,7 @@ cover:  "/assets/statistics.jpg"
 [그림 3] 시간에 따른 프로모션 효과 변화를 표현하려면 더미 변수 방식 (왼쪽) 보다 smoothing function 방식 (오른쪽) 이 더 적절함
 </p>
 
-
+### 설치 방법
 promotionImpact는 엔씨소프트 깃헙 ([https://github.com/ncsoft/promotionImpact](https://github.com/ncsoft/promotionImpact)) 을 통해 설치할 수 있다. 설치 방법은 다음과 같다.
 
 ```cmd
@@ -84,6 +84,7 @@ devtools::install_github("ncsoft/promotionImpact")
  - RcppEigen
  - rstan
 
+### 함수 설명 
 프로모션  효과를  분석하는  함수는 promotionImpact() 이다. 여기에는  많은  파라미터들이  있는데  각각이  의미하는  바는  다음과  같다.
 
  - data: 분석할  시계열  지표  데이터
@@ -104,7 +105,7 @@ devtools::install_github("ncsoft/promotionImpact")
  - logged: 종속  변수를  로그  변환할지  여부  지정. TRUE 이면  종속  변수를  로그  변환한  후  회귀  모델을  적용하게  되며  이  때  프로모션의  영향력은  비율(%)로  표현된다. 
  - differencing: 차분을  할지  여부를  지정하는  파라미터. 만약  모델링  대상이  되는  지표가  자기  상관성이  있다면  이  파라미터를 TRUE로  해야  함
 
-## 한번 연습해 보시라고 예제도 만들어 봤습니다.
+### 연습용 예제 
 promotionImpact 패키지에는 사용자가 모델링 테스트에 사용할 수 있는 샘플 데이터가 같이 제공된다.
 
  - sim.data: 프로모션 효과 추정을 위한 시계열 매출 데이터 
