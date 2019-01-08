@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "prmotionImpact - 프로모션 효과 분석용 R 패키지"
+title:  "promotionImpact - 프로모션 효과 분석용 R 패키지"
 date:   2019-01-08 20:00:00
 categories: Works
 author : DANBI
