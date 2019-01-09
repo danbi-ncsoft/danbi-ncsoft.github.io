@@ -174,31 +174,62 @@ pri <- promotionImpact(data=sim.data, promotion=sim.promotion,
 위 코드를 실행하면 분석  결과는 ‘pri’ 객체에  저장되는데, 여기에는  다음과  같은  정보가  담겨있다. 
 
 #### effects
- sim.promotion에  기록된  프로모션  유형별로  지표에  미치는  효과. 종속  변수는  로그  변환되었으므로 (즉, logged = T) 이  효과는  증가  혹은  감소율로  표시된다. 가령  아래  결과의  경우 A 유형의  프로모션은  평균적으로  매출을 19.35% 증가시키는  효과가  있다는  것을  의미한다.
+ sim.promotion에  기록된  프로모션  유형별로  지표에  미치는  효과. 종속  변수는  로그  변환되었으므로 (즉, logged = T) 이  효과는  증가  혹은  감소율로  표시된다. 가령  아래  결과의  경우 A 유형의  프로모션은  평균적으로  매출을 19.65% 증가시키는  효과가  있다는  것을  의미한다.
 
 ```cmd
-> model$effects
+> pri$effects
          A        B        C        D        E
-1 19.34965 13.40238 10.46531 7.764716 4.015453
+1 19.64531 13.59537 10.62033 7.903838 4.082812
 ```
 
 #### model
 회귀  분석 결과와 관련된 정보를 담고  있는  객체 
- - **model**: lm() 함수를  통해  나온  회귀  모델  결과  객체 
- - **final_input_data**: promotionImpact() 함수에  지정된  파라미터를  토대로  전처리  과정이  모두  끝난  최종  입력  데이터 
- - **fit_plot**: 실제  값과  모델의  예측값을  표시한  그래프 (그림 4)
- - **trend_period_graph**: 추세와  주기성을  표시한  그래프 (그림 5)
- - **trend_period_graph_with_target**: 추세/주기성  그래프를  실제  데이터와  같이  표시한  그래프 (그림 6)
+- **model**: lm() 함수를  통해  나온  회귀  모델  결과  객체 
+
+```cmd
+> summary(pri$model$model)
+
+Call:
+"lm(data, formula = value~A+B+C+D+E+month_start+trend_period_value)"
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.43108 -0.05664  0.00896  0.06357  0.33618 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        -0.010292   0.003621  -2.842  0.00458 ** 
+A                   0.601472   0.033776  17.808  < 2e-16 ***
+B                   0.430225   0.033865  12.704  < 2e-16 ***
+C                   0.339870   0.035449   9.587  < 2e-16 ***
+D                   0.257908   0.033964   7.594 7.43e-14 ***
+E                   0.134598   0.033731   3.990 7.11e-05 ***
+month_start         0.323358   0.020761  15.575  < 2e-16 ***
+trend_period_value  0.432882   0.263455   1.643  0.10069    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1101 on 949 degrees of freedom
+Multiple R-squared:  0.4942,	Adjusted R-squared:  0.4905 
+F-statistic: 132.5 on 7 and 949 DF,  p-value: < 2.2e-16
+```
+
+- **final_input_data**: promotionImpact() 함수에  지정된  파라미터를  토대로  전처리  과정이  모두  끝난  최종  입력  데이터 
+- **fit_plot**: 실제  값과  모델의  예측값을  표시한  그래프 (그림 4)
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_04.png" style="width:6in" />
 [그림 4] fit_plot 그래프  예시
 </p>
 
+- **trend_period_graph**: 추세와  주기성을  표시한  그래프 (그림 5)
+
 <p align="center">
 <img src="/assets/works/promotionImpact/image_05.png" style="width:6in" />
 [그림 5] trend_period_graph 그래프  예시
 </p>
+
+- **trend_period_graph_with_target**: 추세/주기성  그래프를  실제  데이터와  같이  표시한  그래프 (그림 6)
 
 <p align="center">
 <img src="/assets/works/promotionImpact/image_06.png" style="width:6in" />
