@@ -230,4 +230,4 @@ pri <- promotionImpact(data=sim.data, promotion=sim.promotion,
 
 __promotionImpact 는  집계된  지표를  토대로  여러  가지  프로모션들의  효과를  추정하는데  필요한  데이터  전처리  및  회귀  분석  과정을  최대한  쉽게  하기  위해  만든 R 패키지이다.__ 아직  보완해야  할  점이  많이  있으며  부족한  부분들은  계속  개선해  나갈  계획이다. 이  과정에서  많은  분들이  패키지를  사용해  보고  피드백을  준다면  더욱  완성도  높은  라이브러리로  발전해  나갈  수  있으리라  생각한다.
 
-마지막으로 promotionImpact 의 회귀 분석 기법에 대해 좀 더 구체적인 내용이 궁금하신 분은 2019년 1월 마이크로소프트웨어 ([https://www.imaso.co.kr](https://www.imaso.co.kr)) 를 참고하시기 바란다 (2019년 1월 말 발행될 예정이다). 
+마지막으로 promotionImpact 의 회귀 분석 기법에 대해 좀 더 구체적인 내용이 궁금하신 분은 2019년 1월 말에 발간 예정인 마이크로소프트웨어 ([https://www.imaso.co.kr](https://www.imaso.co.kr)) 395호를 참고하시기 바란다.
