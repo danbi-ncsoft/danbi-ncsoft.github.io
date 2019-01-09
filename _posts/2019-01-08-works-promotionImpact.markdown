@@ -92,7 +92,7 @@ __만약  아래  패키지들이  이미  설치되어  있다면, promotionImp
  - **promotion**: 프로모션  일정  정보가  담긴  데이터 
  - **time.field**: ‘data’ 에서  날짜  정보가  담긴  필드명 (디폴트는 ‘date’)
  - **target.field**: ‘data’ 에서  종속  변수  필드명 (디폴트는 ‘value’)
- - dummy.field: ‘data’ 에서  프로모션  외에  지표에  영향을  주는  기타  이벤트  정보를  담고  있는  필드명
+ - **dummy.field**: ‘data’ 에서  프로모션  외에  지표에  영향을  주는  기타  이벤트  정보를  담고  있는  필드명
  - **trend**: 모델에  추세  패턴을  반영하고  싶으면 TRUE, 아니면 FALSE
  - **trend.param**: 추세  패턴  모델링  시  유연성을  조정하는  파라미터
  - **period**: 모델에  주기  패턴을  반영하고  싶으면 TRUE, 아니면 FALSE 
