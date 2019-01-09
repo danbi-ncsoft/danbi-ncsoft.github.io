@@ -176,7 +176,7 @@ pri <- promotionImpact(data=sim.data, promotion=sim.promotion,
  sim.promotion에  기록된  프로모션  유형별로  지표에  미치는  효과. 종속  변수는  로그  변환되었으므로 (즉, logged = T) 이  효과는  증가  혹은  감소율로  표시된다. 가령  아래  결과의  경우 A 유형의  프로모션은  평균적으로  매출을 19.35% 증가시키는  효과가  있다는  것을  의미한다.
 
 ```cmd
-model$effects
+> model$effects
          A        B        C        D        E
 1 19.34965 13.40238 10.46531 7.764716 4.015453
 ```
