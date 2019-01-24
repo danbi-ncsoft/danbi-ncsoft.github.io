@@ -147,6 +147,7 @@ permalink: /about/
       </div>
     </div>
     
+    <br><br>
     <div class="row clearfix">
       <div class="col-md-4 col-sm-6"> 
     	  <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -230,6 +231,7 @@ permalink: /about/
       </div>
     </div>
 
+    <br><br>
     <div class="row clearfix">
       <div class="col-md-4 col-sm-6">
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -268,6 +270,7 @@ permalink: /about/
       </div>
     </div>
     
+    <br><br>
     <div class="row clearfix">
       <div class="col-md-4 col-sm-6">
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -306,6 +309,7 @@ permalink: /about/
       </div>
     </div>
 
+    <br><br>
     <div class="row clearfix">
       <div class="col-md-4 col-sm-6">
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
