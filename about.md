@@ -124,24 +124,26 @@ permalink: /about/
     		      </ul>
     	      </div>
           </div>
-        <p>인텔리전스팀장</p>
+          <p>인텔리전스팀장</p>
+        </div>
       </div>
       
       <div class="col-md-4 col-sm-6 col-md-offset-2"> 
         <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-	        <div class="media">
-		        <div class="pull-left">
-			        <img class="media-object" src="/assets/about_us/images/ini_jyj.png" alt="">
-		        </div>
-		        <div class="media-body">
-			        <h4>장윤제</h4>
-			        <h5>Intelligence Team</h5>
-			        <ul class="tag clearfix">
-				        <li class="btn">Analyst</li>
-			        </ul>              
-		        </div>
-	        </div>
-	      <p>데이터 분석가</p>
+  	      <div class="media">
+  		      <div class="pull-left">
+  			      <img class="media-object" src="/assets/about_us/images/ini_jyj.png" alt="">
+  		      </div>
+  		      <div class="media-body">
+  			      <h4>장윤제</h4>
+  			      <h5>Intelligence Team</h5>
+  			      <ul class="tag clearfix">
+  				      <li class="btn">Analyst</li>
+  			      </ul>              
+  		      </div>
+  	      </div>
+  	      <p>데이터 분석가</p>
+  	      </div>
       </div>
     </div>
     
@@ -160,7 +162,8 @@ permalink: /about/
     		      </ul>
     	      </div>
           </div>
-        <p>데이터 분석가</p>
+          <p>데이터 분석가</p>
+        </div>
       </div>
 
     </div>   
@@ -195,16 +198,17 @@ permalink: /about/
   		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_lej.png " alt="">
   		      </div>
-  		    <div class="media-body">
-  			    <h4>이은조</h4>
-  			    <h5>Analyst&Modeling Team</h5>
-  			    <ul class="tag clearfix">
-  				    <li class="btn">Analyst</li>
-  				    <li class="btn">Developer</li>
-  			    </ul>              
-  		    </div>
-  	    </div>
-  	    <p>분석모델링팀장</p>
+    		    <div class="media-body">
+    			    <h4>이은조</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Analyst</li>
+    				    <li class="btn">Developer</li>
+    			    </ul>              
+    		    </div>
+    	    </div>
+    	    <p>분석모델링팀장</p>
+    	  </div>
       </div>
       
       <div class="col-md-4 col-sm-6 col-md-offset-2">
@@ -213,15 +217,16 @@ permalink: /about/
   		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_uhm.png " alt="">
   		      </div>
-  		    <div class="media-body">
-  			    <h4>엄혜민</h4>
-  			    <h5>Analyst&Modeling Team</h5>
-  			    <ul class="tag clearfix">
-  				    <li class="btn">Analyst</li>
-  			    </ul>              
-  		    </div>
+    		    <div class="media-body">
+    			    <h4>엄혜민</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Analyst</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>데이터 분석가</p>
   	    </div>
-  	    <p>데이터 분석가</p>
       </div>
     </div>
 
@@ -232,15 +237,16 @@ permalink: /about/
   		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_ajo.png " alt="">
   		      </div>
-  		    <div class="media-body">
-  			    <h4>안진옥</h4>
-  			    <h5>Analyst&Modeling Team</h5>
-  			    <ul class="tag clearfix">
-  				    <li class="btn">Developer</li>
-  			    </ul>              
-  		    </div>
+    		    <div class="media-body">
+    			    <h4>안진옥</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Developer</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>프로덕트 개발자</p>
   	    </div>
-  	    <p>프로덕트 개발자</p>
       </div>
       
       <div class="col-md-4 col-sm-6 col-md-offset-2">
@@ -249,15 +255,16 @@ permalink: /about/
   		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_kbs.png " alt="">
   		      </div>
-  		    <div class="media-body">
-  			    <h4>강병수</h4>
-  			    <h5>Analyst&Modeling Team</h5>
-  			    <ul class="tag clearfix">
-  				    <li class="btn">Developer</li>
-  			    </ul>              
-  		    </div>
+    		    <div class="media-body">
+    			    <h4>강병수</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Developer</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>프로덕트 개발자</p>
   	    </div>
-  	    <p>프로덕트 개발자</p>
       </div>
     </div>
     
@@ -268,15 +275,16 @@ permalink: /about/
   		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_ssd.png " alt="">
   		      </div>
-  		    <div class="media-body">
-  			    <h4>서상덕</h4>
-  			    <h5>Analyst&Modeling Team</h5>
-  			    <ul class="tag clearfix">
-  				    <li class="btn">Developer</li>
-  			    </ul>              
-  		    </div>
+    		    <div class="media-body">
+    			    <h4>서상덕</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Developer</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>프로덕트 개발자</p>
   	    </div>
-  	    <p>프로덕트 개발자</p>
       </div>
       
       <div class="col-md-4 col-sm-6 col-md-offset-2">
@@ -285,15 +293,16 @@ permalink: /about/
   		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_ohr.png " alt="">
   		      </div>
-  		    <div class="media-body">
-  			    <h4>오희령</h4>
-  			    <h5>Analyst&Modeling Team</h5>
-  			    <ul class="tag clearfix">
-  				    <li class="btn">Analyst</li>
-  			    </ul>              
-  		    </div>
+    		    <div class="media-body">
+    			    <h4>오희령</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Analyst</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>데이터 분석가</p>
   	    </div>
-  	    <p>데이터 분석가</p>
       </div>
     </div>
 
@@ -304,15 +313,16 @@ permalink: /about/
   		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_cmj.png " alt="">
   		      </div>
-  		    <div class="media-body">
-  			    <h4>조만재</h4>
-  			    <h5>Analyst&Modeling Team</h5>
-  			    <ul class="tag clearfix">
-  				    <li class="btn">Analyst</li>
-  			    </ul>              
-  		    </div>
+    		    <div class="media-body">
+    			    <h4>조만재</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Analyst</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>데이터 분석가</p>
   	    </div>
-  	    <p>데이터 분석가</p>
       </div>
 
     </div>
