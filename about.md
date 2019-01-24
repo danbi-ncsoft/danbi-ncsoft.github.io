@@ -315,6 +315,24 @@ permalink: /about/
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
   	      <div class="media">
   		      <div class="pull-left">
+  			      <img class="media-object" src="/assets/about_us/images/ini_knh.png " alt="">
+  		      </div>
+    		    <div class="media-body">
+    			    <h4>김나현</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Analyst</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>데이터 분석가</p>
+  	    </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6">
+        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+  	      <div class="media">
+  		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_cmj.png " alt="">
   		      </div>
     		    <div class="media-body">
