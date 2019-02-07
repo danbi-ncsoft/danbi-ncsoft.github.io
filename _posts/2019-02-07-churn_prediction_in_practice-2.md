@@ -4,10 +4,10 @@ title:  "실전 이탈 예측 모델링을 위한 세 가지 고려 사항 #2"
 date:   2019-02-07 11:00:00
 categories: Works
 author : DANBI
-cover:  "/assets/customerchurn.jpg"
+cover:  "/assets/customerchurn.png"
 ---
 
-**[실전 이탈 예측 모델링을 위한 세 가지 고려 사항 #1](/works/2019/02/07/churn_prediction_in_practice-1.md)**
+**[실전 이탈 예측 모델링을 위한 세 가지 고려 사항 #1](/works/2019/02/07/churn_prediction_in_practice-1.html)**
 
 ## 2. Concept drift 는 모델링 전반에 걸쳐 고려해야할 문제이다.
 실전에서 예측 모델을 서비스에 적용해 본 분이라면 예측 모델이 처음에는 잘 맞다가 시간이 지날수록 점점 정확도가 떨어지면서 결국 유명무실해진 경험을 해본 적이 있을 것입니다. 이것을 'concept drift 문제' 라고 부릅니다. **'C****oncept drift' 는 기계 학습 분야에서 사용하는 용어로써 '시간이 지남에 따라 모델링 대상의 통계적 특성이 바뀌는 현상'을 의미**합니다 ([https://en.wikipedia.org/wiki/Concept_drift](https://en.wikipedia.org/wiki/Concept_drift)). 예측 모델은 모델링 대상의 통계적 특성 (패턴) 을 학습하는 것입니다. 만약 시간이 지나면서 예측 대상의 통계적 특성이 바뀐다면 예측 모델은 바뀌기 전의 특성만을 학습한 상태이기 때문에 쓸모가 없어지는 것이죠.
@@ -67,4 +67,4 @@ causal_inference.png" style="width:6in" />[그림 5] 인과 추론 모델과 예
 
 <p align="center">
 <img src="/assets/works/churn_prediction_in_practice/
-technical_debt_in_ML.png" style="width:6in" />[그림6] 기계 학습 시스템의 모듈별 비중</p>
+technical_debt_in_ML.png" style="width:6in" />[그림6] 실제 기계 학습 시스템에서 모듈별로 차지하는 비중 예시</p>
