@@ -76,4 +76,4 @@ causal_inference.png" style="width:6in" />[그림 5] 인과 추론 모델과 예
 
 <p align="center">
 <img src="/assets/works/churn_prediction_in_practice/
-technical_debt_in_ML.png" style="width:6in" />[그림6] 실제 기계 학습 시스템에서 모듈별로 차지하는 비중 예시</p>
+technical_debt_in_ML.png" style="width:6in" />[그림 6] 실제 기계 학습 시스템에서 모듈별로 차지하는 비중 예시</p>
