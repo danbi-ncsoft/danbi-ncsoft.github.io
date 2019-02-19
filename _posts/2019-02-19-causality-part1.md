@@ -64,8 +64,12 @@ $$
 
 이러한 근본 문제를 "선택 편의(selection bias)"라고 부른다. 즉, 같은 개체에 대해서 두 개의 상황을 모두 겪게 한 차이와 원래 그렇게 선택한 집단만 모아서 평균을 낸 값은 일반적으로 같을 수 없다. 전자는 이른바 반사실(counterfactual)를 고려한, 즉 이상적인 실험 조건을 충족하는 상황이고 후자는 아니다. 
 
-수식으로 좀 더 자세하게 보자. 우리가 효과 혹은 차이라고 흔히 측정하게 되는 것은 $$E\left[Y^1 | D=1\right] - E\left[Y^0 | D=0\right]$$이다. 이를 위에 적은 수식을 고려하면서 아래처럼 분해해보자. 
+수식으로 좀 더 자세하게 보자. 우리가 효과 혹은 차이라고 흔히 측정하게 되는 것은 다음과 같다. 
 
+$$
+E\left[Y^1 | D=1\right] - E\left[Y^0 | D=0\right]$$
+
+이를 위에 적은 수식을 고려하면서 아래처럼 분해해보자. 
 
 $$
 \begin{aligned}
@@ -95,5 +99,5 @@ $$
 
 하지만 무작위화가 불가능하다면 무엇이 우리를 구원해줄 수 있을까?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTUxNzIzNywyMzU1NDg0MzRdfQ==
+eyJoaXN0b3J5IjpbLTE5MjU0MjQ2OTQsMjM1NTQ4NDM0XX0=
 -->
