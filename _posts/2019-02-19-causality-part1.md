@@ -52,7 +52,7 @@ $$
 Y = D \cdot Y^1 + (1-D) \cdot Y^0
 $$
 
-즉, $D=1$이든 $D=0$이든 그 $Y$만을 보게 된다. 이러한 상황에서 우리가 각각의 $D$들만 모아서 기댓값을 구했다고 하자. 
+즉, $$D=1$$이든 $$D=0$$이든 각각의 처치에 놓은 그 $$Y$$만을 보게 된다. 이러한 상황에서 우리가 각각의 $$D$$들만 모아서 기댓값을 구했다고 하자. 
 
 $$
 \begin{aligned}
@@ -95,5 +95,5 @@ $$
 
 하지만 무작위화가 불가능하다면 무엇이 우리를 구원해줄 수 있을까?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM1NTQ4NDM0XX0=
+eyJoaXN0b3J5IjpbMTY5OTUxNzIzNywyMzU1NDg0MzRdfQ==
 -->
