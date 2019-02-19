@@ -67,7 +67,8 @@ $$
 수식으로 좀 더 자세하게 보자. 우리가 효과 혹은 차이라고 흔히 측정하게 되는 것은 다음과 같다. 
 
 $$
-E\left[Y^1 | D=1\right] - E\left[Y^0 | D=0\right]$$
+E\left[Y^1 | D=1\right] - E\left[Y^0 | D=0\right]
+$$
 
 이를 위에 적은 수식을 고려하면서 아래처럼 분해해보자. 
 
@@ -99,5 +100,5 @@ $$
 
 하지만 무작위화가 불가능하다면 무엇이 우리를 구원해줄 수 있을까?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjU0MjQ2OTQsMjM1NTQ4NDM0XX0=
+eyJoaXN0b3J5IjpbLTU2NTIyNjY2MCwyMzU1NDg0MzRdfQ==
 -->
