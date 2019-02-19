@@ -4,7 +4,7 @@ title: "인과관계를 찾아서 1"
 date: 2019-02-19 10:00:00  
 categories: ETC
 author : DANBI  
-cover: "/assets/E_innga_kyo.jpg"  
+cover: "/assets/cover/E_innga_kyo.jpg"  
 
 ---
 
@@ -93,5 +93,5 @@ $$
 
 즉, 인강을 들을 집단과 듣지 않은 집단이 같은 모집단에서 무작위적으로 추출되었다면, 둘은 기본적으로 같은 집단이다. 인강을 듣지 않았을 때 평균 점수 역시 두 집단에서 같다고 볼 수 있다. 쉽게 말해 RCT가 선택 편의를 제거하는 셈이다. 하지만 무작위화가 불가능하다면 무엇이 우리를 구원해줄 수 있을까?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTMzNDQ5NzZdfQ==
+eyJoaXN0b3J5IjpbMTQ0OTYyNTczNiwtMTUxMzM0NDk3Nl19
 -->
