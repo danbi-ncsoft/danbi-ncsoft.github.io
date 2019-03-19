@@ -12,7 +12,7 @@ cover: "/assets/cover/E_innga_kyo.jpg"
 
 <br>
 <p align="center"><kbd>
-<img src="/assets/etc/causality_part2/causality.png" style="width:2.5in">
+<img src="/assets/etc/causality_part2/causality.png" style="width:3in">
 </kbd></p>
 <br>
 
@@ -26,7 +26,7 @@ cover: "/assets/cover/E_innga_kyo.jpg"
 
 <br>
 <p align="center"><kbd>
-<img src="/assets/etc/causality_part2/chart.png" style="width:2.5in">
+<img src="/assets/etc/causality_part2/chart.png" style="width:6in">
 </kbd></p>
 <br>
 
