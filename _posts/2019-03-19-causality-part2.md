@@ -26,7 +26,7 @@ cover: "/assets/cover/E_innga_kyo.jpg"
 
 <br>
 <p align="center"><kbd>
-<img src="/assets/etc/causality_part2/chart.png" style="width:6in">
+<img src="/assets/etc/causality_part2/chart.png" style="width:9in">
 </kbd></p>
 <br>
 
