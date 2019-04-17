@@ -69,7 +69,7 @@ permalink: /about/
             </div>
     	      <div class="media-body">
     		      <h4>허준석</h4>
-    		      <h5>I&I Head</h5>
+    		      <h5>Data Center Head</h5>
               <!-- 명함에 들어가는 직책-->			 
               <ul class="tag clearfix">
     			      <li class="btn">Manager</li>
@@ -78,11 +78,28 @@ permalink: /about/
     		      </ul>             
     	      </div>
           </div>
-        <p>I&I 실장</p>
+        <p>데이터센터장</p>
         </div>
       </div>
     <!-- 명함 끝 -->
-    
+      <div class="col-md-4 col-sm-6 col-md-offset-2"> 
+        <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+  	      <div class="media">
+  		      <div class="pull-left">
+  			      <img class="media-object" src="/assets/about_us/images/ini_jyj.png" alt="">
+  		      </div>
+  		      <div class="media-body">
+  			      <h4>이은조</h4>
+  			      <h5>I&I Head</h5>
+  			      <ul class="tag clearfix">
+  				      <li class="btn">Analyst</li>
+  				      <li class="btn">Developer</li>
+  			      </ul>              
+  		      </div>
+  	      </div>
+  	      <p>I&I 실장</p>
+  	      </div>
+      </div>
     </div> 
   
   <!-- 팀 구분선 시작 -->
