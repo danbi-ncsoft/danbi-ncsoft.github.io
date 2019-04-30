@@ -2,7 +2,7 @@
 layout: post  
 title: "인과관계를 찾아서 1"  
 date: 2019-02-19 10:00:00  
-categories: ETC
+categories: Study
 author : DANBI  
 cover: "/assets/cover/E_innga_kyo.jpg"  
 
