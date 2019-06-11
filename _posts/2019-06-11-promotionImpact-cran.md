@@ -19,7 +19,7 @@ cover: "/assets/pie_cover.png"
 
 <img src="/assets/pie.png" style="width:6in" />
 
- 
+​    
 
 ### **그런데 뭐부터 시작해야 하지?**
 
@@ -27,13 +27,11 @@ cover: "/assets/pie_cover.png"
 
 먼저 피땀 흘려 만든 패키지를 `devtools::build()`를 통해 tar.gz파일로 잘 묶는다. 이때, 숨김 폴더나 .Rhistory, .gitignore 파일 등은 패키징 될 필요가 없으므로 .Rbuildignore 파일에 적어주면 여기에 적힌 파일은 빌드 시 제외된다. 그 다음, `devtools::check()` 혹은, 터미널에서 `R CMD check` 명령어를 실행하면 이 패키지에 흔히 발생 가능한 문제가 있는지, 있다면 어떠한 것들인지 자동으로 체크할 수 있다. 체킹이 끝나고 나면 에러, 경고, 노트가 몇 개나 있는지 뜨게 되는데, 에러가 있다면 CRAN에 제출하는 것이 아니더라도 꼭 수정해야 한다. 경고가 있다면 CRAN에 제출을 목표로 하는 경우 고쳐야 하는 문제이고, (물론 CRAN이 목표가 아니더라도 고쳐서 없애면 좋다.) NOTE의 경우 CRAN에 제출할 것이 아니라면 크게 신경 쓰지 않아도 되지만, 그렇지 않다면 최대한 없애는 것이 좋다. 이것들을 하나하나 없애는 데에 시간이 조금 걸리긴 하지만, 늘 그렇듯이 구글링을 하면 세계 곳곳에 나와 같은 문제를 가진 사람들이 존재하므로 웬만한 문제는 해결할 수 있다. 그 중에서 'promotionImpact'를 체크하면서 맞닥뜨렸던 문제들을 몇 가지만 소개해보도록 하겠다.
 
-  
+​    
 
 #### Case 1) no visible binding for global variable [variable name]
 
 이런 문제가 발생했을 때, 혹시 [variable name] 자리의 변수명이 ggplot의 `aes()`에 쓰인 변수는 아닌지 살펴보라. 이에 대해 구글링을 하면 가장 간단한 해결법으로 `aes()`대신 `aes_string()`을 쓰면 된다고 나와있는데, promotionImpact의 경우에는 `aes_string()`을 사용하여도 여전히 동일한 NOTE가 발생했었다. 다른 해결법으로는 `with()`를 사용하는 것이라고 나오는데, 아래와 같이 코드를 변경하니 NOTE가 사라졌다.
-
-
 
  ```R
 전) ggplot(data, aes(xvariable, yvariable)) + geom_point()
@@ -41,9 +39,7 @@ cover: "/assets/pie_cover.png"
 후) ggplot() + with(data, geom_point(aes(xvariable, yvariable)))
  ```
 
-
-
- 
+​    
 
 #### Case 2) no visible global function definition for [function name]
 
@@ -63,9 +59,9 @@ cover: "/assets/pie_cover.png"
 
 \* Description 파일에 imports나 depends 등에 패키지 이름과 버전을 쓸 때, [패키지이름] (>= 버전)의 형식으로 패키지 이름 뒤 한 칸, 부등호 뒤 한 칸의 공백을 주어야 한다.
 
-  
+​     
 
-### CRAN은 그렇게 호락호락하지 않다**
+### CRAN은 그렇게 호락호락하지 않다
 
 하나하나 노트를 지워나가며 셀 수도 없을 만큼 체크를 했고 그 결과는 아름다웠다. 0 Errors, 0 Warnings, 0 NOTEs. 하지만 기뻐하기엔 아직 이르다. 동일한 체크를 적어도 2개의 OS에서 실행하여 다른 환경에서도 여전히 문제가 없는지 확인해 보아야 한다. 'promotionImpact'의 경우, windows에서 개발되었기 때문에 윈도우에서 먼저 체크한 다음, linux에서 동일한 테스트를 진행하였으며 다행히도 결과는 윈도우에서와 동일했다. 하지만 여기서 끝이 아니다. 대부분 현재 공식 release 버전이나 크게 오래되지 않은 이전 release버전에서 작업을 마쳤을 텐데, 이 체크는 현재 개발 버전인 R-devel에서도 무사히 통과되어야 한다. 이쯤에서 ‘아니, 이렇게까지 해서 CRAN에 패키지를 등록해야 하나.’ 라는 생각이 들 수도 있겠지만, CRAN에 등록하면 무려 `devtools::install_github()`이 아니라 `install.pakcages()`로 설치가 가능하다.(!) 그러니 조금만 더 힘을 내보도록 하자. 하나의 사이트를 추천하자면 <https://win-builder.r-project.org/upload.aspx>라는 곳인데, 이 곳에 패키지 파일을 업로드 하면 패키지 체크 후 결과가 Maintainer의 메일로 온다. 실제 CRAN에 패키지를 제출하면 자동으로 패키지를 체크하고 그 결과를 Maintainer에게 메일로 알려주는데, 그때 발송자의 메일 주소와 위 사이트의 메일 발송자가 동일하다.
 
@@ -85,7 +81,7 @@ cover: "/assets/pie_cover.png"
 
 이처럼 CRAN에 등록하려면 세세한 것 하나하나까지 신경 써야 했고, 아무리 작은 수정사항들일지라도 고쳐서 제출하는 과정을 반복해야 하기 때문에 이에 대한 시간이 꽤 걸렸다. 그러니 패키지 CRAN 등록을 준비하면서 이 글을 보는 사람들은 이점을 유의하여 사소한 수정에 굳이 시간을 쓰지 않기를 바란다. 다른 패키지들의 CRAN 페이지에서 tar.gz파일을 직접 받아 나의 파일과 비교해보며 참고하는 것도 아주 좋은 방법이 될 것이다.
 
- 
+​    
 
 ### Thanks, on its way to CRAN.
 
