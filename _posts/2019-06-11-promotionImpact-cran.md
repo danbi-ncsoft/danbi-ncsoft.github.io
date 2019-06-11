@@ -19,7 +19,7 @@ cover: "/assets/pie_cover.png"
 
  
 
-<img src="/assets/pie.png" style="width:3.25in;height:2.51458in" />
+<img src="/assets/pie.png" />
 
 
 
@@ -31,7 +31,7 @@ cover: "/assets/pie_cover.png"
 
  
 
-###### Case 1) no visible binding for global variable [variable name]
+#### Case 1) no visible binding for global variable [variable name]
 
 이런 문제가 발생했을 때, 혹시 [variable name] 자리의 변수명이 ggplot의 `aes()`에 쓰인 변수는 아닌지 살펴보라. 이에 대해 구글링을 하면 가장 간단한 해결법으로 `aes()`대신 `aes_string()`을 쓰면 된다고 나와있는데, promotionImpact의 경우에는 `aes_string()`을 사용하여도 여전히 동일한 NOTE가 발생했었다. 다른 해결법으로는 `with()`를 사용하는 것이라고 나오는데, 아래와 같이 코드를 변경하니 NOTE가 사라졌다.
 
@@ -45,13 +45,13 @@ cover: "/assets/pie_cover.png"
 
 
 
-###### Case 2) no visible global function definition for [function name]
+#### Case 2) no visible global function definition for [function name]
 
 혹시 [function name] 자리의 함수에 오타가 없는데도 불구하고 이러한 문구가 뜬다면 import나 importFrom을 사용해 해당 함수가 포함된 패키지를 불러오는 것을 잊지는 않았는지 의심해보도록 하자. 만약 NAMESPACE 파일에 `import([package name])` 혹은 `importFrom([package name],[function name])` 이 없는 경우 .R파일에서 import 혹은 importFrom을 통해 패키지를 불러온 다음 `devtools::document()`로 NAMESPACE 파일을 갱신하자. 혹시 [function name] 자리의 함수가 `head()`, `tail()`, `median()`과 같은 매우 기본적인 함수라면 한가지 간과하고 있었던 사실을 상기해 보아야 한다. 늘 `library()`없이 써서 잊고 있었겠지만 `head()`, `tail()`은 'utils'라는 패키지에, `median()`은 'stats'라는 패키지에 있는 함수이다. 따라서 이들 함수를 사용한 경우에도 import를 명시해주어야 한다.
 
  
 
-###### 그 외에도…
+#### 그 외에도…
 
 \* pdf manual이 생성되지 않았다는 메시지가 뜰 때에는 MiKTeX이나 LaTeX와 같은 프로그램이 설치가 되어있는지 확인해보고 그렇지 않다면 설치를 하면 된다.
 
@@ -93,9 +93,7 @@ cover: "/assets/pie_cover.png"
 
  
 
-**Thanks, on its way to CRAN.**
-
- 
+### **Thanks, on its way to CRAN.**
 
 사실 위에 작성한 수정 사항들을 한번에 알려준 것이 아니라 하나 고쳐서 내면 다른 하나를, 그것을 고쳐서 내면 또 다른 하나를 수정하라고 오는 방식이었다. (도대체 왜 한번에 알려주지 않은 건가요..ㅠㅠ) 그렇게 서서히 지쳐가고 있을 때쯤, 이번에는 또 뭘 고치라고 답장이 왔으려나 하는 자포자기의 심정으로 메일을 열었다. 메일의 내용은 단 한 문장이 전부였는데, 그 메시지는 바로 Thanks, on its way to CRAN. 이 메일을 받은 순간만큼은 그간 고생한 나날들을 떠올리며 감격에 겨워도 좋다. 그 후, 약간의 시간이 지나면 `install.packages()`를 사용해 설치할 수 있으며 CRAN에 아래와 같이 url도 생기고, 바이너리 파일들이 순차적으로 생성된다.
 
