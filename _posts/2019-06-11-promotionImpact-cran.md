@@ -11,15 +11,13 @@ cover: "/assets/pie_cover.png"
 
 ### **피땀 흘려 만든 R 패키지... CRAN에 등록해볼까?**
 
-이전 포스팅에서 설명했듯이, 집계된 지표를 토대로 여러 가지 프로모션들의 효과를 추정하는 데 필요한 데이터 전처리 및 회귀 분석 과정을 도와주는 R 패키지 'promotionImpact'를 만들었다. 
-
-(<https://danbi-ncsoft.github.io/works/2019/01/08/works-promotionImpact.html>)
+이전 포스팅에서 설명했듯이, 집계된 지표를 토대로 여러 가지 프로모션들의 효과를 추정하는 데 필요한 데이터 전처리 및 회귀 분석 과정을 도와주는 R 패키지 'promotionImpact'를 만들었다. (<https://danbi-ncsoft.github.io/works/2019/01/08/works-promotionImpact.html>)
 
 그리고 이왕 R 패키지를 만든 김에, R의 공식 Repository, CRAN에 등록해보고자 어쩌면 험난할지도 모르는 여정을 시작했다.
 
  
 
-<img src="/assets/pie.png" />
+<img src="/assets/pie.png" style="width:6in" />
 
 
 
@@ -37,11 +35,13 @@ cover: "/assets/pie_cover.png"
 
 
 
- ```R
+ ```
 전) ggplot(data, aes(xvariable, yvariable)) + geom_point()
 
 후) ggplot() + with(data, geom_point(aes(xvariable, yvariable)))
  ```
+
+
 
 
 
@@ -67,7 +67,9 @@ cover: "/assets/pie_cover.png"
 
 
 
-### **CRAN은 그렇게 호락호락하지 않다**
+
+
+### CRAN은 그렇게 호락호락하지 않다**
 
 하나하나 노트를 지워나가며 셀 수도 없을 만큼 체크를 했고 그 결과는 아름다웠다. 0 Errors, 0 Warnings, 0 NOTEs. 하지만 기뻐하기엔 아직 이르다. 동일한 체크를 적어도 2개의 OS에서 실행하여 다른 환경에서도 여전히 문제가 없는지 확인해 보아야 한다. 'promotionImpact'의 경우, windows에서 개발되었기 때문에 윈도우에서 먼저 체크한 다음, linux에서 동일한 테스트를 진행하였으며 다행히도 결과는 윈도우에서와 동일했다. 하지만 여기서 끝이 아니다. 대부분 현재 공식 release 버전이나 크게 오래되지 않은 이전 release버전에서 작업을 마쳤을 텐데, 이 체크는 현재 개발 버전인 R-devel에서도 무사히 통과되어야 한다. 이쯤에서 ‘아니, 이렇게까지 해서 CRAN에 패키지를 등록해야 하나.’ 라는 생각이 들 수도 있겠지만, CRAN에 등록하면 무려 `devtools::install_github()`이 아니라 `install.pakcages()`로 설치가 가능하다.(!) 그러니 조금만 더 힘을 내보도록 하자. 하나의 사이트를 추천하자면 <https://win-builder.r-project.org/upload.aspx>라는 곳인데, 이 곳에 패키지 파일을 업로드 하면 패키지 체크 후 결과가 Maintainer의 메일로 온다. 실제 CRAN에 패키지를 제출하면 자동으로 패키지를 체크하고 그 결과를 Maintainer에게 메일로 알려주는데, 그때 발송자의 메일 주소와 위 사이트의 메일 발송자가 동일하다.
 
@@ -93,7 +95,9 @@ cover: "/assets/pie_cover.png"
 
  
 
-### **Thanks, on its way to CRAN.**
+
+
+### Thanks, on its way to CRAN.**
 
 사실 위에 작성한 수정 사항들을 한번에 알려준 것이 아니라 하나 고쳐서 내면 다른 하나를, 그것을 고쳐서 내면 또 다른 하나를 수정하라고 오는 방식이었다. (도대체 왜 한번에 알려주지 않은 건가요..ㅠㅠ) 그렇게 서서히 지쳐가고 있을 때쯤, 이번에는 또 뭘 고치라고 답장이 왔으려나 하는 자포자기의 심정으로 메일을 열었다. 메일의 내용은 단 한 문장이 전부였는데, 그 메시지는 바로 Thanks, on its way to CRAN. 이 메일을 받은 순간만큼은 그간 고생한 나날들을 떠올리며 감격에 겨워도 좋다. 그 후, 약간의 시간이 지나면 `install.packages()`를 사용해 설치할 수 있으며 CRAN에 아래와 같이 url도 생기고, 바이너리 파일들이 순차적으로 생성된다.
 
