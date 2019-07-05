@@ -183,7 +183,25 @@ permalink: /about/
           <p>데이터 분석가</p>
         </div>
       </div>
-
+      
+      <div class="col-md-4 col-sm-6 col-md-offset-2"> 
+        <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+  	      <div class="media">
+  		      <div class="pull-left">
+  			      <img class="media-object" src="/assets/about_us/images/ini_bje.png" alt="">
+  		      </div>
+  		      <div class="media-body">
+  			      <h4>봉지은</h4>
+  			      <h5>Intelligence Team</h5>
+  			      <ul class="tag clearfix">
+  				      <li class="btn">Analyst</li>
+  			      </ul>              
+  		      </div>
+  	      </div>
+  	      <p>데이터 분석가</p>
+  	      </div>
+      </div>
+      
     </div>   
 
   <!-- 팀 구분선 시작 -->
@@ -364,6 +382,43 @@ permalink: /about/
   	    </div>
       </div>
 
+    <br><br>
+    <div class="row clearfix">
+      <div class="col-md-4 col-sm-6">
+        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+  	      <div class="media">
+  		      <div class="pull-left">
+  			      <img class="media-object" src="/assets/about_us/images/ini_jyk.png " alt="">
+  		      </div>
+    		    <div class="media-body">
+    			    <h4>조양규</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Padawan</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>미생</p>
+  	    </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6 col-md-offset-2">
+        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+  	      <div class="media">
+  		      <div class="pull-left">
+  			      <img class="media-object" src="/assets/about_us/images/ini_yjy.png " alt="">
+  		      </div>
+    		    <div class="media-body">
+    			    <h4>윤지영</h4>
+    			    <h5>Analyst&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Padawan</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>미생</p>
+  	    </div>
+      </div>
     </div>
   
   </div> <!-- team -->
