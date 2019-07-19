@@ -22,9 +22,13 @@ cover:  "/assets/banner3.jpg"
 그렇다면 이렇게 얻은 임베딩 벡터는 어떻게 활용할 수 있을까요? 한 가지 방법으로 클러스터링 기법을 활용하여 유저를 특징이 비슷한 유형별로 분류해낼 수 있습니다. 팀 내에서는 다양한 클러스터링 기법들을 활용하고 있었는데 임베딩 벡터에 대한 클러스터링을 진행할 때에는 DBSCAN 알고리즘을 적용하고 있었습니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/pic.jpg" style="width:4in" />
+<img src="/assets/etc/summer_intern/pic.png" style="width:4in" />
+
+​    
 
 </p>
+
+
 
 DBSCAN 알고리즘에 대한 대략적인 설명으로는 군집 내 포함 최소 샘플 수, 거리 반경을 지정하게 됩니다. 예를 들어 거리 반경이 3, 최소 샘플 수가 4라고 했을 때, 특정 점을 하나 선택한 후 다른 점과의 거리가 3 안에 들어오는 샘플이 4개 이상이라면 선택한 점을 core point라고 부르게 됩니다. 반면에 4개의 샘플이 포함되지 않으면 border point, 아무것도 포함되지 않으면 noise point라 하는데요. 앞서 말씀 드린 core point를 기준으로 군집을 형성해 가면서 인근의 border point 를 같은 군집으로 합쳐 나가는 것이 DBSCAN 알고리즘의 학습 방식입니다.
 
@@ -39,7 +43,7 @@ DBSCAN 알고리즘에 대한 대략적인 설명으로는 군집 내 포함 최
 또한 유저들의 컨텐츠 활동을 생산/소비/소셜 활동으로 나누어 광고 매체와 오가닉 간의 차이가 나타나는지 알아보았습니다. 신규 유저와 복귀 유저 별로 광고매체가 오가닉보다 항상 수치가 좋았던 특정 활동이 있는지, 또 그와 반대인 활동들이 있는지 살펴 보았습니다. 이를 쉽게 보기 위해 아래와 같이 콘텐츠 별로 `ggplot` 패키지의 박스 플랏을 그려보았고 이러한 그래프들을 통해서 특정 활동 별로 패턴이 있는지 살펴볼 수 있었습니다. 
 
 <p align="center">
-<img src="/assets/etc/summer_intern/graph.jpg" style="width:4in" />
+<img src="/assets/etc/summer_intern/graph.png" style="width:4in" />
 
 </p>
 
