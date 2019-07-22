@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2019 빅콘테스트"
-date: 2015-07-22 19:00:00
+date: 2019-07-22 19:00:00
 categories: Competition
 author : DANBI
 ---
