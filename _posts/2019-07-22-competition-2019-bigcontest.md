@@ -30,7 +30,7 @@ cover: "/assets/competition/2019-bigcontest/cover.PNG"
 
 
 
-![temp1](C:\Users\asiasi11\Documents\GitHub\danbi-ncsoft.github.io\assets\competition\2019-bigcontest\temp1.png)
+![](/assets/competition/2019-bigcontest/temp.PNG)
 
 <center>[그림 3] 이탈 예측 대회 제공 데이터 및 목표 도식</center>
  이를 위해 총 8만 명(학습 및 평가 데이터 셋 포함)의 게임 활동 정보 및 다른 유저와의 사회 관계 정보, 결제 이력 정보 등을 제공하였습니다. 제공 데이터에 대한 개략적인 항목은 아래와 같으며 상세 스키마는 [2019 빅콘테스트 공식 홈페이지 자료](https://www.bigcontest.or.kr/community/view.php?No=65&gubun=notice)를 참고하시기 바랍니다.
