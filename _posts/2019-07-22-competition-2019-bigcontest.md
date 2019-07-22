@@ -4,7 +4,7 @@ title: "2019 빅콘테스트"
 date: 2019-07-22 19:00:00
 categories: Competition
 author : DANBI
-cover: "/assets/competition/2019-bigcontest/cover.png"
+cover: "/assets/competition/2019-bigcontest/cover.PNG"
 ---
 
 # 2019 빅콘테스트
@@ -30,7 +30,7 @@ cover: "/assets/competition/2019-bigcontest/cover.png"
 
 
 
-![](/assets/competition/2019-bigcontest/temp1.PNG)
+![temp1](C:\Users\asiasi11\Documents\GitHub\danbi-ncsoft.github.io\assets\competition\2019-bigcontest\temp1.png)
 
 <center>[그림 3] 이탈 예측 대회 제공 데이터 및 목표 도식</center>
  이를 위해 총 8만 명(학습 및 평가 데이터 셋 포함)의 게임 활동 정보 및 다른 유저와의 사회 관계 정보, 결제 이력 정보 등을 제공하였습니다. 제공 데이터에 대한 개략적인 항목은 아래와 같으며 상세 스키마는 [2019 빅콘테스트 공식 홈페이지 자료](https://www.bigcontest.or.kr/community/view.php?No=65&gubun=notice)를 참고하시기 바랍니다.
@@ -80,7 +80,6 @@ cover: "/assets/competition/2019-bigcontest/cover.png"
 
 
 <center><b>기대 이익 = 전환율 x (추가생존기간 x 일별평균결제금액) - 인센티브</b></center>
-
 
  먼저, 이탈 방지를 위해 고객에게 제공할 **인센티브**(기업의 입장에서는 비용)는 고객이 계속 게임을 플레이 함으로써 얻을 수 있는 고객의 잔존가치를 바탕으로 산정됩니다. 이탈을 마음 먹은 고객의 입장에서는 제공되는 인센티브가 마음에 든다면 (취향저격) 잔존하겠지만, 마음에 들지 않는다면 그대로 이탈을 하겠지요. 
 
