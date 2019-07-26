@@ -22,9 +22,9 @@ cover:  "/assets/img4.jpg"
 
 저희 팀에서는 자연어처리 분야에서 많이 사용되는 word2vec를 활용하여 게임에서 발생하는 행동 로그(word)를 벡터(vec)로 변형하는 작업을 진행했었는데요. 이 로직에 TensorBoard를 적용해 보았습니다. TensorBoard를 잘 활용하면, TensorFlow로 구현한 로직 및 결과를 쉽게 확인하고 잘 학습되고 있는지 학습 과정도 모니터링 할 수 있습니다.
 
-TensorBoard를 사용하기 위해서는 writer와 name scope를 잘 활용하면 되는데요. SummaryWriter를 통해 로그를 저장할 경로를 지정해주고, 로그를 찍을 loss나 layer에 namescope 함수를 적용해서 이름을 지정해주면 됩니다. 
+TensorBoard를 사용하기 위해서는 writer와 name scope를 잘 활용하면 되는데요. SummaryWriter를 통해 로그를 저장할 경로를 지정해주고, 로그를 찍을 손실 함수나 레이어에 namescope 함수를 적용해서 이름을 지정해주면 됩니다. 
 
-이렇게 name scope로 지정해 둔 스칼라 값을 `summary.merge`하여 writer에 한번에 넣는 간편함이 있습니다. (사실 word2vec 같은 경우에는 레이어가 한 개 이기 때문에 TensorBoard로 시각화할 필요는 없어 보이지만) TensorBoard 활용에 익숙해지면 앞으로 다룰 복잡한 모델도 한 눈에 볼 수 있는 장점이 있을 것입니다.
+이렇게 name scope로 지정해 둔 스칼라 값을 `summary.merge`하여 writer에 한번에 넣는 간편함이 있습니다. (사실 word2vec 같은 경우에는 히든 레이어가 한 층으로 되어 있기 때문에 TensorBoard로 시각화할 필요는 없어 보이지만) TensorBoard 활용에 익숙해지면 앞으로 다룰 복잡한 모델도 한 눈에 볼 수 있는 장점이 있을 것입니다.
 
 <p align="center">
 <img src="/assets/etc/summer_intern/4_1.png" style="width:5in" />
