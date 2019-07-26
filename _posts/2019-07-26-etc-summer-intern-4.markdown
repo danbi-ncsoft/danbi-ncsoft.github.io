@@ -18,7 +18,7 @@ cover:  "/assets/img4.jpg"
 
 ### **악성 유저(봇) 탐지** 
 
-#### - TensorBoard 활용하여 모델 시각화 하기
+#### - TensorBoard를 활용한 모델 시각화 
 
 저희 팀에서는 자연어처리 분야에서 많이 사용되는 word2vec를 활용하여 게임에서 발생하는 행동 로그(word)를 벡터(vec)로 변형하는 작업을 진행했었는데요. 이 로직에 TensorBoard를 적용해 보았습니다. TensorBoard를 잘 활용하면, TensorFlow로 구현한 로직 및 결과를 쉽게 확인하고 잘 학습되고 있는지 학습 과정도 모니터링 할 수 있습니다.
 
