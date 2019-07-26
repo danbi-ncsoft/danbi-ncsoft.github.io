@@ -27,7 +27,7 @@ TensorBoard를 사용하기 위해서는 writer와 name scope를 잘 활용하�
 이렇게 name scope로 지정해 둔 스칼라 값을 `summary.merge`하여 writer에 한번에 넣는 간편함이 있습니다. (사실 word2vec 같은 경우에는 레이어가 한 개 이기 때문에 TensorBoard로 시각화할 필요는 없어 보이지만) TensorBoard 활용에 익숙해지면 앞으로 다룰 복잡한 모델도 한 눈에 볼 수 있는 장점이 있을 것입니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/4_1.png" style="width:4in" />
+<img src="/assets/etc/summer_intern/4_1.png" style="width:5in" />
 
 
 </p>
