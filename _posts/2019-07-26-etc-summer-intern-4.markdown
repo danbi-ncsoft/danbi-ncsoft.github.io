@@ -37,7 +37,7 @@ TensorBoard 활용에 익숙해지면 앞으로 다룰 복잡한 모델도 한 �
  <p align="center"> (optimizer, NCE_loss 등 name scope를 지정하여 학습을 한 눈에 볼 수 있습니다!)
 </p>
 
-두 번째로는 특정 학습 step마다 train/validation loss를 출력해보았습니다.
+두 번째로는 특정 학습 step마다 train/validation loss를 간단히 출력해보았습니다.
 
 <p align="center">
 <img src="/assets/etc/summer_intern/4_2.png" style="width:6in" />
@@ -45,7 +45,6 @@ TensorBoard 활용에 익숙해지면 앞으로 다룰 복잡한 모델도 한 �
 
 </p>
 
-<p align="center"> (보안상의 이유로 이 부분은 TensorFlow 공식 문서 그래프를 첨부합니다.)
-</p>
+
 
 이를 통해 지금 학습하고 있는 모델의 loss 값이 잘 줄어드는지, validation loss와 함께 비교해보며 과적합이 되고 있지는 않은지 확인할 수 있습니다.
