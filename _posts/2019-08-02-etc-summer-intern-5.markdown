@@ -71,7 +71,7 @@ UAC 값은 유저 한 명을 유입하기 위해 소모되는 비용으로 (광�
 #### 2) 지니 불순도 지수
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img5_6.png" style="width:4in" />
+<img src="/assets/etc/summer_intern/img5_6.png" style="width:3in" />
 
 </p>
 
