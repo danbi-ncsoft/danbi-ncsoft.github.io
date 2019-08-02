@@ -64,7 +64,7 @@ UAC 값은 유저 한 명을 유입하기 위해 소모되는 비용으로 (광�
 예를 들어, 아래 그림처럼 그룹 내 A, B, C의 개수를 집계하였을 때, 그룹1은 그 수치가 가장 낮은 순으로 B, C, A가 됩니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img5_5.png" style="width:4in" />
+<img src="/assets/etc/summer_intern/img5_5.png" style="width:5in" />
 
 </p>
 
@@ -73,12 +73,13 @@ UAC 값은 유저 한 명을 유입하기 위해 소모되는 비용으로 (광�
 <p align="center">
 <img src="/assets/etc/summer_intern/img5_6.png" style="width:3in" />
 
+
 </p>
 
 둘째, 지니 불평등 지수 입니다. $p_i$는 각 카테고리 항목이 나올 확률을 나타내며, $n$은 카테고리 수입니다. 계산 방식은 아래 그림과 같습니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img5_7.png" style="width:4in" />
+<img src="/assets/etc/summer_intern/img5_7.png" style="width:5in" />
 
 </p>
 
