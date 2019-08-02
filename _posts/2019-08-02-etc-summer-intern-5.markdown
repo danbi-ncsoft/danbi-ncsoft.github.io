@@ -41,7 +41,8 @@ UAC 값은 유저 한 명을 유입하기 위해 소모되는 비용으로 (광�
 특정 기준으로 이미 나누어진 유저들의 그룹이 있을 때, 각 유저를 대변하는 범주형 데이터가 있다고 가정합시다. 이 때, 한 그룹에 속해있는 유저들의 범주형 데이터가 얼마나 유사한지를 확인하고자 합니다. 편의상 범주형 데이터는 A, B, C가 나올 수 있다고 가정하고 아래 그림을 살펴봅시다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img5_3.png"  style="width:6in" />
+<img src="/assets/etc/summer_intern/img5_3.png"  style="width:8in" />
+
 
 
 
@@ -67,7 +68,7 @@ UAC 값은 유저 한 명을 유입하기 위해 소모되는 비용으로 (광�
 예를 들어, 아래 그림처럼 그룹 내 A, B, C의 개수를 집계하였을 때, 그룹1은 그 수치가 가장 낮은 순으로 B, C, A가 됩니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img5_5.png" style="width: 8in" />
+<img src="/assets/etc/summer_intern/img5_5.png" style="width: 10in" />
 </p>
 
 #### 2) 지니 불순도 지수
@@ -79,7 +80,7 @@ UAC 값은 유저 한 명을 유입하기 위해 소모되는 비용으로 (광�
 둘째, 지니 불평등 지수 입니다. $$p_i$$는 각 카테고리 항목이 나올 확률을 나타내며, $$n$$은 카테고리 수입니다. 계산 방식은 아래 그림과 같습니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img5_7.png" style="width: 8in" />
+<img src="/assets/etc/summer_intern/img5_7.png" style="width: 10in" />
 </p>
 
 이 수치를 토대로 각 카테고리의 값들의 순도가 얼마나 높은지 확인했습니다. 산출된 값에 대한 해석으로는 값이 0 가까울수록 순도가 높음(값이 하나로 몰려있음)을 나타냅니다. 반대로 값이 1에 가깝다면 순도가 낮음(값이 퍼져있음)을 나타냅니다. 따라서 위 그림처럼 그룹1의 경우가 더 불순도가 높습니다.
