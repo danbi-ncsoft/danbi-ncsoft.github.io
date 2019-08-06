@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "모바일 게임 마케팅 분석 #1"
+title:  "무작정 따라해본 모바일 마케팅 분석 #1"
 date:   2019-08-06 18:00:00
 categories: Works
 author : DANBI
