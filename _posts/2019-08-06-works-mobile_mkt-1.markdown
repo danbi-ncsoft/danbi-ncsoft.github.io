@@ -14,7 +14,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 기본적으로 모바일 앱 마케팅 분석은 우리 서비스를 이용하는 유저가 어떤 매체나 채널을 통해 유입되었는지를 추적하는 것에서부터 시작합니다. (세부적인 기술은 업체마다 조금씩 다르겠지만 대체로) 광고 매체에서는 어떤 유저가 광고를 클릭할 경우, 해당 유저가 어떤 광고를 클릭해서 앱 스토어에 방문하게 되었는지를 식별할 수 있는 정보를 URL에 심어 놓습니다. 이것을 ‘추적 URL’ 이라고 부릅니다. 예를 들어 아래 그림은 페이스북을 통해 저희 블로그에 방문할 경우 남게 되는 추적 URL입니다. 
 
 <p align="center">
-<img src="C:/Users/ryung1105/Documents/GitHub/danbi-ncsoft.github.io/_posts/assets/works/mobile_mkt/url.png" style="width:6in" />
+<img src="/assets/works/mobile_mkt/url.png" style="width:6in" />
 <그림1> 추적 URL 예시 (빨간색 박스가 페이스북이 제공하는 클릭 식별자)
 </p>
 
@@ -50,7 +50,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 아래 그림은 모바일 마케팅 분석 과정을 도식화한 것입니다.
 
 <p align="center">
-<img src="C:/Users/ryung1105/Documents/GitHub/danbi-ncsoft.github.io/_posts/assets/works/mobile_mkt/mkt_process.png" style="width:6in" />
+<img src="/assets/works/mobile_mkt/mkt_process.png" style="width:6in" />
 <그림2> 모바일 앱 마케팅 분석 과정
 </p>
 
@@ -62,7 +62,7 @@ __첫째, 정교한 유저 식별 및 추적이 어렵습니다. __
 모바일 앱에서는 보통 유저 식별을 위해 ADID 라는 값을 사용합니다. ADID는 안드로이드나 iOS에서 광고 목적을 위해 제공하는 식별자인데 안드로이드에서는 GAID, iOS에서는 IDFA 라고 하죠. 아래 그림과 같이 내 핸드폰 정보에서 본인의 ADID를 확인하거나 변경할 수 있습니다. 
 
 <p align="center">
-<img src="C:/Users/ryung1105/Documents/GitHub/danbi-ncsoft.github.io/_posts/assets/works/mobile_mkt/adid.PNG" style="width:6in" />
+<img src="/assets/works/mobile_mkt/adid.PNG" style="width:6in" />
 <그림3> 광고 ADID 확인 - 핸드폰에서 자신의 ADID를 확인하고 재설정 할 수 있습니다.
 </p>
 
@@ -72,7 +72,7 @@ __첫째, 정교한 유저 식별 및 추적이 어렵습니다. __
 그런데 ADID 단위의 유저 분석에는 몇 가지 문제가 있습니다. 우선, ADID를 재설정하거나 휴대폰 기기를 바꾼 유저의 경우는 동일한 유저임에도 불구하고 다른 유저로 식별될 수 있습니다. 반대로 하나의 ADID로 여러 개의 게임 계정을 생성하여 플레이를 한 경우에는 단 하나의 유저로 취급되겠죠. 특히, 요즘은 ‘블루 스택’ 같은 에뮬레이터를 이용해 PC에서 모바일 게임을 즐기는 경우도 많은데, 이 경우 만약 에뮬레이터 이미지를 복사해 여러 PC에서 공유할 경우 모두 같은 ADID 정보를 갖는 경우도 있습니다.  
 
 <p align="center">
-<img src="C:/Users/ryung1105/Documents/GitHub/danbi-ncsoft.github.io/_posts/assets/works/mobile_mkt/naruto_clone.jpg" style="width:6in" />
+<img src="/assets/works/mobile_mkt/naruto_clone.jpg" style="width:6in" />
 (실제로 500개 넘는 게임 계정을 갖는 수상한(!) ADID도 있습니다;;)
 
 </p>
@@ -86,7 +86,7 @@ __둘째, 어뷰징 탐지가 어렵습니다. __
 많은 분석 업체들이 광고 어뷰징 탐지를 위해 클릭 로그나 설치 로그 등을 활용하여 여러 가지 탐지 룰을 개발하고 있지만, 그에 못지않게 어뷰징 기법 역시 점점 정교해지고 있습니다. 예를 들어 어뷰징 기법 중 SDK Spoofing 이라는 기법이 있습니다. 이것은 실제 앱을 설치하거나 실행하지 않은 유저의 ADID를 이용해서 트래킹 서버에 허위 이벤트 로그를 전송해서 트래킹 툴을 속이는 기법입니다. 그런데 이런 허위 이벤트 로그를 탐지하기 위해 정교한 탐지 룰을 적용하다 보면 자칫 정상 유저의 이벤트 로그를 어뷰징으로 잘못 탐지하는 경우가 발생하기 쉽습니다. 그리고 이런 오탐률이 높아지면 광고 매체의 수익률에 악영향을 주고 광고 성과 분석의 신뢰도를 떨어뜨릴 수 있죠. 따라서 오탐을 줄이면서 최대한 어뷰징을 검출하려면 많은 노력이 필요한데 기존의 트래킹 로그만으로는 많은 한계가 있습니다. 
 
 <p align="center">
-<img src="C:/Users/ryung1105/Documents/GitHub/danbi-ncsoft.github.io/_posts/assets/works/mobile_mkt/sdkspoofing.PNG" style="width:6in" />
+<img src="/assets/works/mobile_mkt/sdkspoofing.PNG" style="width:6in" />
 (출처: Business of Apps)
 
 </p>
@@ -96,7 +96,7 @@ __셋째, 광고 효과와 관련된 지표들이 워낙 다양하고 직접적�
 가령, 유입 유저 수는 많지만 ROAS는 낮은 매체와 유입 유저 수는 적지만 ROAS가 매우 높은 매체가 있다면 과연 어느 쪽 매체가 더 좋다고 할 수 있을까요? (물론 유입 유저 수와 ROAS 모두 높은 매체가 좋겠지만…) 실제로 ROAS 값이 매우 좋은 매체를 살펴보면, 실상은 매우 적은 일부 유저들로 인해 결과가 왜곡되는 경우가 많습니다. 따라서 다양한 지표들을 이용해 종합적으로 성과를 판단할 수 있는 방법이 필요합니다. 
 
 <p align="center">
-<img src="C:/Users/ryung1105/Documents/GitHub/danbi-ncsoft.github.io/_posts/assets/works/mobile_mkt/sad.jpg" style="width:6in" />
+<img src="/assets/works/mobile_mkt/sad.jpg" style="width:6in" />
 (마냥 좋은 매체인줄 알았는데...)
 
 </p>
