@@ -22,9 +22,11 @@ cover:  "/assets/img4.jpg"
 
 저희 팀에서는 자연어처리 분야에서 많이 사용되는 word2vec를 활용하여 게임에서 발생하는 행동 로그(word)를 벡터(vec)로 변형하는 작업을 진행했었는데요. 이 로직에 TensorBoard를 적용해 보았습니다. TensorBoard를 잘 활용하면, TensorFlow로 구현한 로직 및 결과를 쉽게 확인하고 잘 학습되고 있는지 학습 과정도 모니터링 할 수 있습니다.
 
-TensorBoard를 사용하기 위해서는 writer와 name scope를 잘 활용하면 되는데요. SummaryWriter를 통해 로그를 저장할 경로를 지정해주고, 로그를 찍을 손실 함수나 레이어에 name scope 함수를 적용해서 이름을 지정해주면 됩니다. 
+TensorBoard는 시각화 하고 싶은 노드를 summary operation로 추가한 뒤 실행하여 요약 데이터들을 저장하는데요. 이 요약 데이터는 형태에 따라 histogram, scalar, image 등이 있습니다. 이런 요약 데이터 값들이 기록된 이벤트 파일을 저장할 수 있도록 하는 것이 FileWriter입니다. FileWriter에 이벤트 파일이 저장 위치와, 모델 그래프를 표시하기 위한 그래프를 파라미터로 전달해주면 이를 시각화 해주는 방식으로 동작합니다.
 
-이렇게 name scope로 지정해 둔 스칼라 값을 `summary.merge`하여 writer에 한번에 넣는 간편함이 있습니다. (사실 word2vec 같은 경우에는 히든 레이어가 한 층으로 되어 있기 때문에 TensorBoard로 시각화할 필요는 없어 보이지만) TensorBoard 활용에 익숙해지면 앞으로 다룰 복잡한 모델도 한 눈에 볼 수 있는 장점이 있을 것입니다. 아래 그림처럼 데이터를 불러온 후 배치 처리를 위해 데이터를 전처리 하는 과정, 학습에 쓰이는 배치를 나누는 각 과정을 묶어서 볼 수 있었습니다.
+FileWriter에 값을 저장하는 과정에 대해 간략히 말씀드리면, 먼저  `summary.FileWriter`를 통해 로그를 저장할 경로를 지정해줍니다. 이후 로그를 찍을 손실 함수나 레이어 노드에 `summary.scalar` , `summary.histogram` 함수를 적용하여 값을 전달합니다. 각각의 결과는 별도로 `sess.run` 을 해주어야 하는데 저장할 결과가 많다면 불편할 것입니다. 따라서 `summary.merge_all` 함수라는 것이 존재하는데요. 이를 통해 여러 노드에 적용한 scalar, histogram 값들을 일일이 실행할 필요 없이 모든 요약 데이터를 한번에 `sess.run`  할 수 있었습니다. 마지막으로  묶고 싶은 단위마다 `name_scope` 함수를 적용해서 이름을 정해주면, 묶음별로 일목요연하게 그래프를 볼 수 있었습니다. (사실 word2vec 같은 경우에는 히든 레이어가 한 층으로 되어 있기 때문에 TensorBoard로 시각화할 필요는 없어 보이지만) 
+
+TensorBoard 활용에 익숙해지면 앞으로 다룰 복잡한 모델도 한 눈에 볼 수 있는 장점이 있을 것입니다. 아래 그림처럼 데이터를 불러온 후 배치 처리를 위해 데이터를 전처리 하는 과정, 학습에 쓰이는 배치를 나누는 각 과정을 묶어서 볼 수 있었습니다.
 
 <p align="center">
 <img src="/assets/etc/summer_intern/4_1.png" style="width:5in" />
@@ -35,7 +37,7 @@ TensorBoard를 사용하기 위해서는 writer와 name scope를 잘 활용하�
  <p align="center"> (optimizer, NCE_loss 등 name scope를 지정하여 학습을 한 눈에 볼 수 있습니다!)
 </p>
 
-두 번째로는 특정 학습 step마다 train/validation loss를 출력해보았습니다.
+두 번째로는 특정 학습 step마다 train/validation loss를 간단히 출력해보았습니다.
 
 <p align="center">
 <img src="/assets/etc/summer_intern/4_2.png" style="width:6in" />
@@ -43,7 +45,6 @@ TensorBoard를 사용하기 위해서는 writer와 name scope를 잘 활용하�
 
 </p>
 
-<p align="center"> (보안상의 이유로 이 부분은 TensorFlow 공식 문서 그래프를 첨부합니다.)
-</p>
+
 
 이를 통해 지금 학습하고 있는 모델의 loss 값이 잘 줄어드는지, validation loss와 함께 비교해보며 과적합이 되고 있지는 않은지 확인할 수 있습니다.
