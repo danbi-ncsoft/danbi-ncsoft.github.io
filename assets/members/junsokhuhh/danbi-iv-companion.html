@@ -383,6 +383,17 @@ summary {
 </div>
 
 
+<style>
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Raleway', sans-serif;
+}
+</style>
 <p>그냥 넘어가기 섭섭하니, 실제 분석 사례를 하나 소개하기로 하자. <a href="http://eclr.humanities.manchester.ac.uk/index.php/R#Data_Sets">데이터</a>는 울드리지 교수의 계량경제학 교과서에서 가져왔다. 데이터는 1975년 753명의 여성 노동자를 대상으로 임금, 나이, 자녀, 결혼 상태 등 각종 변수를 담고 있다.</p>
 <p>먼저 자료의 csv를 다운 받아서 적절한 방식으로 통계 패키지에 로드하도록 하자. 여기서는 R의 AER 패키지에 담긴 <code>ivreg</code> 명령을 활용할 예정이다.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <pre class="r"><code>library(tidyverse)
@@ -396,6 +407,8 @@ mydata &lt;-
     lwage = as.numeric(lwage)
   )</code></pre>
 <p>데이터에는 NA값이 ’.’으로 되어 있어 이를 NA로 바꾸고, 해당 값을 제외한다.</p>
+<div id="ols" class="section level3">
+<h3>OLS</h3>
 <pre class="r"><code>reg_ex0 &lt;- lm(lwage ~ educ, data=mydata)
 summary(reg_ex0)</code></pre>
 <pre><code>## 
@@ -417,6 +430,9 @@ summary(reg_ex0)</code></pre>
 ## Multiple R-squared:  0.1179, Adjusted R-squared:  0.1158 
 ## F-statistic: 56.93 on 1 and 426 DF,  p-value: 2.761e-13</code></pre>
 <p>로그 임금을 교육년수로 회귀했을 때 계수는 약 0.11이다. 즉, 교육년수가 1년 올라갈 때 임금이 약 11% 정도 증가하는 것으로 이해할 수 있다. 그런데 이 회귀분석은 문제가 있다. 임금수준과 교육년수에 모두 영향을 줄 수 있는 요인이 있다면, OLS 추정량은 일치성을 지니지 않는다.</p>
+</div>
+<div id="simple-iv" class="section level3">
+<h3>Simple IV</h3>
 <pre class="r"><code>reg_iv0 &lt;- ivreg(lwage~educ|fatheduc,data=mydata)
 summary(reg_iv0)</code></pre>
 <pre><code>## 
@@ -469,6 +485,9 @@ summary(reg_iv0, diagnostics = TRUE)</code></pre>
 <li>“Wu-Hausman”: IV(도구변수) 추정량이 일치성을 지니는지를 검정한다. <span class="math inline">\(H_0\)</span>이 ’일치성이 존재한다,’이다.</li>
 <li>Sargan: IV가 여러 개 있을 때, 해당 도구 변수가 오차항에 대해서 외생적인지를 검정한다. <span class="math inline">\(H_0\)</span>이 ’외생적이다,’이다.</li>
 </ul>
+</div>
+<div id="iv-in-action" class="section level3">
+<h3>IV in action</h3>
 <pre class="r"><code>reg_1 &lt;- lm(lwage~educ+age+exper+expersq, data=mydata) # OLS estimation
 summary(reg_1)</code></pre>
 <pre><code>## 
@@ -534,6 +553,7 @@ summary(reg_iv1, vcov = sandwich, diagnostics = T)</code></pre>
 </code></pre>
 <p>위와 같은 식으로 표현할 수도 있다. 위 식에서 <code>.-</code>이하는 원래 회귀식에서 내생변수(<code>educ</code>)과 이의 추정에 동원되는 IV들(<code>fathereduc</code>, <code>motheduc</code>)을 나타낸다.</p>
 <p>이 결과에서 보듯이 IV 회귀분석은 OLS이 지니는 가장 근본적인 한계를 교정할 수 있는 좋은 수단이다. 당신의 데이터에서 IV로 사용될 만한 것이 없는지 한번 고민해보실 때다!</p>
+</div>
 <div class="footnotes">
 <hr />
 <ol>
