@@ -13,21 +13,24 @@ cover:  "/assets/spoonz2.jpg"
 이번 주에는 다양한 시각화 방법들을 시도해보면서 리니지M 유저들의 특정 컨텐츠 활동에 대해 알아보았습니다. (보안상의 이유로, 구체적인 내용은 표기하지 않은 점 참고 부탁 드립니다.) 첫째는 오가닉과 광고 매체 유저 간의 특정 컨텐츠 이용률 비교입니다. 처음에는 두 경로로 유입된 유저들을 나타내기 위해 선 그래프 시각화를 진행해보았습니다. 오가닉 유저들의 이용률이 높다는 것을 볼 수 있었지만 두 그룹간의 차이를 시간 별로 보기 어려웠습니다. 따라서, 오가닉 이용률과 광고 매체 이용률의 차이 값을 활용하여 아래와 같은 롤리팝 그래프로 다시 그려보았습니다. 이를 통해, 두 그룹의 이용률 차이의 정도를 시간 별로 확인할 수 있었습니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img6_1.png" style="width:5in" />
+<img src="/assets/etc/summer_intern/img6_1.png" style="width:7in" />
+
 
 </p>
 
 그 다음에는 광고 매체로 유입된 유저들의 컨텐츠 활동에 대해 세부적으로 살펴보았습니다. 기간별로 접속했던 유저 수가 상이하기 때문에 단순히 절대적인 값만 보기 보다는 아래와 같이 비율 정보를 표시하여 나타내 보았습니다. 파란색 박스로 표시된 부분에서 유저 수는 두드러지게 많았지만, 컨텐츠를 이용한 비율은 가장 적었습니다. 또한 빨간색 박스로 표시된 부분인 컨텐츠를 이용한 비율이 높은 기간에는 게임 업데이트와 연관성이 있어 보였습니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img6_2.png" style="width:5in" />
+<img src="/assets/etc/summer_intern/img6_2.png" style="width:7in" />
+
 
 </p>
 
 또한 이 컨텐츠를 이용한 유저들의 활동에 대해 플레이 시간을 이용하여 더 자세히 알아보았습니다. 
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img6_3.png" style="width:5in" />
+<img src="/assets/etc/summer_intern/img6_3.png" style="width:7in" />
+
 
 </p>
 
@@ -53,7 +56,8 @@ cover:  "/assets/spoonz2.jpg"
 오토인코더는 어떤 분야에 사용하는 지에 따라 그 방식과 활용 방안이 다양합니다. 저희는 유저 행동 패턴을 효과적으로 다루기 위해서 오토인코더 구조를 가진 Seq2Seq모델을 활용하고 있습니다. Seq2Seq은 주로 기계번역에 사용되는 모델로써 다음과 같은 구조로 이루어져 있습니다.
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img6_5.png" style="width:5in" />
+<img src="/assets/etc/summer_intern/img6_5.png" style="width:7in" />
+
 
 </p>
 
@@ -62,7 +66,8 @@ cover:  "/assets/spoonz2.jpg"
 이러한 연산은 인코더, 디코더 안에 존재하는 신경망을 통해 진행됩니다. Seq2Seq모델은 신경망의 종류에 따라 여러 형태가 존재하지만, 이 글에서는 LSTM cell로 구성된 모델을 아래 그림과 함께 살펴보겠습니다. 
 
 <p align="center">
-<img src="/assets/etc/summer_intern/img6_6.png" style="width:5in" />
+<img src="/assets/etc/summer_intern/img6_6.png" style="width:7in" />
+
 
 </p>
 
