@@ -135,8 +135,8 @@ cover: "/assets/cover/causality.png"
 
   
 
-지금까지는 2X2 테이블로 요약된 이중차분 결과를 봤다. 이걸 회귀 분석으로 어떻게 할 수 있지? 의문이 드시는 분은 [LINK](https://anarinsk.github.io/rstat-danbi_did/)를 참고하기 바란다.
+지금까지는 2X2 테이블로 요약된 이중차분 결과를 봤다. 이걸 회귀 분석으로 어떻게 풀어낼 수 있을지 의문이 드시는 분은 [LINK](https://anarinsk.github.io/rstat-danbi_did/)를 참고하기 바란다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzODE3ODM1NiwtNzE5MjYzNjU3LDM0Nz
-cxOTQ5NSwtMjA4MzI3NDI0NF19
+eyJoaXN0b3J5IjpbLTE5NTU0ODM2NjUsLTcxOTI2MzY1NywzND
+c3MTk0OTUsLTIwODMyNzQyNDRdfQ==
 -->
