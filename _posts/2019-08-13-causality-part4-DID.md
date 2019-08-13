@@ -128,7 +128,7 @@ cover: "/assets/cover/causality.png"
 
 표에서 보듯이 최저임금이 인상된 뉴저지만 보면 고용에 큰 변화가 없다. 하지만 이를 이중차분법으로 살펴보면 (통계적으로 유의미하게) 2.76명 고용이 증가했다! 당시 이 논문은 학계에서 그리고 사회적으로 큰 반향을 일으켰다. 최저 임금이 상승하면 여튼 고용이 줄어든다는 것을 상식으로 받아들이던 때에 크루거 교수는 상식에 반하는 실증의 증거를 내놓았다. 이 연구는 경제학에서 이른바 '경험적 연구의 혁명 empirical revolution'의 신호탄을 쏘아올리기도 했다. 
 
-자연실험을 소개했던 [내용](https://danbi-ncsoft.github.io/study/2018/07/09/natural_experiment.html)을 기억한다면, 역학(epidemiology)의 선구자 존 스노(John Snow)가 수행했던 콜레라 연구 역시 이중 차분법을 활용했다는 사실을 떠올일 수 있을 것이다. 
+자연실험을 소개했던 [내용](https://danbi-ncsoft.github.io/study/2018/07/09/natural_experiment.html)을 다시 들춰보자. 역학(epidemiology)의 선구자 존 스노(John Snow)가 수행했던 콜레라 발병 연구 역시 이중 차분법을 활용했다.
 
   
 
@@ -138,6 +138,7 @@ cover: "/assets/cover/causality.png"
 
 지금까지는 2X2 테이블로 요약된 이중차분 결과를 봤다. 이걸 회귀 분석으로 어떻게 풀어낼 수 있을지 의문이 드시는 분은 [LINK](https://anarinsk.github.io/rstat-danbi_did/)를 참고하기 바란다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0NTM0Mzk2LC0yMjY4MzI1NzksLTcxOT
-I2MzY1NywzNDc3MTk0OTUsLTIwODMyNzQyNDRdfQ==
+eyJoaXN0b3J5IjpbLTkwODkzMTI2OSwzOTQ1MzQzOTYsLTIyNj
+gzMjU3OSwtNzE5MjYzNjU3LDM0NzcxOTQ5NSwtMjA4MzI3NDI0
+NF19
 -->
