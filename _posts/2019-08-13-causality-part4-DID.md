@@ -8,7 +8,7 @@ cover: "/assets/cover/causality.png"
 ---
 인과관계를 탐구하는 방법들이 대체로 다소 전문적일 수 있다. 이번 회차에 소개할 이중차분법(DID; Difference In Differences)는 그렇지 않다. 이 개념을 알아두면 일상적인 비교에서도 제법 유용하게 써먹을 수 있다. 한마디로 생활의 지혜다. 가상의 사례를 통해서 DID가 어떤 것인지 간단히 살펴보자.
 
-  # Difference in Differences?
+# Difference in Differences?
 
 ## 모호한 팀장님의 지시
 
@@ -137,5 +137,6 @@ cover: "/assets/cover/causality.png"
 
 지금까지는 2X2 테이블로 요약된 이중차분 결과를 봤다. 이걸 회귀 분석으로 어떻게 할 수 있지? 의문이 드시는 분은 [LINK](https://anarinsk.github.io/rstat-danbi_did/)를 참고하기 바란다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3NzE5NDk1LC0yMDgzMjc0MjQ0XX0=
+eyJoaXN0b3J5IjpbMTA4NTQ4NjE1MSwzNDc3MTk0OTUsLTIwOD
+MyNzQyNDRdfQ==
 -->
