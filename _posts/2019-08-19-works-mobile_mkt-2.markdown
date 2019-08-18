@@ -87,7 +87,7 @@ $$
 이렇게 만들어진 광고 종합 지수를 이용해서 각 매체의 광고 성과를 하나의 수치로 비교하는 한편, 매월 측정된 지수들의 추세를 모니터링함으로써 특정 매체 혹은 전체 매체의 평균적인 광고 성과가 시간이 지남에 따라 어떻게 바뀌는지도 측정할 수 있게 되었습니다. 
 
 <p align="center">
-<img src="/aseets/works/mobile_mkt/pca.PNG" style="width:6in" />
+<img src="/aseets/works/mobile_mkt/pca.jpg" style="width:6in" />
 [그림7] 광고 종합 지수를 활용하여 매체별 비교 및 월별 추세 변화를 모니터링 할 수 있습니다.
 </p>
 
