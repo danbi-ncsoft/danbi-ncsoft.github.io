@@ -518,7 +518,7 @@ cover:  "/assets/bns.jpg"
         (100,20,20)으로 샘플과 시간의 개수는 그대로 유지하고 특징의
         개수에만 독립적으로 적용하게끔 하는 변수입니다.
 
-**모델 튜닝 **
+** 모델 튜닝 **
 
 -   하이퍼 파라미터 튜닝
 
@@ -798,11 +798,8 @@ Accuracy : 0.71</p>
 
 모델 및 결과 파일입니다.
 
--   모델 코드 파일  : [<span
-    class="underline">http://172.20.92.57:9999/edit/kuross/churn\_DNN/fin\_model/test\_churn\_model\_fin.py</span>](http://172.20.92.57:9999/edit/kuross/churn_DNN/fin_model/test_churn_model_fin.py)
+-   모델 코드 파일  : <a href = "/assets/competition/2017-competition/competition.py" >다운로드</a>
 
--   각 모델별 테스트 라벨  : [<span
-    class="underline">http://172.20.92.57:9999/tree/kuross/churn\_DNN/fin\_model/cv\_label</span>](http://172.20.92.57:9999/tree/kuross/churn_DNN/fin_model/cv_label)
+-   모델 예측 결과  : <a href = "/assets/competition/2017-competition/result_label.zip">다운로드</a>
 
--   학습 데이터 : [<span
-    class="underline">http://172.20.92.57:9999/tree/YokozunaData/data</span>](http://172.20.92.57:9999/tree/YokozunaData/data)
+-   학습/테스트 데이터 :<a href = "https://storage.googleapis.com/ncsoft_comeptition_datastore/2019_bigcon/data.zip">다운로드</a>
