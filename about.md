@@ -423,7 +423,5 @@ permalink: /about/
     </div>
     
     
-    </div>
-  
   </div> <!-- team -->
 </div>
