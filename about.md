@@ -407,28 +407,6 @@ permalink: /about/
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
   	      <div class="media">
   		      <div class="pull-left">
-  			      <img class="media-object" src="/assets/about_us/images/ini_yjy.png " alt="">
-  		      </div>
-    		    <div class="media-body">
-    			    <h4>윤지영</h4>
-    			    <h5>Analysis&Modeling Team</h5>
-    			    <ul class="tag clearfix">
-    				    <li class="btn">Padawan</li>
-    			    </ul>              
-    		    </div>
-  	      </div>
-  	      <p>미생</p>
-  	    </div>
-      </div>
-    </div>
-    
-    
-    <br><br>
-    <div class="row clearfix">
-      <div class="col-md-4 col-sm-6">
-        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-  	      <div class="media">
-  		      <div class="pull-left">
   			      <img class="media-object" src="/assets/about_us/images/ini_cwm.png " alt="">
   		      </div>
     		    <div class="media-body">
@@ -442,7 +420,9 @@ permalink: /about/
   	      <p>미생</p>
   	    </div>
       </div>
-
+    </div>
+    
+    
     </div>
   
   </div> <!-- team -->
