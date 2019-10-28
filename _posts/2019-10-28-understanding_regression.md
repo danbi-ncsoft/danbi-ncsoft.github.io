@@ -30,7 +30,7 @@ col $$\mathbf X$$를 통해 생성되는 공간의 최대 차원, 즉 $$\mathbf 
 
 그림에서 색칠된 평면이 $$\mathbf X$$가 생성하는 컬럼 스페이스, 즉 col $$\mathbf X$$를 표현하고 있다. 앞서 보았듯이 $$\mathbf Y$$는 $$n$$ 차원 벡터다. 몹시 특별한 경우가 아니라면 $$\mathbf Y$$ 벡터가 col $$\mathbf X$$에 속할 가능성은 없다. 만일 속해 있다면 회귀분석이 필요 없을 것이다. col $$\mathbf X$$를 통해서 $$\mathbf Y$$를 완벽하게 예측할 수 있는데 무슨 걱정이 있겠는가? 대체로 우리가 마주하는 상황은 $$n$$ 차원 벡터를 $$k$$ 차원 공간에 끼워 넣기 힘든 상황이다. 
 
-회귀분석의 목표는 regressor를 통해서 regressand를 '가장' 잘 설명하는 것이다. 이를 기하를 통해 풀어보자. 회귀분석이란 regressand와 '닮은' 것을 col $$\mathbf X$$에서 찾는 것이다. 즉 $$\mathbf Y$$와 닮은 무엇을 $$\mathbf X$$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $$\mathbf Y$$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $$\mathbf Y$$에서 $$\mathbf X$$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $$\mathbf X$$의 지점이다. col $$\mathbf X$$ 내에 있는 수선의 발 벡터를 찾는 연산자(operator)가 회귀분석 계수 $$\hat{\bm \beta}$$이다. 즉, 
+회귀분석의 목표는 regressor를 통해서 regressand를 '가장' 잘 설명하는 것이다. 이를 기하를 통해 풀어보자. 회귀분석이란 regressand와 '닮은' 것을 col $$\mathbf X$$에서 찾는 것이다. 즉 $$\mathbf Y$$와 닮은 무엇을 $$\mathbf X$$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $$\mathbf Y$$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $$\mathbf Y$$에서 $$\mathbf X$$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $$\mathbf X$$의 지점이다. col $$\mathbf X$$ 내에 있는 수선의 발 벡터를 찾는 연산자(operator)가 회귀분석 계수 $$\hat{ \boldsymbol \beta}$$이다. 즉, 
 
 $$
 \hat{\bm \beta} = ({\mathbf X}'{\mathbf X})^{-1} ({\mathbf X}' \mathbf Y)
@@ -68,5 +68,5 @@ $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0MjAzOTA2LDExMjU0MzU4MDZdfQ==
+eyJoaXN0b3J5IjpbLTc1MjI3OTU1OCwxMTI1NDM1ODA2XX0=
 -->
