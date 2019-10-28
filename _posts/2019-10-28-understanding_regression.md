@@ -33,7 +33,7 @@ col $$\mathbf X$$를 통해 생성되는 공간의 최대 차원, 즉 $$\mathbf 
 회귀분석의 목표는 regressor를 통해서 regressand를 '가장' 잘 설명하는 것이다. 이를 기하를 통해 풀어보자. 회귀분석이란 regressand와 '닮은' 것을 col $$\mathbf X$$에서 찾는 것이다. 즉 $$\mathbf Y$$와 닮은 무엇을 $$\mathbf X$$의 컬럼 스페이스에 찾아야 한다. 직관적으로 쉽게 떠올릴 수 있는 것은 이 평면과 $$\mathbf Y$$의 (유클리드) 거리를 가장 짧게 만들어주는 벡터일 것이다. 그리고 이 최단거리는 $$\mathbf Y$$에서 $$\mathbf X$$ 컬럼 스페이스로 내린 수선의 발이 닿는 col $$\mathbf X$$의 지점이다. col $$\mathbf X$$ 내에 있는 수선의 발 벡터를 찾는 연산자(operator)가 회귀분석 계수 $$\hat{ \boldsymbol \beta}$$이다. 즉, 
 
 $$
-\hat{\bm \beta} = ({\mathbf X}'{\mathbf X})^{-1} ({\mathbf X}' \mathbf Y)
+\hat{\boldsymbol \beta} = ({\mathbf X}'{\mathbf X})^{-1} ({\mathbf X}' \mathbf Y)
 $$
 
 그리고 이 연산자를 regressor의  모음인 col $$\mathbf X$$에 적용하면 regressand $$\mathbf Y$$의 예측치 $$\hat{\mathbf Y}$$이 계산된다. 그림에서 보듯이 $$\hat{\mathbf Y}$$은 $$\mathbf Y$$와 $$\mathbf X$$의 컬럼 스페이스의 거리를 최소화하는 위치에 존재한다. $$\hat{\mathbf Y}$$는 어떤 벡터일까? $$(n \times 1)$$ 벡터지만   col $$\mathbf X$$ 내에 위치하고 있다. 
@@ -68,5 +68,5 @@ $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjI3OTU1OCwxMTI1NDM1ODA2XX0=
+eyJoaXN0b3J5IjpbMzAyNzMyODEyLDExMjU0MzU4MDZdfQ==
 -->
