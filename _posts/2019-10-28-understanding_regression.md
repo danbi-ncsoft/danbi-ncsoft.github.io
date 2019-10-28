@@ -71,11 +71,11 @@ $$\textrm R^2$$는 가끔 회귀분석의 성과 지표로 남용되는 경우�
 
 $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 분석의 목표가 회귀분석을 통한 예측이라면, 즉 원래 관찰값과 예측된 값이 얼마나 떨어져 있는지 여부가 중요하다면 $$\textrm R^2$$는 의미를 지닐 수 있다. 반면, 분석의 목표가 회귀분석을 통한 이러한 종류의 예측이 아니라 특정한 regressor의 인과관계에 관한 추정이라면, $$\textrm R^2$$는 거의 무시해도 좋다. 
 
-아울러 회귀분석이라는 이름을 지니고 있지만 사실 위에 설명한 전형적인 회귀분석의 방법을 따르지 않는 기법에서  $$\textrm R^2$$가 정의되지 않는 경우도 있다. 잘 알려진 로지스틱 회귀가 이에 해당한다. 로지스틱 회귀에서 회귀 계수의 추정은 여기서 봤듯이 관찰과 col $$\mathbf X$$ 사이의 거리를 최소화하는 방식이 아니라 우도(likelihood)를 극대화하는 방식을 따른다. 따라서 벡터 공간의 피타고라스 정리를 따르는 $$\textrm R^2$$는 정의되지 않는다.[^2]
+아울러 회귀분석이라는 이름을 달고 있지만 전형적인 회귀분석의 방법을 따르지 않는 기법에서 $$\textrm R^2$$가 정의되지 않는 경우도 있다. 잘 알려진 로지스틱 회귀가 이에 해당한다. 로지스틱 회귀에서 회귀 계수의 추정은 여기서 봤듯이 관찰과 col $$\mathbf X$$ 사이의 거리를 최소화하는 방식이 아니라 우도(likelihood)를 극대화하는 방식을 따른다. 따라서 벡터 공간의 피타고라스 정리를 따르는 $$\textrm R^2$$는 정의되지 않는다.[^2]
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTMzODU5OCwxNDkyMDA4MjM2LDEyOD
-Q0ODc4MTYsMTA0ODk1MzI4NywtOTMwODAzMjM5LDMwMjczMjgx
-MiwxMTI1NDM1ODA2XX0=
+eyJoaXN0b3J5IjpbLTIwNTg2NDAwOTcsMTQ5MjAwODIzNiwxMj
+g0NDg3ODE2LDEwNDg5NTMyODcsLTkzMDgwMzIzOSwzMDI3MzI4
+MTIsMTEyNTQzNTgwNl19
 -->
