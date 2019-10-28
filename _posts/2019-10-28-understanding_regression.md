@@ -67,7 +67,7 @@ $$
   {\mathrm R}^2 = 1 - \dfrac{\text{RSS}}{\text{TSS}}
 $$
 
-$$\textrm R^2$$는 가끔 회귀분석의 성과 지표로 남용되는 경우가 있다. 이렇게 기하학적으로 보면 col $$\mathbf X$$ 내에 표현된 $$\hat{\mathbf Y}$$ 가 $$\mathbf Y$$와 얼마나 가깝게 있는지를 $$ \overline{\mathbf Y}$$를 기준으로 지표화한 것에 불과하다. 
+$$\textrm R^2$$는 가끔 회귀분석의 성과 지표로 남용되는 경우가 있다. 이렇게 기하학적으로 보면 col $$\mathbf X$$ 내에 표현된 $$\hat{\mathbf Y}$$ 가 $$\mathbf Y$$와 얼마나 가깝게 있는지를 $$\overline{\mathbf Y}$$를 기준으로 지표화한 것에 불과하다. 
 
 $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까? 분석의 목표가 회귀분석을 통한 예측이라면, 즉 원래 관찰값과 예측된 값이 얼마나 떨어져 있는지 여부가 중요하다면 $$\textrm R^2$$는 의미를 지닐 수 있다. 반면, 분석의 목표가 회귀분석을 통한 이러한 종류의 예측이 아니라 특정한 regressor의 인과관계에 관한 추정이라면, $$\textrm R^2$$는 거의 무시해도 좋다. 
 
@@ -75,7 +75,7 @@ $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjMwMDU4MiwxNDkyMDA4MjM2LDEyOD
+eyJoaXN0b3J5IjpbMTc3NTMzODU5OCwxNDkyMDA4MjM2LDEyOD
 Q0ODc4MTYsMTA0ODk1MzI4NywtOTMwODAzMjM5LDMwMjczMjgx
 MiwxMTI1NDM1ODA2XX0=
 -->
