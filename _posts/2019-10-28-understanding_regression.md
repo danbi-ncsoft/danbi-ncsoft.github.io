@@ -16,7 +16,7 @@ cover: "/assets/statistics.jpg"
 여기서 회귀분석을 해설할 생각은 없다. 이미 너무나 많은 그리고 매우 훌륭한 내용들이 책, 웹, 강의로 넘쳐날테니까. 이 글의 용도는 그림 하나로 지나치게 쉬운 회귀분석의 '핵심'을 살피는 것이다. [crossvalidated](https://stats.stackexchange.com/questions/123651/geometric-interpretation-of-multiple-correlation-coefficient-r-and-coefficient)에서 이 그림을 보는 순간 일종의 '돈오돈수'가 강림했다. (이렇게 이해하면 쉬웠을 것을...) 먼저 우리에게 익숙한 회귀분석 모델을 매트릭스로 적어보자. 
 
 $$
-\underset{n \times 1}{\phantom{\boldsymbol \gamma}\mathbf{Y}\phantom{\bm \gamma}} = \underset{n \times k}{\phantom{\bm \gamma} \mathbf{X} \phantom{\bm \gamma} }\underset{k \times 1}{\bm \beta} + \underset{n \times 1}{\phantom{\bm \beta} \bm \varepsilon \phantom{\bm \gamma} }
+\underset{n \times 1}{\phantom{\boldsymbol \gamma}\mathbf{Y}\phantom{\boldsymbol \gamma}} = \underset{n \times k}{\phantom{\boldsymbol \gamma} \mathbf{X} \phantom{\boldsymbol \gamma} }\underset{k \times 1}{\boldsymbol \beta} + \underset{n \times 1}{\phantom{\boldsymbol \beta} \boldsymbol \varepsilon \phantom{\boldsymbol \gamma} }
 $$
 
 식에 관한 자세한 설명 역시 생략한다. 대충 $$n$$ 개의 관찰 수과 $$k$$ 개의 regressor를 지닌 중회귀분석 모형이라고 생각하면 되겠다.  앞서 본 그림은 보통 회귀분석의 예시로 많이 활용되는 아래 그림과는 다르다.[^1]
@@ -75,6 +75,6 @@ $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDgwMzIzOSwzMDI3MzI4MTIsMTEyNT
-QzNTgwNl19
+eyJoaXN0b3J5IjpbMTA0ODk1MzI4NywtOTMwODAzMjM5LDMwMj
+czMjgxMiwxMTI1NDM1ODA2XX0=
 -->
