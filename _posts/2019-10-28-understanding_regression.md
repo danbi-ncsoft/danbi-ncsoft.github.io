@@ -19,7 +19,7 @@ $$
 \underset{n \times 1}{\phantom{\boldsymbol \gamma}\mathbf{Y}\phantom{\boldsymbol \gamma}} = \underset{n \times k}{\phantom{\boldsymbol \gamma} \mathbf{X} \phantom{\boldsymbol \gamma} }\underset{k \times 1}{\boldsymbol \beta} + \underset{n \times 1}{\phantom{\boldsymbol \beta} \boldsymbol \varepsilon \phantom{\boldsymbol \gamma} }
 $$
 
-식에 관한 자세한 설명 역시 생략한다. 대충 $$n$$ 개의 관찰 수과 $$k$$ 개의 regressor를 지닌 중회귀분석 모형이라고 생각하면 되겠다.  앞서 본 그림은 보통 회귀분석의 예시로 많이 활용되는 아래 그림과는 다르다.[^1]
+식에 관한 자세한 설명 역시 생략한다. 대충 $$n$$ 개의 관찰 수과 $$k$$ 개의 regressor를 지닌 중회귀분석 모형이라고 생각하면 되겠다.[^1] 앞서 본 그림은 보통 회귀분석의 예시로 많이 활용되는 아래 그림과는 다르다.
 
 [^1]: 흔히 $$\mathbf Y$$를 종속변수, $$\mathbf X$$를 독립변수로 부르기도 한다. 하지만 이러한 이름에는 혼란의 여지가 있다. 여기서는 regressor, regressand라는 영어 표현을 그대로 쓰도록 하겠다. 
 
@@ -45,7 +45,7 @@ $$
 
 그리고 이 연산자를 regressor의  모음인 col $$\mathbf X$$에 적용하면 regressand $$\mathbf Y$$의 예측치 $$\hat{\mathbf Y}$$이 계산된다. 그림에서 보듯이 $$\hat{\mathbf Y}$$은 $$\mathbf Y$$와 $$\mathbf X$$의 컬럼 스페이스의 거리를 최소화하는 위치에 존재한다. $$\hat{\mathbf Y}$$는 어떤 벡터일까? $$(n \times 1)$$ 벡터지만   col $$\mathbf X$$ 내에 위치하고 있다. 
 
-이제 이 그림을 머리에 넣고서 $$\mathrm R^2$$의 의미를 살펴보자. 결론부터 이야기하면  $$\mathrm R^2$$는 그림에서 $$(\mathbf Y - \overline{\mathbf Y})$$ 벡터와 $$(\hat{\mathbf Y}-\overline{\mathbf Y})$$ 벡터가 이루는 각의 코사인 값, 즉 $$\cos \theta$$다. $$\overline{\mathbf Y}$$는 무엇일까? 그림에서처럼 $$\overline{Y} \mathbf{1}_n$$로 표기할 수 있다. 즉, $$\mathbf Y$$의 평균값 $$\overline{Y}$$만으로 구성된 $$(n \times 1)$$ 벡터다. 이 벡터는 col $$\mathbf X$$ 안에 있을까? 당연히 그렇다. $$\mathbf X$$는 최대한 $$k(<n)$$ 차원의 벡터이고, $$\overline{\mathbf Y}$$는 1차원 벡터다. 다시 본론으로 돌아가자. 이 코사인 값의 의미는 무엇일까? 
+이제 이 그림을 머리에 넣고서 $$\mathrm R^2$$의 의미를 살펴보자. 결론부터 이야기하면  $$\mathrm R^2$$는 그림에서 $$(\mathbf Y - \overline{\mathbf Y})$$ 벡터와 $$(\hat{\mathbf Y}-\overline{\mathbf Y})$$ 벡터가 이루는 각의 코사인 값, 즉 $$\cos \theta$$ 다. $$\overline{\mathbf Y}$$는 무엇일까? 그림에서처럼 $$\overline{Y} \mathbf{1}_n$$로 표기할 수 있다. 즉, $$\mathbf Y$$의 평균값 $$\overline{Y}$$만으로 구성된 $$(n \times 1)$$ 벡터다. 이 벡터는 col $$\mathbf X$$ 안에 있을까? 당연히 그렇다. $$\mathbf X$$는 최대한 $$k(<n)$$ 차원의 벡터이고, $$\overline{\mathbf Y}$$는 1차원 벡터다. 다시 본론으로 돌아가자. 이 코사인 값의 의미는 무엇일까? 
 
 그림에서 보듯이 세 개의 벡터가 직각삼각형을 이루고 있으므로 아래의 식이 성립한다. 
 
@@ -75,6 +75,6 @@ $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODcxMTk5NCwxMDQ4OTUzMjg3LC05Mz
+eyJoaXN0b3J5IjpbMTI4NDQ4NzgxNiwxMDQ4OTUzMjg3LC05Mz
 A4MDMyMzksMzAyNzMyODEyLDExMjU0MzU4MDZdfQ==
 -->
