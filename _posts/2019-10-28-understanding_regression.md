@@ -8,7 +8,7 @@ cover: "/assets/statistics.jpg"
 ---
  
 
-![regression with topology](/assets/members/junsokhuhh/.png)
+![regression with topology](/assets/members/junsokhuhh/understanding_regression_1.png)
 
 여기서 회귀분석을 해설할 생각은 없다. 이미 너무나 많은 그리고 매우 훌륭한 내용들이 책, 웹, 강의로 넘쳐날테니까. 이 글의 용도는 그림 하나로 지나치게 쉬운 회귀분석의 '핵심'을 살피는 것이다. [crossvalidated](https://stats.stackexchange.com/questions/123651/geometric-interpretation-of-multiple-correlation-coefficient-r-and-coefficient)에서 이 그림을 보는 순간 일종의 '돈오돈수'가 강림했다. (이렇게 이해하면 쉬웠을 것을...) 먼저 우리에게 익숙한 회귀분석 모델을 매트릭스로 적어보자. 
 
@@ -20,7 +20,7 @@ $$
 
 [^1]: 흔히 $$\mathbf Y$$를 종속변수, $$\mathbf X$$를 독립변수로 부르기도 한다. 하지만 이러한 이름에는 혼란의 여지가 있다. 여기서는 regressor, regressand라는 영어 표현을 그대로 쓰도록 하겠다. 
 
-![](https://miro.medium.com/max/1720/1*G1Y_-X14q2xMVHlUuaUUdA.png =500x)
+![regression with one regressor](/assets/members/junsokhuhh/understanding_regression_2.png)
 
 위 그림은 1개의 regressor가 존재할 때 이것과 regressand를 그대로 2차원 평면에 관찰 수만큼 찍은 것이다. 첫번째 그림에서 "Observed Y"는 $$n$$ 개의 regressand를 모두 포괄한다. $$\mathbf{Y}$$는 $$(n \times 1)$$ 벡터, 즉 $$n$$ 차원 벡터다. 이 벡터 하나가 회귀식 좌변의 관찰값 전체를 나타낸다. 
 
@@ -68,5 +68,5 @@ $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjYyNTYxNSwxMTI1NDM1ODA2XX0=
+eyJoaXN0b3J5IjpbOTc0MjAzOTA2LDExMjU0MzU4MDZdfQ==
 -->
