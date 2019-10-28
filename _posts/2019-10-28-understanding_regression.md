@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: "회귀분석 이해하기"  
+title: "회귀분석 이해하기 (기하편)"  
 date: 2019-10-28 13:00:00  
 categories: StudyETC  
 author : DANBI  
@@ -75,6 +75,6 @@ $${\mathrm R}^2$$는 회귀분석의 성과 지표로 어떤 의미가 있을까
 
 [^2]: 궁여지책으로 이와 유사한 지표를 만들어낼 수는 있겠다. [여기](https://thestatsgeek.com/2014/02/08/r-squared-in-logistic-regression)를 참고하라. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0ODk1MzI4NywtOTMwODAzMjM5LDMwMj
-czMjgxMiwxMTI1NDM1ODA2XX0=
+eyJoaXN0b3J5IjpbLTE2ODcxMTk5NCwxMDQ4OTUzMjg3LC05Mz
+A4MDMyMzksMzAyNzMyODEyLDExMjU0MzU4MDZdfQ==
 -->
