@@ -2,7 +2,7 @@
 layout: post  
 title: "회귀분석 이해하기 (기하편)"  
 date: 2019-10-28 13:00:00  
-categories: StudyETC  
+categories: Study  
 author : DANBI  
 cover: "/assets/statistics.jpg"  
 ---
