@@ -78,7 +78,7 @@ permalink: /about/
     		      </ul>             
     	      </div>
           </div>
-        <p>데이터센터장</p>
+          <p>데이터센터장</p>
         </div>
       </div>
     <!-- 명함 끝 -->
@@ -92,13 +92,13 @@ permalink: /about/
   			      <h4>이은조</h4>
   			      <h5>I&I Head</h5>
   			      <ul class="tag clearfix">
-  				      <li class="btn">Analyst</li>
-  				      <li class="btn">Developer</li>
+  				      <li class="btn">Manager</li>
+   				      <li class="btn">Analyst</li>
   			      </ul>              
   		      </div>
   	      </div>
   	      <p>I&I 실장</p>
-  	      </div>
+  	    </div>
       </div>
     </div> 
   
@@ -232,14 +232,14 @@ permalink: /about/
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
   	      <div class="media">
   		      <div class="pull-left">
-  			      <img class="media-object" src="/assets/about_us/images/ini_lej.png " alt="">
+  			      <img class="media-object" src="/assets/about_us/images/ini_uhm.png " alt="">
   		      </div>
     		    <div class="media-body">
-    			    <h4>이은조</h4>
+    			    <h4>엄혜민</h4>
     			    <h5>Analysis&Modeling Team</h5>
     			    <ul class="tag clearfix">
+    				    <li class="btn">Manager</li>
     				    <li class="btn">Analyst</li>
-    				    <li class="btn">Developer</li>
     			    </ul>              
     		    </div>
     	    </div>
@@ -251,17 +251,17 @@ permalink: /about/
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
   	      <div class="media">
   		      <div class="pull-left">
-  			      <img class="media-object" src="/assets/about_us/images/ini_uhm.png " alt="">
+  			      <img class="media-object" src="/assets/about_us/images/ini_ajo.png " alt="">
   		      </div>
     		    <div class="media-body">
-    			    <h4>엄혜민</h4>
+    			    <h4>안진옥</h4>
     			    <h5>Analysis&Modeling Team</h5>
     			    <ul class="tag clearfix">
-    				    <li class="btn">Analyst</li>
+    				    <li class="btn">Developer</li>
     			    </ul>              
     		    </div>
   	      </div>
-  	      <p>데이터 분석가</p>
+  	      <p>프로덕트 개발자</p>
   	    </div>
       </div>
     </div>
@@ -272,10 +272,10 @@ permalink: /about/
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
   	      <div class="media">
   		      <div class="pull-left">
-  			      <img class="media-object" src="/assets/about_us/images/ini_ajo.png " alt="">
+  			      <img class="media-object" src="/assets/about_us/images/ini_ssd.png " alt="">
   		      </div>
     		    <div class="media-body">
-    			    <h4>안진옥</h4>
+    			    <h4>서상덕</h4>
     			    <h5>Analysis&Modeling Team</h5>
     			    <ul class="tag clearfix">
     				    <li class="btn">Developer</li>
@@ -311,10 +311,10 @@ permalink: /about/
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
   	      <div class="media">
   		      <div class="pull-left">
-  			      <img class="media-object" src="/assets/about_us/images/ini_ssd.png " alt="">
+  			      <img class="media-object" src="/assets/about_us/images/ini_cwm.png " alt="">
   		      </div>
     		    <div class="media-body">
-    			    <h4>서상덕</h4>
+    			    <h4>조원민</h4>
     			    <h5>Analysis&Modeling Team</h5>
     			    <ul class="tag clearfix">
     				    <li class="btn">Developer</li>
@@ -395,33 +395,13 @@ permalink: /about/
     			    <h4>조양규</h4>
     			    <h5>Analysis&Modeling Team</h5>
     			    <ul class="tag clearfix">
-    				    <li class="btn">Padawan</li>
+    				    <li class="btn">Analyst</li>
     			    </ul>              
     		    </div>
   	      </div>
-  	      <p>미생</p>
+  	      <p>데이터 분석가</p>
   	    </div>
       </div>
-      
-      <div class="col-md-4 col-sm-6 col-md-offset-2">
-        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-  	      <div class="media">
-  		      <div class="pull-left">
-  			      <img class="media-object" src="/assets/about_us/images/ini_cwm.png " alt="">
-  		      </div>
-    		    <div class="media-body">
-    			    <h4>조원민</h4>
-    			    <h5>Analysis&Modeling Team</h5>
-    			    <ul class="tag clearfix">
-    				    <li class="btn">Padawan</li>
-    			    </ul>              
-    		    </div>
-  	      </div>
-  	      <p>미생</p>
-  	    </div>
-      </div>
-    </div>
-    
     
   </div> <!-- team -->
 </div>
