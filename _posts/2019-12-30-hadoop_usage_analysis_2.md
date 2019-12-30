@@ -2,7 +2,7 @@
 layout: post
 title: "데이터 분석을 통해 하둡 시스템 개선하기 #2"
 date: 2019-12-30 18:00:00
-categories: Study
+categories: Works
 author : DANBI
 cover: "/assets/bulbs.png"
 ---
