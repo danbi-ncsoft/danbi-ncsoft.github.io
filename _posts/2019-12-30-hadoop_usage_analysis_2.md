@@ -7,7 +7,7 @@ author : DANBI
 cover: "/assets/bulbs.png"
 ---
 
-앞선 포스팅([데이터 분석을 통해 하둡 시스템 개선하기 #1](<https://danbi-ncsoft.github.io/study/2019/12/30/hadoop_usage_analysis_1.html>))에서 데이터 분석을 통한 하둡 시스템 개선 프로젝트의목적과 그 첫번째 주제인 capacity scheduler 최적화를 위한 큐별 자원 할당 비율 을 최적화하는 분석을 살펴보았습니다. 
+앞선 포스팅([데이터 분석을 통해 하둡 시스템 개선하기 #1](<https://danbi-ncsoft.github.io/works/2019/12/30/hadoop_usage_analysis_1.html>))에서 데이터 분석을 통한 하둡 시스템 개선 프로젝트의목적과 그 첫번째 주제인 capacity scheduler 최적화를 위한 큐별 자원 할당 비율 을 최적화하는 분석을 살펴보았습니다. 
 
 이번 포스팅에서는 본 프로젝트의 두번째 주제인 데이터웨어하우스 테이블 구조 최적화의 분석 내용을 나눈 후에 두 분석 주제의 결과를 실제 적용하여 검증한 내용을 함께 나누겠습니다.
 
