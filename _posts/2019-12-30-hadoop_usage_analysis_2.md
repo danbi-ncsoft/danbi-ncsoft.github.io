@@ -86,7 +86,7 @@ Queue A는 전반적으로 자원 할당량이 증가했는데, 오전과 오후
 두번째 분석이었던 테이블 구조 변경 시 기대 효과에 대한 검증은 실제 도출된 3개의 테이블 그룹에 대한 실제 사용자들의 쿼리를 이용해서 1) 원래 쿼리를 그대로 실행한 경우와 2) 병합 테이블이 제공될 경우 수정된 쿼리를 사용하는 경우에 대해서 다양한 시간대와 요일에서 여러 차례 반복 실행해 본 후 duration의 차이를 분석했습니다.
 
 <p align="center">
-<img src="/assets/works/hadoop_usage_analysis\2편_그림4.png" style="width:8in" />
+<img src="/assets/works/hadoop_usage_analysis\2편_그림4.png" style="width:6in" />
 <그림 4> 세 가지 테이블 그룹의 1) 원래 쿼리와 2) 수정된 쿼리의 duration 분포
 </p>
 
