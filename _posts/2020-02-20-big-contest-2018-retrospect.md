@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2018 빅콘테스트 후기"
-date: 2019-02-20 18:00:00
+date: 2019-02-19 18:00:00
 categories: Competition
 author : DANBI
 cover: "/assets/competition/bigcontest/poster.PNG"
