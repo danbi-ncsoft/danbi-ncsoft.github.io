@@ -7,7 +7,7 @@ author : DANBI
 cover: "/assets/competition/bigcontest/poster.PNG"
 ---
 
-이 글은2019년 1월에 발간된 [마이크로소프트웨어 395호](https://www.imaso.co.kr/archives/4654)에 기고했던 글입니다.  
+**이 글은 2019년 1월에 발간된 [마이크로소프트웨어 395호](https://www.imaso.co.kr/archives/4654)에 기고했던 글입니다.**
 
 ## 시작하며
 
