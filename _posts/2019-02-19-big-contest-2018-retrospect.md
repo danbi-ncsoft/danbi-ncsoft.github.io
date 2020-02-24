@@ -123,7 +123,7 @@ $$
 
 <p align="center">
 <img src="/assets/competition/2018-bigcontest/image02.png" style="width:8in" />
-<그림 2> 자율 평가 순위표 ? 치열한 순위 경쟁의 현장
+<그림 2> 자율 평가 순위표 - 치열한 순위 경쟁의 현장
 </p>
 
 ### **최종 제출물**
