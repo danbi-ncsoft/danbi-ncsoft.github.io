@@ -198,7 +198,7 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
 - 리텐션 함수: $$R(t) = Average(s(t) + c(t))$$
 
   - $$s(t)$$ : shifted Beta Geometric Model
-  - $$c(t)$$ : Curve fitting 함수 (분수 함수): $$c(t) = \frac{d}{b * t^a + c} $$
+  - $$c(t)$$ : Curve fitting 함수 (분수 함수) $$= \frac{d}{b * t^a + c} $$
   - $$R(t, date)$$ : 특정 유입일(date)에 유입된 유저의 잔존율 피팅 함수
     - shifted Beta Geometric Model fitting 방식과 Curve fitting 방식의 평균값
 
@@ -212,11 +212,10 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
   \end{equation}
   $$
 
-- 따라서 신뢰구간은 아래와 같음
+- 따라서 최종 신뢰구간은 아래와 같음
   $$
   \begin{equation}
-  (LTV_{lower} , LTV_{upper}) = \\
-  ( ∑\hat{ARPU}* R(t) - 2.58 * \sqrt\frac{{var(R(t)*\hat{ARPU}}}{{n}} , ∑ARPU_hat * R(t) + 2.58 * \sqrt\frac{{var(R(t)*\hat{ARPU}}}{{n}} )
+  (LTV_{lower} , LTV_{upper}) = ( ∑\hat{ARPU}* R(t) - 2.58 * \sqrt\frac{{var(R(t)*\hat{ARPU}}}{{n}} , ∑ARPU_hat * R(t) + 2.58 * \sqrt\frac{{var(R(t)*\hat{ARPU}}}{{n}} )
   \end{equation}
   $$
   
