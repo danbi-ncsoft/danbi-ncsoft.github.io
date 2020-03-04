@@ -172,7 +172,7 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
       $$
       \begin{equation}
       L( α , β | data ) = ∏_{1≤i≤t} P(T=i | α , β )^{n_i} * S( t | α , β )^{N - ∑_{1≤i≤t^{n_i}}} \\
-      LL( α , β | data ) = ∑ n\_i * log( P(T=i | α , β ) ) + (N - ∑ n_i) * log( S( t | α , β ) ) \\
+      LL( α , β | data ) = ∑ n_i * log( P(T=i | α , β ) ) + (N - ∑ n_i) * log( S( t | α , β ) ) \\
       \hat{α}, \hat{β} = argmax_{α , β} ( LL( α , β | data ) )
       \end{equation}
       $$
@@ -217,3 +217,6 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
   (LTV_{lower} , LTV_{upper}) = ( ∑\hat{ARPU}* R(t) - 2.58 * \sqrt\frac{{Var(R(t)*\hat{ARPU}}}{{n}} , ∑\hat{ARPU} * R(t) + 2.58 * \sqrt\frac{{Var(R(t)*\hat{ARPU}}}{{n}} )
   $$
   
+
+ 
+
