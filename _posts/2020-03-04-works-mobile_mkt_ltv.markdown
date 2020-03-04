@@ -148,13 +148,13 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
 
   - s(t) : shifted Beta Geometric Model
   - c(t) : Curve fitting 함수 (분수 함수)
-    - c(t) = d / (b * ta + c) (신규 유저 그룹이 아닐 경우 a = 1)
+    - c(t) = d / (b * t^a + c) 
   - R(t, date) : 특정 유입일(date)에 유입된 유저의 잔존율 피팅 함수
     - shifted Beta Geometric Model fitting 방식과 Curve fitting 방식의 평균값
 - σ_{Retention, t} 
   - Var(f(t)) = Var( (s(t) + c(t) / 2) =[ Var(s(t)) + Var(c(t)) ]/4 (s(t)와 c(t)가 독립이라고 가정)
   - σ_{Retention, t} = sqrt( Vart(s(t)) + Vart(c(t)) ) / 2
   - n : 표준 오차 계산에 사용된 데이터의 갯수
-- var(R(t)\*ARPU_hat ) = var(R(t)\*var(ARPU_hat ) + var(R(t)\*[E(ARPU_hat )]2 + var(ARPU_hat )\*[E(R(t))]2  (R(t) 와 ARPU_hat이 독립이라고 가정)
-- [E(R(t))]2 = [E{c(t))2+E{s(t))2]/4 + E(c(t))\*E(s(t))/2
+- var(R(t)\*ARPU_hat ) = var(R(t)\*var(ARPU_hat ) + var(R(t)\*[E(ARPU_hat )]^2 + var(ARPU_hat )\*[E(R(t))]^2  (R(t) 와 ARPU_hat이 독립이라고 가정)
+- [E(R(t))]^2 = [E{c(t))^2+E{s(t))^2]/4 + E(c(t))\*E(s(t))/2
 - (LTV_lower , LTV_upper) = ( ∑ARPU_hat \* R(t) - 2.58 \* sqrt(var(R(t)\*ARPU_hat) / sqrt(n) , ∑ARPU_hat \* R(t) + 2.58 \* sqrt(var(R(t)\*ARPU_hat) / sqrt(n) )
