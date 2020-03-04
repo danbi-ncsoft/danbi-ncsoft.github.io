@@ -153,7 +153,7 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
     $$
     \begin{aligned}
     P(T=1 | α , β ) = \frac{α}{α+β}, \ \ \ \ \ 
-    P(T=t | α , β ) = \frac{β + t - 2}{α + β + t - 1} * P(T=t-1 | α , β ) \ \ if \ \ t=2,3,4.....
+    P(T=t | α , β ) = \frac{β + t - 2}{α + β + t - 1} * P(T=t-1 | α , β ) \ \ \ if \ \ \ t=2,3,4.....
     \end{aligned}
     $$
 
@@ -167,15 +167,20 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
   - MLE를 사용한 $$α$$ , $$β$$ 추정 방법
 
     - $$α$$ , $$β$$ 에 대한 우도함수는 다음과 같이 나타냄 
+
     - $$n_i$$ : $$i$$ 시점에서의 이탈한 유저 수
-    - $$L( α , β \| data ) = ∏\_{1≤i≤t} P(T=i \| α , β )^{n_i} \* S( t \| α , β )^{N - ∑_{1≤i≤t^{n_i}}}$$
-    - $$LL( α , β \| data ) = ∑ n\_i * log( P(T=i \| α , β ) ) + (N - ∑ n\_i) * log( S( t \| α , β ) )$$
-    - $$α_{hat}, β_{hat} = argmax\_{α , β} ( LL( α , β \| data ) )$$
+      $$
+      \begin{equation}
+      L( α , β | data ) = ∏_{1≤i≤t} P(T=i | α , β )^{n_i} * S( t | α , β )^{N - ∑_{1≤i≤t^{n_i}}} \\
+      LL( α , β | data ) = ∑ n\_i * log( P(T=i | α , β ) ) + (N - ∑ n_i) * log( S( t | α , β ) ) \\
+      α_{hat}, β_{hat} = argmax_{α , β} ( LL( α , β | data ) )
+      \end{equation}
+      $$
 
   - $$α_{hat}$$, $$β_{hat}$$를 이용하여 유저의 모든 시점의 생존 확률을 계산하여 Retention 함수로 사용
 
-    - $$S(T = 1) = β / (α+β)$$
-    - $$S(T = t) = r_t * S(T = t-1) = (β + t -1) / (α + β + t - 1) \* S(T = t-1) $$
+    - $$S(T = 1) = \frac{β}{α+β}$$
+    - $$S(T = t) = r_t * S(T = t-1) = \frac{β + t -1}{α + β + t - 1} \* S(T = t-1) $$
 
 - 참고 자료
 
@@ -185,11 +190,10 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
 
 - $$σ_{ARPU_hat}$$ = ARPU 추정에 사용된 ARPDAU들의 표준 오차
   - $$n$$ : 표준 오차 계산에 사용된 데이터의 갯수
-- $$R(t) = Average(s(t) + c(t))$$
+- 리텐션 함수: $$R(t) = Average(s(t) + c(t))$$
 
   - $$s(t)$$ : shifted Beta Geometric Model
-  - $$c(t)$$ : Curve fitting 함수 (분수 함수)
-    - $$c(t) = d / (b * t^a + c) $$
+  - $$c(t)$$ : Curve fitting 함수 (분수 함수): $$c(t) = \frac{d}{b * t^a + c} $$
   - $$R(t, date)$$ : 특정 유입일(date)에 유입된 유저의 잔존율 피팅 함수
     - shifted Beta Geometric Model fitting 방식과 Curve fitting 방식의 평균값
 - $$σ_{Retention, t} $$
