@@ -48,7 +48,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv1.PNG" style="width:3in" />
+<img src="/assets/works/mobile_mkt/ltv1.PNG" style="width:8in" />
     [그림1] (왼)꾸준히 감소하는 형태의 일반적인 잔존율 (오)증가와 감소가 혼합된 우리의 잔존율 그래프
 </p>
 
@@ -57,7 +57,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
  
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:3in" />
+<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:8in" />
 [그림2] 15개의 특정 날짜(15개의 line 그래프)에 접속한 유저들의 시간에 따른 리텐션 변화, (왼)전체 유저 (오)특정 그룹에 속한 유저, 완만하게 감소하는 형태가 아닌 요동치는 모습이라 전처리가 필요함. 그룹별로도 양상이 매우 다른 것을 확인할 수 있음
 </p>
 
@@ -76,18 +76,18 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv3.PNG" style="width:3in" />
+<img src="/assets/works/mobile_mkt/ltv3.PNG" style="width:8in" />
 [그림3] 개선된 예상 수익 지표 기획안 일부 발췌
 </p>
 
 ## 개선 결과 
 
-사실 기존의 평생 수익을 예측하는 관점인 LTV 지표라는 용어와 달리, 개선된 지표는 향후 x일 간 발생할 예상 수익을 예측하는 관점인데요. (LTV에서 예상 수익으로 용어를 변경한 이유) 그렇지만 이와 같은 개선을 통해 기간별 그룹별로 예측치를 제공하여 좀 더 활용성을 높이고자 했습니다. 또한 예상 수익 예측 작업은 기존 LTV 지표 대비 오차율을 절반 이상 감소시켜 지표의 정확성도 증대시켰습니다. (각기 다른 방식으로 계산된 예측치이기에 180일 예측으로 기준을 통일하여 평균 오차 비율을 |실측치-예측치|/실측치)*100 으로 계산했을 때, 기존대비 50%->18%로 대폭 감소)
+사실 기존의 평생 수익을 예측하는 관점인 LTV 지표라는 용어와 달리, 개선된 지표는 향후 x일 간 발생할 예상 수익을 예측하는 관점인데요. (LTV에서 예상 수익으로 용어를 변경한 이유) 그렇지만 이와 같은 개선을 통해 기간별 그룹별로 예측치를 제공하여 좀 더 활용성을 높이고자 했습니다. 또한 예상 수익 예측 작업은 기존 LTV 지표 대비 오차율을 절반 이상 감소시켜 지표의 정확성도 증대시켰습니다. (각기 다른 방식으로 계산된 예측치이기에 180일 예측으로 기준을 통일하여 평균 오차 비율을 \|실측치-예측치\|/실측치)*100 으로 계산했을 때, 기존대비 50% → 18%로 대폭 감소)
 
  
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:3in" />
+<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:8in" />
 [그림4] 접속일별 기존 지표와 개선된 지표 비교, 빨간 점선 박스 안의 그래프가 이번 작업 내용인데 많이 개선된 것을 확인할 수 있습니다!
 </p>
 
