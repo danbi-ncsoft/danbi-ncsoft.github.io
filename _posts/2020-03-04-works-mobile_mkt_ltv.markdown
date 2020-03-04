@@ -118,7 +118,7 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
     - $$t$$ 시점에서 유저의 이탈 확률:
       $$
       \begin{aligned}
-      P( T=t | Θ ) = Θ * (1-Θ)^{t-1}
+      P( T=t | Θ ) = Θ \times (1-Θ)^{t-1}
       \end{aligned}
       $$
 
@@ -132,7 +132,7 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
     - 유저의 이탈 확률 $$Θ$$는 베타 분포를 따름:
       $$
       \begin{aligned}
-      f( Θ | α , β ) = \frac{Θ^{α-1} * (1-Θ)^{β-1}}{Β(α,β)}
+      f( Θ | α , β ) = \frac{Θ^{α-1} \times (1-Θ)^{β-1}}{Β(α,β)}
       \end{aligned}
       $$
       
@@ -153,14 +153,14 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
     $$
     \begin{aligned}
     P(T=1 | α , β ) = \frac{α}{α+β}, \ \ \ \ \ 
-    P(T=t | α , β ) = \frac{β + t - 2}{α + β + t - 1} * P(T=t-1 | α , β ) \ \ \ if \ \ \ t=2,3,4.....
+    P(T=t | α , β ) = \frac{β + t - 2}{α + β + t - 1} \times P(T=t-1 | α , β ) \ \ \ if \ \ \ t=2,3,4.....
     \end{aligned}
     $$
 
   - $$t$$시점에서의 유저의 생존 확률을 이용하면 t시점에서의 유저의 잔존 확률은 다음과 같이 정의하며, 잔존 확률은 유저의 생존 확률 계산에 사용
     $$
     \begin{aligned}
-    r_t = \frac{S(t)}{S(t-1)} = \frac{β+t-1}{α+β+t-1} , \ \ \ \ \ S(t) = r_t * S(t-1)
+    r_t = \frac{S(t)}{S(t-1)} = \frac{β+t-1}{α+β+t-1} , \ \ \ \ \ S(t) = r_t \times S(t-1)
     \end{aligned}
     $$
 
@@ -171,8 +171,8 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
     - $$n_i$$ : $$i$$ 시점에서의 이탈한 유저 수
       $$
       \begin{equation}
-      L( α , β | data ) = ∏_{1≤i≤t} P(T=i | α , β )^{n_i} * S( t | α , β )^{N - ∑_{1≤i≤t^{n_i}}} \\
-      LL( α , β | data ) = ∑ n_i * log( P(T=i | α , β ) ) + (N - ∑ n_i) * log( S( t | α , β ) ) \\
+      L( α , β | data ) = ∏_{1≤i≤t} P(T=i | α , β )^{n_i} \times S( t | α , β )^{N - ∑_{1≤i≤t^{n_i}}} \\
+      LL( α , β | data ) = ∑ n_i \times log( P(T=i | α , β ) ) + (N - ∑ n_i) \times log( S( t | α , β ) ) \\
       \hat{α}, \hat{β} = argmax_{α , β} ( LL( α , β | data ) )
       \end{equation}
       $$
@@ -181,7 +181,7 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
     $$
     \begin{equation}
     S(T = 1) = \frac{β}{α+β}, \ \ \ \ \ 
-    S(T = t) = r_t * S(T = t-1) = \frac{β + t -1}{α + β + t - 1} * S(T = t-1)
+    S(T = t) = r_t * S(T = t-1) = \frac{β + t -1}{α + β + t - 1} \times S(T = t-1)
     \end{equation}
     $$
 
@@ -207,14 +207,14 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
   \begin{equation}
   Var(f(t)) = Var( \frac{s(t) + c(t)}{2} ) =\frac{Var(s(t)) + Var(c(t))}{4}\ \ (s(t)와 \ c(t)는 \ 독립), \ \ \ \ \ 
   σ_{Retention, t} = \frac{\sqrt{Var(s(t)) + Var(c(t))}}{2} \\
-  Var(R(t)*\hat{ARPU} ) = Var(R(t)*Var(\hat{ARPU} ) + Var(R(t)*[E(\hat{ARPU} )]^2 + Var(\hat{ARPU})*[E(R(t))]^2 \ \ (R(t)와 \ \hat{ARPU}는 \ 독립) \\
-  E(R(t))^2 = \frac{E(c(t))^2+E(s(t))^2}{4} + \frac{E(c(t))*E(s(t))}{2}
+  Var(R(t)\times\hat{ARPU} ) = Var(R(t)\times Var(\hat{ARPU} ) + Var(R(t)\times[E(\hat{ARPU} )]^2 + Var(\hat{ARPU})\times[E(R(t))]^2 \ \ (R(t)와 \ \hat{ARPU}는 \ 독립) \\
+  E(R(t))^2 = \frac{E(c(t))^2+E(s(t))^2}{4} + \frac{E(c(t))\times E(s(t))}{2}
   \end{equation}
   $$
 
 - 따라서 최종 신뢰구간은 아래와 같음
   $$
-  (LTV_{lower} , LTV_{upper}) = ( ∑\hat{ARPU}* R(t) - 2.58 * \sqrt\frac{Var(R(t)*\hat{ARPU}}{n} , ∑\hat{ARPU} * R(t) + 2.58 * \sqrt\frac{Var(R(t)*\hat{ARPU}}{n} )
+  (LTV_{lower} , LTV_{upper}) = ( ∑\hat{ARPU}* R(t) - 2.58 \times \sqrt\frac{Var(R(t)\times \hat{ARPU}}{n} , ∑\hat{ARPU} * R(t) + 2.58 \times \sqrt\frac{Var(R(t)\times \hat{ARPU}}{n} )
   $$
   
 
