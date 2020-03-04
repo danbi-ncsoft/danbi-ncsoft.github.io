@@ -105,7 +105,7 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
     - ARPU는 ARPDAU의 평균으로 추정
     - Retention은 함수 피팅과 sBG 방식으로 추정
 - 결과
-  - 전체 & 세그먼트(매체, 신규, os, 에뮬) 별 30/90/180/365일 예상 수익 예측치
+  - 전체 & 세그먼트(신규, 광고매체 등) 별 30/90/180/365일 예상 수익 예측치
 
 ## Appendix.
 
@@ -153,8 +153,8 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
     - shifted Beta Geometric Model fitting 방식과 Curve fitting 방식의 평균값
 - σ_{Retention, t} 
   - Var(f(t)) = Var( (s(t) + c(t) / 2) =[ Var(s(t)) + Var(c(t)) ]/4 (s(t)와 c(t)가 독립이라고 가정)
-  - σRetention, t = sqrt( Vart(s(t)) + Vart(c(t)) ) / 2
+  - σ_{Retention, t} = sqrt( Vart(s(t)) + Vart(c(t)) ) / 2
   - n : 표준 오차 계산에 사용된 데이터의 갯수
-- var(R(t)*ARPU_hat ) = var(R(t)*var(ARPU_hat ) + var(R(t)*[E(ARPU_hat )]2 + var(ARPU_hat )*[E(R(t))]2  (R(t) 와 ARPU_hat이 독립이라고 가정)
-- [E(R(t))]2 = [E{c(t))2+E{s(t))2]/4 + E(c(t))*E(s(t))/2
-- (LTV_lower , LTV_upper) = ( ∑ARPU_hat * R(t) - 2.58 * sqrt(var(R(t)*ARPU_hat) / sqrt(n) , ∑ARPU_hat * R(t) + 2.58 * sqrt(var(R(t)*ARPU_hat) / sqrt(n) )
+- var(R(t)\*ARPU_hat ) = var(R(t)\*var(ARPU_hat ) + var(R(t)\*[E(ARPU_hat )]2 + var(ARPU_hat )\*[E(R(t))]2  (R(t) 와 ARPU_hat이 독립이라고 가정)
+- [E(R(t))]2 = [E{c(t))2+E{s(t))2]/4 + E(c(t))\*E(s(t))/2
+- (LTV_lower , LTV_upper) = ( ∑ARPU_hat \* R(t) - 2.58 \* sqrt(var(R(t)\*ARPU_hat) / sqrt(n) , ∑ARPU_hat \* R(t) + 2.58 \* sqrt(var(R(t)\*ARPU_hat) / sqrt(n) )
