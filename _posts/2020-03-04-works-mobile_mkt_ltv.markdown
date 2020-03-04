@@ -48,7 +48,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv1.PNG" style="width:8in" />
+<img src="/assets/works/mobile_mkt/ltv1.PNG" style="width:10in" />
     [그림1] (왼)꾸준히 감소하는 형태의 일반적인 잔존율 (오)증가와 감소가 혼합된 우리의 잔존율 그래프
 </p>
 
@@ -57,11 +57,11 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
  
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:8in" />
-[그림2] 15개의 특정 날짜(15개의 line 그래프)에 접속한 유저들의 시간에 따른 리텐션 변화, (왼)전체 유저 (오)특정 그룹에 속한 유저, 완만하게 감소하는 형태가 아닌 요동치는 모습이라 전처리가 필요함. 그룹별로도 양상이 매우 다른 것을 확인할 수 있음
+<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:10in" />
+[그림2] 15개의 특정 날짜(15개의 line 그래프)에 접속한 유저들의 시간에 따른 리텐션 변화, (왼)전체 유저 (오)특정 그룹에 속한 유저, <\br> 완만하게 감소하는 형태가 아닌 요동치는 모습이라 전처리가 필요함. 그룹별로도 양상이 매우 다른 것을 확인할 수 있음
 </p>
 
-**(드디어) 리텐션 예측하기**
+**(드디어!) 리텐션 예측하기**
 
 리텐션 예측은 함수 피팅 값과 sBG(shifted Beta Geometric) 모델 값을 이용하여 추정하였습니다. 함수 피팅의 경우, 유저의 리텐션과 비슷하게 감소하는 형태를 갖는 분수 함수 개형을 사용합니다. 분수 함수의 파라미터는 Non-linear Least Square 방식을 이용하여 실측값과 분수 함수 피팅 값의 오차가 적어지도록 하는 최적의 값으로 추정합니다. sBG 모델의 경우는 기하/베타 분포를 이용하여 리텐션을 구하는 방식입니다. 확률분포에 의거하여 구하기 때문에 리텐션의 개형을 모르는 상태에서도 사용이 가능합니다. 저희 모바일 게임 기준으로, 함수 피팅 값은 실측값보다 under-fitting 되는 경향이 있었으며 가끔씩 아예 피팅이 안 되는 경우도 발생했고, sBG 모델 값의 경우 실측값보다 over-fitting 되는 경향이 있었기에 두 가지 방식을 모두 사용하여 리텐션을 추정하였습니다. sBG 모델의 자세한 내용은 Appendix로 추가합니다.
 
@@ -71,12 +71,14 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 
 **최종 예측치와 신뢰구간 계산하기**
 
-위에서 추정된 리텐션과 매출을 이용하여, 최종 예상 수익 지표는 예상수익_hat = 매출_hat * ∑0≤t≤period 리텐션_hat 으로 계산합니다! 이 때, period는 30/90/180/365일로 나누어 단기/중기/장기 예상 수익 값을 제공하게 하였고, 앞서 말씀드렸듯 전체 유저의 예상 수익 이외에도 신규 유저와 같이 그룹별로 예측 값을 추가 제공하여 활용성이 더욱더 증대될 수 있도록 하였습니다. 또한 단순히 하나의 값으로 예상 수익을 예측하기 보다는 리텐션과 매출의 표준 오차를 활용하여 99% 예상 수익 신뢰구간을 계산하여 함께 제공하였습니다. (신뢰구간 세부 계산 식은 Appendix로 추가합니다.)
+위에서 추정된 리텐션과 매출을 이용하여, 최종 예상 수익 지표는 다음과 같이 계산합니다! 
+$$ \hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
+이 때, period는 30/90/180/365일로 나누어 단기/중기/장기 예상 수익 값을 제공하게 하였고, 앞서 말씀드렸듯 전체 유저의 예상 수익 이외에도 신규 유저와 같이 그룹별로 예측 값을 추가 제공하여 활용성이 더욱더 증대될 수 있도록 하였습니다. 또한 단순히 하나의 값으로 예상 수익을 예측하기 보다는 리텐션과 매출의 표준 오차를 활용하여 99% 예상 수익 신뢰구간을 계산하여 함께 제공하였습니다. (신뢰구간 세부 계산 식은 Appendix로 추가합니다.)
 
 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv3.PNG" style="width:8in" />
+<img src="/assets/works/mobile_mkt/ltv3.PNG" style="width:10in" />
 [그림3] 개선된 예상 수익 지표 기획안 일부 발췌
 </p>
 
@@ -87,7 +89,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
  
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:8in" />
+<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:10in" />
 [그림4] 접속일별 기존 지표와 개선된 지표 비교, 빨간 점선 박스 안의 그래프가 이번 작업 내용인데 많이 개선된 것을 확인할 수 있습니다!
 </p>
 
@@ -111,8 +113,9 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 
 - 가정
 
-  1. Θ: 유저의 이탈 확률 , T=1 : 초기 시점.
-     1.  t 시점에서 유저의 이탈 확률
+  - Θ: 유저의 이탈 확률 , T=1 : 초기 시점.
+
+  1. 1.  t 시점에서 유저의 이탈 확률
         1. P( T=t | Θ ) = Θ * (1-Θ)^{t-1}
      2. t 시점에서 유저의 생존 확률
         1. S( T=t | Θ ) = (1-Θ)^t
