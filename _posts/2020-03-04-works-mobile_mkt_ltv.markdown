@@ -198,7 +198,7 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
 - 리텐션 함수: $$R(t) = Average(s(t) + c(t))$$
 
   - $$s(t)$$ : shifted Beta Geometric Model
-  - $$c(t)$$ : Curve fitting 함수 (분수 함수) $$= \frac{d}{b * t^a + c} $$
+  - $$c(t)$$ : Curve fitting 함수 (분수 함수) $$= \frac{d}{b \times t^a + c} $$
   - $$R(t, date)$$ : 특정 유입일(date)에 유입된 유저의 잔존율 피팅 함수
     - shifted Beta Geometric Model fitting 방식과 Curve fitting 방식의 평균값
 
