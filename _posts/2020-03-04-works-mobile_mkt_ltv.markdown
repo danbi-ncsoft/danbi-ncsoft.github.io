@@ -192,17 +192,31 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
 **예상 수익 지표 신뢰구간**
 
 - $$σ_{\hat{ARPU}}$$ = ARPU 추정에 사용된 ARPDAU들의 표준 오차
-  - $$n$$ : 표준 오차 계산에 사용된 데이터의 갯수
+  
+- $$n$$ : 표준 오차 계산에 사용된 데이터의 갯수
+  
 - 리텐션 함수: $$R(t) = Average(s(t) + c(t))$$
 
   - $$s(t)$$ : shifted Beta Geometric Model
   - $$c(t)$$ : Curve fitting 함수 (분수 함수): $$c(t) = \frac{d}{b * t^a + c} $$
   - $$R(t, date)$$ : 특정 유입일(date)에 유입된 유저의 잔존율 피팅 함수
     - shifted Beta Geometric Model fitting 방식과 Curve fitting 방식의 평균값
+
 - $$σ_{Retention, t} $$ 는 아래와 같이 계산
-  - $$Var(f(t)) = Var( \frac{s(t) + c(t)}{2} ) =\frac{Var(s(t)) + Var(c(t))}{4}$$ ($$s(t)$$와 $$c(t)$$가 독립이라고 가정)
-  - $$σ_{Retention, t} = \sqrt{( Vart(s(t)) + Vart(c(t)) )}{2}$$
-  - $$n$$ : 표준 오차 계산에 사용된 데이터의 갯수
-- $$var(R(t)\*\hat{ARPU} ) = var(R(t)\*var(ARPU_hat ) + var(R(t)\*[E(ARPU_hat )]^2 + var(ARPU_hat )\*[E(R(t))]^2$$  ($$R(t)$$ 와 $$ARPU_hat$$이 독립이라고 가정)
-- $$[E(R(t))]^2 = [E{c(t))^2+E{s(t))^2]/4 + E(c(t))\*E(s(t))/2$$
-- $$(LTV_lower , LTV_upper) = ( ∑ARPU_hat \* R(t) - 2.58 \* sqrt(var(R(t)\*ARPU_hat) / sqrt(n) , ∑ARPU_hat \* R(t) + 2.58 \* sqrt(var(R(t)\*ARPU_hat) / sqrt(n) )$$
+  $$
+  \begin{equation}
+  Var(f(t)) = Var( \frac{s(t) + c(t)}{2} ) =\frac{Var(s(t)) + Var(c(t))}{4}\ \ (s(t)와 \ c(t)는 \ 독립), \ \ \ \ \ 
+  σ_{Retention, t} = \frac{\sqrt{Var(s(t)) + Var(c(t))}}{2} \\
+  Var(R(t)*\hat{ARPU} ) = Var(R(t)*Var(\hat{ARPU} ) + Var(R(t)*[E(\hat{ARPU} )]^2 + Var(\hat{ARPU})*[E(R(t))]^2 \ \ (R(t)와 \ \hat{ARPU}는 \ 독립) \\
+  E(R(t))^2 = \frac{E(c(t))^2+E(s(t))^2}{4} + \frac{E(c(t))*E(s(t))}{2}
+  \end{equation}
+  $$
+
+- 따라서 신뢰구간은 아래와 같음
+  $$
+  \begin{equation}
+  (LTV_{lower} , LTV_{upper}) = \\
+  ( ∑\hat{ARPU}* R(t) - 2.58 * \sqrt\frac{{var(R(t)*\hat{ARPU}}}{{n}} , ∑ARPU_hat * R(t) + 2.58 * \sqrt\frac{{var(R(t)*\hat{ARPU}}}{{n}} )
+  \end{equation}
+  $$
+  
