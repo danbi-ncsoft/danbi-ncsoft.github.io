@@ -58,7 +58,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 
 <p align="center">
 <img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:10in" />
-[그림2] 15개의 특정 날짜(15개의 line 그래프)에 접속한 유저들의 시간에 따른 리텐션 변화, (왼)전체 유저 (오)특정 그룹에 속한 유저, 완만하게 감소하는 형태가 아닌 요동치는 모습이라 전처리가 필요함. 그룹별로도 양상이 매우 다른 것을 확인할 수 있음
+[그림2] 15개의 특정 날짜(15개의 line 그래프)에 접속한 유저들의 시간에 따른 리텐션 변화, (왼)전체 유저 (오)특정 그룹에 속한 유저, 완만하게 감소하는 형태가 아닌 요동치는 모습이라 전처리가 필요함. 그룹별로도 양상이 매우 다른 것을 확인할 수 있음.
 </p>
 
 **(드디어!) 리텐션 예측하기**
@@ -130,9 +130,9 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
   - MLE를 사용한 α , β 추정 방법
     - α , β 에 대한 우도함수는 다음과 같이 나타냄 
     - n_i : i 시점에서의 이탈한 유저 수
-    - L( α , β \| data ) = ∏_{1≤i≤t} P(T=i | α , β )n_i * S( t | α , β )N - ∑_{1≤i≤t^{ni}}
-    - LL( α , β | data ) = ∑ ni * log( P(T=i \| α , β ) ) + (N - ∑ ni) * log( S( t \| α , β ) )
-    - α_{hat}, β_{hat} = argmax_{α , β} ( LL( α , β | data ) )_
+    - L( α , β \| data ) = ∏\_{1≤i≤t} P(T=i \| α , β )n_i * S( t \| α , β )N - ∑_{1≤i≤t^{ni}}
+    - LL( α , β \| data ) = ∑ ni * log( P(T=i \| α , β ) ) + (N - ∑ ni) * log( S( t \| α , β ) )
+    - α_{hat}, β_{hat} = argmax\_{α , β} ( LL( α , β \| data ) )
   - _α_{hat}, β_{hat}를 이용하여 유저의 모든 시점의 생존 확률을 계산하여 Retention 함수로 사용
     - S(T = 1) = β / (α+β)
     - S(T = t) = r_t * S(T = t-1) = (β + t -1) / (α + β + t - 1) \* S(T = t-1) 
@@ -157,4 +157,4 @@ $$\hat{예상수익} = \hat{매출} * \sum_{0≤t≤period} \hat{리텐션} $$
   - n : 표준 오차 계산에 사용된 데이터의 갯수
 - var(R(t)*ARPU_hat ) = var(R(t)*var(ARPU_hat ) + var(R(t)*[E(ARPU_hat )]2 + var(ARPU_hat )*[E(R(t))]2  (R(t) 와 ARPU_hat이 독립이라고 가정)
 - [E(R(t))]2 = [E{c(t))2+E{s(t))2]/4 + E(c(t))*E(s(t))/2
-- (LTVlower , LTVupper) = ( ∑ARPU_hat * R(t) - 2.58 * sqrt(var(R(t)*ARPU_hat) / sqrt(n) , ∑ARPU_hat * R(t) + 2.58 * sqrt(var(R(t)*ARPU_hat) / sqrt(n) )
+- (LTV_lower , LTV_upper) = ( ∑ARPU_hat * R(t) - 2.58 * sqrt(var(R(t)*ARPU_hat) / sqrt(n) , ∑ARPU_hat * R(t) + 2.58 * sqrt(var(R(t)*ARPU_hat) / sqrt(n) )
