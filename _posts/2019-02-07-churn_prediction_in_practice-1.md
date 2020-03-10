@@ -61,7 +61,7 @@ $$
 
 <p align="center">
 <img src="/assets/works/churn_prediction_in_practice/
-experiments.png" style="width:6in" />[그림 3] 고객 전체레 이탈 예측 모델을 적용한 경우 (Test set I) 와 기대 이익이 큰 고객 집단만 선별하여 예측 모델을 적용한 경우 (Test set II) 에 대한 예측 성능과 기대 이익 비교 결과표
+experiments.png" style="width:6in" />[그림 3] 고객 전체에 이탈 예측 모델을 적용한 경우 (Test set I) 와 기대 이익이 큰 고객 집단만 선별하여 예측 모델을 적용한 경우 (Test set II) 에 대한 예측 성능과 기대 이익 비교 결과표
 </p>
 
 그렇다면, 아예 학습 단계에서 기대 이익을 최대로 하는 예측 모델을 만들도록 최적화 함수를 정의할 수는 없을까요? 실제 이런 접근 방법을 제안한 논문이 있습니다. 'Profit optimizing customer churn prediction with Bayesian network classifiers ([https://content.iospress.com/articles/intelligent-data-analysis/ida00625](https://content.iospress.com/articles/intelligent-data-analysis/ida00625))' 는 바로 이렇게 기대 이익을 최대로 하는 분류기를 만드는 기법을 제안한 논문입니다.

@@ -214,7 +214,7 @@ $$\hat{예상수익} = \hat{매출} \times \sum_{0≤t≤period} \hat{리텐션}
 
 - 따라서 최종 신뢰구간은 아래와 같음
   $$
-  (LTV_{lower} , LTV_{upper}) = ( ∑\hat{ARPU} \times R(t) - 2.58 \times \sqrt\frac{Var(R(t)\times \hat{ARPU}}{n} , ∑\hat{ARPU} \times R(t) + 2.58 \times \sqrt\frac{Var(R(t)\times \hat{ARPU}}{n} )
+  (LTV_{lower} , LTV_{upper}) = ( ∑\hat{ARPU} \times R(t) - 2.58 \times \sqrt\frac{Var(R(t))\times \hat{ARPU}}{n} , ∑\hat{ARPU} \times R(t) + 2.58 \times \sqrt\frac{Var(R(t))\times \hat{ARPU}}{n} )
   $$
   
 
