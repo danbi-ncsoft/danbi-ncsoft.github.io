@@ -54,7 +54,7 @@ ARPU 추정은 사실상 대규모 업데이트 시기와 같은 특정 날짜�
 
 <p align="center">
 <img src="/assets/works/mobile_mkt/ltv4.PNG" style="width:9in" />
-[그림3] sBG 모델과 함수 피팅 모델 비교
+[그림4] sBG 모델과 함수 피팅 모델 비교
 </p>
 
 **일정 기간 동안의 고객 가치 추정하기**
@@ -67,7 +67,7 @@ $$\hat{예상수익} = \hat{매출} \times \sum_{0≤t≤period} \hat{리텐션}
 
 <p align="center">
 <img src="/assets/works/mobile_mkt/ltv5.PNG" style="width:10in" />
-[그림4] 개선된 LTV 지표 기획안 일부 발췌
+[그림5] 개선된 LTV 지표 기획안 일부 발췌
 </p>
 
 **추정 모델의 정확도 평가**
@@ -76,7 +76,7 @@ $$\hat{예상수익} = \hat{매출} \times \sum_{0≤t≤period} \hat{리텐션}
 
 <p align="center">
 <img src="/assets/works/mobile_mkt/ltv6.png" style="width:4in" />
-[그림5] 개선된 방식과 기존 방식의 오차율 비교
+[그림6] 개선된 방식과 기존 방식의 오차율 비교
 </p>
 
 **세그먼트별 추정치  집계**
