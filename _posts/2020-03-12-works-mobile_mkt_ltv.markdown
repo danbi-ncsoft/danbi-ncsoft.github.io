@@ -16,14 +16,14 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 (1) 방식은 초반의 단위 기간 당 ARPU와 리텐션이 향후에도 반복된다는 가정을 갖고, 유저의 리텐션을 공비로 하는 등비 수열을 무한 합하여 $$\frac{ARPU}{(1 – 리텐션)}$$와 같이 LTV를 계산하는 방식입니다. 이 방식은 매우 직관적이고 쉽지만, 단위 기간 당 ARPU와 리텐션이 일정하다는 가정이 현실과는 잘 맞지 않죠. 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv1.PNG" style="width:10in" />
+<img src="/assets/works/mobile_mkt/ltv1.PNG" style="width:9in" />
 [그림1] 모델 가정과 맞지 않는 실제 우리 게임의 리텐션과 ARPU 변동성
 </p>
 
 (2) 방식은 거래의 최근성(Recency), 빈도(Frequency), 규모(Monatary)와 관련된 피쳐를 이용하여 Random Forest 모델을 적용한 후, 향후 매출을 예측한 지표입니다. 이 방식은 위의 (1) 방식과 같은 가정이 필요없지만, 정확한 예측 모델을 만들기가 어렵습니다. 라벨 데이터 확보나 모델링에 사용할 안정적인 피쳐 선택이 어려울뿐더러 시간이 지남에 따라 예측 모델의 정확도도 점점 떨어지게 됩니다. 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:10in" />
+<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:6in" />
 [그림2] 정확도가 매우 떨어진 RFM 모델의 최근 예측치와 실측값
 </p>
 
@@ -48,7 +48,7 @@ ARPU 추정은 사실상 대규모 업데이트 시기와 같은 특정 날짜�
 리텐션 추정은 함수 피팅 값과 sBG(shifted Beta Geometric) 모델 값을 이용하여 추정하였습니다. 함수 피팅의 경우, 유저의 리텐션과 비슷하게 감소하는 형태를 갖는 분수 함수 개형을 사용합니다. 분수 함수의 파라미터는 Non-linear Least Square 방식을 이용하여 실측값과 분수 함수 피팅 값의 오차가 적어지도록 하는 최적의 값으로 추정합니다. sBG 모델의 경우는 기하/베타 분포를 이용하여 리텐션을 구하는 방식입니다. 확률분포에 의거하여 구하기 때문에 리텐션의 개형을 모르는 상태에서도 사용이 가능합니다. 저희 모바일 게임 기준으로, 함수 피팅 값은 실측값보다 under-fitting 되는 경향이 있었으며 가끔씩 아예 피팅이 안 되는 경우도 발생했고, sBG 모델 값의 경우 실측값보다 over-fitting 되는 경향이 있었기에 두 가지 방식을 모두 사용하여 리텐션을 추정하였습니다. (sBG 모델의 자세한 내용은 Appendix로 추가합니다.)
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv4.PNG" style="width:10in" />
+<img src="/assets/works/mobile_mkt/ltv4.PNG" style="width:9in" />
 [그림3] sBG 모델과 함수 피팅 모델 비교
 </p>
 
@@ -70,7 +70,7 @@ $$\hat{예상수익} = \hat{매출} \times \sum_{0≤t≤period} \hat{리텐션}
 예상 수익 추정은 기존 LTV 지표 대비 오차율을 절반 이상 감소시켜 지표의 정확성도 증대시켰습니다. 각기 다른 방식으로 계산된 추정치이기에 180일 추정으로 기준을 통일하여 평균 오차 비율을 $$ \frac{ \|실측치-추정치\| }{실측치} * 100 $$으로 계산하였고, 결과적으로 기존 대비 실측값과의 차이가 50% → 18%로 대폭 감소하였습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv6.PNG" style="width:10in" />
+<img src="/assets/works/mobile_mkt/ltv6.png" style="width:6in" />
 [그림5] 개선된 방식과 기존 방식의 오차율 비교
 </p>
 
