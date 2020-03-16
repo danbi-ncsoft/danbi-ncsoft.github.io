@@ -42,7 +42,7 @@ $$=$$ (단위 기간 당 ARPU) $$+$$ (단위 기간 당 ARPU)$$\times$$(단위 �
 이 방식을 생애 가치인 LTV 관점에서 예측하려하면 라벨 데이터 확보가 매우 어렵고, 지금처럼 향후 7일이나 30일 매출 예측으로 범위를 축소하더라도 정확한 예측 모델을 만들기 어렵습니다. 모델링에 사용할 안정적인 피쳐 선택이 어려울뿐더러 시간이 지남에 따라 예측 모델의 정확도가 점점 떨어지게 되기 때문입니다.  
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv2.png" style="width:6in" />
+<img src="/assets/works/mobile_mkt/ltv2.PNG" style="width:6in" />
 [그림2] 정확도가 매우 떨어진 RFM 모델의 최근 예측치와 실측값
 </p>
 
@@ -69,7 +69,7 @@ $$=$$ (단위 기간 당 ARPU) $$+$$ (단위 기간 당 ARPU)$$\times$$(단위 �
 ARPU 추정은 사실상 대규모 업데이트 시기와 같은 특정 날짜에 따라서 값의 편차가 매우 컸기 때문에, 아래에서 소개해 드릴 리텐션 추정과 같이 함수 피팅 방식이나 확률 분포를 이용한 방식으로는 추정하기 어려웠습니다. 이러한 일자별 변동성을 완화시키되 학습 기간 동안의 평균적인 값을 반영할 수 있도록 일자별 ARPU의 이동 평균을 구하는 방식으로 추정을 대체하여 변동성에 강건해지도록 전처리 하였습니다. 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv3.png" style="width:9in" />
+<img src="/assets/works/mobile_mkt/ltv3.PNG" style="width:9in" />
 [그림3] 일자별 ARPU와 ARPU의 이동 평균 비교
 </p>
 
@@ -84,7 +84,7 @@ ARPU 추정은 사실상 대규모 업데이트 시기와 같은 특정 날짜�
 이 때, 접속률 정보만을 사용하였기에 일반적인 감소 형태의 리텐션 그래프가 아닌, 전반적으로는 감소하나 일부 상승하는 일자도 있는 형태로 그려졌는데요. 추정 결과의 정확성을 위해 약간의 데이터 전처리가 필요했습니다. 리텐션이 전날보다 상승한 경우, 이전 시점까지 리텐션의 최소값으로 대체하여 시간에 따라 감소하는 형태가 되게 처리하였고 추정의 정확성을 높일 수 있었습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv4.png" style="width:9in" />
+<img src="/assets/works/mobile_mkt/ltv4.PNG" style="width:9in" />
 [그림4] 리텐션 전처리를 하지 않으면, 심한 날짜의 경우 이와 같이 추정의 정확성이 떨어집니다.
 </p>
 
@@ -97,7 +97,7 @@ ARPU 추정은 사실상 대규모 업데이트 시기와 같은 특정 날짜�
 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv5.png" style="width:9in" />
+<img src="/assets/works/mobile_mkt/ltv5.PNG" style="width:9in" />
 [그림5] 초반 데이터를 가지고 리텐션을 추정하여 후반 리텐션을 살펴보면, 함수 피팅 방식은 under-fitting 경향이 있고 sBG 모델 방식은 over-fitting 되는 경향이 있어 두 방식의 평균을 사용하였습니다. 
 </p>
 
@@ -110,7 +110,7 @@ $$\hat{예상수익} = \hat{매출} \times \sum_{0≤t≤period} \hat{리텐션}
 이 때, LTV의 의미상 평생 가치를 측정하기 위해서는 리텐션이 0으로 수렴하는 $$t$$ 시점 까지 합 해야 하지만, 수렴하는 곡선이 완만해서 LTV가 지나치게 높게 추정되는 문제가 있었습니다. 애초에 수십년 동안의 누적 가치를 추정하는 것은 의미가 없다고 판단하였고, 실제 사업에서 1년 단위 매출을 추정하는 것이 중요하기 때문에, period를 30/90/180/365일로 나누어 단기/중기/장기 예상 수익 값을 제공하게 하였습니다. (서비스 명칭도 LTV에서 예상 수익으로 변경!) 또한 단순히 하나의 값으로 예상 수익을 추정하기 보다는 리텐션과 매출의 표준 오차를 활용하여 99% 예상 수익 신뢰구간을 계산하여 함께 제공하였습니다. 신뢰구간 세부 계산 식은 Appendix로 추가합니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv6.PNG" style="width:10in" />
+<img src="/assets/works/mobile_mkt/ltv6.PNG" style="width:9in" />
 [그림6] 개선된 LTV 지표 기획안 일부 발췌
 </p>
 
