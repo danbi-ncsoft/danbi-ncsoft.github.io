@@ -69,7 +69,7 @@ $$=$$ (단위 기간 당 ARPU) $$+$$ (단위 기간 당 ARPU)$$\times$$(단위 �
 ARPU 추정은 사실상 대규모 업데이트 시기와 같은 특정 날짜에 따라서 값의 편차가 매우 컸기 때문에, 아래에서 소개해 드릴 리텐션 추정과 같이 함수 피팅 방식이나 확률 분포를 이용한 방식으로는 추정하기 어려웠습니다. 이러한 일자별 변동성을 완화시키되 학습 기간 동안의 평균적인 값을 반영할 수 있도록 일자별 ARPU의 이동 평균을 구하는 방식으로 추정을 대체하여 변동성에 강건해지도록 전처리 하였습니다. 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv3.PNG" style="width:9in" />
+<img src="/assets/works/mobile_mkt/ltv3.PNG" style="width:6in" />
 [그림3] 일자별 ARPU와 ARPU의 이동 평균 비교
 </p>
 
@@ -84,7 +84,7 @@ ARPU 추정은 사실상 대규모 업데이트 시기와 같은 특정 날짜�
 이 때, 접속률 정보만을 사용하였기에 일반적인 감소 형태의 리텐션 그래프가 아닌, 전반적으로는 감소하나 일부 상승하는 일자도 있는 형태로 그려졌는데요. 추정 결과의 정확성을 위해 약간의 데이터 전처리가 필요했습니다. 리텐션이 전날보다 상승한 경우, 이전 시점까지 리텐션의 최소값으로 대체하여 시간에 따라 감소하는 형태가 되게 처리하였고 추정의 정확성을 높일 수 있었습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv4.PNG" style="width:9in" />
+<img src="/assets/works/mobile_mkt/ltv4.PNG" style="width:6in" />
 [그림4] 리텐션 전처리를 하지 않으면, 심한 날짜의 경우 이와 같이 추정의 정확성이 떨어집니다.
 </p>
 
@@ -97,7 +97,7 @@ ARPU 추정은 사실상 대규모 업데이트 시기와 같은 특정 날짜�
 
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv5.PNG" style="width:9in" />
+<img src="/assets/works/mobile_mkt/ltv5.PNG" style="width:6in" />
 [그림5] 초반 데이터를 가지고 리텐션을 추정하여 후반 리텐션을 살펴보면, 함수 피팅 방식은 under-fitting 경향이 있고 sBG 모델 방식은 over-fitting 되는 경향이 있어 두 방식의 평균을 사용하였습니다. 
 </p>
 
@@ -119,7 +119,7 @@ $$\hat{예상수익} = \hat{매출} \times \sum_{0≤t≤period} \hat{리텐션}
 예상 수익 추정은 기존 LTV 지표 대비 오차율을 절반 이상 감소시켜 지표의 정확성도 증대시켰습니다. 각기 다른 방식으로 계산된 추정치이기에 180일 추정으로 기준을 통일하여 MAPE(Mean Absolute Percentage Error, $$\frac{1}{n} \sum \frac{ \|실측치-추정치\| }{실측치} \times 100$$)를 계산하였을 때, 결과적으로 기존 지표 중 가장 좋은 값과 비교하여도 50% → 18%로 대폭 감소하였습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/ltv7.png" style="width:4in" />
+<img src="/assets/works/mobile_mkt/ltv7.png" style="width:5in" />
 [그림7] 개선된 방식과 기존 방식의 MAPE 비교
 </p>
 
