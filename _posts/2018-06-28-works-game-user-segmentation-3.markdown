@@ -82,7 +82,7 @@ Radius가 큰 커뮤니티(왼쪽)와 작은 커뮤니티(오른쪽)의 예
 각 커뮤니티마다 이런 다양한 지표를 구한 후 커뮤니티에 대한 군집화를 수행하면 마치 탄소 분자간의 얽힘 구조를 보고 다이아몬드와 석탄을 구분하듯이 전체 네트워크에서 비슷한 구조를 갖는 커뮤니티끼리 분류할 수 있습니다. 아래 그림은 다양한 네트워크 지표를 기반으로 군집화 알고리즘을 사용해 게임 고객 네트워크를 다섯 가지 유형의 커뮤니티로 분류한 것입니다.
 
 <p align="center">
-<img src="/assets/works/game_user_segmentation/image_3_7.png" style="width:6in" />
+<img src="/assets/works/game_user_segmentation/image_3_8.png" style="width:6in" />
 네트워크 구조를 기준으로 커뮤니티들을 다섯 가지 유형으로 군집화한 예
 </p>
 
