@@ -53,9 +53,6 @@ permalink: /about/
 <div class="container">
   <!-- 팀소개 및 명함 파트 -->
   <div class="team">
-<!--        <div class="center wow fadeInDown">
-      <h2 align="left">Members of <span> Intelligence & Insight Division </span></h2>
-    </div> -->
     <div class="row clearfix">
     <!-- 명함 시작 -->
       <div class="col-md-4 col-sm-6">  
@@ -103,29 +100,28 @@ permalink: /about/
   	    </div>
       </div>
     </div> 
+  </div> <!-- team -->
   
   <!-- 팀 구분선 시작 -->
-  
-    <div class="row team-bar">
-      <div class="first-one-arrow hidden-xs">
-    	  <hr>
-      </div>
-      <div class="first-arrow hidden-xs">
-        <hr> <i class="fa fa-angle-up"></i>
-      </div>
-      <div class="second-arrow hidden-xs">
-      	<hr> <i class="fa fa-angle-down"></i>
-      </div>
-      <div class="third-arrow hidden-xs">
-      	<hr> <i class="fa fa-angle-up"></i>
-      </div>
-      <div class="fourth-arrow hidden-xs">
-      	<hr> <i class="fa fa-angle-down"></i>
-      </div>
-    </div>     
+  <div class="row team-bar">
+    <div class="first-one-arrow hidden-xs">
+  	  <hr>
+    </div>
+    <div class="first-arrow hidden-xs">
+      <hr> <i class="fa fa-angle-up"></i>
+    </div>
+    <div class="second-arrow hidden-xs">
+    	<hr> <i class="fa fa-angle-down"></i>
+    </div>
+    <div class="third-arrow hidden-xs">
+    	<hr> <i class="fa fa-angle-up"></i>
+    </div>
+    <div class="fourth-arrow hidden-xs">
+    	<hr> <i class="fa fa-angle-down"></i>
+    </div>
+  </div>     
   <!-- 팀 구분선 끝 -->
-  </div> <!-- 'team' div -->
-
+  
   <div class="team">
     <div class="row clearfix">
       <div class="col-md-4 col-sm-6"> 
@@ -249,8 +245,7 @@ permalink: /about/
     </div>
   </div>  
   <!-- 팀 구분선 끝 -->
-  </div> <!-- 'team' div -->
-
+  
   <div class="team">
     <div class="row clearfix">
       <div class="col-md-4 col-sm-6">
