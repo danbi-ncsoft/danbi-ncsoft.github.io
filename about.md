@@ -39,8 +39,10 @@ permalink: /about/
 ## 주요 진행 업무
 * 기계 학습 기반의 이탈 예측 및 악성 유저 탐지 시스템 개발
 * 이벤트/프로모션 효과 분석 시스템 개발
+* 마케팅 지표 및 광고 어뷰징 탐지 모델 개발
 * 유저 세그먼테이션 및 이를 이용한 각종 지표 개발
-* 재무/회계/인사 등 사내 ERP 데이터 분석을 위한 데이터 가공 및 적재 시스템 구축
+* 게임 관련 게시판 데이터를 이용한 고객 동향 조회 서비스 개발 
+* 재무/회계/인사 등 사내 ERP 데이터 분석을 위한 DW/BI 시스템 구축
 * 유저의 가상 세계 속 행태에 대한 다양한 분석 및 관련 연구 진행
 
 ## Members of I&I Division
@@ -134,7 +136,7 @@ permalink: /about/
     	      </div>
     	      <div class="media-body">
     		      <h4>유초롱</h4>
-    		      <h5>Inteligence Team</h5>
+    		      <h5>Intelligence Team</h5>
     		      <ul class="tag clearfix">
     			      <li class="btn">Manager</li>
     			      <li class="btn">Analyst</li>
@@ -174,7 +176,7 @@ permalink: /about/
     	      </div>
     	      <div class="media-body">
     		      <h4>한여진</h4>
-    		      <h5>Inteligence Team</h5>
+    		      <h5>Intelligence Team</h5>
     		      <ul class="tag clearfix">
     			      <li class="btn">Analyst</li>
     		      </ul>
@@ -201,9 +203,32 @@ permalink: /about/
   	      <p>데이터 분석가</p>
   	      </div>
       </div>
+    </div>  
+    
+    <br><br>
+    <div class="row clearfix">
+      <div class="col-md-4 col-sm-6"> 
+    	  <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+    	    <div class="media">
+    	      <div class="pull-left">
+    		      <img class="media-object" src="/assets/about_us/images/ini_khs.png " alt="">
+    	      </div>
+    	      <div class="media-body">
+    		      <h4>김현수</h4>
+    		      <h5>Intelligence Team</h5>
+    		      <ul class="tag clearfix">
+    			      <li class="btn">Analyst</li>
+    		      </ul>
+    	      </div>
+          </div>
+          <p>데이터 분석가</p>
+        </div>
+      </div>
       
     </div>   
-
+    
+  </div> <!-- team -->
+  
   <!-- 팀 구분선 시작 -->
   
   <div class="row team-bar">
@@ -222,7 +247,7 @@ permalink: /about/
     <div class="fourth-arrow hidden-xs">
     	<hr> <i class="fa fa-angle-down"></i>
     </div>
-  </div>     
+  </div>  
   <!-- 팀 구분선 끝 -->
   </div> <!-- 'team' div -->
 
@@ -402,6 +427,24 @@ permalink: /about/
   	      <p>데이터 분석가</p>
   	    </div>
       </div>
-    
+      
+      <div class="col-md-4 col-sm-6 col-md-offset-2">
+        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+  	      <div class="media">
+  		      <div class="pull-left">
+  			      <img class="media-object" src="/assets/about_us/images/ini_khj.png " alt="">
+  		      </div>
+    		    <div class="media-body">
+    			    <h4>김현준</h4>
+    			    <h5>Analysis&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Padawan</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>미생</p>
+  	    </div>
+      </div>
+    </div>
   </div> <!-- team -->
 </div>
