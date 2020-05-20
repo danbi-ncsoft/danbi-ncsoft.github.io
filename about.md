@@ -441,5 +441,25 @@ permalink: /about/
   	    </div>
       </div>
     </div>
+    
+    <br><br>
+    <div class="row clearfix">
+      <div class="col-md-4 col-sm-6">
+        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+  	      <div class="media">
+  		      <div class="pull-left">
+  			      <img class="media-object" src="/assets/about_us/images/ini_cjh.png " alt="">
+  		      </div>
+    		    <div class="media-body">
+    			    <h4>최재훈</h4>
+    			    <h5>Analysis&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Developer</li>
+    			    </ul>              
+    		    </div>
+  	      </div>
+  	      <p>프로덕트 개발자</p>
+  	    </div>
+      </div>
   </div> <!-- team -->
 </div>
