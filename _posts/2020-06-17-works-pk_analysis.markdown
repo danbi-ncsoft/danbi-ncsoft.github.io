@@ -35,7 +35,7 @@ cover: "/assets/pvp2.jpg"
 앞서 보여드린 이탈율에 대한 비교 분석 결과에서도 비슷한 문제가 있습니다. 왜냐하면 애초에 게임 플레이 기간이 매우 짧으면 PK 를 당할 확률이 매우 낮기 때문이죠 (극단적으로 보자면, 게임을 처음 시작한지 몇 분만에 이탈한 유저와 일주일 동안 하루에 10시간 이상씩 게임 플레이를 하는 유저 중 어떤 유저가 더 PK를 경험할 확률이 높을지 생각해 보면 됩니다). 다시 말해, PK 경험이 게임의 이탈을 낮춘 것이 아니라 게임을 더 오래하는 유저일수록 PK를 당할 확률이 올라가는 '역 인과' 관계가 있을 수 있는 것입니다. 따라서  **PK 경험이 실제 이탈율에 어떤 인과적 영향을 끼치는지를 추정하려면 이런 역 인과 효과를 제거해야 합니다.**  
 
 <p align="center">
-<img src="/assets/works/pk_analysis/image01.png" style="width:8in" />
+<img src="/assets/works/pk_analysis/image01.png" style="width:6in" />
 <그림 1> PK 와 유저의 이탈 사이에는 역인과 관계가 있을 수 있습니다.
 </p>
 
@@ -45,7 +45,7 @@ cover: "/assets/pvp2.jpg"
 **교란 요인은 X와 Y 양쪽에 영향을 미치는 제 3의 요인을 의미합니다.** 이와  관련해서  흔히 드는 예시로 '아이스크림 판매량과 물놀이 사망자수의 관계'  가 있습니다. 아이스크림 판매량이 올라갈수록 물놀이 사망자 수가 올라간다고 해서 아이스크림 판매가 물놀이 사고의 원인이라고 볼 수는 없습니다. 실제로는 온도가 올라갈수록 아이스크림 판매량과 물놀이 이용객이 증가하고 이로 인해 물놀이 사망자 수도 높아지는  것이죠.  즉,  기온  상승이라는  교란  요인으로  인해  아이스크림  판매량과  물놀이  사고  사이에  마치  인과  관계가  있는  것처럼  보이는  것입니다.
 
 <p align="center">
-<img src="/assets/works/pk_analysis/image02.png" style="width:8in" />
+<img src="/assets/works/pk_analysis/image02.png" style="width:6in" />
 <그림 2> 교란요인으로 인해 상관 관계를 인과 관계로 오해할 수 있습니다. 
 </p>
 
@@ -54,7 +54,7 @@ cover: "/assets/pvp2.jpg"
 한편, 캐릭터의 레벨은 이탈율에도 영향을 미칠 수 있습니다. 레벨이 높다는 것은 게임을 시작한지 얼마지나지 않은 유저에 비해 게임에 대한 충성도가  높다고  볼  수 있으며, 따라서 고레벨 유저는 저레벨 유저에 비해 이탈율이 낮을 가능성이 높습니다. **결국  예시로  든  캐릭터  레벨과 같은  교란 요인을 적절하게 통제하지 않으면 캐릭터 레벨 차이로 인해 발생한 PK 경험 여부와 이탈율 사이의 상관 관계를 자칫 인과 관계로 오해할 수 있습니다.**  
 
 <p align="center">
-<img src="/assets/works/pk_analysis/image03.png" style="width:8in" />
+<img src="/assets/works/pk_analysis/image03.png" style="width:6in" />
 <그림 3> 캐릭터 레벨은 PK와 이탈율 모두에 영향을 주는 교란 요인일 수 있습니다.
 </p>
 
@@ -67,7 +67,7 @@ cover: "/assets/pvp2.jpg"
 PK가 이탈에 미치는 영향을 분석할 때에도 단순히 PK를 당한 집단과 그렇지 않은 집단 사이의 이탈율의 차이만 볼 것이 아니라 이 차이가 통계적으로 볼 때 충분히 의미가 있을만큼 큰지에 대해 확인해야 합니다. 여기서 말하는 '충분히 의미가 있다' 라는 말은 내가 분석에 사용한 관측 데이터에서만 발생한 우연한 차이가 아니라 다음 번에 다른 관측 데이터를 수집하여 분석했을 때에도 일관된 결과가 나올 것으로 기대될 정도로 차이가 크다라는 뜻입니다.  
 
 <p align="center">
-<img src="/assets/works/pk_analysis/image04.png" style="width:8in" />
+<img src="/assets/works/pk_analysis/image04.png" style="width:6in" />
 <그림 4> 평균의 함정에 빠지지 않으려면 집단 간의 차이를 비교할 때 집단 내 편차를 고려해야 합니다.
 </p>
 
@@ -78,7 +78,7 @@ PK가 이탈에 미치는 영향을 분석할 때에도 단순히 PK를 당한 �
 **첫째, 역인과 관계를 해소하기 위해 우선 PK 경험 집단을 최초 PK 를 당한 일자별로 분류한 후, 최소한 해당 일자까지 접속한 이력이 있는 PK 미경험 집단을 샘플링하여 대조군으로 선정하였습니다.** 이렇게 하면 조기에 이탈하는 바람에 PK를 당할 일조차 없었던 유저들은 비교 대상에서 제외될 수 있어서 위에서 설명한 역인과 관계는 자연스럽게 해소될 수 있다고 생각했습니다.  
 
 <p align="center">
-<img src="/assets/works/pk_analysis/image05.png" style="width:8in" />
+<img src="/assets/works/pk_analysis/image05.png" style="width:6in" />
 <그림 5> 역인과 관계를 통제하기 위해 PK 집단과 비교할 대조군을 선정할 때 게임 접속 일자와 PK 당한 일자에 대한 고려가 필요합니다.  
 </p>
 
@@ -106,7 +106,7 @@ PK가 이탈에 미치는 영향을 분석할 때에도 단순히 PK를 당한 �
 이렇게 선별된 집단에 대해서 이번엔 교란 요인을 통제하기 위해 PK를 당한 유저와 비슷한 특징을 갖는 PK 미경험 유저를 선별하는  PSM 작업을 수행했습니다. 아래 QQ plot은 PSM 전/후에 PK 경험 집단과 미경험 집단 사이의 데이터 분포가 어떻게 다른지를 보여주는 그래프입니다.
 
 <p align="center">
-<img src="/assets/works/pk_analysis/image06.png" style="width:8in" />
+<img src="/assets/works/pk_analysis/image06.png" style="width:6in" />
 <그림 6> PSM 적용 전/후의 PK 경험 집단과 미경험 집단 데이터 분포 비교  
 </p>
 
@@ -124,7 +124,7 @@ PK가 이탈에 미치는 영향을 분석할 때에도 단순히 PK를 당한 �
 |z-ratio | -6.325 |
 
 <p align="center">
-<img src="/assets/works/pk_analysis/image07.png" style="width:8in" />
+<img src="/assets/works/pk_analysis/image07.png" style="width:6in" />
 <그림 7> 로지스틱 회귀 분석 결과 시각화 - PK 경험은 이탈율을 약 7% 포인트 낮추는 효과가 있으며, 95% 신뢰 구간 내에서 통게적으로 유의합니다. 
 </p>
 
