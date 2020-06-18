@@ -115,7 +115,7 @@ PK가 이탈에 미치는 영향을 분석할 때에도 단순히 PK를 당한 �
 마지막으로 이렇게 추출한 두 집단을 이용해 PK가 이탈율에 미친 영향력을 추정하기 위해 로지스틱 회귀 모델을 구하면 아래와 같은 결과가 나옵니다. 아래 회귀 모델 결과에서 is.pk 가 PK 를 당한 경험이 있는지 여부를 나타내는 변수인데 이 변수의 회귀 계수에 대한 p-value 가 매우 낮은 것으로 봐서 통계적으로 충분히 유의하다고 볼 수 있습니다. 
 
 <p align="center">
-<img src="/assets/works/pk_analysis/image07.png" style="width:4in" />
+<img src="/assets/works/pk_analysis/image07.png" style="width:6in" />
 <그림 7> 로지스틱 회귀 모델 결과  
 </p>
 
