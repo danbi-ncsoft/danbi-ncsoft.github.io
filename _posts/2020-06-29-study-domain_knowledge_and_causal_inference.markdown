@@ -11,7 +11,7 @@ cover: "/assets/study/domain_knowledge_n_causal_inference/full_graph.png"
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/full_graph.png" style="width:6in" />
-그림1. 인과 관계 그래프
+[그림1] 인과 관계 그래프
 </p>
 
 
@@ -61,7 +61,7 @@ R코드를 이용해 각 사례를 나타내는 가상의 데이터를 생성해
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/df1_model_result.png" style="width:6in" />
-<그림2> 모든 모델에 대해서 x1과 x2의 회귀 계수는 통계적으로 유의하며 y ~ x1 + x2 모델은 매우 높은 설명력 (Adjusted R-sqaured) 을 갖습니다.
+[그림2] 모든 모델에 대해서 x1과 x2의 회귀 계수는 통계적으로 유의하며 y ~ x1 + x2 모델은 매우 높은 설명력 (Adjusted R-sqaured) 을 갖습니다.
 </p>
 
 
@@ -75,7 +75,7 @@ R코드를 이용해 각 사례를 나타내는 가상의 데이터를 생성해
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph2.png" style="width:6in" />
-<그림3> df2 의 인과 관계 그래프 
+[그림3] df2 의 인과 관계 그래프 
 </p>
 
 
@@ -89,7 +89,7 @@ R코드를 이용해 각 사례를 나타내는 가상의 데이터를 생성해
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/df2_model_result.png" style="width:6in" />
-<그림4> x1과 x2를 모두 모델에 반영하지 않으면 인과 관계를 잘못 추정하게 됩니다.
+[그림4] x1과 x2를 모두 모델에 반영하지 않으면 인과 관계를 잘못 추정하게 됩니다.
 </p>
 
 
@@ -106,7 +106,7 @@ df3 에서 w는 x1과 x2 뿐만 아니라 y에도 인과적 영향을 끼치는 
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph3.png" style="width:6in" />
-<그림5> df3 의 인과 관계 그래프 
+[그림5] df3 의 인과 관계 그래프 
 </p>
 
 
@@ -120,7 +120,7 @@ df3 에서 w는 x1과 x2 뿐만 아니라 y에도 인과적 영향을 끼치는 
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/df3_model_result.png" style="width:6in" />
-<그림 6> 교안 변수인 w를 모델에 포함하지 않으면 잘못된 추정 결과가 나옵니다.
+[그림 6] 교안 변수인 w를 모델에 포함하지 않으면 잘못된 추정 결과가 나옵니다.
 </p>
 
   
@@ -137,7 +137,7 @@ df3 에서 w는 x1과 x2 뿐만 아니라 y에도 인과적 영향을 끼치는 
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph4.png" style="width:6in" />
-<그림7> df4 의 인과 관계 그래프 
+[그림7] df4 의 인과 관계 그래프 
 </p>
 
 
@@ -151,7 +151,7 @@ df3 에서 w는 x1과 x2 뿐만 아니라 y에도 인과적 영향을 끼치는 
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/df4_model_result.png" style="width:6in" />
-<그림 8> collider를 모델에 포함시키면 잘못된 추정 결과가 나옵니다.
+[그림 8] collider를 모델에 포함시키면 잘못된 추정 결과가 나옵니다.
 </p>
   
 
