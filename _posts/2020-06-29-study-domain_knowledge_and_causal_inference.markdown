@@ -11,7 +11,7 @@ cover: "/assets/study/domain_knowledge_n_causal_inference/full_graph.png"
 
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/full_graph.png" style="width:6in" />
-<그림1> 인과 관계 그래프
+그림1. 인과 관계 그래프
 </p>
 
 
