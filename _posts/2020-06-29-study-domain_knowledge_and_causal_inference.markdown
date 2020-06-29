@@ -9,7 +9,6 @@ cover: "/assets/study/domain_knowledge_n_causal_inference/full_graph.png"
 
 다음과 같은 네 가지 경우(df1 ~ df4)의 인과 관계를 갖는 사례가 있다고 가정해 보겠습니다. 아래 도식에서 동그라미는 각각의 변수를 의미하며, 화살표가 있는 실선은 두 변수가 화살표 방향으로 인과 관계에 있는 것을 의미합니다. 또한 실선 옆에 표시된 숫자는 원인 변수가 결과 변수에 미치는 인과 효과를 의미합니다. 예를 들어, df1 사례에서 x1 으로부터 y 로 향한 실선에 표시된 1.5는 'x1 변수의 값이 1만큼 증가하면 y 변수의 값이 평균적으로 1.5 만큼 증가하는 경향이 있다'는 것을 의미합니다.
 
-
 <p align="center">
 <img src="/assets/study/domain_knowledge_n_causal_inference/full_graph.png" style="width:6in" />
 <그림1> 인과 관계 그래프
@@ -140,6 +139,7 @@ df3 에서 w는 x1과 x2 뿐만 아니라 y에도 인과적 영향을 끼치는 
 <img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph4.png" style="width:6in" />
 <그림7> df4 의 인과 관계 그래프 
 </p>
+
 
 이제 이 데이터를 이용해 회귀 모델을 만들어 봅니다.
 
