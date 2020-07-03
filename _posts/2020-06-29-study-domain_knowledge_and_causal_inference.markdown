@@ -80,7 +80,7 @@ R코드를 이용해 각 사례를 나타내는 가상의 데이터를 생성해
 
 
 <p align="center">
-<img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph2.png" style="width:6in" />
+<img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph2.png" style="width:4in" />
 [그림3] df2 의 인과 관계 그래프 
 </p>
 
@@ -113,7 +113,7 @@ df3 에서 w는 x1과 x2 뿐만 아니라 y에도 인과적 영향을 끼치는 
 
 
 <p align="center">
-<img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph3.png" style="width:6in" />
+<img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph3.png" style="width:4in" />
 [그림5] df3 의 인과 관계 그래프 
 </p>
 
@@ -144,7 +144,7 @@ df3 에서 w는 x1과 x2 뿐만 아니라 y에도 인과적 영향을 끼치는 
 이번에는 기존과 구조가 좀 다릅니다. y에 영향을 주는 변수는 x1 하나뿐이며, x2는 이제 x1 과 y 로부터 인과적 영향을 받는 결과 변수입니다. 통계학에서는 x2와 같은 변수를 '[collider](https://en.wikipedia.org/wiki/Collider_(statistics))' 라고 부릅니다.  
 
 <p align="center">
-<img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph4.png" style="width:6in" />
+<img src="/assets/study/domain_knowledge_n_causal_inference/causal_graph4.png" style="width:4in" />
 [그림7] df4 의 인과 관계 그래프 
 </p>
 
