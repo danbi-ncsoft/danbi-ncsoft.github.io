@@ -63,14 +63,14 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 예상 수익 지표의 경우, 조회 시점에 접속한 유저들의 향후 수익을 의미하므로 조회 시점 이후에 접속한 유저에 대한 예상 수익 정보는 빠져 있습니다. 그렇기 때문에 사업년도 1년간 전체 유저에 대한 수익을 구하기 위해서는 해당 기간 동안 접속할 모든 유저 수를 추정하는 작업이 먼저 필요합니다. 이 때 조회 시점까지의 전체 활동 유저 수 및 일별 신규 유저 수 정보를 활용하여 아래와 같이 전체 유저 수를 계산하였습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/sales2.png" style="width:8in" />
+<img src="/assets/works/mobile_mkt/sales2.png" style="width:9in" />
 [그림2] 8월 1일 대비 신규 접속자가 얼마나 들어올지 비율을 예측합니다.
 </p>
 
 예를 들어 8월 1일을 기준으로 이후에 신규 접속하는 유저 비율은 아래 표와 같이 구할 수 있습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/sales_table.png" style="width:8in" />
+<img src="/assets/works/mobile_mkt/sales_table.png" style="width:7in" />
 </p>
 
 실제 데이터로 신규 접속 유저 비율을 구해보면 그 형태가 유저들의 잔존율 그래프와 비슷한 패턴을 갖습니다. 따라서 저희는 유저들의 잔존율 함수를 추정할 때와 동일하게 분수 함수로 적합 시키는 방식을 신규 유저 비율 추정할 때도 사용하였습니다 (잔존율 함수 추정 방식과 관련된 내용은 지난 포스팅을 참고 바랍니다). 이렇게 추정된 함수를 이용하여 1년 동안 예상되는 일별 신규 접속 유저 수를 모두 더하면 총 접속 유저 수를 추정할 수 있습니다!
