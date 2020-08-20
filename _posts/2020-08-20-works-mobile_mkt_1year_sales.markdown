@@ -31,7 +31,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 만약 오늘이 8월 1일이라면, 이미 알고 있는 정보인 사업년도 시작일부터 7월 31일까지의 실제 누적 매출과 8월 1일부터 사업년도 말까지 남은 5개월간의 예상 매출 값을 더하여 지표를 제공합니다. 내일(8월 2일)이 된다면 예상 매출은 새롭게 갱신되어, 8월 1일까지의 실제 누적 매출과 8월 2일부터의 예상 매출을 더하여 제공하게 되는 것이죠.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/sales1.png" style="width:6in" />
+<img src="/assets/works/mobile_mkt/sales1.png" style="width:8in" />
 [그림1] 지난 일자에 대해서는 실제 매출 값을 활용하며, 지표는 매일 갱신됩니다.
 </p>
 
@@ -63,14 +63,14 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 예상 수익 지표의 경우, 조회 시점에 접속한 유저들의 향후 수익을 의미하므로 조회 시점 이후에 접속한 유저에 대한 예상 수익 정보는 빠져 있습니다. 그렇기 때문에 사업년도 1년간 전체 유저에 대한 수익을 구하기 위해서는 해당 기간 동안 접속할 모든 유저 수를 추정하는 작업이 먼저 필요합니다. 이 때 조회 시점까지의 전체 활동 유저 수 및 일별 신규 유저 수 정보를 활용하여 아래와 같이 전체 유저 수를 계산하였습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/sales2.png" style="width:6in" />
+<img src="/assets/works/mobile_mkt/sales2.png" style="width:8in" />
 [그림2] 8월 1일 대비 신규 접속자가 얼마나 들어올지 비율을 예측합니다.
 </p>
 
 예를 들어 8월 1일을 기준으로 이후에 신규 접속하는 유저 비율은 아래 표와 같이 구할 수 있습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/sales_table.png" style="width:6in" />
+<img src="/assets/works/mobile_mkt/sales_table.png" style="width:8in" />
 </p>
 
 실제 데이터로 신규 접속 유저 비율을 구해보면 그 형태가 유저들의 잔존율 그래프와 비슷한 패턴을 갖습니다. 따라서 저희는 유저들의 잔존율 함수를 추정할 때와 동일하게 분수 함수로 적합 시키는 방식을 신규 유저 비율 추정할 때도 사용하였습니다 (잔존율 함수 추정 방식과 관련된 내용은 지난 포스팅을 참고 바랍니다). 이렇게 추정된 함수를 이용하여 1년 동안 예상되는 일별 신규 접속 유저 수를 모두 더하면 총 접속 유저 수를 추정할 수 있습니다!
@@ -84,7 +84,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
   365일 예상 수익의 경우 당일 접속한 유저의 365일간 벌어들일 것으로 예상되는 수익이므로, 8월 1일에 접속한 유저에 곱하여 사용할 경우에는 적절한 weight를 계산하여 곱해주어야 합니다. 즉, 사업년도 말인 12월 31일까지 총 153일간 벌어들일 것으로 예상되는 수익이므로 기존 예상 수익 지표에 $$fac{153}{365}$$ 라는 weight를 곱해줍니다. 마찬가지로 8월 2일에 새로 접속한 유저에는 $$fac{152}{365}$$ 를 곱해줍니다. weight는 비교적 직관적으로 계산한 값을 사용하였습니다.
 
   <p align="center">
-  <img src="/assets/works/mobile_mkt/sales3.png" style="width:6in" />
+  <img src="/assets/works/mobile_mkt/sales3.png" style="width:8in" />
   [그림3] 남은 기간에 대한 weight를 구해줍니다.
   </p>
 
@@ -109,7 +109,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
   이러한 선행 지식을 바탕으로 특정 시점까지는 감소하다가 특정 시점 이후로는 상수 값으로 수렴하는 트렌드 함수 L(t)를 추정하여 사용했습니다. 예상 매출 계산 시점으로부터 예측에 사용되는 기간인 60일 전과 감소 추세 시작 시점까지의 일자를 계산하고, 해당 일자를 추정된 트렌드 함수에 활용하여 0~1 사이를 갖는 비율 함수를 만들어주어 곱하였습니다.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/sales4.png" style="width:6in" />
+<img src="/assets/works/mobile_mkt/sales4.png" style="width:8in" />
 [그림4] 추정된 트렌드 함수에 시점을 적용하여 0~1 사이를 값는 비율 함수를 곱합니다.
 </p>
 
@@ -118,6 +118,8 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 ## 예상 매출 추정 계산하기
 
 최종적으로 위와 같이 실제 상황에 맞는 다양한 변수들을 고려하면, 예상 매출 추정식은 아래와 같이 계산되게 됩니다!
+
+
 $$
 예상 매출 = ∑_{t} (t시점의\ 신규\ 접속\ 유저\ 수)\times (한명\ 당\ 사업년도\ 말까지의\ 예상\ 수익),\ t = 0, ... , x \\
 = ∑_{t} { DAU^{*} × f(t) } × { (AU당\ 365일\ 예상\ 수익)^* × weight × \frac{( x - t )}{365} } × L'(t),\ t = 0, ... , x \\
