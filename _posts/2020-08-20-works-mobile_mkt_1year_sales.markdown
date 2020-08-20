@@ -31,7 +31,7 @@ cover:  "/assets/works/mobile_mkt/title_mobile_mkt.jpg"
 만약 오늘이 8월 1일이라면, 이미 알고 있는 정보인 사업년도 시작일부터 7월 31일까지의 실제 누적 매출과 8월 1일부터 사업년도 말까지 남은 5개월간의 예상 매출 값을 더하여 지표를 제공합니다. 내일(8월 2일)이 된다면 예상 매출은 새롭게 갱신되어, 8월 1일까지의 실제 누적 매출과 8월 2일부터의 예상 매출을 더하여 제공하게 되는 것이죠.
 
 <p align="center">
-<img src="/assets/works/mobile_mkt/sales1.png" style="width:8in" />
+<img src="/assets/works/mobile_mkt/sales1.png" style="width:9in" />
 [그림1] 지난 일자에 대해서는 실제 매출 값을 활용하며, 지표는 매일 갱신됩니다.
 </p>
 
