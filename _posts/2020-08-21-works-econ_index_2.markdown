@@ -24,7 +24,7 @@ cover:  "/assets/works/econ_index/title2.png"
 R에서는 Markdown을 활용하여 HTML 형식의 보고서를 만들면 이것이 가능하다. Markdown이란 텍스트 기반의 마크업 언어로써 쉽고 간편하게 문서 작성을 할 수 있다는 것이 특징이다. R을 사용하는 경우 R Studio에서 Rmd 형식의 파일로 Markdown을 작성하면 HTML로 내보낼 수 있다. R Studio에서는 간단한 Markdown 예제 코드를 제공한다. File -> New File -> R Markdown에서 Document를 선택하고 Output Format을 HTML로 정하면 문서를 작성해 HTML로 내보낼 수 있도록 예제 코드가 쓰인 새로운 스크립트가 생성된다. 구성은 간단하다. 가장 위에는 문서의 제목이나 저자 등을 명시하는 부분이 있고, 코드는 **```** 로 구분이 되어 있다. 단락 제목은 #의 개수로 크기를 조절해서 쓰고, 설명은 그냥 입력하면 된다. 마지막으로 작성 후 HTML 파일로 내보낼 때에는 스크립트 상단의 knit를 클릭하기만 하면 된다. 전체적인 구성은 이것이 전부이다.
 
 <p align="center">
-<img src="/assets/works/econ_index/figure6.PNG"/>
+<img src="/assets/works/econ_index/figure6.png"/>
 [그림 1] R Markdown 시작하기
 </p>
 
@@ -37,7 +37,7 @@ R에서는 Markdown을 활용하여 HTML 형식의 보고서를 만들면 이것
 보고서에 차트만 표시하는 방법을 알았으니 본격적으로 그려볼 차례이다. 이 글에서는 보편적으로 사용되는 데이터 시각화 라이브러리인 'ggplot2'와 'plotly'를 활용하여 상호작용이 가능한 그래프를 그리는 과정을 다룰 것이다. 먼저 'plotly' 라이브러리에서 제공하는 함수인 `plot_ly()`를 통해 그리는 방법을 알아보자. 아래 [그림 2]는 각 서버별로 전체 거래 금액과 전체 중 고가 아이템의 거래 금액을 겹쳐 나타낸 것으로, 마우스 오버 시 [그림 2]처럼 해당하는 부분의 상세 수치를 볼 수 있다. 이와 같은 차트를 그리기 위한 코드는 다음과 같다.
 
 <p align="center">
-<img src="/assets/works/econ_index/figure7.PNG"/>
+<img src="/assets/works/econ_index/figure7.png"/>
 [그림 2] 서버별 전체 거래와 고가 아이템의 거래 금액
 </p>
 
@@ -56,7 +56,7 @@ p <- p %>% layout(barmode = 'overlay', hovermode = 'y unified',
 앞선 방법은 처음부터 'plotly'를 사용해 동적인 그래프를 그리는 방법이었다면 이번에는 'ggplot'을 'plotly'로 변경하는 방법에 대해 알아보자. 평소 'ggplot'을 많이 사용했다면 이 방법이 훨씬 편리할 수도 있다. 예시로 그려볼 차트는 앞선 포스팅에도 있었던 아래 [그림 3]이다. 지표 개발 시 KOSPI에서 아이디어를 얻으면서 차트의 모양 또한 주가 그래프에서 착안했다. 보편적인 Boxplot을 그릴 때에는 `geom_boxplot()`을 사용하면 편리하지만, 이 그래프는 일반적인 Boxplot과 차이가 있기 때문에 빈 공간 위에 네모 박스를 그리고, 세로 선을 긋고, 시간에 따른 이동 선을 그리는 순서로 하나하나 커스터마이징이 필요했다.
 
 <p align="center">
-<img src="/assets/works/econ_index/figure8.PNG"/>
+<img src="/assets/works/econ_index/figure8.png"/>
 [그림 3] 시간에 따른 종합 지수 그래프
 </p>
 
@@ -86,7 +86,7 @@ g <- ggplot()+
 이러한 니즈를 충족시키고자 그래프에 쓰인 원데이터나 연관시켜 관찰하면 좋을 데이터들을 보고서 상에서 제공할 방법을 고민했고, 그러다 상호작용이 가능한 테이블의 형태를 떠올렸다. 이러한 인터랙티브 테이블은 일반 표와 달리 검색이나 데이터 다운로드의 기능을 제공할 뿐만 아니라 색상이나 아이콘, 게이지 바 등을 통해 데이터와 함께 시각적 효과를 나타낼 수 있는 것이 특징이다. 이를 구현하고자 'formattable' 라이브러리를 사용하였으며, 다음 [그림 4]와 같은 테이블을 만들기 위한 코드는 아래와 같다.
 
 <p align="center">
-<img src="/assets/works/econ_index/figure9.PNG"/>
+<img src="/assets/works/econ_index/figure9.png"/>
 [그림 4] 서버별 각종 수치를 제공하는 인터랙티브 테이블
 </p>
 
@@ -129,7 +129,7 @@ as.datatable(mytable, rownames = FALSE, extensions = 'Buttons',
 하나의 문서에 여러 정보를 제공할 때, 아래로 스크롤을 내리며 이어지는 내용을 보기에 적절한 항목이 있는 반면, 동등한 레벨을 갖는 자료의 경우, 탭을 사용하여 병렬적인 형태로 나타내는 것이 더욱 적절한 항목도 있다. 이러한 경우에 활용할 수 있도록 탭으로 섹션을 나누는 것도 좋은 방법이다. 사용법은 매우 간단하다. Markdown에서 소제목들을 구분할 때, 아래와 같이 한단계의 레벨 차이를 두고, 상위 소제목의 뒤에 `{.tabset}`을 입력하기만 하면 된다. 그러면 [그림 5]와 같은 모양으로 문서가 구성된다.
 
 <p align="center">
-<img src="/assets/works/econ_index/figure10.PNG"/>
+<img src="/assets/works/econ_index/figure10.png"/>
 [그림 5] 탭을 통해 보고서의 섹션을 나눈 모습
 </p>
 
@@ -158,7 +158,7 @@ output:
 도움말 등 다른 내용과 분리해야 하는 설명이 필요할 때 사용하기 좋은 텍스트 박스도 있다. 아래 [그림 6]에서 다양한 텍스트 박스들을 볼 수 있는데, 특히 맨 아래 예시는 "도움말"이라는 문구를 클릭하면 ‘내용 입력”이 보이고 한 번 더 클릭하면 해당 내용이 다시 숨겨지는 형태이다. 코드는 아래와 같으며, 첫째줄의 `class=”well well-sm”`대신 각 텍스트 박스 안에 쓰인 코드를 입력하면 해당 테마로 바뀐다. `<button`으로 시작하는 코드부터는 [그림 6]의 가장 아래 열고 접기가 가능한 도움말을 위한 부분이다. 한가지 주의할 점은 button 절의 `data-target=’#myinfo’`와 가장 아래 `<div id=”myinfo”`에 있는 myinfo는 서로 동일하게 지정하되 다른 id와 겹치지 않도록 해주어야 한다는 것인데, 이는 id를 토대로 버튼 제목과 내용을 이어주기 때문이다. 참고로 `<br />`은 줄바꿈을 의미한다.
 
 <p align="center">
-<img src="/assets/works/econ_index/figure11.PNG"/>
+<img src="/assets/works/econ_index/figure11.png"/>
 [그림 6] 도움말을 삽입하는 여러 가지 방법
 </p>
 
@@ -181,7 +181,7 @@ output:
 내용을 모두 작성했다면 스크립트 상단의 Knit -> Knit To HTML을 클릭해 파일로 내보내도록 하자. 그러면 Rmd 스크립트와 동일한 경로에 html 형식으로 저장이 되며, 지금까지의 내용을 골고루 활용한 경우 아래 [그림 7]과 같은 모양의 문서를 볼 수 있다. 
 
 <p align="center">
-<img src="/assets/works/econ_index/figure12.PNG"/>
+<img src="/assets/works/econ_index/figure12.png"/>
 [그림 7] 예시 Interactive Report의 모습
 </p>
 
