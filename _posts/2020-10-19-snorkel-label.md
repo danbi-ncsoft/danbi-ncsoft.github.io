@@ -30,9 +30,9 @@ cover:  "/assets/works/snorkel/snorkel_header.png"
 
 **Weak supervision**
 
-Weak supervision이란 대규모의 학습 데이터 셋에 라벨을 지정하기 위해, 노이즈가 있거나 제한적이거나 일부 부정확한 소스(Weak Label)를 사용하는 기계학습의 한 분야 입니다. 즉, 라벨이 지정된 데이터의 부족, 라벨링에 대한 시간과 비용등의 문제에 대응하기 위한 라벨링 자동화 방법입니다. Weak Label의 종류에는 도메인 전문가에 의한 휴리스틱 규칙, 기존 리소스(지식 기반 정보, 사전 학습된 모델의 결과) 등이 이에 포함됩니다. 쉽게 말해, 각각의 Weak label을 바로 학습 라벨로 사용하기는 어렵지만 여러 취합한 태깅 정보들을 통해 학습 라벨로 쓸만한 결과를 만들어 주는 시스템입니다. 좀 더 자세한 정보는 이 링크(http://ai.stanford.edu/blog/weak-supervision/)를 참조하시길 바랍니다. 
+Weak supervision이란 대규모의 학습 데이터 셋에 라벨을 지정하기 위해, 노이즈가 있거나 제한적이거나 일부 부정확한 소스(Weak Label)를 사용하는 기계학습의 한 분야 입니다. 즉, 라벨이 지정된 데이터의 부족, 라벨링에 대한 시간과 비용등의 문제에 대응하기 위한 라벨링 자동화 방법입니다. Weak Label의 종류에는 도메인 전문가에 의한 휴리스틱 규칙, 기존 리소스(지식 기반 정보, 사전 학습된 모델의 결과) 등이 이에 포함됩니다. 쉽게 말해, 각각의 Weak label을 바로 학습 라벨로 사용하기는 어렵지만 여러 취합한 태깅 정보들을 통해 학습 라벨로 쓸만한 결과를 만들어 주는 시스템입니다. 좀 더 자세한 정보는 [이 링크](http://ai.stanford.edu/blog/weak-supervision/)를 참조하시길 바랍니다. 
 
-부정사용자 탐지 작업의 경우에도 직접적으로 라벨로 활용하기는 어렵지만 충분히 이상패턴으로 볼 수 있는 태깅 정보(Weak label)가 있었으므로 Weak supervision을 적용해볼 만하다 판단했습니다. 그 중 Snorkel이라는 관련 기법이 구현된 Python 라이브러리(https://github.com/snorkel-team/snorkel)를 적용했습니다. 각 과정을 간단히 요약하자면 아래와 같습니다. 
+부정사용자 탐지 작업의 경우에도 직접적으로 라벨로 활용하기는 어렵지만 충분히 이상패턴으로 볼 수 있는 태깅 정보(Weak label)가 있었으므로 Weak supervision을 적용해볼 만하다 판단했습니다. 그 중 Snorkel이라는 관련 기법이 구현된 [Python 라이브러리](https://github.com/snorkel-team/snorkel)를 적용했습니다. 각 과정을 간단히 요약하자면 아래와 같습니다. 
 
 - 사용자가 직접 라벨을 지정하지 않는 대신, 임의의 도메인 지식들을 표현하는 Label function을 작성
 - 작성한 Label functions을 토대로 라벨 생성 모델을 학습
@@ -95,7 +95,7 @@ def regex_check_out(x):
 이렇게 다양한 이상 패턴에 대한 도메인 지식을 활용하여 패턴을 함수 형태로 정의한 뒤 각 함수마다의 summary 정보를 확인할 수 있습니다.  
 
 <p align="center">
-<img src="/assets/works/snorkel/lf_summary.png" style="width:9in" />
+<img src="/assets/works/snorkel/lf_summary.png" style="width:7in" />
 [그림2] 취합한 Label Functions의 Summary 정보
 </p>
 
@@ -115,10 +115,10 @@ def regex_check_out(x):
 
 두번째 과정은 snorkel의 과정 중 빨간색 박스에 해당하는 생성 모델 학습 과정입니다. 이 과정에서는 여러 도메인 지식에 근거한 Label function들을 모은 뒤 최종 취합하는 생성 모델을 통해 각 함수마다의 적합한 계수를 학습하게 됩니다. 가장 단순한 방식을 생각해보면 라벨 함수의 계수를 1로 생각하는 것(다수결 투표) 이지만 라벨 함수의 각 계수를 라벨 함수 간의 종속적인 관계, 설정한 Loss function를 고려하여 노이즈가 덜 포함된 데이터 세트로 계수를 학습하고자 하는 것이 생성 모델 학습의 목적입니다. snorkel 내에 구현된 계수를 학습하는 알고리즘은 아래 두 논문에서 개발되었습니다. 
 
-  - 1.Data programming: creating large training sets, quickly’ (Ratner 2016)
+  - 1.[Data programming: creating large training sets, quickly’ (Ratner 2016)](https://arxiv.org/abs/1605.07723)
     - 생성모델의 기본 학습 원리는 위에서 개발
     
-  - 2.Learning the structure of generative models without labeled data’ (Bach 2017)
+  - 2.[Learning the structure of generative models without labeled data’ (Bach 2017)](https://arxiv.org/abs/1703.00854)
     - 라벨 함수간의 종속성 구조를 자동으로 찾아주는 알고리즘(Structure Learning)을 추가한 것
 
 기본 원리는 각 함수가 태깅을 달 확률, 함수 간의 태깅 결과가 고른지에 대한 확률을 모수로 하는 확률 분포를 정의 한 뒤, MLE를 통해 확률분포에 대한 두 모수를 추정합니다. 그 다음 정의한 Loss function(logistic loss)를 최소화 하는 매개변수를 학습하게 되는데, 이때 앞서 학습한 확률분포를 참고해 Loss에 대한 기대 값을 구하게 됩니다. 이렇게 되면 주어진 데이터 세트 중 노이즈가 덜 포함된 정보(정의한 확률 분포의 확률 값이 높은 값 위주)로 각 Label function의 계수를 학습하게 됩니다. 알고리즘 상세 과정은 Appendix를 참고 바랍니다. 
