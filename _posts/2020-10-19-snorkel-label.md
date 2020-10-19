@@ -498,8 +498,8 @@ snorkel 라벨 보정 후 학습한 모델이 추가 검출한 샘플이 부정�
 
 ## 참고 자료
 
-- https://arxiv.org/pdf/1711.10160.pdf
-- https://arxiv.org/abs/1605.07723
-- https://arxiv.org/abs/1703.00854
-- http://ai.stanford.edu/blog/weak-supervision/
-- https://github.com/snorkel-team/snorkel
+- [https://arxiv.org/pdf/1711.10160.pdf](https://arxiv.org/pdf/1711.10160.pdf)
+- [https://arxiv.org/abs/1605.07723](https://arxiv.org/abs/1605.07723)
+- [https://arxiv.org/abs/1703.00854](https://arxiv.org/abs/1703.00854)
+- [http://ai.stanford.edu/blog/weak-supervision/](http://ai.stanford.edu/blog/weak-supervision/)
+- [https://github.com/snorkel-team/snorkel](https://github.com/snorkel-team/snorkel)
