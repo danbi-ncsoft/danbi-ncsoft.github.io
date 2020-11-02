@@ -396,7 +396,7 @@ permalink: /about/
   		      </div>
     		    <div class="media-body">
     			    <h4>안진옥</h4>
-    			    <h5>Analysis&Modeling Team</h5>
+    			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
     				    <li class="btn">Developer</li>
     			    </ul>              
@@ -414,7 +414,7 @@ permalink: /about/
   		      </div>
     		    <div class="media-body">
     			    <h4>최재훈</h4>
-    			    <h5>Analysis&Modeling Team</h5>
+    			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
     				    <li class="btn">Developer</li>
     			    </ul>              
@@ -435,7 +435,7 @@ permalink: /about/
   		      </div>
     		    <div class="media-body">
     			    <h4>서상덕</h4>
-    			    <h5>Analysis&Modeling Team</h5>
+    			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
     				    <li class="btn">Developer</li>
     			    </ul>              
@@ -453,7 +453,7 @@ permalink: /about/
   		      </div>
     		    <div class="media-body">
     			    <h4>조원민</h4>
-    			    <h5>Analysis&Modeling Team</h5>
+    			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
     				    <li class="btn">Developer</li>
     			    </ul>              
