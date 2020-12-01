@@ -200,28 +200,7 @@ permalink: /about/
   	      </div>
       </div>
     </div>  
-    
-    <br><br>
-    <div class="row clearfix">
-      <div class="col-md-4 col-sm-6"> 
-    	  <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-    	    <div class="media">
-    	      <div class="pull-left">
-    		      <img class="media-object" src="/assets/about_us/images/ini_lsy.png " alt="">
-    	      </div>
-    	      <div class="media-body">
-    		      <h4>이승연</h4>
-    		      <h5>Intelligence Team</h5>
-    		      <ul class="tag clearfix">
-    			      <li class="btn">Analyst</li>
-    		      </ul>
-    	      </div>
-          </div>
-          <p>데이터 분석가</p>
-        </div>
-      </div>
-      
-    </div>   
+
     
   </div> <!-- team -->
   
@@ -363,6 +342,28 @@ permalink: /about/
   	    </div>
       </div>
     </div>
+    
+    <br><br>
+    <div class="row clearfix">
+      <div class="col-md-4 col-sm-6"> 
+    	  <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+    	    <div class="media">
+    	      <div class="pull-left">
+    		      <img class="media-object" src="/assets/about_us/images/ini_csb.png " alt="">
+    	      </div>
+    	      <div class="media-body">
+    		      <h4>최수빈</h4>
+    		      <h5>Analysis&Modeling Team</h5>
+    		      <ul class="tag clearfix">
+    			      <li class="btn">Analyst</li>
+    		      </ul>
+    	      </div>
+          </div>
+          <p>데이터 분석가</p>
+        </div>
+      </div>
+    </div> 
+    
   </div> <!-- team -->
 
   <!-- 팀 구분선 시작 -->
