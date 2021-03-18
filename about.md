@@ -452,7 +452,7 @@ permalink: /about/
     	      </div>
     	      <div class="media-body">
     		      <h4>봉지은</h4>
-    		      <h5>Intelligence Team</h5>
+    		      <h5>Model Engineering Team</h5>
     		      <ul class="tag clearfix">
     			      <li class="btn">Engineer</li>
     		      </ul>
