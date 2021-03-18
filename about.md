@@ -415,7 +415,7 @@ permalink: /about/
     			    <h4>안진옥</h4>
     			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
-    				    <li class="btn">Engineer</li>
+    				    <li class="btn">Developer</li>
     			    </ul>              
     		    </div>
   	      </div>
@@ -433,7 +433,7 @@ permalink: /about/
     			    <h4>최재훈</h4>
     			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
-    				    <li class="btn">Engineer</li>
+    				    <li class="btn">Developer</li>
     			    </ul>              
     		    </div>
   	      </div>
@@ -532,7 +532,7 @@ permalink: /about/
     			    <h4>한윤하</h4>
     			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
-    				    <li class="btn">Engineer</li>
+    				    <li class="btn">Developer</li>
     			    </ul>              
     		    </div>
   	      </div>
