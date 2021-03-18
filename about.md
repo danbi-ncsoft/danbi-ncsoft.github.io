@@ -157,7 +157,7 @@ permalink: /about/
   			      </ul>              
   		      </div>
   	      </div>
-  	      <p>데이터 엔지니어</p>
+  	      <p>데이터 분석가</p>
   	      </div>
       </div>
     </div>
