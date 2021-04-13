@@ -1,7 +1,7 @@
 ---
 
   layout: post
-  title:  "대량의 게임 데이터를 임베딩 해보자!"
+  title:  "Transformer를 이용해 대량의 게임 데이터를 임베딩 해보자!"
   date:   2021-04-13 09:43:00
   categories: Works
   author : DANBI
@@ -77,7 +77,7 @@
 
 ​          캐릭터 2 =  [''**게임머니감소 _ 혈맹기부 _ A지역''** , ''**아이템증가 _ 드랍아이템획득 _B지역''** ,  ''**아이템증가 _ 드랍아이템획득 _ A지역 3층''** , ...  ]
 
-  #### 2. Training Time
+#### 2. Training Time
 
   Hyperparameter(인코더 레이어 층, Feed-Forward Layer의 Node 개수 등)에 따라 학습 시간은 천차만별이기에, NVIDIA-GPU를 사용하였을 때의 학습 시간 감소효과 정도만 소개하려고 합니다.
   LSTM 기반의 Seq2Seq-Autoencoder의 경우 Only CPU만을 사용하여 학습한 것과  GPU(1개)를 사용하여 학습한 것을 비교하였을 때 학습 시간 감소가 23%정도(Epoch당)밖에 줄어들진 않았지만, Transformer의 경우 1epoch당 Only CPU만 사용했을 경우 40분(Epoch당) 에서 10분(Epoch당)으로 줄어들었습니다. 거의 75%의 감소 효과를 이루어낸 것이죠! 이런 차이가 나타난 이유는 아래 그림을 통해서 설명할 수 있을 것 같습니다. 
