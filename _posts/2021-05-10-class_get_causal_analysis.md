@@ -256,7 +256,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 ### 5-2. 결제 금액 변화 인과 다이어그램
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image5.png" style="width:8.5in" /><br>[그림6] 결제 금액 변화에 대한 인과 다이어그램</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image5.png" style="width:8in" /><br>[그림6] 결제 금액 변화에 대한 인과 다이어그램</p>
 
 위의 방식과 마찬가지로 최종 통제 변수를 선정하여 모델을 설계하면 아래와 같습니다.
 
@@ -358,7 +358,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 - Y : 결과변수
 - X : 외생 변수
 
-<img src = "/assets/works/class_get_causal_analysis/image9_1.png" style="width:3in"/>
+<img src = "/assets/works/class_get_causal_analysis/image9_1.png" style="width:2.5in" align="left"/>
 
 - T → Y : Causal Association (분석가가 알고 싶어하는 T와 Y 사이의 인과효과)
 - T ← X → Y : Non-Causal Association (인과효과 이외에 T와 Y를 연결하는 path)
@@ -368,7 +368,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 T가 Y에 미치는 인과효과 추정을 위해서는 non-causal association을 block해야 합니다
 
-<img src = "/assets/works/class_get_causal_analysis/image9_2.png" style="width:3in"/>
+<img src = "/assets/works/class_get_causal_analysis/image9_2.png" style="width:2.5in" align="left" />
 
 - block : 통제를 통해 non-causal association 상에서 T와 Y의 관계를 독립으로 만들어 주는 것
 - 노드 간의 관계(화살표 방향)에 따라 통제하는 방법이 다름
@@ -381,17 +381,17 @@ x1과 x3의 association이 형성되는 세 가지 경우
 
 1. Chain
 
-   <img src = "/assets/works/class_get_causal_analysis/image9_3.png" style="width:3in"/>
+   <img src = "/assets/works/class_get_causal_analysis/image9_3.png" style="width:2.5in" align="left"/>
 
 2. Fork
 
-   <img src = "/assets/works/class_get_causal_analysis/image9_4.png" style="width:3in"/>
+   <img src = "/assets/works/class_get_causal_analysis/image9_4.png" style="width:2.5in" align="left"/>
 
    - $$x_2$$는 $$x_1$$과 $$x_3$$에 **영향을 줌** : $$x_2$$는 $$x_1$$과 $$x_3$$의 Confounder
 
 3. Imorality
 
-   <img src = "/assets/works/class_get_causal_analysis/image9_5.png" style="width:3in"/>
+   <img src = "/assets/works/class_get_causal_analysis/image9_5.png" style="width:2.5in" align="left" />
 
    - $$x_2$$는 $$x_1$$과 $$x_3$$의 **영향을 받음** : $$x_2$$는 $$x_1$$과 $$x_3$$의 collider
 
@@ -399,7 +399,7 @@ x1과 x3의 association이 형성되는 세 가지 경우
 
 위의 Chain, Fork, Immorality의 각 관계에서 non-causal association의 영향을 제거하기 위해 통제할 변수를 선정
 
-(위의 예시에서 $$x_1$$(원인변수), $$x_3$$(결과변수)로 간주함)
+(위의 예시에서 $$x_1$$를 원인변수, $$x_3$$를 결과변수로 간주함)
 
 
 
@@ -410,13 +410,13 @@ x1과 x3의 association이 형성되는 세 가지 경우
 - chain rule of probability에 local markov assumption을 적용한 개념
 
   -  chain rule of probability
-     -  $$ p(x_1, x_2, ..., x_n) = \[ \prod_i {p(x_i | x_{i-1}, x_{i-2}, ..., x_1)} \] $$
+     -  $$p(x_1, x_2, ..., x_n) = \prod_i {p(x_i | x_{i-1}, x_{i-2}, ..., x_1)}$$
   -  local markov assumption
      -  DAG에서 노드 X($$x_i$$)는 부모노드($$pa_i$$)에게만 영향을 받음
      -  자식 노드에게는 영향을 받지 않음
 
   - <u>bayesian network factorization</u>
-    - $$ p(x_1, x_2, ..., x_n) = \[ \prod_i {p(x_i | pa_i)} \] $$
+    - $$p(x_1, x_2, ..., x_n) =  \prod_i {p(x_i | pa_i)}$$
 
 2) 변수 통제(조건부 확률) 시 원인 변수와 결과 변수의 독립성 확인 
 
@@ -430,8 +430,8 @@ x1과 x3의 association이 형성되는 세 가지 경우
      * $$p(x_1,x_2,x_3) = p(x_1) * p(x_2 | x_1) *  p(x_3|x_2)$$
 
    - x2 통제 시 x1과 x3의 독립성 확인
-     - $$p(x_1, x_3 | x_2) = {p(x_1, x_2, x_3) \over p(x_2)}$$ (베이즈 정리)
-     - $${p(x_1) * p(x_2|x_1) * p(x_3 | x_2) \over p(x_2)} = {p(x2, x_1) * p(x_3|x_2) \over p(x_2)} = {p(x_2, x_1) \over p(x_2)} * p(x_3|x_2) = p(x_1 | x_2) * p(x_3 | x_2)$$(분자에 bayesian network factorization에 의해 도출 된 식 대입, 베이즈 정리 적용)
+     - $$p(x_1, x_3 | x_2) = \frac{p(x_1, x_2, x_3)}{p(x_2)}$$ (베이즈 정리)
+     - $$\frac{p(x_1) * p(x_2 | x_1) * p(x_3 | x_2)}{p(x_2) } = \frac{p(x2, x_1) * p(x_3|x_2)}{p(x_2)} = \frac{p(x_2, x_1)}{p(x_2)} * p(x_3|x_2) = p(x_1 | x_2) * p(x_3 | x_2)$$(분자에 bayesian network factorization에 의해 도출 된 식 대입, 베이즈 정리 적용)
      - $$\newcommand{\indep}{\perp \!\!\! \perp}
        x_1 \indep x_3 | x_2$$(x2를 통제하는 경우, x1과 x3가 독립이 됨) 
      - **즉, chain의 경우 중간에 위치한 노드(변수)를 통제하면 해당 non-causal association(x1 → x3)가 block 됨**
@@ -441,8 +441,8 @@ x1과 x3의 association이 형성되는 세 가지 경우
    - bayesian network factorization 
      - $$p(x_1,x_2,x_3) = p(x_2) * p(x_1 | x_2) *  p(x_3|x_2)$$
    - x2 통제 시 x1과 x3의 독립성 확인
-     - $$p(x_1, x_3 | x_2) = {p(x_1, x_2, x_3) \over p(x_2)}$$ (베이즈 정리)
-     - $${p(x_2) * p(x_1 | x_2) *  p(x_3|x_2) \over p(x_2)} = {p(x1, x_2) * p(x_3|x_2) \over p(x_2)} = {p(x_1, x_2) \over p(x_2)} * p(x_3|x_2) = p(x_1 | x_2) * p(x_3 | x_2)$$
+     - $$p(x_1, x_3 | x_2) = \frac{p(x_1, x_2, x_3)}{p(x_2)}$$ (베이즈 정리)
+     - $$\frac{p(x_2) * p(x_1 | x_2) *  p(x_3|x_2)}{p(x_2)} = \frac{p(x1, x_2) * p(x_3|x_2)}{p(x_2)} = \frac{p(x_1, x_2)}{p(x_2)} * p(x_3|x_2) = p(x_1 | x_2) * p(x_3 | x_2)$$
        (분자에 bayesian network factorization에 의해 도출 된 식 대입, 베이즈 정리 적용)
      - $$\newcommand{\indep}{\perp \!\!\! \perp}
        x_1 \indep x_3 | x_2$$ (x2를 통제하는 경우, x1과 x3가 독립이 됨)
@@ -453,13 +453,13 @@ x1과 x3의 association이 형성되는 세 가지 경우
    - bayesian network factorization
      - $$p(x_1,x_2,x_3) = p(x_1) * p(x_3) *  p(x_2|x_1, x_3)$$
    - x2 통제 시 x1과 x3의 독립성 확인
-     - $$p(x_1, x_3 | x_2) = {p(x_1, x_2, x_3) \over p(x_2)}$$ (베이즈 정리)
-     - $${ p(x_1) * p(x_3) *  p(x_2|x_1, x_3) \over p(x_2)}$$ (분자에 위의 식 대입)
+     - $$p(x_1, x_3 | x_2) = \frac{p(x_1, x_2, x_3)}{p(x_2)}$$ (베이즈 정리)
+     - $$\frac{p(x_1) * p(x_3) *  p(x_2 | x_1, x_3)}{p(x_2)}$$ (분자에 위의 식 대입)
      - $$ \newcommand{\indep}{\perp \!\!\! \perp}
        x_1 \ \not\indep x_3 | x_2 $$ (**x2를 통제하는 경우, x1과 x2는 독립이 아님**)
    - x2를 통제하지 않고 x1, x3의 독립성 확인
      - $$p(x_1,x_3) = \sum_{x_2} {p(x_1, x_3, x_2)}$$ (marginalize)
-     - $$p(x_1,x_3) = \sum_{x_2} {p(x_1, x_3, x_2)}$$ 를 풀어쓰면_
+     - 이것을 풀어쓰면
      - $$\sum_{x_2} {p(x_1) * p(x_3) * p(x_2|x_1, x_3)} =p(x_1) * p(x_3) * \sum_{x_2} { p(x_2|x_1, x_3) } = p(x_1) * p(x_3) * 1 = p(x_1) * p(x_3)$$
        (bayesian network factorization에 의해 도출 된 식 대입)
      - $$ \newcommand{\indep}{\perp \!\!\! \perp}
