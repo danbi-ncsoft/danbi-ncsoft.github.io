@@ -256,7 +256,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 ### 5-2. 결제 금액 변화 인과 다이어그램
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image5.png" style="width:8in" /><br>[그림6] 결제 금액 변화에 대한 인과 다이어그램</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image5.png" style="width:7.5in" /><br>[그림6] 결제 금액 변화에 대한 인과 다이어그램</p>
 
 위의 방식과 마찬가지로 최종 통제 변수를 선정하여 모델을 설계하면 아래와 같습니다.
 
