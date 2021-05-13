@@ -358,7 +358,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 - Y : 결과변수
 - X : 외생 변수
 
-<p><img src = "/assets/works/class_get_causal_analysis/image9_1.png" style="width:2.5in" align="left"/></p>
+<p><img src = "/assets/works/class_get_causal_analysis/image9_1.png" style="width:2.5in" align="left"/><br></p>
 
 - T → Y : Causal Association (분석가가 알고 싶어하는 T와 Y 사이의 인과효과)
 - T ← X → Y : Non-Causal Association (인과효과 이외에 T와 Y를 연결하는 path)
@@ -368,7 +368,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 T가 Y에 미치는 인과효과 추정을 위해서는 non-causal association을 block해야 합니다
 
-<p><img src = "/assets/works/class_get_causal_analysis/image9_2.png" style="width:2.5in" align="left" /></p>
+<p><img src = "/assets/works/class_get_causal_analysis/image9_2.png" style="width:2.5in" align="left" /><br></p>
 
 - block : 통제를 통해 non-causal association 상에서 T와 Y의 관계를 독립으로 만들어 주는 것
 - 노드 간의 관계(화살표 방향)에 따라 통제하는 방법이 다름
@@ -381,17 +381,17 @@ x1과 x3의 association이 형성되는 세 가지 경우
 
 1. Chain
 
-   <p><img src = "/assets/works/class_get_causal_analysis/image9_3.png" style="width:2.5in" align="left"/></p>
+   <p><img src = "/assets/works/class_get_causal_analysis/image9_3.png" style="width:2.5in" align="left"/><br></p>
 
 2. Fork
 
-   <p><img src = "/assets/works/class_get_causal_analysis/image9_4.png" style="width:2.5in" align="left"/></p>
+   <p><img src = "/assets/works/class_get_causal_analysis/image9_4.png" style="width:2.5in" align="left"/><br></p>
 
    - $$x_2$$는 $$x_1$$과 $$x_3$$에 **영향을 줌** : $$x_2$$는 $$x_1$$과 $$x_3$$의 Confounder
 
 3. Imorality
 
-   <p><img src = "/assets/works/class_get_causal_analysis/image9_5.png" style="width:2.5in" align="left" /></p>
+   <p><img src = "/assets/works/class_get_causal_analysis/image9_5.png" style="width:2.5in" align="left" /><br></p>
 
    - $$x_2$$는 $$x_1$$과 $$x_3$$의 **영향을 받음** : $$x_2$$는 $$x_1$$과 $$x_3$$의 collider
 
