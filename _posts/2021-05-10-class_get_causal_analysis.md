@@ -17,8 +17,9 @@ cover: "/assets/cover_correlation.jpg"
 
  분석 내용에 앞서 배경 설명을 간략히 드리면 게임 내에서 모든 캐릭터는 생성부터 직업을 갖게 됩니다. 그리고 각 직업마다 등급(일반, 고급, 희귀, 영웅, 전설, 신화)이 있고 특정 등급으로 전직하기 위해서는 특별한 아이템이 필요합니다. 해당 아이템을 사용하여 높은 등급으로 전직하면 전반적인 캐릭터의 능력치가 올라가는데 영웅 등급부터 대폭 향상되기 때문에 영웅 등급 이후가 매우 중요합니다. 하지만 영웅 등급 전직을 위한 아이템을 얻기 매우 어려워 대부분 유저들이 게임을 시작하고 첫 목표를 영웅 전직(주로 "영변"이라 부릅니다)으로 잡습니다. 
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image0.png" style="width:4.5in" /><br>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image0.png" style="width:4in" /><br>
     [그림1] 첫 영변을 얻었을 때의 기분이란!</p>
+
 
 
  우연한 획득과 획득하였을 때 큰 이점이 존재한다는 점으로 보았을 때, 게임 내 "영변"을 획득하는 것은 현실 세계의 로또 복권 당첨과 유사한 면이 있다고 생각하였습니다. 그래서 "유저가 최초로 영웅/전설 등급 전직을 획득하면 그 이후 플레이를 더 열심히 할까?", "유저가 플레이를 열심히 하게되는 이유가 최초로 영웅/전설 등급을 획득해서일까?" 라는 인과 효과에 대해 궁금증이 생겼고 분석을 진행하게 되었습니다.
@@ -51,11 +52,11 @@ cover: "/assets/cover_correlation.jpg"
 
 confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, 원인 변수와 결과 변수 사이에 상관 관계를 만드는 변수를 말합니다.
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image1_1.png" style="width:7in" /><br>[그림2-1] 원인 변수와 결과 변수에 동시에 영향을 주는 교란 변수</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image1_1.png" style="width:5in" /><br>[그림2-1] 원인 변수와 결과 변수에 동시에 영향을 주는 교란 변수</p>
 
 
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image1_2.png" style="width:8.5in" /><br>[그림2-2] 교란 변수 때문에 애초에 두 그룹의 공정한 비교가 불가능합니다(교란 변수의 개념적 이해)</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image1_2.png" style="width:7in" /><br>[그림2-2] 교란 변수 때문에 애초에 두 그룹의 공정한 비교가 불가능합니다(교란 변수의 개념적 이해)</p>
 
 * 애초에 게임에 대해 애착이 높은 유저는 영웅/전설 획득 가능성이 높을 수 있으며, 플레이 변화가 증가할 가능성(게임을 열심히 함)도 높을 수 있습니다.
 * 게임에 대한 애착이 영웅/전설 획득과 플레이 변화에 동시에 영향을 주기 때문에, 실제로 영웅/전설 획득과 플레이 변화 간에 인과 관계가 없더라도 "상관 관계"가 생기게 됩니다.
@@ -71,7 +72,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
  그렇다면 교란 변수로 판단되는 가능한 많은 변수를 통제하여 인과 관계를 추정하면 될까요? 여기서 조심해야할 것이 있습니다. 원인 변수와 결과 변수의 영향을 동시에 받는 변수는 통제 대상에서 제외하여야 합니다.(이런 변수를 collider라고 부릅니다)
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image2_1.png" style="width:7in" /><br>[그림3-1] 원인 변수와 결과 변수에 동시에 영향을 받는 collider</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image2_1.png" style="width:5in" /><br>[그림3-1] 원인 변수와 결과 변수에 동시에 영향을 받는 collider</p>
 
 
 
@@ -300,10 +301,10 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 ### 5-2. 결제 금액 변화에 미치는 인과 효과 추정
 
-| 구분   |                     대규모 업데이트 이후                     |                     소규모 업데이트 이후                     |
-| ------ | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| 무과금 | <img src = "/assets/works/class_get_causal_analysis/image7_1.png" style="width:6in" /> | <img src = "/assets/works/class_get_causal_analysis/image7_2.png" style="width:6in" /> |
-| 과금   | <img src = "/assets/works/class_get_causal_analysis/image7_3.png" style="width:6in" /> | <img src = "/assets/works/class_get_causal_analysis/image7_4.png" style="width:6in" /> |
+|                     대규모 업데이트 이후                     |                     소규모 업데이트 이후                     |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src = "/assets/works/class_get_causal_analysis/image7_1.png" style="width:6in" /> | <img src = "/assets/works/class_get_causal_analysis/image7_2.png" style="width:6in" /> |
+| <img src = "/assets/works/class_get_causal_analysis/image7_3.png" style="width:6in" /> | <img src = "/assets/works/class_get_causal_analysis/image7_4.png" style="width:6in" /> |
 
 (x축의 범위는 과금 그룹이 무과금 그룹에 비해 5배 넓습니다)
 
