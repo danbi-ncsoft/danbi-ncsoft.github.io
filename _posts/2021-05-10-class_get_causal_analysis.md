@@ -381,7 +381,7 @@ x1과 x3의 association이 형성되는 세 가지 경우
 
 1. Chain
 
-   <p align="left"><img src ="/assets/works/class_get_causal_analysis/image9_3.png" style="width:2.5in" /><br></p>
+   ![]("/assets/works/class_get_causal_analysis/image9_3.png"){.alignleft}
 
 2. Fork
 
@@ -449,7 +449,7 @@ x1과 x3의 association이 형성되는 세 가지 경우
        
        (x2를 통제하는 경우, x1과 x3가 독립이 됨) 
        
-     - **즉, chain의 경우 중간에 위치한 노드(변수)를 통제하면 해당 non-causal association(x1 → x3)가 block 됨**
+     - **즉, chain의 경우 중간에 위치한 노드를 통제하면 해당 non-causal association(x1 → x3)가 block 됨**
 
 2. **Fork에 의한 non-causal association**
 
@@ -512,6 +512,6 @@ x1과 x3의 association이 형성되는 세 가지 경우
        
        (x2를 통제하지 않는 경우, x1과 x3가 독립이 됨)
        
-     - 즉, fork의 경우 colllider를 통제하지 않는 경우 이를 제외한 두 노드는 독립임
+     - 즉, immorality의 경우 colllider를 통제하지 않을 때 이를 제외한 두 노드는 독립임
        - **collider를 통제하면 해당 non-causal association이 발생(collider bias)**
        - **따라서, immorality에 의한 원인 변수와 결과 변수의 association을 제거하기 위해서는 collider를 통제하지 않고 그대로 두어야 함**
