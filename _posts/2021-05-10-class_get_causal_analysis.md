@@ -381,7 +381,7 @@ x1과 x3의 association이 형성되는 세 가지 경우
 
 1. Chain
 
-   ![]("/assets/works/class_get_causal_analysis/image9_3.png"){.alignleft}
+   <img src ="/assets/works/class_get_causal_analysis/image9_3.png" style="width:2.5in" align="left" /><br>
 
 2. Fork
 
