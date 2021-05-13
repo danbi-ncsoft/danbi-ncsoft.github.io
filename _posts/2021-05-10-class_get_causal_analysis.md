@@ -17,8 +17,9 @@ cover: "/assets/cover_correlation.jpg"
 
  분석 내용에 앞서 배경 설명을 간략히 드리면 게임 내에서 모든 캐릭터는 생성부터 직업을 갖게 됩니다. 그리고 각 직업마다 등급(일반, 고급, 희귀, 영웅, 전설, 신화)이 있고 특정 등급으로 전직하기 위해서는 특별한 아이템이 필요합니다. 해당 아이템을 사용하여 높은 등급으로 전직하면 전반적인 캐릭터의 능력치가 올라가는데 영웅 등급부터 대폭 향상되기 때문에 영웅 등급 이후가 매우 중요합니다. 하지만 영웅 등급 전직을 위한 아이템을 얻기 매우 어려워 대부분 유저들이 게임을 시작하고 첫 목표를 영웅 전직(주로 "영변"이라 부릅니다)으로 잡습니다. 
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image0.png" style="width:1.5in" /><br>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image0.png" style="width:4.5in" /><br>
     [그림1] 첫 영변을 얻었을 때의 기분이란!</p>
+
 
  우연한 획득과 획득하였을 때 큰 이점이 존재한다는 점으로 보았을 때, 게임 내 "영변"을 획득하는 것은 현실 세계의 로또 복권 당첨과 유사한 면이 있다고 생각하였습니다. 그래서 "유저가 최초로 영웅/전설 등급 전직을 획득하면 그 이후 플레이를 더 열심히 할까?", "유저가 플레이를 열심히 하게되는 이유가 최초로 영웅/전설 등급을 획득해서일까?" 라는 인과 효과에 대해 궁금증이 생겼고 분석을 진행하게 되었습니다.
 
@@ -50,11 +51,11 @@ cover: "/assets/cover_correlation.jpg"
 
 confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, 원인 변수와 결과 변수 사이에 상관 관계를 만드는 변수를 말합니다.
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image1_1.png" width="45%" /><br>[그림2-1] 원인 변수와 결과 변수에 동시에 영향을 주는 교란 변수</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image1_1.png" style="width:7in" /><br>[그림2-1] 원인 변수와 결과 변수에 동시에 영향을 주는 교란 변수</p>
 
 
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image1_2.png" width="60%" /><br>[그림2-2] 교란 변수 때문에 애초에 두 그룹의 공정한 비교가 불가능합니다(교란 변수의 개념적 이해)</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image1_2.png" style="width:8.5in" /><br>[그림2-2] 교란 변수 때문에 애초에 두 그룹의 공정한 비교가 불가능합니다(교란 변수의 개념적 이해)</p>
 
 * 애초에 게임에 대해 애착이 높은 유저는 영웅/전설 획득 가능성이 높을 수 있으며, 플레이 변화가 증가할 가능성(게임을 열심히 함)도 높을 수 있습니다.
 * 게임에 대한 애착이 영웅/전설 획득과 플레이 변화에 동시에 영향을 주기 때문에, 실제로 영웅/전설 획득과 플레이 변화 간에 인과 관계가 없더라도 "상관 관계"가 생기게 됩니다.
@@ -70,7 +71,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
  그렇다면 교란 변수로 판단되는 가능한 많은 변수를 통제하여 인과 관계를 추정하면 될까요? 여기서 조심해야할 것이 있습니다. 원인 변수와 결과 변수의 영향을 동시에 받는 변수는 통제 대상에서 제외하여야 합니다.(이런 변수를 collider라고 부릅니다)
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image2_1.png" width="45%" /><br>[그림3-1] 원인 변수와 결과 변수에 동시에 영향을 받는 collider</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image2_1.png" style="width:7in" /><br>[그림3-1] 원인 변수와 결과 변수에 동시에 영향을 받는 collider</p>
 
 
 
@@ -78,7 +79,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 다시 말해, collider를 통제하여 인과 관계를 추정하면 원인 변수와 결과 변수 간에 종속관계가 있는 샘플만으로 영향을 추정하는 것이므로 실제 인과 관계가 아닌 상관 관계를 추정하게 됩니다. 그리고 우리는 그 상관 관계를 인과 관계로 오해할 수 있기 때문에 collider는 통제하지 말아야 합니다.
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image2_2.png" width="80%" /><br>[그림3-2] collider를 통제하면 일부 샘플만 분석에 사용됩니다(collider bias의 개념적 이해)</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image2_2.png" style="width:8.5in"/><br>[그림3-2] collider를 통제하면 일부 샘플만 분석에 사용됩니다(collider bias의 개념적 이해)</p>
 
 *collider를 통제하지 말아야 하는 이유는 Appendix에 수식으로 설명되어 있으니 참고하시면 좋을 것 같습니다.* 
 
@@ -155,7 +156,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 ## 3. 대상 선정
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image3.png" width="90%" /><br>[그림4] 변수 집계 기간 선정을 위한 실험군, 대조군 d시점 매칭</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image3.png" style="width:11in" /><br>[그림4] 변수 집계 기간 선정을 위한 실험군, 대조군 d시점 매칭</p>
 
 분석 대상은 측정 기간 전에 영웅/전설 획득을 한 적이 없는 유저 중 측정 기간 동안 게임에 접속하여 획득 시도를 한 유저로 선정하였습니다. 여기서 측정 기간 동안 게임에 접속한 유저라는 조건으로 둔 이유는 역인과 관계로 인한 편향(접속 → 영웅/전설 획득)을 방지하기 위해서입니다. 이러한 조건 없이 대상을 선택하면 대조군에 측정 기간 동안 게임에 접속하지 않아 영웅/전설 획득을 하지 못한 유저가 포함되고, 실험군은 전부 측정 기간에 접속했던 유저들이기 때문에 공정한 비교가 어려울 것입니다.  
 
@@ -222,7 +223,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 ### 5-1. 접속 일수 변화 인과 다이어그램
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image4.png" width="75%" /><br>[그림5] 접속 일수 변화에 대한 인과 다이어그램</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image4.png" style="width:9in" /><br>[그림5] 접속 일수 변화에 대한 인과 다이어그램</p>
 
 **step1)**
 
@@ -254,7 +255,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 ### 5-2. 결제 금액 변화 인과 다이어그램
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis/image5.png" width="65%" /><br>[그림6] 결제 금액 변화에 대한 인과 다이어그램</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis/image5.png" style="width:8.5in" /><br>[그림6] 결제 금액 변화에 대한 인과 다이어그램</p>
 
 위의 방식과 마찬가지로 최종 통제 변수를 선정하여 모델을 설계하면 아래와 같습니다.
 
@@ -287,7 +288,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 |                     대규모 업데이트 이후                     |                     소규모 업데이트 이후                     |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src = "/assets/works/class_get_causal_analysis/image6_1.png" width="95%" /> | <img src = "/assets/works/class_get_causal_analysis/image6_2.png" width="95%" /> |
+| <img src = "/assets/works/class_get_causal_analysis/image6_1.png" style="width:6in"/> | <img src = "/assets/works/class_get_causal_analysis/image6_2.png" style="width:6in" /> |
 
  모든 유저 그룹에서 최초 영웅/전설 획득은 30일 간 플레이 증가에 유의한 영향을 미치는 것으로 나타납니다. 
 
@@ -301,8 +302,8 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 | 구분   |                     대규모 업데이트 이후                     |                     소규모 업데이트 이후                     |
 | ------ | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| 무과금 | <img src = "/assets/works/class_get_causal_analysis/image7_1.png"/> | <img src = "/assets/works/class_get_causal_analysis/image7_2.png"/> |
-| 과금   | <img src = "/assets/works/class_get_causal_analysis/image7_3.png"/> | <img src = "/assets/works/class_get_causal_analysis/image7_4.png"/> |
+| 무과금 | <img src = "/assets/works/class_get_causal_analysis/image7_1.png" style="width:6in" /> | <img src = "/assets/works/class_get_causal_analysis/image7_2.png" style="width:6in" /> |
+| 과금   | <img src = "/assets/works/class_get_causal_analysis/image7_3.png" style="width:6in" /> | <img src = "/assets/works/class_get_causal_analysis/image7_4.png" style="width:6in" /> |
 
 (x축의 범위는 과금 그룹이 무과금 그룹에 비해 5배 넓습니다)
 
@@ -316,7 +317,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 |                     대규모 업데이트 이후                     |                     소규모 업데이트 이후                     |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src = "/assets/works/class_get_causal_analysis/image8_1.png" width="95%"/> | <img src = "/assets/works/class_get_causal_analysis/image8_2.png" width="95%"/> |
+| <img src = "/assets/works/class_get_causal_analysis/image8_1.png" style="width:6in" /> | <img src = "/assets/works/class_get_causal_analysis/image8_2.png" style="width:6in" /> |
 
  사용한 로지스틱 회귀 모델에서 회귀 계수는 로그 오즈비(영웅/전설 미획득 대비 획득 시 유저 그룹 지표가 상향될 확률이 몇 배나 더 큰지)를 나타냅니다. 본 분석에서는 결과 해석에 편의를 위해 유저 그룹 지표가 상향될 확률 자체에 대해 인과 효과를 해석하였습니다.(유저 그룹 지표 상향 확률에 대해 영웅/전설 획득 여부가 미치는 영향의 미분값을 이용해 marginal effect 를 구하였습니다.) 즉, 그래프가 의미하는 것은 유저 그룹 상향에 확률에 대한 최초 영웅/전설 획득의 인과 효과를 의미합니다.
 
@@ -356,7 +357,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 - Y : 결과변수
 - X : 외생 변수
 
-<img src = "/assets/works/class_get_causal_analysis/image9_1.png" width="25%"/>
+<img src = "/assets/works/class_get_causal_analysis/image9_1.png" style="width:3in"/>
 
 - T → Y : Causal Association (분석가가 알고 싶어하는 T와 Y 사이의 인과효과)
 - T ← X → Y : Non-Causal Association (인과효과 이외에 T와 Y를 연결하는 path)
@@ -366,7 +367,7 @@ confounder는 원인 변수와 결과 변수에 동시에 영향을 주면서, �
 
 T가 Y에 미치는 인과효과 추정을 위해서는 non-causal association을 block해야 합니다
 
-<img src = "/assets/works/class_get_causal_analysis/image9_2.png" width="25%"/>
+<img src = "/assets/works/class_get_causal_analysis/image9_2.png" style="width:3in"/>
 
 - block : 통제를 통해 non-causal association 상에서 T와 Y의 관계를 독립으로 만들어 주는 것
 - 노드 간의 관계(화살표 방향)에 따라 통제하는 방법이 다름
@@ -379,17 +380,17 @@ x1과 x3의 association이 형성되는 세 가지 경우
 
 1. Chain
 
-   <img src = "/assets/works/class_get_causal_analysis/image9_3.png" width="25%"/>
+   <img src = "/assets/works/class_get_causal_analysis/image9_3.png" style="width:3in"/>
 
 2. Fork
 
-   <img src = "/assets/works/class_get_causal_analysis/image9_4.png" width="25%"/>
+   <img src = "/assets/works/class_get_causal_analysis/image9_4.png" style="width:3in"/>
 
    - $$x_2$$는 $$x_1$$과 $$x_3$$에 **영향을 줌** : $$x_2$$는 $$x_1$$과 $$x_3$$의 Confounder
 
 3. Imorality
 
-   <img src = "/assets/works/class_get_causal_analysis/image9_5.png" width="25%"/>
+   <img src = "/assets/works/class_get_causal_analysis/image9_5.png" style="width:3in"/>
 
    - $$x_2$$는 $$x_1$$과 $$x_3$$의 **영향을 받음** : $$x_2$$는 $$x_1$$과 $$x_3$$의 collider
 
@@ -428,7 +429,7 @@ x1과 x3의 association이 형성되는 세 가지 경우
      * $$p(x_1,x_2,x_3) = p(x_1) * p(x_2 | x_1) *  p(x_3|x_2)$$
 
    - x2 통제 시 x1과 x3의 독립성 확인
-     - $$p(x_1, x_3 | x_2) = {p(x_1, x_2, x_3) \over p(x_2)}$$(베이즈 정리)
+     - $$p(x_1, x_3 | x_2) = {p(x_1, x_2, x_3) \over p(x_2)}$$ (베이즈 정리)
      - $${p(x_1) * p(x_2|x_1) * p(x_3 | x_2) \over p(x_2)} = {p(x2, x_1) * p(x_3|x_2) \over p(x_2)} = {p(x_2, x_1) \over p(x_2)} * p(x_3|x_2) = p(x_1 | x_2) * p(x_3 | x_2)$$(분자에 bayesian network factorization에 의해 도출 된 식 대입, 베이즈 정리 적용)
      - $$\newcommand{\indep}{\perp \!\!\! \perp}
        x_1 \indep x_3 | x_2$$(x2를 통제하는 경우, x1과 x3가 독립이 됨) 
