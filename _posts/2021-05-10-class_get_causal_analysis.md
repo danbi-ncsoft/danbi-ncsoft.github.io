@@ -391,7 +391,7 @@ x1과 x3의 association이 형성되는 세 가지 경우
 
 3. Imorality
 
-   <p align="left"><img src = "/assets/works/class_get_causal_analysis/image9_5.png" style="width:2.5in" align="left" /><br></p>
+   <p align="left"><img src = "/assets/works/class_get_causal_analysis/image9_5.png" style="width:2.5in" /><br></p>
 
    - $$x_2$$는 $$x_1$$과 $$x_3$$의 **영향을 받음** : $$x_2$$는 $$x_1$$과 $$x_3$$의 collider
 
