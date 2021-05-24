@@ -17,7 +17,7 @@ cover: "/assets/satisfaction.jpg"
 
 상세 내용을 공유드리기 전에 배경을 간략히 설명 드리면, 영웅 등급 이상 전직 아이템은 획득 후 동일 등급의 다른 전직 아이템으로 랜덤 변경할 수 있는 기회가 주어집니다. 무제한으로 변경 가능한 건 아니고, 최대 변경 횟수가 있으며 변경 시에는 소정의 비용이 요구됩니다. 영웅 등급 이상은 매우 얻기 어렵기 때문에 만약 원하는 전직 아이템이 아닌 경우, 아이템을 변경하는 것이 새로 획득하는 것보다 나은 경우가 많습니다.
 
-<p align="center"><img src = "/assets/works/class_get_causal_analysis2/image1.png" style="width:5.5in" /><br>[그림1] 영웅/전설 획득 ~ 전직까지의 절차</p>
+<p align="center"><img src = "/assets/works/class_get_causal_analysis2/image1.png" style="width:6.2in" /><br>[그림1] 영웅/전설 획득 ~ 전직까지의 절차</p>
 
 그래서 본 포스팅에서는 "최초로 획득한 영웅/전설 등급 전직에 대한 만족도에 따라 향후 플레이 변화 차이가 있을까?", 즉 "최초 획득한 영웅/전설 등급 전직에 대한 만족도는 향후 플레이 변화 차이를 일으키는 원인이 될까?"로 분석한 내용을 공유드리고자 합니다.
 
@@ -189,7 +189,7 @@ cover: "/assets/satisfaction.jpg"
 
 |                            무과금                            |                             과금                             |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src = "/assets/works/class_get_causal_analysis2/image6_1.png" style="width:7in"/> | <img src = "/assets/works/class_get_causal_analysis2/image6_2.png" style="width:7in" /> |
+| <img src = "/assets/works/class_get_causal_analysis2/image6_1.png" style="width:7.3in"/> | <img src = "/assets/works/class_get_causal_analysis2/image6_2.png" style="width:7.3in" /> |
 
 (x축의 범위는 과금 그룹이 무과금 그룹에 비해 5배 넓습니다)
 
@@ -199,7 +199,7 @@ cover: "/assets/satisfaction.jpg"
 
 |                     최초 영웅/전설 유지                      |                     최초 영웅/전설 변경                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src = "/assets/works/class_get_causal_analysis2/image7_1.png" style="width:7in"/> | <img src = "/assets/works/class_get_causal_analysis2/image7_2.png" style="width:7in" /> |
+| <img src = "/assets/works/class_get_causal_analysis2/image7_1.png" style="width:7.3in"/> | <img src = "/assets/works/class_get_causal_analysis2/image7_2.png" style="width:7.3in" /> |
 
 (x축이 나타내는 것은 유저 등급이 상향될 확률입니다)
 
@@ -279,7 +279,8 @@ $$T_2$$가 변함에 따라 $$T_1$$이 $$Y$$에 미치는 영향이 바뀐다. �
 
 상호작용을 고려하지 않았을 때
 
-* 시간을 고정하지 않은 채 온도의 증가(Low → High)가 수율에 미치는 평균 차이를 구하면 (62+32.5) / 2 - (59+32.5) / 2 = 1.5  → <u>온도가 수율에 영향을 미치지 않는다고 판단할 수 있음</u>
+* 시간을 고정하지 않은 채 온도의 증가(Low → High)가 수율에 미치는 평균 차이를 구하면 (62+32.5) / 2 - (59+32.5) / 2 = 1.5  
+* **→ 온도가 수율에 영향을 미치지 않는다고 판단할 수 있음**
 
 상호작용을 고려하였을 때
 
@@ -287,4 +288,5 @@ $$T_2$$가 변함에 따라 $$T_1$$이 $$Y$$에 미치는 영향이 바뀐다. �
   * 온도의 증가(Low → High)가 수율에 미치는 영향의 평균 = 62-32.5 = 29.5
 * time을 High로 고정
   * 온도의 증가(Low → High)가 수율에 미치는 영향의 평균 = -26.5
-* <u>**→ 수율에 대해 온도와 시간이 상호작용을 일으키므로 하나의 변수를 고정한 후 나머지 하나의 영향을 살펴보는 것이 타당함**</u>
+* **→ 수율에 대해 온도와 시간이 상호작용을 일으키므로 하나의 변수를 고정한 후 나머지 하나의 영향을 살펴보는 것이 타당함**
+
