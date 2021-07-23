@@ -4,7 +4,7 @@ title: "ETL 개념과 ETL 개발 시 고려해야 하는 원칙들"
 date: 2021-07-23 16:26:00
 categories: Works
 author : DANBI
-cover: "/assets/bulb_scatter.jpg"
+cover: "/assets/bulbs.png"
 ---
 
 ## 0. 시작하며
