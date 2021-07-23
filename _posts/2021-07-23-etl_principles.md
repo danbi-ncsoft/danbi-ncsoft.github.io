@@ -115,7 +115,7 @@ ETL은 총 세 단계로 이루어져있습니다. 바로 추출(**E**xtract), �
 ### as-is
 INSERT OVERWRITE TABLE sample_summary_table PARTITION (pdt = '20210716')
 SELECT customer
-	   , COUNT(1) AS buy_cnt
+	, COUNT(1) AS buy_cnt
 FROM sample_fact_table
 WHERE pdt <= '20210716'
 GROUP BY customer
@@ -124,15 +124,15 @@ GROUP BY customer
 ### to-be
 INSERT OVERWRITE TABLE sample_summary_table PARTITION (pdt = '20210716')
 SELECT customer
-	   , SUM(buy_cnt) AS buy_cnt
+	, SUM(buy_cnt) AS buy_cnt
 FROM (
 	SELECT customer
-		   , buy_cnt
+		, buy_cnt
 	FROM sample_summary_table
 	WHERE pdt = '20210715'
 	UNION
 	SELECT customer
-		   , COUNT(1) AS buy_cnt
+		, COUNT(1) AS buy_cnt
 	FROM sample_fact_table
 	WHERE pdt = '20210716'
 	GROUP BY customer
