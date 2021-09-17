@@ -2,7 +2,7 @@
 layout: post
 title: "자연어처리와 HR analytics"
 date: 2021-09-16 12:00:00
-categories: Work
+categories: Works
 author : DANBI
 cover: "/assets/nlp_free_image.jpg"
 
