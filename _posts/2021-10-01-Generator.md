@@ -45,13 +45,13 @@
 
 ![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림2.png)
 
-출처 :  https://datascienceschool.net/03%20machine%20learning/11.01%20%EC%84%A0%ED%98%95%ED%8C%90%EB%B3%84%EB%B6%84%EC%84%9D%EB%B2%95%EA%B3%BC%20%EC%9D%B4%EC%B0%A8%ED%8C%90%EB%B3%84%EB%B6%84%EC%84%9D%EB%B2%95.html 
+​                                                                                        출처 : https://datascienceschool.net/intro.html
 
  가능도, 즉 y의 클래스값에 따른 X의 분포에 대한 정보를 먼저 알아낸 후 , 베이즈 정리를 사용하여 주어진 X에 대한 Y의 확률분포를 찾는 것입니다. 사전확률은 보통 Y의 비율로 두는 경우가 많죠. 이차판별분석법(QDA)의 경우에는 다음과 같이 우도를 가정하는 것입니다. 즉, 독립변수 X가 실수이고 확률분포가 다변수 정규분포라고 가정하는 것입니다. 이 분포들을 알고 있으면, 독립변수 X에 대한 Y클래스의 조건부확률분포는 위의 식을 따라 구할 수 있겠죠?
 
 ![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림3.png)
 
-출처 :  https://datascienceschool.net/03%20machine%20learning/11.01%20%EC%84%A0%ED%98%95%ED%8C%90%EB%B3%84%EB%B6%84%EC%84%9D%EB%B2%95%EA%B3%BC%20%EC%9D%B4%EC%B0%A8%ED%8C%90%EB%B3%84%EB%B6%84%EC%84%9D%EB%B2%95.html 
+​                                                                                       출처 :  https://datascienceschool.net/intro.html
 
  선형판별분석법과 이차판별분석법에 대해서 조금 더 자세하게 알고 싶다면 위 수식 출처에 있는 블로그를 추천드립니다.(제가 본 곳중에서 가장 상세하고 쉽게 설명이 되어 있네요.) 추가적으로, 선형판별분석법의 경우는 PCA와 같은 차원축소 기법으로 알려져있기도 하고, 분류모델로도 알려져있습니다. Introduction에서 설명드린것처럼, 이렇게 생성모델은 다른 task에서 쓰이고 있는 경우가 많습니다. 그래서 필자도 원래는 이게 생성모델이라고 생각을 못했었죠.
 
