@@ -29,7 +29,7 @@
 
 1. **지도적 생성모델** : LABEL이 있는 데이터에 대해서 각 클래스 별 특징 데이터의 확률분포 P(X\|Y)를 추정한 다음 베이즈 정리를 사용하여 P(Y\|X)를 계산하는 방법입니다. P(Y\|X)를 계산할 수 있기 때문에 분류모델로 활용할 수도 있고 클래스별 Conditional 확률 P(X\|Y)를 추정했기 때문에 확률분포 상에서의 새로운 가상의 데이터를 생성하거나 확률분포 끝자락에 있는 데이터를 이상치로도 판단하는 이상치 판별 모델로도 활용할 수 있습니다. 아래 그림을 보면 조금 더 이해하기 편하실 것 같습니다. 
 
-![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림1.png)
+<img src="https://danbi-ncsoft.github.io/assets/works/generator/그림1.png" alt="7fb4eda6aa89713e268cf3d8fafcd283" style="zoom:80%;" />
 
 ​                                                        출처 : https://sites.google.com/site/machlearnwiki/bayesian-learning/saengseong-model
 
@@ -97,7 +97,7 @@
 
 ![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림8.png)
 
-![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림9.png)
+<img src="https://danbi-ncsoft.github.io/assets/works/generator/그림9.png" alt="7fb4eda6aa89713e268cf3d8fafcd283" style="zoom:67%;" />
 
 
 
