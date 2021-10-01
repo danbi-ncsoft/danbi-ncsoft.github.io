@@ -29,7 +29,7 @@
 
 1. **지도적 생성모델** : LABEL이 있는 데이터에 대해서 각 클래스 별 특징 데이터의 확률분포 P(X\|Y)를 추정한 다음 베이즈 정리를 사용하여 P(Y\|X)를 계산하는 방법입니다. P(Y\|X)를 계산할 수 있기 때문에 분류모델로 활용할 수도 있고 클래스별 Conditional 확률 P(X\|Y)를 추정했기 때문에 확률분포 상에서의 새로운 가상의 데이터를 생성하거나 확률분포 끝자락에 있는 데이터를 이상치로도 판단하는 이상치 판별 모델로도 활용할 수 있습니다. 아래 그림을 보면 조금 더 이해하기 편하실 것 같습니다. 
 
-![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림1.png){: width="80" height="200"}
+![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림1.png){: width="60" height="400"}
 
 ​                                                        출처 : https://sites.google.com/site/machlearnwiki/bayesian-learning/saengseong-model
 
@@ -49,7 +49,7 @@
 
  가능도, 즉 y의 클래스값에 따른 X의 분포에 대한 정보를 먼저 알아낸 후 , 베이즈 정리를 사용하여 주어진 X에 대한 Y의 확률분포를 찾는 것입니다. 사전확률은 보통 Y의 비율로 두는 경우가 많죠. 이차판별분석법(QDA)의 경우에는 다음과 같이 우도를 가정하는 것입니다. 즉, 독립변수 X가 실수이고 확률분포가 다변수 정규분포라고 가정하는 것입니다. 이 분포들을 알고 있으면, 독립변수 X에 대한 Y클래스의 조건부확률분포는 위의 식을 따라 구할 수 있겠죠?
 
-![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림3.png){: width="70" height="70"}
+![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림3.png){: width="40" height="80"}
 
 ​                                                                                       출처 :  https://datascienceschool.net/intro.html
 
@@ -63,7 +63,7 @@
 
  통계적 생성 모델이란 밀도 추정을 의미한다고 생각하면 좋을것 같습니다. 관측된 데이터들의 분포로부터 원래 변수의 확률분포를 추정하고자 하는 것이 밀도 추정입니다. 사실상 통계 책에 나오는 모수적/비모수적 추정과 같죠. 대표적인 예시로 커널 밀도 추정(Kernel Density Estimation)이 있습니다.  랜덤변수 X에 대한 PDF를 다음과 같이 추정하는 것입니다. 어떤 커널 모양이냐에 따라 PDF가 달라지겠죠?
 
-![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림4.png){: width="70" height="70"}
+![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림4.png){: width="40" height="80"}
 
 아래 왼쪽 그래프를 보시면, 검은색 선이 원 데이터를 나타내고 , 이에 걸맞는 분포를 Kernel값을 통해 추정하는 겁니다. 여기서 커널은 '가우시안', 'TOPHAT', 'EPANECHNIKOV'를 사용했는데요, 원 데이터의 분포를 잘 추정하고 있음을 확인할 수 있습니다. 이처럼 원 데이터의 분포를 추정하는 생성모델을 Kernel Density Estimation이라고 합니다. 원 데이터의 분포를 추정했기 때문에 추정한 분포로부터 새로운 데이터를 생성할 수 있겠죠?오른쪽 MNIST 사진을 보시면 MNIST 픽셀들의 분포를 학습하여, KDE로 새로운 숫자이미지를 생성한 것입니다. 
 
@@ -97,7 +97,7 @@
 
 ![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림8.png)
 
-![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림9.png){: width="100" height="100"}
+![7fb4eda6aa89713e268cf3d8fafcd283](https://danbi-ncsoft.github.io/assets/works/generator/그림9.png){: width="50" height="300"}
 
 
 
