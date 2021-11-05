@@ -45,6 +45,7 @@ SELECT p_date
 	, COUNT(DISTINCT column_name)
 FROM table_name
 WHERE p_date BETWEEN DATE_FORMAT('20211006', 'yyyy-MM-dd') AND DATE_FORMAT('20211008', 'yyyy-MM-dd')
+GROUP BY p_date
 ```
 
 <br /> 
