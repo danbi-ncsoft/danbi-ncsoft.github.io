@@ -57,6 +57,7 @@ SELECT p_date
 	, COUNT(DISTINCT column_name)
 FROM table_name
 WHERE p_date BETWEEN DATE_FORMAT('20211006', 'yyyy-MM-dd') AND DATE_FORMAT('20211008', 'yyyy-MM-dd')
+GROUP BY p_date
 ```
 위의 예시 쿼리는 설명한 것처럼 `COUNT` 함수 안에서 `DISTINCT` 작업이 이루어지는 형태이기 때문에 단 1개의 리듀서만을 할당 받게 됩니다. 이를 방지하기 위해서 아래처럼 쿼리를 수정할 수 있습니다.
 ```sql
