@@ -199,6 +199,7 @@ permalink: /about/
           <p>데이터 분석가</p>
           </div>
       </div>
+    </div>
     
     <br><br>
     <div class="row clearfix">
@@ -358,6 +359,7 @@ permalink: /about/
           <p>데이터 분석가</p>
         </div>
       </div>
+    </div>
     
     <br><br>
     <div class="row clearfix">
