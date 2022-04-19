@@ -199,6 +199,26 @@ permalink: /about/
           <p>데이터 분석가</p>
           </div>
       </div>
+    
+    <br><br>
+    <div class="row clearfix">
+      <div class="col-md-4 col-sm-6"> 
+    	  <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+    	    <div class="media">
+    	      <div class="pull-left">
+    		      <img class="media-object" src="/assets/about_us/images/ini_shs.png" alt="">
+    	      </div>
+    	      <div class="media-body">
+    		      <h4>신현수</h4>
+    		      <h5>Intelligence Team</h5>
+    		      <ul class="tag clearfix">
+    			      <li class="btn">Analyst</li>
+    		      </ul>
+    	      </div>
+          </div>
+          <p>데이터 분석가</p>
+        </div>
+      </div>
     </div>  
 
   </div> <!-- team -->
@@ -338,7 +358,27 @@ permalink: /about/
           <p>데이터 분석가</p>
         </div>
       </div>
-    </div>
+    
+    <br><br>
+    <div class="row clearfix">
+      <div class="col-md-4 col-sm-6">
+        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="media">
+    	      <div class="pull-left">
+    		      <img class="media-object" src="/assets/about_us/images/ini_khw.png " alt="">
+    	      </div>
+    		    <div class="media-body">
+    			    <h4>김한울</h4>
+    			    <h5>Analysis&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Analyst</li>
+    			    </ul>              
+    		    </div>
+          </div>
+          <p>데이터 분석가</p>
+        </div>
+      </div>
+    </div>  
 
   </div> <!-- team -->
 
@@ -415,7 +455,7 @@ permalink: /about/
     		      <h4>서상덕</h4>
     		      <h5>Model Engineering Team</h5>
     		      <ul class="tag clearfix">
-    			      <li class="btn">Engineer</li>
+    			      <li class="btn">Developer</li>
     		      </ul>
     	      </div>
           </div>
@@ -433,7 +473,7 @@ permalink: /about/
     			    <h4>이수인</h4>
     			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
-    				    <li class="btn">Engineer</li>
+    				    <li class="btn">Developer</li>
     			    </ul>              
     		    </div>
           </div>
@@ -454,7 +494,7 @@ permalink: /about/
     			    <h4>조원민</h4>
     			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
-    				    <li class="btn">Engineer</li>
+    				    <li class="btn">Developer</li>
     			    </ul>              
     		    </div>
           </div>
