@@ -586,6 +586,7 @@ permalink: /about/
           <p>백엔드 개발자</p>
         </div>
       </div> 
+    </div>
 
   </div> <!-- team -->
 </div>
