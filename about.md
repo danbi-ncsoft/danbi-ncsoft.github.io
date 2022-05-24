@@ -573,7 +573,7 @@ permalink: /about/
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
           <div class="media">
     	      <div class="pull-left">
-    		      <img class="media-object" src="/assets/about_us/images/ini_cdm.png" alt="">
+    		      <img class="media-object" src="/assets/about_us/images/ini_hym.png " alt="">
     	      </div>
     		    <div class="media-body">
     			    <h4>홍용만</h4>
