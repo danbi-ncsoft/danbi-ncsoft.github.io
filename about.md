@@ -381,14 +381,14 @@ permalink: /about/
           <p>데이터 분석가</p>
         </div>
       </div>
-    
-    
+    </div>
+    <br><br>
     <div class="row clearfix">
       <div class="col-md-4 col-sm-6">
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
           <div class="media">
     	      <div class="pull-left">
-    		      <img class="media-object" src="/assets/about_us/images/ini_bih.png " alt="">
+    		      <img class="media-object" src="/assets/about_us/images/ini_bih.PNG " alt="">
     	      </div>
     		    <div class="media-body">
     			    <h4>방일한</h4>
@@ -401,6 +401,7 @@ permalink: /about/
           <p>데이터 분석가</p>
         </div>
       </div>
+    </div>
        <div class="col-md-4 col-sm-6 col-md-offset-2">
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
           <div class="media">
