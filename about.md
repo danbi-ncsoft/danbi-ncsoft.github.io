@@ -398,7 +398,8 @@ permalink: /about/
           </div>
           <p>데이터 분석가</p>
         </div>
-      </div>  
+      </div>
+    <br><br>
        <div class="col-md-4 col-sm-6 col-md-offset-2">
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
           <div class="media">
