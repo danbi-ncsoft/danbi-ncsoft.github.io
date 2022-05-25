@@ -381,7 +381,24 @@ permalink: /about/
           <p>데이터 분석가</p>
         </div>
       </div>
-      
+    <br><br>
+    <div class="col-md-4 col-sm-6 col-md-offset-2">
+        <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="media">
+    	      <div class="pull-left">
+    		      <img class="media-object" src="/assets/about_us/images/ini_bih.png " alt="">
+    	      </div>
+    		    <div class="media-body">
+    			    <h4>방일한</h4>
+    			    <h5>Analysis&Modeling Team</h5>
+    			    <ul class="tag clearfix">
+    				    <li class="btn">Analyst</li>
+    			    </ul>              
+    		    </div>
+          </div>
+          <p>데이터 분석가</p>
+        </div>
+      </div>  
        <div class="col-md-4 col-sm-6 col-md-offset-2">
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
           <div class="media">
