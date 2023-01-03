@@ -534,10 +534,10 @@ permalink: /about/
         <div class="single-profile-bottom wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
           <div class="media">
     	      <div class="pull-left">
-    		      <img class="media-object" src="/assets/about_us/images/ini_cwm.png " alt="">
+    		      <img class="media-object" src="/assets/about_us/images/ini_jyk2.png" alt="">
     	      </div>
     		    <div class="media-body">
-    			    <h4>조원민</h4>
+    			    <h4>김재영</h4>
     			    <h5>Model Engineering Team</h5>
     			    <ul class="tag clearfix">
     				    <li class="btn">Developer</li>
