@@ -225,7 +225,7 @@ permalink: /about/
         <div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
           <div class="media">
     	      <div class="pull-left">
-    		      <img class="media-object" src="/assets/about_us/images/ini_hse.PNG" alt="">
+    		      <img class="media-object" src="/assets/about_us/images/ini_hse.png" alt="">
     	      </div>
     	      <div class="media-body">
     		      <h4>홍성은</h4>
