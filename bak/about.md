@@ -1,8 +1,3 @@
----
-layout: about
-title: About Us
-permalink: /about/
----
 <head>
 	<script src="/assets/about_us/js/jquery.js"></script>
 	<script src="/assets/about_us/js/bootstrap.min.js"></script>
